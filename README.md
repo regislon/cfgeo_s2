@@ -20,6 +20,7 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 
 ![ ](/ressources/apache/images/1.png) 
 
+- Remplacer le fichier httpd.conf par celui ci : ![OSGEo4W ](/ressources/apache/conf/httpd.conf)
 
 
 

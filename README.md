@@ -9,13 +9,17 @@ Merci d'installer les différents composants en suivant scupuleusement les chema
 ### Installation de QGIS et QGIS server
 Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciel open source geospatial pour les environnements Windows
 
--  Télécharger l'Installateur [OSGEo4W ](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
+-  Télécharger l'Installateur [OSGEo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
 - Choisir l’option « Advanced Install »
 - Répertoire d’installation : C:\OSGeo4W64
 - Choisir qgis-lrt et qgis-lrt-server
 
+Vidéo complète de l'installation [ici](https://www.apachefriends.org/download.html) 
+
+
+
 ### Installation d'Apache
--  Télécharger l'Installateur [XAMPP](https://www.apachefriends.org/download.html)
+-  Télécharger l'Installateur [XAMPP](/ressources/qgis/videos/install.mkv)
 - Sélectionner uniquement que :
 
 ![ ](/ressources/apache/images/1.png) 

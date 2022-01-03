@@ -16,6 +16,9 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/qgis/videos/install.mkv).
 
+### Création d'un premier projet QGIS
+- Créer un projet QGIS, enregistrer-le sous C:\OSGeo4W64\apps\qgis-ltr\bin
+- Ajouter ces [données](https://github.com/regislon/cfgeo_s2/raw/main/ressources/qgis/data/initial_load.gpkg).
 
 
 ### Installation d'Apache

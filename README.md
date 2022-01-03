@@ -1,10 +1,11 @@
 # Module S2 "SIT systèmes" 
 
 ## Introduction
+![ ](/ressources/planning/images/plan.png) 
 
 ## Installations
 ### Préambule
-Merci d'installer les différents composants en suivant scupuleusement les chemains d'accès et les nomages.
+Merci d'installer les différents composants en suivant scrupuleusement les chemins d'accès et les nommages.
 
 ### Machine virtuelle
 Vous disposez toutes et tous d'une machine virtuel sur Amazon. 
@@ -12,7 +13,7 @@ Vous disposez toutes et tous d'une machine virtuel sur Amazon.
  
 
 ### Installation de QGIS et QGIS server
-Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciel open source geospatial pour les environnements Windows
+Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciels open source geospatial pour les environnements Windows
 
 -  Télécharger l'Installateur [OSGEo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
 - Choisir l’option « Advanced Install »
@@ -46,7 +47,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 - Installer python dans le répertoire C:\Python\python-3.9.9-amd64
 
 ### Installation des libraries python
-1.	Démarrer l’invite de commande windows (tapper CMD dans la barre de recherche)
+1.	Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)
 1. Se rendre dans le répertoire d’installation de python en tapant la commande suivante :``cd C:\Python\python-3.9.9-amd64\Scripts``
 1. Installer ipython-sql  en tapant la commande suivante : ``pip install ipython-sql``
 1. Installer jupyter en tapant la commande suivante : ``pip install jupyter``

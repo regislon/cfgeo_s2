@@ -14,12 +14,12 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 - Répertoire d’installation : C:\OSGeo4W64
 - Choisir qgis-lrt et qgis-lrt-server
 
-Vidéo complète de l'installation [ici](https://www.apachefriends.org/download.html) 
+Vidéo complète de l'installation [ici](/ressources/qgis/videos/install.mkv).
 
 
 
 ### Installation d'Apache
--  Télécharger l'Installateur [XAMPP](/ressources/qgis/videos/install.mkv)
+-  Télécharger l'Installateur [XAMPP](https://www.apachefriends.org/download.html)
 - Sélectionner uniquement que :
 
 ![ ](/ressources/apache/images/1.png) 

@@ -24,7 +24,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 
 ![ ](/ressources/apache/images/1.png) 
 
-- Remplacer le fichier httpd.conf par celui ci : ![OSGEo4W ](/ressources/apache/conf/httpd.conf)
+- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![OSGEo4W ](/ressources/apache/conf/httpd.conf)
 - Ne pas oublier de redémarrer Apache à la fin de l'installation.
 
 ### Test de la configuration GIS server + Apache

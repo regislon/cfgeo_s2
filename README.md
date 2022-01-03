@@ -48,8 +48,8 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 ### Installation des libraries python
 1.	Démarrer l’invite de commande windows (tapper CMD dans la barre de recherche)
 1. Se rendre dans le répertoire d’installation de python en tapant la commande suivante :
-&nbsp;&nbsp;&nbsp;&nbsp;cd C:\Python\python-3.9.9-amd64\Scripts
+``cd C:\Python\python-3.9.9-amd64\Scripts``
 1. Installer ipython-sql  en tapant la commande suivante : 
-&nbsp;&nbsp;&nbsp;&nbsp;pip install ipython-sql
+``pip install ipython-sql``
 
 

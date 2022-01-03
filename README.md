@@ -51,3 +51,9 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 1. Installer ipython-sql  en tapant la commande suivante : ``pip install ipython-sql``
 1. Installer jupyter en tapant la commande suivante : ``pip install jupyter``
 1. Installer psycopg2 en tapant la commande suivante : ``pip install psycopg2``
+
+### Installation des jupyter notebooks
+1.	Créer un répertoire C:\Python_projects\cfgeo
+1.	Dézipper le contenu dans ce répertoire 
+
+

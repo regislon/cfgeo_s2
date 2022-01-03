@@ -1,0 +1,12 @@
+# Module S2 "SIT systèmes" 
+
+## Introduction
+
+## Installations
+### Installation de QGIS et QGIS server
+Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciel open source geospatial pour les environnements Windows
+
+-   Télécharger l'Installateur [OSGEo4W ](download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
+- Choisir l’option « Advanced Install »
+- Répertoire d’installation : C:\OSGeo4W64
+- Choisir qgis-lrt et qgis-lrt-server

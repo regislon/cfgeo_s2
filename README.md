@@ -13,7 +13,9 @@ Vous disposez toutes et tous d'une machine virtuel sur exoscale.
  ![ ](/ressources/exoscale/images/snapshot.png)
 - Une fois le snapshot effectué, il faut créer un template en utilisant les informations suivantes :
  ![ ](/ressources/exoscale/images/snapshot2.png)
- le template se crée icc :
+ 
+ le template se crée ici :
+ 
   ![ ](/ressources/exoscale/images/snapshot3.png)
 - Finalement, il faut "destroyer" la machine pour ne pas payer des frais de licence windows inutilement. 
 

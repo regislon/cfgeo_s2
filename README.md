@@ -21,6 +21,12 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 ![ ](/ressources/apache/images/1.png) 
 
 - Remplacer le fichier httpd.conf par celui ci : ![OSGEo4W ](/ressources/apache/conf/httpd.conf)
+- Ne pas oublier de redémarrer Apache à la fin de l'installation.
+
+### Test de la configuration GIS server + Apache
+- Placer un projet QGIS nommé "cfgeo.qgz" dans
+- Depuis un navigateur web sur la machine virtuelle (Edge par exemple), entrer :  [localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz](localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz)
+
 
 
 

@@ -45,4 +45,11 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 -  Télécharger l'Installateur [python 3.9.9](https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe)
 - Installer python dans le répertoire C:\Python\python-3.9.9-amd64
 
+### Installation des libraries python
+1.	Démarrer l’invite de commande windows (tapper CMD dans la barre de recherche)
+1. Se rendre dans le répertoire d’installation de python en tapant la commande suivante :
+cd C:\Python\python-3.9.9-amd64\Scripts
+1. Installer ipython-sql  en tapant la commande suivante : 
+pip install ipython-sql
+
 

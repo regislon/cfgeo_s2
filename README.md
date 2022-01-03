@@ -14,7 +14,7 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 - Répertoire d’installation : C:\OSGeo4W64
 - Choisir qgis-lrt et qgis-lrt-server
 
-Vidéo complète de l'installation [ici](/ressources/qgis/videos/install.mkv).
+Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/qgis/videos/install.mkv).
 
 
 

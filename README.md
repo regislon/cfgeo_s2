@@ -53,7 +53,14 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 1. Installer psycopg2 en tapant la commande suivante : ``pip install psycopg2``
 
 ### Installation des jupyter notebooks
-1.	Créer un répertoire C:\Python_projects\cfgeo
-1.	Dézipper le contenu dans ce répertoire 
+1.	Créer un répertoire C:\Python_projects\cfgeo\notebooks
+1.	Dézipper le contenu de ce [fichier](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/notebooks/s2_4_python_conditions.zip) dans ce répertoire 
 
+### Démarrage de Jupyter Notebook
+1.	Démarrer l’invite de commande windows
+1.	Se rendre dans le répertoire du projet python « C:\Python_projects\cfgeo »
+``cd C:\Python_projects\cfgeo\notebooks``
+1.	Entrer la ligne de commande suivante :
+``python -m notebook``
+1.	Jupyter notebook doit se démarrer dans la fenêtre du navigateur 
 

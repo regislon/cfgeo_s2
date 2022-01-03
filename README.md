@@ -16,7 +16,9 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 
 ### Installation d'Apache
 -  Télécharger l'Installateur [XAMPP](https://www.apachefriends.org/download.html)
-- Sélectionner uniquement que :![ ](/ressources/apache/images/1.png) 
+- Sélectionner uniquement que :
+
+![ ](/ressources/apache/images/1.png) 
 
 
 

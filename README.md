@@ -11,6 +11,16 @@ Merci d'installer les différents composants en suivant scrupuleusement les chem
 Vous disposez toutes et tous d'une machine virtuel sur Amazon. 
  - Ne pas oublier de stopper la machine après utilisation 
  
+### Installation de PostgreSQL et PostGIS
+Pour installer cette base de données avec son extention spatiale, veuillez procéder ainsi :
+- Télécharger l'Installateur [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+- Laisser les répertoire tels que proposés par défaut 
+- User = "postgres"
+- Mot de passe = "postgres"
+- Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
+
+Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/install.mkv).
+
 
 ### Installation de QGIS et QGIS server
 Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciels open source geospatial pour les environnements Windows

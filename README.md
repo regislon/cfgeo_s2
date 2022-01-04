@@ -16,7 +16,7 @@ Pour installer cette base de données avec son extention spatiale, veuillez proc
 - Télécharger l'Installateur [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 - Laisser les répertoire tels que proposés par défaut 
 - User = "postgres"
-- Mot de passe = "postgres"
+- Mot de passe = "postgres" (A ne jamais faire dans la vraie vie, mais la on a le droit :-))
 - Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/install.mkv).

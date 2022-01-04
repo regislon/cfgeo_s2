@@ -18,6 +18,7 @@ Pour installer cette base de données avec son extention spatiale, veuillez proc
 - User = "postgres"
 - Mot de passe = "postgres" (A ne jamais faire dans la vraie vie, mais la on a le droit :-))
 - Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
+- Démarrer PgAdmin pour vérifier que l'on peut se connecter à cette nouvelle base installée
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/install.mkv).
 
@@ -55,6 +56,8 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 ### Installation de python 
 -  Télécharger l'Installateur [python 3.9.9](https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe)
 - Installer python dans le répertoire C:\Python\python-3.9.9-amd64
+
+Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/videos/install.mkv).
 
 ### Installation des libraries python
 1.	Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)

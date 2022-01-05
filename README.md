@@ -52,6 +52,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 ### Test de la configuration GIS server + Apache en local (sur la machine virtuelle)
 - Placer un projet QGIS nommé "cfgeo.qgz" dans
 - Depuis un navigateur web sur la machine virtuelle (Edge par exemple), entrer :  ``localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz``
+- Le test est réussi si vous obtenez une page web avec du code XML
 
 ### Test de la configuration GIS server + Apache en externe (depuis internet)
 - Le test précédant est réussi 
@@ -62,7 +63,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
  ![ ](/ressources/aws/images/firewall.png)
 
 - Depuis un navigateur web à l'extérieur de la machine virtuelle, entrer :  ``<votre_DNS>/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz``
-
+- Le test est réussi si vous obtenez une page web avec du code XML
 
 ### Installation de python 
 -  Télécharger l'Installateur [python 3.9.9](https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe)
@@ -91,4 +92,13 @@ Vidéo de l'installation de la première librairie [ici](https://github.com/regi
 1.	Entrer la ligne de commande suivante :
 ``python -m notebook``
 1.	Jupyter notebook doit se démarrer dans la fenêtre du navigateur 
+
+
+### Requête server WMS
+- la couche se nomme "commune"
+- l'image demandée est inclue dans la bounding box 2534472,1176780,2541983,1182660
+
+``<votre_DNS>/cgi-bin/qgis_mapserv.fcgi.exe?MAP=cfgeo.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=2534472,1176780,2541983,1182660&SRS=EPSG:2056&WIDTH=665&HEIGHT=551&LAYERS=commune&FORMAT=image/jpeg``
+
+Ne pas hésiter à modifier l'url ci-dessus pour la faire correspond à votre projet QGIS
 

@@ -49,9 +49,19 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/apache/videos/install.mkv).
 
-### Test de la configuration GIS server + Apache
+### Test de la configuration GIS server + Apache en local (sur la machine virtuelle)
 - Placer un projet QGIS nommé "cfgeo.qgz" dans
 - Depuis un navigateur web sur la machine virtuelle (Edge par exemple), entrer :  ``localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz``
+
+### Test de la configuration GIS server + Apache en externe (depuis internet)
+- le test précédant est réussi 
+- Depuis la console d'amazon, récupérer le DNS de votre machine virtuelle. Il s'agit de l'adresse de votre machine. 
+
+![ ](/ressources/aws/images/dns.png) 
+ - Depuis votre machine virtuelle, tapper "firewall" dans la recherche Windows et désactiver le firewall du private network
+ ![ ](/ressources/aws/images/firewall.png)
+
+
 
 ### Installation de python 
 -  Télécharger l'Installateur [python 3.9.9](https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe)

@@ -3,9 +3,20 @@
 ## Introduction
 ![ ](/ressources/planning/images/plan.png) 
 
-## Installations
+## Ressources théoriques
+| Thème  | Powerpoint  | 
+|---|---|
+| PostgreSQL|  [inroduction](/slides/introduction.pptx) <br>[postgres](/slides/postgis.pptx) | 
+| Python  | ...  | 
+|  QGIS server | ...  |   |
+
+Lien pour le [suivi des différentes étape](https://docs.google.com/spreadsheets/d/17YdfYZI3R0N86sSZc5DGH54euCWpwDZ4hMcn9SM57sg/edit#gid=0)
+
+
+## Installation
 ### Préambule
 Merci d'installer les différents composants en suivant scrupuleusement les chemins d'accès et les nommages.
+
 
 ### Machine virtuelle
 Vous disposez toutes et tous d'une machine virtuel sur Amazon. 
@@ -15,6 +26,7 @@ Vous disposez toutes et tous d'une machine virtuel sur Amazon.
 Pour installer cette base de données avec son extention spatiale, veuillez procéder ainsi :
 - Télécharger l'Installateur [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 - Laisser les répertoire tels que proposés par défaut 
+- Installer pgAdmin par la même occasion
 - User = "postgres"
 - Mot de passe = "postgres" (A ne jamais faire dans la vraie vie, mais la on a le droit :-))
 - Démarrer le stack buider pour installer postGIS (à la fin de l'installation)

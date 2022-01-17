@@ -40,7 +40,7 @@ Dès l'intsallation terminée, il faut ajouter la ligne suivant dans le fichier 
 
 Cela permet l'accès à la base PostgreSQL depuis l'extérieur de la machine AWS.
 
-Dernière étape, autoriser l'accès à PostgreSQL dans le security group d'amazon [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/aws_security.mkv).
+Dernière étape, autoriser l'accès à PostgreSQL dans le security group d'amazon. Vidéo [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/aws_security.mkv).
 
 
 ### Installation de QGIS et QGIS server

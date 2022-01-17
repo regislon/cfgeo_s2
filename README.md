@@ -20,12 +20,12 @@ Merci d'installer les différents composants en suivant scrupuleusement les chem
 
 ### Machine virtuelle
 Vous disposez toutes et tous d'une machine virtuel sur Amazon. 
- - Ne pas oublier de stopper la machine après utilisation 
+
  
 ### Installation de PostgreSQL et PostGIS
 Pour installer cette base de données avec son extention spatiale, veuillez procéder ainsi :
 - Télécharger l'Installateur [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-- Laisser les répertoireS tels que proposés par défaut 
+- Laisser les répertoires tels que proposés par défaut 
 - Installer pgAdmin par la même occasion
 - User = "postgres"
 - Mot de passe = à votre guise, mais merci de ne pas l'oublier !
@@ -38,7 +38,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 
 ### Permettre la connexion à cette base de données depuis l'extérieur de la machine virtuelle Amazon
 
-Dès l'intsallation terminée, il faut ajouter la ligne suivante à la fin du fichier "C:\Program Files\PostgreSQL\14\data\pg_hba.conf"
+Dès l'installation  terminée, il faut ajouter la ligne suivante à la fin du fichier "C:\Program Files\PostgreSQL\14\data\pg_hba.conf"
 
 ``host    all all             all                scram-sha-256``
 

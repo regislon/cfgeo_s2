@@ -4,9 +4,9 @@
 ![ ](/ressources/planning/images/plan.png) 
 
 ## Ressources théoriques
-| Thème  | Powerpoint  | 
-|---|---|
-| PostgreSQL|  [inroduction](/slides/introduction.pptx) <br>[postgres](/slides/postgis.pptx) | 
+| Thème  | Powerpoint  | ressources| 
+|---|---|---|
+| PostgreSQL|  [introduction](/slides/introduction.pptx) <br>[postgres](/slides/postgis.pptx) | [dump SQL](/slides/dump.sql)  |
 | Python  | ...  | 
 |  QGIS server | ...  |   |
 
@@ -28,11 +28,19 @@ Pour installer cette base de données avec son extention spatiale, veuillez proc
 - Laisser les répertoire tels que proposés par défaut 
 - Installer pgAdmin par la même occasion
 - User = "postgres"
-- Mot de passe = "postgres" (A ne jamais faire dans la vraie vie, mais la on a le droit :-))
+- Mot de passe = à votre guise, mais merci de ne pas l'oublier !
 - Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
 - Démarrer PgAdmin pour vérifier que l'on peut se connecter à cette nouvelle base installée
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/install.mkv).
+
+Dès l'intsallation terminée, il faut ajouter la ligne suivant dans le fichier "C:\Program Files\PostgreSQL\14\data\pg_hba.conf"
+
+``host    all all             all                scram-sha-256``
+
+Cela permet l'accès à la base PostgreSQL depuis l'extérieur de la machine AWS.
+
+Dernière étape, autoriser l'accès à PostgreSQL dans le security group d'amazon [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/aws_security.mkv).
 
 
 ### Installation de QGIS et QGIS server

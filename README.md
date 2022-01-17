@@ -31,10 +31,12 @@ Pour installer cette base de données avec son extention spatiale, veuillez proc
 - Mot de passe = à votre guise, mais merci de ne pas l'oublier !
 - Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
 - Démarrer PgAdmin pour vérifier que l'on peut se connecter à cette nouvelle base installée
+- Exécuter la requête  ``SELECT postgis_full_version();``  pour vérifier que postGIS est installé
+![ ](/ressources/postgres/images/check_postgis.png)
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/install.mkv).
 
-Dès l'intsallation terminée, il faut ajouter la ligne suivant dans le fichier "C:\Program Files\PostgreSQL\14\data\pg_hba.conf"
+Dès l'intsallation terminée, il faut ajouter la ligne suivante à la fin du fichier "C:\Program Files\PostgreSQL\14\data\pg_hba.conf"
 
 ``host    all all             all                scram-sha-256``
 

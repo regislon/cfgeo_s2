@@ -31,6 +31,7 @@ Pour installer cette base de données avec son extention spatiale, veuillez proc
 - Mot de passe = à votre guise, mais merci de ne pas l'oublier !
 - Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
 - Démarrer PgAdmin pour vérifier que l'on peut se connecter à cette nouvelle base installée
+- Dans une requête, taper ``CREATE EXTENSION postgis;``
 - Exécuter la requête  ``SELECT postgis_full_version();``  pour vérifier que postGIS est installé
 ![ ](/ressources/postgres/images/check_postgis.png)
 

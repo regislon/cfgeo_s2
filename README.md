@@ -1,7 +1,7 @@
 # Module S2 "SIT systèmes" 
 
 ## Introduction
-![ ](/ressources/planning/images/plan.png) 
+![ ](/ressources/planning/images/planning.png) 
 
 ## Ressources théoriques
 | Thème  | Powerpoint  | ressources| 

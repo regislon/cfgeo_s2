@@ -108,7 +108,7 @@ Vidéo de l'installation de la première librairie [ici](https://github.com/regi
 
 ### Installation des jupyter notebooks
 1.	Créer un répertoire C:\Python_projects\cfgeo\notebooks
-1.	Dézipper le contenu de ce [fichier](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/notebooks/s2_4_python_conditions.zip) dans ce répertoire 
+1.	Dézipper le contenu de ce [fichier](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/notebooks/s2_2_python.zip) dans ce répertoire 
 
 ### Démarrage de Jupyter Notebook
 1.	Démarrer l’invite de commande windows

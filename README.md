@@ -7,7 +7,7 @@
 | Thème  | Powerpoint  | ressources| 
 |---|---|---|
 | PostgreSQL|  [introduction](/slides/introduction.pptx) <br>[postgres](/slides/postgis.pptx) | [dump SQL](/slides/dump.sql)  |
-| Python  | [python](/slides/python.pptx)  | 
+| Python  | [python](/slides/python.pptx)  | [Notebook](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/notebooks/s2_2_python.zip)|
 |  QGIS server | ...  |   |
 
 Lien pour le [suivi des différentes étape](https://docs.google.com/spreadsheets/d/17YdfYZI3R0N86sSZc5DGH54euCWpwDZ4hMcn9SM57sg/edit#gid=0)

@@ -84,8 +84,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 - Depuis la console d'amazon, récupérer le DNS de votre machine virtuelle. Il s'agit de l'adresse de votre machine. 
 
 ![ ](/ressources/aws/images/dns.png) 
- - Depuis votre machine virtuelle, tapper "firewall" dans la recherche Windows et désactiver le firewall du private network
- ![ ](/ressources/aws/images/firewall.png)
+
 
 - Depuis un navigateur web à l'extérieur de la machine virtuelle, entrer :  ``<votre_DNS>/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz``
 - Le test est réussi si vous obtenez une page web avec du code XML
@@ -128,3 +127,6 @@ Vidéo de l'installation de la première librairie [ici](https://github.com/regi
 
 Ne pas hésiter à modifier l'url ci-dessus pour la faire correspond à votre projet QGIS
 
+### Divers
+ - Depuis votre machine virtuelle, tapper "firewall" dans la recherche Windows et désactiver le firewall du private network
+ ![ ](/ressources/aws/images/firewall.png)

@@ -69,7 +69,7 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 
 ![ ](/ressources/apache/images/1.png) 
 
-- Depuis la console d'aministration d'amazon, modifier le security group ainsi : 
+- Depuis la console d'administration d'amazon, modifier le security group ainsi (ajouter cette règle): 
 ![ ](/ressources/apache/images/2.png) 
 
 - Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](/ressources/apache/conf/httpd.conf)

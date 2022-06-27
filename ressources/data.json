@@ -1,6 +1,5 @@
 {
 	"type" : "FeatureCollection",
-	"name" : "Output",
 	"features" : [
 		{
 			"type" : "Feature",

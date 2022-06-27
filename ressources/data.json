@@ -5,6 +5,1080 @@
 		{
 			"type" : "Feature",
 			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.15, 46.08 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Spherical Cap Harmonic Analysis (SCHA) for Characterising the Morphology of Rough Surface Patches",
+				"author" : "Mahmoud Shaqfa; Gary P. T. Choi; Katrin Beyer",
+				"format" : ".zip",
+				"description" : "This release includes implementations for Spherical Cap Harmonics (SCH), Hemispherical Harmonics (HSH) and Spherical Harmonics (SH) for analyzing and reconstructing open and closed surfaces. This is a stable and tested version. Please pay attention to the comments before the inputs. Report bugs to \"mahmoud.shaqfa@epfl.ch\" or \"ptchoi@mit.edu\" (as per the author of the bugged file).",
+				"url" : "https://doi.org/10.5281/zenodo.4890809",
+				"lng" : 7.15,
+				"lat" : 46.08
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.01, 46.53 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Experimental data on plastered rubble stone masonry walls",
+				"author" : "Rezaie, Amir; Godio, Michele; Beyer, Katrin",
+				"format" : ".txt, .zip",
+				"description" : "This repository contains data from experimental tests on plastered rubble stone masonry walls conducted at École Polytechnique Fédérale de Lausanne (EPFL) in Switzerland.  Data visualization in RENKU: Click here Please cite the following related publications: [1] Rezaie, A., Godio, M., Beyer, K. (2020). Experimental investigation of strength, stiffness and drift capacity of rubble stone masonry walls. Construction and Building Materials, 251, 118972.   [2] Rezaie, A., Achanta, R., Godio, M., Beyer, K. (2020). Comparison of crack segmentation using digital image correlation measurements and deep learning. Construction and Building Materials, 261, 120474.   [3] Rezaie, A., Godio, M., & Beyer, K. (2021). Investigating the cracking of plastered stone masonry walls under shear–compression loading. Construction and Building Materials, 306, 124831.",
+				"url" : "https://doi.org/10.5281/zenodo.5052675",
+				"lng" : 7.01,
+				"lat" : 46.53
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.63, 46.54 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "preprocessed OpenStreetMap data edges for Côte d'Ivoire",
+				"author" : "Pessoa Colombo, Vitor",
+				"format" : ".gpkg",
+				"description" : "OpenStreetMap data for Côte d'Ivoire (downloaded on 4 March 2020) transformed to network format following the methods of Karduni et al. (2016). References Karduni, Alireza, Amirhassan Kermanshah, and Sybil Derrible. \"A protocol to convert spatial polyline data to network formats and applications to world urban road networks.\" Scientific data 3.1 (2016): 1-7.",
+				"url" : "https://doi.org/10.5281/zenodo.5564798",
+				"lng" : 6.63,
+				"lat" : 46.54
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.08, 46.37 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Socially-Aware Large-Scale Crowd Forecasting",
+				"author" : "alahi, alexandre; Ramanathan, Vignesh; Fei-fei, li",
+				"format" : ".gz",
+				"description" : "In crowded spaces such as city centers or train stations, human mobility looks complex, but is often influenced only by a few causes. We propose to quantitatively study crowded environments by introducing a dataset of trajectories collected in train stations. ",
+				"url" : "https://doi.org/10.1109/CVPR.2014.283",
+				"lng" : 8.08,
+				"lat" : 46.37
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.97, 46.91 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Questionnaire sur le niveau d'activité et les indicateurs de développement durable dans les villes suisses",
+				"author" : "Boesch Anne",
+				"description" : "This document is the pre-final French version of a questionnaire that will be sent to all Swiss cities approx. September 2021 about their activities (government and administration) related to sustainable development - or other transversal issues - and their potential use of sustainable development indicators (or indicators about similar transversal issues)",
+				"url" : "https://doi.org/10.5281/zenodo.5452447",
+				"lng" : 7.97,
+				"lat" : 46.91
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.56, 46.88 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Landscape of data repositories and platforms",
+				"author" : "Francesco Varrato; Eliane Blumer; Charlotte Weil; Miriam Braskova",
+				"format" : ".xlsx, .pdf, .pptx",
+				"description" : "Scholarly Communication is still shifting from papers to richer content, as for instance research data and code. Data dissemination has a crucial role and yet it is in its infancy, with visible fragmentation and too many unknowns for researchers to get onboard. With our work, we want to mitigate this situation and help researchers decide which platforms are best suited to disseminate their data and code. The table we elaborated is based on multiple feedback from EPFL researchers, and its purpose is both to capture the variety of use-cases, and to guide researchers to make their choice. This poster is principally conceived for colleagues working in university services related to Open Science and Research Data Management, to provide them with an example of collaboration that might be reproduced in their institutions, and to create awareness on the challenges that such an endeavor entails. In this publication, we also include the current version of the comparative table of data dissemination solutions.",
+				"url" : "https://doi.org/10.5281/zenodo.5769280",
+				"lng" : 7.56,
+				"lat" : 46.88
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.16, 46.7 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "MASCDB: a database of images, descriptors and1microphysical properties of individual snowflakes in free fall",
+				"author" : "Grazioli, Jacopo; Ghiggi, Gionata",
+				"format" : ".parquet, .zip",
+				"description" : "Dataset overview This dataset provides data and images of snowflakes in free fall collected with a Multi-Angle Snowflake Camera (MASC) The dataset includes, for each recorded snowflakes: A triplet of gray-scale images corresponding to the three cameras of the MASC A large quantity of geometrical, textural descriptors and the pre-compiled output of published retrieval algorithms as well as basic environmental information at the location and time of each measurement. The pre-computed descriptors and retrievals are available either individually for each camera view or, some of them, available as descriptors of the triplet as a whole. A non exhaustive list of precomputed quantities includes for example: Textural and geometrical descriptors as in Praz et al 2017 Hydrometeor classification, riming degree estimation, melting identification, as in Praz et al 2017 Blowing snow identification, as in  Schaer et al 2020 Mass, volume, gyration estimation, as in Leinonen et al 2021 Data format and structure The dataset is divided into four .parquet file (for scalar descriptors) and a Zarr database (for the images). A detailed description of the data content and of the data records is available here. Supporting code A python-based API is available to manipulate, display and organize the data of our dataset. It can be found on GitHub. See also the code documentation on ReadTheDocs. Download notes All files available here for download should be stored in the same folder, if the python-based API is used MASCdb.zarr.zip must be unzipped after download    ",
+				"url" : "https://doi.org/10.5281/zenodo.5709832",
+				"lng" : 8.16,
+				"lat" : 46.7
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.8, 46.09 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Hydraulic fracturing block test experiments in Gabbro & Marble - experiments # GABB-002 & MARB-007",
+				"author" : "Dong Liu; Brice Lecampion",
+				"format" : ".zip",
+				"description" : "This dataset contains raw, processed and inverted data for 2 hydraulic fracturing tests performed in a Zimbabwe gabbro (GABB-002) and a Carrara Marble (MARB-007) at the Geo-Energy lab @ EPFL. [IMPORTANT NOTE: DUE TO file size-constraint, the raw binary filed containing the acoustic data is not part of this zenodo data set - Please contact Prof. B. Lecampion directly if you are interested in playing with the raw acoustic data file] TEST ID - GABB-002  : Lag/viscosity dominated test in a gabbro TEST ID - MARB-007   : Lag/viscosity dominated test in a carrara Marble The details of these two tests and its analysis is described in details in the following publication: Measurements of the evolution of the fluid lag in laboratory hydraulic fracture experiments in rocks Dong Liu, Brice Lecampion Geo-Energy Laboratory, Gaznat Chair on Geo-Energy, Ecole Polytechique Fédérale de Lausanne, EPFL-ENAC-IIC-GEL, Lausanne, Switzerland",
+				"url" : "https://doi.org/10.5281/zenodo.5525773",
+				"lng" : 6.8,
+				"lat" : 46.09
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.32, 46.64 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Selektiver Rückbau - Rückbaubare Konstruktion: Studie zur Förderung der Abfallreduktion und der Wiederverwendung in der Baubranche",
+				"author" : "Célia Küpfer; Corentin Fivet",
+				"format" : ".pdf",
+				"description" : "Diese Sammlung stützt sich auf eine Literaturrecherche sowie 32 Fallstudien und Interviews mit Fachkräften und: › fasst die Grundprinzipien beider Ansätze zusammen; › dokumentiert und gibt Erfahrungsberichte und bewährte Verfahren weiter; › liefert technische Referenzen für Bauunternehmen, Entwerferinnen/Entwerfer und Bauherrschaft; › bietet einen aktuellen und detaillierten theoretischen Hintergrund sowie Referenzen für die weitere Entwicklung; › skizziert die Möglichkeiten zur Weiterentwicklung und Umsetzung für Schweizer Bauten.",
+				"url" : "https://doi.org/10.5281/zenodo.5131243",
+				"lng" : 7.32,
+				"lat" : 46.64
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.63, 46.58 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data & Figures on the Multiscale Spatiotemporal Characterization of Embodied Environmental Efficiency of Building Structures in Geneva from 1850 to 2018",
+				"author" : "Fivet, Corentin; De Wolf, Catherine; Menny, Thibaut; Vanbutsele, Serena",
+				"format" : ".svg, .tif, .xlsx",
+				"description" : "Process data, figures, and figure data resulting from the study on Multiscale Spatiotemporal Characterization of Embodied Environmental Efficiency of Building Structures in Geneva from 1850 to 2018.",
+				"url" : "https://doi.org/10.5281/zenodo.4542784",
+				"lng" : 6.63,
+				"lat" : 46.58
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.1, 46.03 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Déconstruction sélective - Construction Réversible: recueil pour diminuer les déchets et favoriser le réemploi dans la construction.",
+				"author" : "Célia Küpfer; Corentin Fivet",
+				"format" : ".pdf",
+				"description" : "A travers une revue de la littérature, ainsi que 32 études de cas et des entretiens avec des praticiens, ce recueil: › synthétise les principes fondamentaux des deux approches; › documente et diffuse les retours d’expériences et les bonnes pratiques; › apporte aux entrepreneurs/entrepreneuses, concepteurs/conceptrices et maîtrises d’ouvrage des références techniques; › procure aux parties prenantes un bagage théorique à la pointe et détaillé ainsi qu’une série de référence pour aller plus loin; › esquisse les perspectives d’évolution et opportunités applicables au bâti suisse.",
+				"url" : "https://doi.org/10.5281/zenodo.4314325",
+				"lng" : 7.1,
+				"lat" : 46.03
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.83, 46.68 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "NGon",
+				"author" : "Petras Vestartas; Aryan Rezaei Rad",
+				"format" : ".zip",
+				"description" : "For mesh processing. Examples for Nexorades and COMPAS structural analysis.",
+				"url" : "https://doi.org/10.5281/zenodo.4550592",
+				"lng" : 6.83,
+				"lat" : 46.68
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.39, 46.32 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Ecological modelling",
+				"name" : "Very high-resolution digital elevation models of la Para and les Martinets areas in the Swiss Alps",
+				"author" : "Guillaume, Annie S.; Leempoel, Kevin; Rochat, Estelle; Rogivue, Aude; Kasser, Michel; Gugerli, Felix; Parisod, Christian; Joost, Stéphane",
+				"format" : ".csv, .tif, .zip",
+				"description" : "Data to support the article \"Multiscale very-high resolution topographic models in Alpine ecology: pros and cons of airborne LiDAR and drone-based stereo-photogrammetry technologies\". This study is based in two valleys of the western Swiss Alps in the state of Vaud. The two study sites, Para and Martinets, are situated above the tree-line between 1800-2400m asl, with target site areas of 0.5km2.\n\nHere, we provide the base digital elevation models (DEMs) acquired via Light Detection and Ranging (LiDAR) and stereo-photogrammetry (PHOTO) methods for each site. The finest resolution for LiDAR DEMs is 0.5m and for PHOTO DEMs is 6.25cm. These were then generalised to 32m for LiDAR and 8m for PHOTO using the impyramid function in MATLAB and cropped to remove incorrect borders before being used to derive 23 variables in SAGA GIS. \n\nThe site outline shape files (as zip) show the limitations of each study site, which were used to crop the DEMs and derived variables to the target site.\n\nThe georef_points.csv file contains point data of geo-referenced points (±3cm accuracy) used to assess the DEM accuracies.\n\nThe Aalpina_presence_points.csv file contains the point data of the Arabis alpina plant presence locations for both sites, which were used in MaxEnt analyses.\n\n ",
+				"url" : "https://doi.org/10.5281/zenodo.4575251",
+				"lng" : 7.39,
+				"lat" : 46.32
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.3, 46.67 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data for \"Heat stress reduces the contribution of diazotrophs to coral holobiont nitrogen cycling\"",
+				"author" : "Rädecker, Nils; Pogoreutz, Claudia; Gegner, Hagen M.; Cardenás, Anny; Perna, Gabriela; Geißler, Laura; Roth, Florian; Bougoure, Jeremey; Guagliardo, Paul; Struck, Ulrich; Wild, Christian; Pernice, Mathieu; Raina, Jean-Baptiste; Meibom, Anders; Voolstra, Christian R.",
+				"format" : ".csv",
+				"description" : "Raw data associated with publication 'Heat stress reduces the importance of diazotrophs for coral holobiont nitrogen cycling'.  \"Rädecker_etal_16S.csv\" contains sequence abundance data of annotated 16S rRNA ASVs for all five coral colonies during control or heat stress conditions at day 10 of the experiment.  \"Rädecker_etal_nifH.csv\" contains sequence abundance data of annotated nifH rRNA ASVs for all five coral colonies during control or heat stress conditions at day 10 of the experiment.  \"Rädecker_etal_N2Fix.csv\" contains bulk (acetylene reduction) as well as net (15N2 assimilation) measurements of microbial nitrogen fixation for all five coral colonies during control or heat stress conditions at day 10 of the experiment.  \"Rädecker_etal_NanoSIMS.csvv\" contains raw mass count data of coral host and algal symbiont ROIs (15 images per treatment)  for one coral colony during control or heat stress conditions at day 10 of the experiment. ",
+				"url" : "https://doi.org/10.5281/zenodo.5552980",
+				"lng" : 7.3,
+				"lat" : 46.67
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.82, 46.22 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data for 'Heat stress destabilizes symbiotic nutrient cycling in corals'",
+				"author" : "Nils Rädecker; Claudia Pogoreutz; Hagen M. Gegner; Anny Cárdenas; Florian Roth; Jeremy Bougoure; Paul Guagliardo; Christian Wild; Mathieu Pernice; Jean-Baptiste Raina; Anders Meibom; Christian R. Voolstra",
+				"format" : ".xlsx",
+				"description" : "Physiological data (tab 1) and NanoSIMS data (tab 2) associated with publication 'Heat stress destabilizes symbiotic nutrient cycling in corals'. ",
+				"url" : "https://doi.org/10.5281/zenodo.4429583",
+				"lng" : 7.82,
+				"lat" : 46.22
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.34, 46.35 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Light quantity controls locomotion in photosymbiotic Aiptasia",
+				"author" : "Strumpen, Nils F; Rädecker, Nils; Pogoreutz, Claudia; Voolstra, Christian R",
+				"format" : ".zip",
+				"description" : "Many cnidarians engage in endosymbiotic relationships with photosynthetic microalgae in the family Symbiodiniaceae. This symbiosis is deeply integrated into the physiology of the host. Although positive phototaxis and phototropism have been reported for symbiotic cnidarians, it is currently unknown whether light quantity influences phototactic behavior. Here we tested behavior of aposymbiotic (without Symbiodiniaceae) and symbiotic (with Symbiodiniaceae) Aiptasia in a light gradient to assess presence and effect of phototactic behavior.   ",
+				"url" : "https://doi.org/10.5281/zenodo.5036902",
+				"lng" : 7.34,
+				"lat" : 46.35
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.69, 46.54 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Phenotypic plasticity versus ecotypic differentiation under recurrent summer drought in two drought-tolerant pine species",
+				"author" : "Bachofen, Christoph; Perret-Gentil, Anouchka; Wohlgemuth, Tom; Vollenweider, Pierre; Moser, Barbara",
+				"format" : ".csv, .rtf",
+				"description" : "1. Despite worldwide reports of high tree mortality, growing evidence indicates that many tree species are well adapted to survive repeated dry spells. The drought resilience of trees is related to their phenotypic plasticity and ecotypic differentiation. Whether these two mechanisms act at the same organisational level of a tree and involve similar plant traits is still unknown. 2. We assessed phenotypic plasticity and ecotypic differentiation across four populations of Pinus sylvestris and Pinus nigra seedlings grown for three years under a recurrent summer drought treatment or well-watered control conditions in a common garden. We measured the response to the summer drought treatment of a total of 26 traits including shoot and needle morphology, needle anatomy, and foliar macronutrients, and related the traits to the growing season water deficit (GSWD) at the location of the seed origin. 3. Foliar phenotypic plasticity in response to recurrent summer drought was surprisingly low, with the needle length and the fraction of mesophyll and phloem tissue adjusting to some extent. In comparison, shoot morphological traits were much more plastic in both species with predominant responses to the summer drought stress including shorter and less numerous apical and lateral shoots. These three traits were also correlated with GSWD at the seed origin, indicating local adaptation. In contrast, between-population variation of foliar morphological and anatomical traits, and macronutrients were mostly unrelated to the GSWD at the seed origin. 4. Consequently, phenotypic plasticity and ecotypic differentiation occurred at the same level of organisation and in the same plant traits, i.e. shoot morphology. This combination of plasticity and ecotypic differentiation allowed P. sylvestris and P. nigra seedlings to rapidly acclimate to recurrent and long-lasting dry-spells. 5. Synthesis: P. sylvestris and P. nigra seedlings showed considerable ecotypic differentiation and phenotypic plasticity of shoot morphological traits, and not foliar traits. Acclimation to recurrent severe summer drought was achieved by reducing shoot growth.",
+				"url" : "https://doi.org/10.5061/dryad.547d7wm8g",
+				"lng" : 6.69,
+				"lat" : 46.54
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.43, 46.67 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "High-Frequency Gaseous and Particulate Chemical Characterization using Extractive Electrospray Ionization Mass Spectrometry (Dual-Phase-EESI-TOF)",
+				"author" : "Chuan Ping Lee; Mihnea Surdu; David M. Bell; Josef Dommen; Mao Xiao; Xueqin Zhou; Andrea Baccarini; Stamatios Giannoukos; Günther Wehrle; Pascal André Schneider; Andre S. H. Prevot; Jay G. Slowik; Houssni Lamkaddam; Dongyu Wang; Urs Baltensperger; Imad El Haddad",
+				"format" : ".mat, .m, .asv, .txt",
+				"description" : "To elucidate the sources and chemical reaction pathways of organic vapors and particulate matter in the ambient atmosphere, real-time detection of both gas and particle phase is needed. State-of-the-art techniques often suffer from thermal decomposition, ionization-induced fragmentation, high cut-off size of aerosols or low time resolution. In response to all these limitations, we developed a new technique that uses extractive electrospray ionization (EESI) for online gas and particle chemical speciation, namely the dual-phase extractive electrospray ionization time-of-flight mass spectrometer (Dual-Phase-EESI-TOF or Dual-EESI in short). The Dual-EESI was designed and optimized to measure gas- and particle-phase species with saturation vapor concentrations spanning more than 10 orders of magnitude with good linearity and a measurement cycle as fast as 3 min. The gas-phase selectivity of the Dual-EESI was compared with that of nitrate chemical ionization mass spectrometry. In addition, we performed organic aerosol uptake experiments to characterize the relative gas and particle response factors. In general, the Dual-EESI is more sensitive toward gas-phase analytes as compared to their particle-phase counterparts. The real-time measurement capability of the Dual-EESI for chemically speciated gas- and particle-phase measurements can provide new insights into aerosol sources or formation mechanisms, where gas-particle partitioning behavior can be determined after absolute parameterization of the gas/particle sensitivity.",
+				"url" : "https://doi.org/10.5281/zenodo.3731647",
+				"lng" : 6.43,
+				"lat" : 46.67
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.15, 46.64 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Concentration of gaseous sulfuric acid measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Tummon, Fiona; Hartmann, Markus; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract The authors would highly appreciate being contacted if the data is used for any purpose. We measured sulfuric acid concentration in the gas phase with a nitrate chemical ionization mass spectrometer (we used an APi-HTOF mass spectrometer produced by Tofwerk AG coupled with a Chemical ionization inlet A70 produced by Airmodus). Sulfuric acid is detected in the mass spectrometer either as a deprotonated ion or as a cluster with the reagent ion (NO3-). The concentration is calculated as the area of these two peaks normalized to the concentration of the reagent ions (monomer, dimer and trimer) and multiplied by a calibration factor that was experimentally derived at Paul Scherrer Institute in the summer 2017, after the campaign. In the atmosphere, sulfuric acid is produced by the oxidation of sulfur dioxide that could have both a natural or anthropogenic origin (e.g. phytoplankton emission or fossil fuel combustion). Sulfuric acid in the atmosphere is responsible for a very large fraction of the newly formed particles, therefore it is important to have accurate measurements of this vapour in remote places like the Southern Ocean to better understand secondary aerosol sources and processes. The data have been cleaned from the influence of the exhaust of the research vessel. Temporal coverage is from January 22, 2017 to March 19, 2017. There are no data for the first leg of the expedition because the instrument was not on the ship. The instrument was operated during leg 4 but data has not been processed yet as they require additional work due to some instrumental issues that affects their quality. Data were collected with one-second time resolution but integrated to five minutes to increase the signal to noise ratio. Concentrations are reported as molecules per cubic centimeter. The lower limit of detection is in the ppq (part per quadrillion) range but was not determined exactly as it varies with the integration time and background noise. Dataset contents gas_sulfuric_acid_concentration_data.csv, data file, comma-separated values data_file_header.txt, metadata, text format README.txt, metadata, text format change_log.txt, metadata, text format Data that were missing or bad because of instrumental problems were simply removed from the file (no entry). Change log v1.1 - data files updated re-analysis of the raw data with an improved mass spectra peak fitting routine, a different calibration factor was also applied to the data following a more detailed analysis of the calibration experiment use updated, corrected GPS data v1.0 - initial release of dataset",
+				"url" : "https://doi.org/10.5281/zenodo.5711169",
+				"lng" : 8.15,
+				"lat" : 46.64
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.78, 46.26 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Size distribution of neutral and charged particles smaller than 42 nm measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Tummon, Fiona; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
+				"format" : ".csv, .txt",
+				"description" : "The size distribution of neutral and charged particles was measured using a neutral cluster and air ion spectrometer (NAIS) instrument. The concentration was corrected for diffusional losses in the inlet. The concentration and temporal dynamics of small particles is fundamental to characterize the first step of new particle formation (NPF) and growth. Moreover, naturally charged particles and ions can provide information about the role of ion induced nucleation. Newly formed particles can grow to larger sizes where they act as cloud condensation nuclei, directly affecting the Earth radiative budget and cloud properties. Measurements were performed on the upper deck of icebreaker Akademik Tryoshnikov along the track of the Antarctic Circumnavigation expedition. Temporal coverage is from January 22, 2017 to April 11, 2017. The concentration is reported as dN/dlog(Dp) per cubic centimetre, where Dp indicates the corresponding diameter size bin. Data were collected with one-second time resolution and averaged automatically by the acquisition software to 120 seconds before January 31 2017 and to 90 seconds after that date. The instrument was calibrated before the campaign by the manufacturer and periodically cleaned during the campaign (one time per leg). Pollution from the ship exhaust and other human activities (e.g. helicopter flights) was identified as described in Schmale et al., 2019 (https://doi.org/10.1175/BAMS-D-18-0187.1) and a corresponding flag was associated to the data (with 1 meaning clean data and 0 polluted data).   ***** Dataset contents ***** - 01_neutral_particles_size_distribution.csv, data file, comma-separated values - 02_negative_ions_size_distribution.csv, data file, comma-separated values - 03_positive_ions_size_distribution.csv, data file, comma-separated values - 04_neutral_particles_size_distribution_header.txt, metadata, text - 05_negative_ions_size_distribution_header.txt, metadata, text - 06_positive_ions_size_distribution_header.txt, metadata, text - README.txt, metadata, text Data that were missing or bad because of instrumental problems were simply removed from the file (no entry).",
+				"url" : "https://doi.org/10.5281/zenodo.5180560",
+				"lng" : 8.78,
+				"lat" : 46.26
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.14, 46.9 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Concentration of gaseous iodic acid measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Hartmann, Markus; Tummon, Fiona; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
+				"format" : ".csv, .txt",
+				"description" : "Measurements of iodic acid concentration in the gas phase obtained with a nitrate chemical ionization mass spectrometer (we used an APi-TOF mass spectrometer produced by Tofwerk AG coupled with a Chemical ionization inlet A70 produced by Airmodus). Iodic acid is detected in the mass spectrometer either as a deprotonated ion or as a cluster with the reagent ion (NO3-). The concentration is calculated as the area of these two peaks normalized to the concentration of the reagent ions (monomer, dimer and trimer) and multiplied by a calibration factor equal to 6.9E9 molecules cm-3 that was experimentally derived at Paul Scherrer Institute in the summer 2017, after the campaign. Iodic acid can participate in both new particle formation and growth, affecting the Earth radiative balance and cloud properties. Iodic acid is produced from the iodine radical but the exact formation pathways is still unknown. Measurements were performed on the upper deck of the icebreaker Akademik Tryoshnikov along the track of the Antarctic Circumnavigation expedition. Temporal coverage is from January 22, 2017 to March 19, 2017. There are no data for the first leg of the expedition because the instrument was not on the ship. The instrument was operated during leg 4 but data has not been processed yet. Data were collected with one-second time resolution but integrated to five minutes to increase the signal to noise ratio. Concentrations are reported as molecules per cubic centimeter in five minutes averages. The lower limit of detection was estimated to be lower than 6E3 molecules cm-3. Data below the detection limit were replaced by the detection limit divided by the square root of 2. Pollution from the ship exhaust and other human activities (e.g. helicopter flights) was identified as described in Schmale et al. 2019 (https://doi.org/10.1175/BAMS-D-18-0187.1) and a corresponding flag was associated to the data (with 1 meaning clean data and 2 polluted data). No direct influence of pollution on the iodic acid concentration was found. ***** Dataset contents ***** - 01_gas_iodic_acid_concentration_data.csv, data file, comma-separated values - 02_IodicAcid_file_header.txt, metadata, text format - 03_README.txt, metadata, text format  ",
+				"url" : "https://doi.org/10.5281/zenodo.5176217",
+				"lng" : 7.14,
+				"lat" : 46.9
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.01, 46.89 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Particulate methylsulfonic acid (MSA), sodium and chloride concentrations from high-volume air filter samples over the Southern Ocean during austral summer of 2016/2017 on board the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Tatzelt, Christian; Henning, Silvia; van Pinxteren, Manuela; Tummon, Fiona; Hartmann, Markus; Baccarini, Andrea; Welti, André; Lehtipalo, Katrianne; Schmale, Julia",
+				"description" : "Dataset abstract Aerosol particles come from a variety of sources: a look at the chemical composition gives insights on the particle origin. Ion chromatography was performed for aerosol particles smaller than 10 micrometers (PM10 inlet), giving concentrations of sodium and chloride, as well as particulate methylsulfonic acid (MSA). For this, aerosol particles where sampled on quartz fibre filters for 24 hours each. The sampled filters were stored at -20 degrees C on the research vessel, transported frozen back to the chemistry lab of TROPOS and analysed for main ions. Temporal coverage is from December 20, 2016 to March 20, 2017. We give 24-hour quality controlled particulate MSA, sodium and chloride concentrations in microgram per cubic meter for the Antarctic Circumnavigation Expedition (ACE) cruise over the Southern Ocean, as part of the ACE-SPACE project. Dataset contents ACESPACE_ particulate_MSA_Sodium_Chloride_PM10, data file, comma-separated values data_file_header, metadata, text format README.txt, metadata, text format",
+				"url" : "https://doi.org/10.5281/zenodo.2636773",
+				"lng" : 8.01,
+				"lat" : 46.89
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.16, 46.17 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Concentration of gaseous methanesulfonic acid measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Tummon, Fiona; Hartmann, Markus; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract The authors would highly appreciate being contacted if the data is used for any purpose. We measured methanesulfonic acid concentration in the gas phase with a nitrate chemical ionization mass spectrometer (we used an APi-HTOF mass spectrometer produced by Tofwerk AG coupled with a Chemical ionization inlet A70 produced by Airmodus). Methanesulfonic acid is detected in the mass spectrometer either as a deprotonated ion or as a cluster with the reagent ion (NO3-). The concentration is calculated as the area of these two peaks normalized to the concentration of the reagent ions (monomer, dimer and trimer) and multiplied by a calibration factor that was experimentally derived at Paul Scherrer Institute in the summer 2017, after the campaign. In the atmosphere, methanesulfonic acid is produced by the oxidation of dimethyl sulfide that is mostly emitted in the atmosphere by phytoplankton. Methanesulfonic acid can contribute to the growth of aerosol particles by condensation or aqueous phase processing in clouds. The data have been cleaned from the influence of the exhaust of the research vessel. Temporal coverage is from 22 January 2017 to 19 March 2017. There are no data for the first leg of the expedition because the instrument was not on the ship. The instrument was operated during leg 4 but data has not been processed yet as they require additional work due to some instrumental issues that affects their quality. Data were collected with one-second time resolution but integrated to five minutes to increase the signal-to-noise ratio. Concentrations are reported as molecules per cubic centimeter. The lower limit of detection is in the ppq (part per quadrillion) range but was not determined exactly as it varies with the integration time and background noise. Dataset contents gas_methanesulfonic_acid_concentration_data.csv, data file, comma-separated values data_file_header.txt, metadata, text format README.txt, metadata, text format change_log.txt, metadata, text format There are no null values in the file. Data that were missing or bad because of instrumental problems were simply removed from the file (no entry). Change log v1.1 - data files updated re-analysis of the raw data with an improved mass spectra peak fitting routine, a different calibration factor was also applied to the data following a more detailed analysis of the calibration experiment use updated, corrected GPS data v1.0 - initial release of dataset",
+				"url" : "https://doi.org/10.5281/zenodo.5718382",
+				"lng" : 8.16,
+				"lat" : 46.17
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3, 46.3 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Pollution Detection Algorithm (PDA)",
+				"author" : "Beck Ivo; Angot Hélène; Baccarini Andrea; Lampimäki Markus; Boyer Matthew; Schmale Julia",
+				"format" : ".pdf, .py",
+				"description" : "The Pollution Detection Algorithm (PDA) is an algorithm to identify and flag periods of primary polluted data in remote atmospheric time series in five steps. The first and most important step identifies polluted periods based on the gradient (time-derivative) of a concentration over time. If this gradient exceeds a given threshold, data are flagged as polluted. Further pollution identification steps are a simple concentration threshold filter, a neighboring points filter (optional), a median and a sparse data filter (optional). The PDA is written in python and runs from the command line. No GUI installation is needed. The script only relies on the target dataset file itself and is independent of ancillary datasets such as meteorological variables. All parameters of each step are adjustable so that the PDA can be “tuned” to be more or less stringent (e.g., flag more or less data points as polluted). The PDA was developed and tested with a particle number concentration dataset collected during the Multidisciplinary drifting Observatory for the Study of Arctic Climate (MOSAiC) expedition in the Central Arctic.",
+				"url" : "https://doi.org/10.5281/zenodo.5761101",
+				"lng" : 8.3,
+				"lat" : 46.3
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.32, 46.91 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Intermediate processing stage of horizontal particle flux data collected using a snow particle counter on board the R/V Akademik Tryoshnikov in the Southern Ocean during the austral summer of 2016/17 as part of the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tuskernik, Maria; Lehning, Michael",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract Flux of particles (snow, rain and other particles including sea spray) were recorded passing through a photo-electric snow particle counter installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present an intermediate step in data processing, with relative horizontal particle flux of particles with a size between 36 – 2000 μm averaged over one-minute periods. Data are presented in daily files. Dataset contents SPC_HPF_1min_YYYY_MM_DD.csv, data files, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This one-minute averaged horizontal particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"url" : "https://doi.org/10.5281/zenodo.4550721",
+				"lng" : 7.32,
+				"lat" : 46.91
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.09, 46.65 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Quality-checked horizontal particle flux data collected using a snow particle counter on board the R/V Akademik Tryoshnikov in the Southern Ocean during the austral summer of 2016/17 as part of the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tsukernik, Maria; Lehning, Michael",
+				"format" : ".txt, .zip, .csv, .png, .py",
+				"description" : "Dataset abstract Flux of particles (snow, rain and other particles including sea spray) were recorded passing through a photo-electric snow particle counter installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present the finalised, quality-checked, horizontal particle flux data where counts have been averaged over a one-minute period. Dataset contents SPC_HPF_windtrue_1min.csv, data file, comma-separated values SPC_HPF_windtrue_1min.png, metadata, portable network graphics SPC_HPF_windtrue_saveplot.py, script, Python code data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This quality-checked horizontal particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"url" : "https://doi.org/10.5281/zenodo.4550883",
+				"lng" : 7.09,
+				"lat" : 46.65
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8, 46.23 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Hydrometeor particle size distribution data collected using a snow particle counter on board the R/V Akademik Tryoshnikov in the Southern Ocean during the austral summer of 2016/17 as part of the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tsukernik, Maria; Lehning, Michael",
+				"format" : ".zip, .txt",
+				"description" : "Dataset abstract The data consist of the hydrometeor particle size distribution for particles with a size range (average diameter) from 36 to 490 μm (with the last bin including all detected particles larger than 490 μm) detecting the flux of snow, rain and other particles including sea spray passing through a photo-electric snow particle counter (SPC-95) installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present the raw data set, generated by the SPC-95 Data Processing Device, which consists of the number of particles, classified into 64 size bins, passing through the snow particle counter with a time resolution of one second. Data are presented in daily files and have undergone some pre-processing. The data were collected as part of ACE project 18 aiming to estimate freshwater fluxes (particularly precipitation and blowing snow) and understand their contribution to surface freshening in the Southern Ocean. Dataset contents UYYMMDD_hhmmssSnow-XXX-1sec-org-YYYY.csv, data files, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text where XXX is the sensor code number and YYY is the CF serial number. Dataset license This pre-processed hydrometeor particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"url" : "https://doi.org/10.5281/zenodo.4446616",
+				"lng" : 8,
+				"lat" : 46.23
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.56, 46.34 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Proposed changes to the masonry chapter in EC8 Part 1 - Background document for the masonry chapter in EC8 Part 1",
+				"author" : "Beyer, Katrin",
+				"format" : ".pdf",
+				"description" : "This document summarises the background for changes proposed in the masonry chapter of EC8 – Part 1-2 with regard to the current version of EC8 – Part 1 (2004). Note that separate background documents exist for drift capacities of URM walls, behaviour factors and slenderness limits and the design of simple buildings.",
+				"url" : "https://doi.org/10.5281/zenodo.4603576",
+				"lng" : 6.56,
+				"lat" : 46.34
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.34, 46.42 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Supplementary material to 'Numerical Simulation of Unreinforced Masonry Buildings with Timber Diaphragms'",
+				"author" : "Tomić, Igor; Vanin, Francesco; Božulić, Ivana; Beyer, Katrin",
+				"format" : ".pdf, .rar",
+				"description" : "This repository provides the OpenSEES models used for producing the results presented in the papers as well as the data with results of the calibration procedure and IDAs.",
+				"url" : "https://doi.org/10.5281/zenodo.4659149",
+				"lng" : 6.34,
+				"lat" : 46.42
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.85, 46.25 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Biostimulation as a sustainable solution for acid neutralization and uranium immobilization post acidic in-situ recovery",
+				"author" : "Coral, Thomas; Placko, Anne-Laure; Beaufort, Daniel; Tertre, Emmanuel; Bernier-Latmani, Rizlan; Descostes, Michaël; de Boissezon, Hélène; Guillon, Sophie; Rossi, Pierre",
+				"format" : ".zip, .md",
+				"description" : "Major uranium (U) deposits worldwide are exploited by acid leaching, known as 'in-situ recovery' (ISR). ISR involves the injection of an acid fluid into ore-bearing aquifers and the pumping of the resulting metal-containing solution through cation exchange columns for the recovery of dissolved U. Rehabilitation of ISR-impacted aquifers could be achieved through natural attenuation, or via biostimulation of autochthonous heterotrophic microorganisms due to the associated acid neutralization and trace metal immobilization. In this study, we analyzed the capacity of pristine aquifer sediments impacted by diluted ISR fluids to buffer pH and immobilize U. The experimental setup consisted of glass columns, filled with sediment from a U ore-bearing aquifer, through which diluted ISR fluids were flowed continuously. The ISR solution was obtained from ISR mining operations at the Muyunkum and Tortkuduk deposits in Kazakhstan. Following this initial phase, columns were biostimulated with a mix of molasses, yeast extract and glycerol to stimulate the growth of autochthonous heterotrophic communities. Experimental results showed that this amendment efficiently promoted the activity of acid-tolerant bacterial guilds, with pH values rising from 4.8 to 6.5 - 7.0 at the outlet of the stimulated columns. The reduction of sulfate, nitrate, and metals as well as dissimilatory nitrate reduction to ammonia induced the rise in pH values, in agreement with geochemical modeling results. Biostimulation efficiently promoted the complete immobilization of U, with the accumulation of up to 3,343 ppm in the first few centimeters of the columns. Synchrotron analysis and SEM-EDS revealed that up to 60% of the injected hexavalent U was immobilized as tetravalent non-crystalline U onto bacterial cell surfaces. 16S rRNA amplicon analysis and qPCR data suggested a predominant role played for members of the Phylum Firmicutes (from the genera Clostridium, Pelosinus, and Desulfosporosinus) in biological U reduction and immobilization.",
+				"url" : "https://doi.org/10.5281/zenodo.5763237",
+				"lng" : 8.85,
+				"lat" : 46.25
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.78, 46.26 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Supplementary material for \"AR-assisted timber drilling with smart retrofitted tools\"",
+				"author" : "Settimi, Andrea; Gamerro, Julien; Weinand, Yves",
+				"format" : ".dxf, .ply, .3dm, .m, .mat, .md",
+				"description" : "The dataset contains point clouds from 3D scans, reconstructed 3D data, and statistical data analysis, which are intended as complementary material for the publication \"AR-assisted timber drilling with smart retrofitted tools\". ",
+				"url" : "https://doi.org/10.5281/zenodo.5142178",
+				"lng" : 7.78,
+				"lat" : 46.26
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.71, 46.96 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Civil Engineering",
+				"name" : "Composite Beams Database",
+				"author" : "El Jisr, Hammad; Lignos, Dimitrios G.",
+				"format" : ".xlsx, .zip",
+				"description" : "1. Composite Beam Database v1.0\n\nA database of composite steel beams that are part of moment-resisting frames is provided. The database consists of 97 tests conducted over the last 30 years. The collection and metadata methodology are thoroughly presented in El Jisr et al. (2019). \n\nEach column in the spreadsheet is defined in the \"Definitions\" tab along with accompanying figures in the \"Figures\" tab. The database includes details of the composite slab (dimensions, material strength, shear studs) as well as the calculation of the plastic moment resistance and elastic stiffness of the sections as per European, US and Japanese provisions. A comparison between the code-based and test values is also shown. Furthermore, the database includes the plastic deformation capacity of the sections based on the first cycle envelope.\n\n2.Digitized Moment Rotation Data v1.0\n\nFull digitized histories of the moment-chord rotation of the composite beams are provided.",
+				"url" : "https://doi.org/10.5281/zenodo.4423351",
+				"lng" : 6.71,
+				"lat" : 46.96
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.31, 46.29 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data for Larivé et al, J. Virol. Meth, 2021 (doi 10.1016/j.jviromet.2021.114225)",
+				"author" : "Larivé, Odile; Kohn, Tamar",
+				"format" : ".csv",
+				"description" : "Raw data (RT-qPCR, culturing, ICC-RTqPCR) pertaining to figures 2-5 in publication: Larive et al., An integrated cell culture reverse transcriptase quantitative PCR (ICC-RTqPCR) method to simultaneously quantify the infectious concentrations of eight environmentally relevant enterovirus serotypes. J Virol Methods, 2021.  https://doi.org/10.1016/j.jviromet.2021.114225 Explanations for each data set are given at the bottom of the respective csv file.",
+				"url" : "https://doi.org/10.5281/zenodo.5069278",
+				"lng" : 6.31,
+				"lat" : 46.29
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.87, 46.27 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data for Fernandez-Cassi et al., Wastewater monitoring outperforms case numbers as a tool to track COVID-19 incidence dynamics when test positivity rates are high",
+				"author" : "Fernandez-Cassi, Xavier; Scheidegger, Andreas; Bänziger, Carola; Cariti, Federica; Tunas Corzon, Alex; Ganesanandamoorthy, Pravin; Lemaitre, Joseph; Ort, Christoph; Julian, Timothy R.; Kohn, Tamar",
+				"format" : ".csv",
+				"description" : "Measured virus concentrations (SARS-CoV-2, surrogates and pepper mild mottle virus) and flow rates for Lugano, Lausanne and Zurich wastewater treatment plants Epidemiological data (reported case numbers; test positivity rates) for Lugano, Lausanne and Zurich wastewater treatment plant catchments",
+				"url" : "https://doi.org/10.5281/zenodo.4750572",
+				"lng" : 7.87,
+				"lat" : 46.27
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.61, 46.26 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Swiss Alpine Refuges Dataset",
+				"author" : "Huang, Jeffrey; Johanes, Mikhael; Kim, Frederick Chando; Doumpioti, Christina; Holz, Georg-Christoph",
+				"description" : "This dataset contains 4480 images of Swiss mountain alpine refuges collected from three online databases (Swiss Alpine Club SAC, Capanneti.ch, and Hikr.org). The data were cropped, cleaned and formatted for GAN experiments. Source: Swiss Alpine Club SAC Capanneti.ch Hikr.org Data: 00_full_dataset (4480 images) 01_curated_dataset_1 (613 images) 02_curated_dataset_2 (1203 images) 03_curated_dataset_3 (624 images) 04_curated_dataset_4 (3791 images)",
+				"url" : "https://doi.org/10.5281/zenodo.5036413",
+				"lng" : 7.61,
+				"lat" : 46.26
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.12, 46.79 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Experimental investigation into turbulent free-surface flows over a steep permeable bed",
+				"author" : "ROUSSEAU Gauthier; ANCEY Christophe",
+				"format" : ".zip",
+				"description" : "Data set (Experimental conditions profiles) and python scripts to generate figures for the paper entitled \"Experimental investigation into turbulent free-surface flows over a steep permeable bed\" by Rousseau G. and Ancey C",
+				"url" : "https://doi.org/10.5281/zenodo.4792205",
+				"lng" : 7.12,
+				"lat" : 46.79
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.2, 46.08 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data for the JFM paper \"An experimental scaling law for particle-size segregation in dense granular flows\"",
+				"author" : "Trewhela, Tomas; Ancey, Christophe; Gray, J. M. N. T.",
+				"format" : ".zip, .txt",
+				"description" : "This repository provides the data and routines to plot figures 5 to 15 of the article \"An experimental scaling law for particle-size segregation in dense granular flows\" published in J. Fluid Mech. Tomás Trewhela tomas.trewhela@epfl.ch (from October 2021: tomas.trewhela@uai.cl) Lausanne, March 2021",
+				"url" : "https://doi.org/10.5281/zenodo.4597441",
+				"lng" : 7.2,
+				"lat" : 46.08
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.49, 46.89 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Physics-based estimates of drag coefficients for the impact pressure calculation of dense snow avalanches",
+				"author" : "Kyburz, Michael Lukas; Sovilla, Betty; Gaume, Johan; Ancey, Christophe",
+				"format" : ".py",
+				"description" : "This entry provides the code that can be used with the Itasca PFC3D software to reproduce the data presented in the paper \"Physics-based estimates of drag coefficients for the impact pressure calculation of dense snow avalanches\".",
+				"url" : "https://doi.org/10.5281/zenodo.4394455",
+				"lng" : 7.49,
+				"lat" : 46.89
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.63, 46.03 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Visualization of simulations for \"Effect of wear particles and roughness on nanoscale friction\"",
+				"author" : "Brink, Tobias; Milanese, Enrico; Molinari, Jean-François",
+				"format" : ".webm",
+				"description" : "Videos of sliding molecular dynamics simulations for the article \"Effect of wear particles and roughness on nanoscale friction\". The atoms are colour-coded according to the body they initially belonged to: red: top surface yellow: bottom surface grey: third body blue: boundary The following videos are provided: Excerpts of the simulations showing the different friction regimes run-in.webm: An example of the running-in process, where the rigid particles are quickly coated by material from the two first bodies. This is from the simulation with FN = 7.69 µN with polyhedral particles that were initially arranged equidistantly. rolling.webm: An example of rolling cylindrical particles with low friction and relatively high wear rate. This is from the simulation with FN = 7.69 µN with polyhedral particles that were initially arranged equidistantly. sb-like-regime.webm: An example of the shear-band-like regime forming when particles form adhesive bridges and the rolling regime breaks down. This is from the simulation with FN = 7.69 µN with round particles that were initially arranged randomly (this simulation showed the densest third body). Full main simulations over a sliding distance of 3 µm with polyhedral particles that were initially arranged equidistantly FN-03_85-equidistant-polyhedra.webm: Simulation with FN = 3.85 µN. FN-05_77-equidistant-polyhedra.webm: Simulation with FN = 5.77 µN. FN-07_69-equidistant-polyhedra.webm: Simulation with FN = 7.69 µN. FN-11_54-equidistant-polyhedra.webm: Simulation with FN = 11.54 µN. Simulation with initially round, equidistantly-distributed wear particles over a sliding distance of 3 µm FN-07_69-equidistant-spheres.webm: Simulation with FN = 7.69 µN. Simulations random initial placement of the wear particles over a sliding distance of 3 µm FN-07_69-random_distrib-polyhedra.webm: Simulation with FN = 7.69 µN and polyhedral particles. FN-07_69-random_distrib-spheres.webm: Simulation with FN = 7.69 µN and round particles.",
+				"url" : "https://doi.org/10.5281/zenodo.4698010",
+				"lng" : 6.63,
+				"lat" : 46.03
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.03, 46.54 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Tamaas, a high-performance library for periodic rough surface contact",
+				"author" : "Frérot, Lucas; Anciaux, Guillaume; Rey, Valentine; Pham-Ba, Son; Molinari, Jean-François",
+				"format" : ".md, copying, .gz",
+				"description" : "Tamaas (from تماس meaning \"contact\" in Farsi) is a high-performance rough-surface periodic contact code based on boundary and volume integral equations. The clever mathematical formulation of the underlying numerical methods allows the use of the fast-Fourier Transform, a great help in achieving peak performance: Tamaas is consistently two orders of magnitude faster (and lighter) than traditional FEM! This means we can tackle such difficult problems as elastoplastic contact of rough surfaces with upwards of 100 million degrees-of-freedom on a single compute node (and more with MPI distributed parallelism). Online documentation can be found on tamaas.readthedocs.io. To give proper credit to Tamaas and the researchers who have developed the numerical methods that it implements, please cite the JOSS paper and the appropriate references therein (see README below for selected references). Tamaas is under active development on GitLab.",
+				"url" : "https://doi.org/10.5281/zenodo.5713675",
+				"lng" : 8.03,
+				"lat" : 46.54
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.79, 46.56 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Support data and codes for the evaluation experiment section of the paper: \"Mass and geometry reconstruction of snowfall particles from multi angle snowflake camera (MASC) images\"",
+				"author" : "Grazioli, Jacopo; Leinonen, Jussi; Berne, Alexis",
+				"format" : ".zip",
+				"description" : "Codes and data to support the evaluation of the 3D-GAN method, described in the article: \"Mass and geometry reconstruction of snowfall particles from multi angle snowflake camera (MASC) images\", submitted to AMTD in 2021. A README is included in the data/code, with details on how to reproduce the results shown in the paper.",
+				"url" : "https://doi.org/10.5281/zenodo.4790962",
+				"lng" : 7.79,
+				"lat" : 46.56
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.29, 46.63 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Radar-based mesocyclone detections in Switzerland from 2016-2020",
+				"author" : "Feldmann, Monika; Germann, Urs; Gabella, Marco; Berne, Alexis",
+				"format" : ".csv, .txt",
+				"description" : "The data is owned by MeteoSwiss and the Laboratoire de Télédétection Environnementale, EPFL. It is linked to the research article: Feldmann et al., 2021, A Characterisation of Alpine Mesocyclone Occurrence, submitted to Weather and Climate Dynamics. Whenever using the dataset, please include a reference to this article. This dataset contains thunderstorm track data of thunderstorms containing a radar-detected mesocyclone in Switzerland from 2016-2020. Tracked variables include time, position, size, terrain altitude, track direction, track distance, rotational velocity, vorticity and depth of rotation, amongst others. The README.txt file contains a comprehensive list of all included variables and their units. The data is provided as a .csv file. The methods used to obtain this data are described in the corresponding publication (Feldmann et al., 2021).",
+				"url" : "https://doi.org/10.5281/zenodo.5122519",
+				"lng" : 7.29,
+				"lat" : 46.63
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.79, 46.18 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Dataset - Impact of 3D radiative transfer on airborne NO2 imaging remote sensing over cities with buildings",
+				"author" : "Schwaerzel, Marc; Brunner, Dominik; Jakub ,Fabian; Emde, Claudia; Buchmann, Brigitte; Berne, Alexis; Kuhlmann, Gerrit",
+				"format" : ".zip",
+				"description" : "This dataset was created by Marc Schwaerzel (marc.schwaerzel@empa.ch) and is intended to get along with the Schwaerzel et al. (2021) AMT publication (amt-2020-146) . The data and the data structure is described in the readme.md text file. The dataset contains: - libRadtran output (radiances and AMFs) - Synthetic SCDs",
+				"url" : "https://doi.org/10.5281/zenodo.5519616",
+				"lng" : 6.79,
+				"lat" : 46.18
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.87, 46.28 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Vehicle sharing systems: A review and a holistic management framework",
+				"author" : "Ataç, Selin; Obrenović, Nikola; Bierlaire, Michel",
+				"format" : ".pdf",
+				"description" : "Although different vehicle sharing systems (VSSs) use different vehicle types, the management challenges and optimization problems to be solved are similar or even the same. This observation led us to create a generalized and holistic VSS management framework, which aims to be applicable to the system using any vehicle type. The framework components, their mutual relationships, and framework tasks have been identified through a thorough and systematic literature review. Furthermore, the literature is positioned in the line with the framework. Finally, the framework and systematic literature review allowed us to identify gaps in the literature, and interesting research avenues.",
+				"url" : "https://doi.org/10.1016/j.ejtl.2021.100033",
+				"lng" : 6.87,
+				"lat" : 46.28
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.09, 46.79 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data Set: The influence of roughness on experimental fault mechanical behaviour and associated microseismicity",
+				"author" : "Fryer, Barnaby; Giorgetti, Carolina; Passelègue, François; Momeni, Seyyedmaalek; Lecampion, Brice; Violay, Marie",
+				"format" : ".m, .mat, .jpeg, .txt, .tdms, .tdms_index, .csv, .docx",
+				"description" : "This is the data set used to create the figures for the submitted manuscript, The influence of roughness on experimental fault mechanical behaviour and associated microseismicity. Submitted December 2021 to Earth and Planetary Science Letters.",
+				"url" : "https://doi.org/10.5281/zenodo.5750031",
+				"lng" : 8.09,
+				"lat" : 46.79
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.38, 46.06 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Effect of water on sandstone's fracture toughness and frictional parameters: Brittle strength constraints",
+				"author" : "Noël, Corentin; Baud, Patrick; Violay, Marie",
+				"format" : ".xlsx, .txt",
+				"description" : "This is the ReadMe file corresponding to the study entitled: \"Effect of water on sandstone’s fracture toughness and frictional parameters: Brittle strength constraints\" By Noël C., Baud P. and Violay M. This study has been published in the journal International Journal of Rock Mechanics and Mining Sciences. It is under Under a Creative Commons license CC BY-NC-ND 4.0. doi: 10.1016/j.ijrmms.2021.104916 This Read-Me file has been last edited in September 2021 This readme file describes the data repository and supplementary files accompanying the above publication.   For any further queries please contact corentin.noel@uniroma1.it",
+				"url" : "https://doi.org/10.1016/j.ijrmms.2021.104916",
+				"lng" : 8.38,
+				"lat" : 46.06
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.2, 46.33 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Origin of the co-seismic variations of elastic properties in the crust: insight from the laboratory",
+				"author" : "Paglialunga Federica; Passelègue Francois; Acosta Mateo; Violay Marie",
+				"format" : ".zip",
+				"description" : "Raw data used for the study of the origin of co-seismic variations of elastic properties in the crust through laboratory experiments.",
+				"url" : "https://doi.org/10.5281/zenodo.4892328",
+				"lng" : 7.2,
+				"lat" : 46.33
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.5, 46.51 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Data Set: The influence of roughness on experimental fault mechanical behaviour and associated microseismicity",
+				"author" : "Fryer, Barnaby; Giorgetti, Carolina; Passelègue, François; Momeni, Seyyedmaalek; Lecampion, Brice; Violay, Marie",
+				"format" : ".m, .mat, .jpeg, .txt, .tdms, .tdms_index, .csv, .docx",
+				"description" : "This is the data set used to create the figures for the submitted manuscript, The influence of roughness on experimental fault mechanical behaviour and associated microseismicity. Submitted December 2021 to Earth and Planetary Science Letters.",
+				"url" : "https://doi.org/10.5281/zenodo.5750031",
+				"lng" : 6.5,
+				"lat" : 46.51
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.94, 46.15 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "video supplement for \"Molecular scale description of interfacial mass transfer in phase separated aqueous secondary organic aerosol\"",
+				"author" : "Lbadaoui-Darvas, Maria; Takahama, Satoshi; Nenes, Athanasios",
+				"format" : ".gif",
+				"description" : "Sample steered molecular dynamics trajectory at 300 K. ",
+				"url" : "https://doi.org/10.5281/zenodo.4902870",
+				"lng" : 8.94,
+				"lat" : 46.15
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.87, 46.18 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Global chemistry transport model results used to demonstrate \"Changing atmospheric acidity as a modulator of nutrient deposition and ocean biogeochemistry\"",
+				"author" : "Kanakidou, Maria; Myriokefalitakis, Stelios; Nenes, Athanasios; Baker, Alex",
+				"format" : ".nc",
+				"description" : "This dataset contains the TM4-ECPL global chemistry-transport model results as netcdf files that are used for the figures and the discussion in the paper by Baker et al. on \"Changing atmospheric acidity as a modulator of nutrient deposition and ocean biogeochemistry\" under revision for Science Advances. The simulations are described in the paper by Kanakidou M., Myriokefalitakis, S., Tsagkaraki, M., Atmospheric inputs of nutrients to the Mediterranean Sea, Deep Sea Research II, 171 104606, https://doi.org/10.1016/j.dsr2.2019.06.014, 2020. The data concern 1- annual mean distribution of the pH of the near-surface aerosol in the accumulation (aerosolphacc) and in the coarse (aerosolphcoa) modes for present (year 2010), past (year 1850) and future ( year 2100) anthropogenic and biomass burning emissions. 2- Annual mean near-surface partitioning of ammonium (NH4+/(NH4++NH3) (enh4) and of nitrate (NO3-/(NO3-+HNO3) (eno3) for the present, past and future simulations. 3- Monthly mean wet (wet_dep_) and total (dep_) deposition fluxes of the sum of NH4+and NH3 (nhx) , the sum of NO3- and HNO3 (no3hno3), soluble Fe (dfe)  and soluble P (dp) for the present, past and future simulations. 4- Deposition Regimes for accumulation (Regime_Dep_acc) and coarse (Regime_Dep_Coa) mode particles for past, present, future simulations, defined and calculated as explained by Nenes, A., Pandis, S. N., Kanakidou, M., Russell, A., Song, S., Vasilakos, P., and Weber, R. J.: Aerosol acidity and liquid water content regulate the dry deposition of inorganic reactive nitrogen, Atmos. Chem. Phys. Discuss., https://doi.org/10.5194/acp-2020-266, 2020 - in press in Atmos. Chem. Phys. in 2021 for further details please email to mariak (AT) uoc.gr",
+				"url" : "https://doi.org/10.5281/zenodo.4630208",
+				"lng" : 8.87,
+				"lat" : 46.18
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.39, 46.23 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Supplementary data for \"Detrainment and braking of snow avalanches interacting with forests\"",
+				"author" : "Védrine Louis; Li Xingyue; Gaume Johan",
+				"format" : ".zip",
+				"description" : "We are releasing the data as the supplementary information for our manuscript “Detrainment and braking of snow avalanches interacting with forests”. Figure 5. Data of Fig. 5. Evolution of the detrainment mass per unit of area of snow with the velocity (regular staggered forest, e= 8m). Figure 6. Data of Fig. 6. Evolution of the detrainment mass observed for the one tree arrangement and the fits with the tree diameter for 2 flow regimes: Case 1 and Case 2 with respectively a front velocity of12.5 m/s and 10.6 m/s, ‘maximum’ refer to the maximum mass stored behind the tree and ‘final’ refer to the final mass stored. A slope of 30◦, and a top wedge angle of 60° (from measurements Feistl et al. (2014)) is used for the theoretical model (Eq. 8) Figure 8. Data of Fig. 8. Evolution of the detrainment mass per unit of area with the tree diameter for different types of snow and front velocity (regular staggered forest, e = 8 m) Figure 9. Data of Fig. 9. Evolution of the detrainment mass per unit of area with the forest density for different front velocities (regular staggered forest, snow properties: case 2, d = 1 m) Figure 10. Data of Fig. 10. Evolution of the detrainment mass predicted with the model (Eq. 11) and with the observation, r2=0.9926 Figure 11. Data of Fig. 11. Temporal evolution of the kinetic and potential energy without forest and with a regular staggered forest (Case 2, v0 = 6 m/s) Figure 12. Data of Fig. 12. Temporal evolution of the detrainment energy and dissipation due to the forest (Case 2, v0 = 6 m/s) Figure 13. Data of Fig. 13. Energy detrainment and dissipation for different snow properties (1: case 1, 2: case 2, 3: case 3 with M=1) and for 3 types of forest structure (regular aligned, regular staggered and random)",
+				"url" : "https://doi.org/10.5281/zenodo.5547395",
+				"lng" : 8.39,
+				"lat" : 46.23
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.97, 46.72 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Supplementary videos for \"Detrainment and braking of snow avalanches interacting with forests\"",
+				"author" : "Védrine Louis; Li Xingyue; Gaume Johan",
+				"format" : ".avi, .mp4, .pdf",
+				"description" : "We are releasing the videos as the supplementary information for our manuscript “Detrainment and braking of snow avalanches interacting with forests”. Movie 1. Side view of the snow profile for different values of M in Fig. 2. Movie 2. Perspective view of the snow profile for different values of M in Fig. 2. Movie 3. Flow profile for 3 different flow regimes in Fig. 3. Movie 4. Profile of accumulated snow for different flow regimes in Fig. 4. Movie 5. Flow height of the avalanche in a forest with different forest arrangements in Fig. 14.",
+				"url" : "https://doi.org/10.5281/zenodo.5547386",
+				"lng" : 7.97,
+				"lat" : 46.72
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.34, 46.08 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Single aerosol measurements from a wideband integrated bioaerosol sensor, collected during the Antarctic Circumnavigation Expedition (ACE).",
+				"author" : "Moallemi, Alireza; Schmale, Julia",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract This data set contains the time series of single particle data, measured by the wideband integrated bioaerosol sensor (WIBS-4, University of Hertfordshire, Hatfield, UK), during the Antarctic Circumnavigation Expedition (ACE), which was conducted between 20th of December 2016 and 19th of March 2017. WIBS provides aerosol optical diameter (5 μm - 14 μm), asymmetry factor and fluorescent signals on three different channels. WIBS measures single aerosol particles at a sampling rate of 125 Hz. More technical details about WIBS could be found in Kaye et al. (2005). Dataset contents part_1_Cape_Town_Kerguelen.csv, data file, comma-separated values part_2_Kerguelen_Hobart.csv, data file, comma-separated values part_3_Hobart_Mertz.csv, data file, comma-separated values part_4_Mertz_Punta Arenas.csv, data file, comma-separated values part_5_Punta_Arenas_Cape_Town.csv, data file, comma-separated value part_6_Cape_Town_Bremerhaven.csv, data file, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This aerosol measurement dataset collected using a WIBS during ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"url" : "https://doi.org/10.5281/zenodo.5109386",
+				"lng" : 8.34,
+				"lat" : 46.08
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.77, 46.27 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "ACE-DATA: Delivering Added value To Antarctica",
+				"author" : "Thomas, Jen; Schmale, Julia",
+				"format" : ".pdf",
+				"description" : "The ACE-DATA project provided added value to data from the Antarctic Circumnavigation Expedition (ACE). This poster describes the initial aims of the project, a collaboration between the Paul Scherrer Institute, Swiss Data Science Center and Swiss Polar Institute. This poster was presented at POLAR2018, a joint SCAR and IASC conference.",
+				"url" : "https://doi.org/10.5281/zenodo.5657300",
+				"lng" : 8.77,
+				"lat" : 46.27
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.34, 46.99 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Number concentration and fluorescent class fraction of fluorescent and hyper-fluorescent aerosol particles measured during the Antarctic Circumnavigation Expedition",
+				"author" : "Moallemi, Alireza; Schmale, Julia; Schnaiter, Martin; Gysel-Beer, Martin; Modini, Robin; Landwehr, Sebastian",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract This dataset consists of a 5-minute time series of number concentrations of fluorescent and total aerosol particles that were measured by wideband integrated by aerosol sensor during the Antarctic Circumnavigation Expedition in the austral summer of 2016/2017. Furthermore, the dataset includes the fraction of fluorescent classes of aerosol particles, according to the ABC classification of Perring et al. (2015). The dataset provides information on fluorescent and hyper-fluorescent aerosols which were obtained by considering low and high fluorescence thresholds. For this dataset, aerosol particles that have optical diameter greater than 1 μm are considered. Since the ship’s exhaust could considerably affect the fluorescence properties of aerosol particles, in this dataset we removed the periods where it is likely that the samples were contaminated by the ship's exhaust. Dataset contents N_fluorescent.csv, data file, comma-separated values N_hyper_fluorescent.csv, data file, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This number concentration and fluorescent class fraction of fluorescent and hyper-fluorescent aerosol particles dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"url" : "https://doi.org/10.5281/zenodo.5109382",
+				"lng" : 6.34,
+				"lat" : 46.99
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.79, 46.02 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Particle number size distribution of fluorescent, hyper-fluorescent, and total aerosol particles measured during the Antarctic Circumnavigation Expedition.",
+				"author" : "Moallemi, Alireza; Schmale, Julia; Schnaiter, Martin; Gysel-Beer, Martin; Modini, Robin; Landwehr, Sebastian",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract This dataset consists of a 5-minute time series of particle number concentration of fluorescent and total aerosol particles that were measured by wideband integrated by aerosol sensor during the Antarctic Circumnavigation Expedition during the austral summer of 2016/2017. For this dataset, aerosol particles within the optical diameter range of 0.5 μm to 14.5 μm were considered. In this dataset, the time periods when samples are likely contaminated by the ship’s exhaust were removed from the time series. Dataset contents PSD_fluorescent.csv , data file, comma-separated values PSD_hyper_fluorescent.csv , data file, comma-separated values PSD_hyper_tot.csv , data file, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This particle number size distribution of fluorescent, hyper-fluorescent, and total aerosol particles dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"url" : "https://doi.org/10.5281/zenodo.5109384",
+				"lng" : 8.79,
+				"lat" : 46.02
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.01, 46.68 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"name" : "Both diversity and functional composition affect productivity and water use efficiency in experimental temperate grasslands",
+				"author" : "Grossiord, Charlotte; Walde, Manuel; Allan, Eric; Cappelli, Seraina L.; Didion‐Gency, Margaux; Gessler, Arthur; Lehmann, Marco M.; Pichon, Noémie A.",
+				"format" : ".txt",
+				"description" : "Many experiments have shown that biodiversity promotes ecosystem functioning and stability and that this relationship varies with resource availability. However, we still have a poor understanding of the underlying physiological and ecological mechanisms driving diversity effects and how they may interact with soil nutrient availability. We collected data in a grassland experiment factorially manipulating fertilization, species richness, functional composition (slow-growing vs. fast-growing species), and functional diversity in resource economic traits. We measured aboveground productivity, nitrogen (N) uptake, photosynthesis, and water use efficiency by combining a 15N labelling approach with productivity, gas exchange, and stable isotope measurements in three years differing in rainfall. We found that sown species richness increased aboveground productivity, N uptake and photosynthesis, suggesting that species richness is the most important driver of ecosystem productivity and nutrient cycling. Similarly, photosynthesis was affected by functional composition but not by functional diversity. Water use efficiency was reduced by sown species richness for communities dominated by slow growing species but not for communities dominated by fast growing species. Fertilization increased productivity, N uptake and water use efficiency. The positive effects of high species richness on ecosystem functions were independent of fertility levels. Synthesis. Our results provide evidence that high species richness in temperate grasslands could enhance productivity and reduce the negative impacts of drought events. Multiple factors and community characteristics are important in driving enhanced ecosystem functioning in biodiverse grasslands and seem to affect functioning and stability through different mechanisms.",
+				"url" : "https://doi.org/10.5061/dryad.0cfxpnw31",
+				"lng" : 8.01,
+				"lat" : 46.68
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.43, 46.38 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Environmental assessments of buildings/neighborhoods.",
+				"name" : "Architectural Design Strategies for Building-Integrated Photovoltaics in residential building renovation processes",
+				"format" : "Web",
+				"description" : "--> EPFL Website: http://design-explorer.epfl.ch/\n\nUsing an open source tool (Design Explorer), we have created a web page that allows to explore the simulation results of different research projects, such as Active Interfaces (https://infoscience.epfl.ch/record/265585?ln=en). Architectural Design Strategies for Building-Integrated Photovoltaics in residential building renovation processes\n\nOther projects will be soon exposed here.\n",
+				"url" : "http://design-explorer.epfl.ch/",
+				"lng" : 8.43,
+				"lat" : 46.38
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.22, 46.7 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Civil Engineering",
+				"name" : "Dataset on seismic tests for novel friction damper with composite non-metallic materials",
+				"author" : "Martina Paronesso / Dimitrios Lignos",
+				"format" : "Videos, Photos, txt format",
+				"description" : "The open research dataset contains experimental data on a recently developed prototype seismic damper that was validated in GIS at EPFL. The damper is comprised of composite materials that are not corrosive, thereby leading to superior performance in seismic applications without any weather considerations. The dataset contains over 60 physical experiments including synchronized videos and photos from those tests.",
+				"url" : "https://zenodo.org/record/4544314#.YiZKWRMo-WY",
+				"lng" : 7.22,
+				"lat" : 46.7
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 6.53, 46.26 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Civil Engineering",
+				"name" : "Inelastic panel zone database",
+				"author" : "Andronikos Skiadopoulos / Dimitrios Lignos",
+				"format" : "Excel, photos, txt",
+				"description" : "1. Inelastic_Panel_Zone_Database_v1.xlsx\n\nAn inelastic panel zone database of fully restrained beam-to-column connection tests as part of steel moment-resisting frames (MRFs) is provided. The database consists of 100 tests of experimental research over the last 50 years. The collection and metadata methodology are thoroughly presented in Skiadopoulos and Lignos (2020).\n\n2. Digitized_Data_v1.7z\n\nFull digitized histories of the local panel zone shear force - shear distortion as well as the global force - story drift ratio hysteretic diagrams of each experiment are provided. A MATLAB code to plot and acquire the performance parameters of interest is shared.\n\n3. Panel_Zone_Deduced_Parameters_v1.m\n\nA MATLAB code to automatically deduce the measured panel zone response parameters of interest is shared.\n\n4. ABAQUS_Model_Validation_v1.7z\n\nThe provided hysteretic responses are exploited for continuum finite element (CFE) model validation. Such a validated CFE model is shared (.inp) together with the respective buckling analysis files (.inp and .fil). The model represents SPEC-6 by Ricles et al. (2004) and was generated by ABAQUS.",
+				"url" : "https://zenodo.org/record/3689756#.YiZL9xMo-WY",
+				"lng" : 6.53,
+				"lat" : 46.26
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.3, 46.8 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Civil Engineering",
+				"name" : "Cyclic Push-out Tests Dataset",
+				"author" : "El Jisr, Hammad / Dimitrios, Lignos",
+				"format" : "Excel, txt",
+				"description" : "This dataset consists of 42 cyclic push-out tests of steel beam-slab connections from 11 experimental programs.\n\nThe geometric and material properties of each specimen are summarized in \"Dataset.xlsx\". The slip values at each of the four damage states (DS1 to DS4) defined according to El Jisr and Lignos (2021) are also included in the \"Dataset.xlsx\" file.\n\nThe shear-slip behavior of each specimen in the dataset can be found in the accompanying \".xlsx\" files named according to the corresponding experimental program. In total, eleven files are included.",
+				"url" : "https://zenodo.org/record/4660271#.YiZNcRMo-WY",
+				"lng" : 7.3,
+				"lat" : 46.8
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.94, 46.29 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Civil Engineering",
+				"name" : "Dissipative column base connections dataset",
+				"author" : "Inamasu, Hiroyuki / Lignos, Dimitrios",
+				"format" : "Videos, Photos, DIC, txt",
+				"description" : "Contains the dataset on physical experiments conducted in GIS on the development and experimental validation of a novel dissipative column base connection for steel frame buildings that defies the current paradigm and minimizes earthquake damage in steel columns in the aftermath of earthquakes.",
+				"url" : "https://doi.org/10.5281/zenodo.4244684",
+				"lng" : 8.94,
+				"lat" : 46.29
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 9, 46.33 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"domain" : "Traffic Engineering",
+				"name" : "Pneuma",
+				"author" : "LUTS",
+				"description" : "pNEUMA is an open large-scale dataset of naturalistic trajectories of half a million vehicles that have been collected by a one-of-a-kind experiment by a swarm of drones in the congested downtown area of Athens, Greece. A unique observatory of traffic congestion, a scale an-order-of-magnitude higher than what was not available until now, that researchers from different disciplines around the globe can use to develop and test their own models.",
+				"url" : "https://open-traffic.epfl.ch",
+				"lng" : 9,
+				"lat" : 46.33
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
 				"type" : "MultiPolygon",
 				"coordinates" : [
 					[
@@ -151,7 +1225,7 @@
 				"name" : "swissBUILDINGS3D 2.0",
 				"author" : "Administration cantonale vaudoise",
 				"description" : "",
-				"url" : "info"
+				"url" : "https://viageo.ch/md/83dcbd6d-6a5c-4884-9d83-fbd9d0200e0e"
 			}
 		},
 		{
@@ -210,7 +1284,7 @@
 				"name" : "Data & Figures on the Multiscale Spatiotemporal Characterization of Embodied Environmental Efficiency of Building Structures in Geneva from 1850 to 2018",
 				"author" : "Geneva Canton",
 				"description" : "",
-				"url" : "data"
+				"url" : "https://zenodo.org/record/4542784"
 			}
 		},
 		{
@@ -360,161 +1434,9 @@
 				"organisation" : "cantonal",
 				"domain" : "Health",
 				"name" : "Guichet cartographique cantonal de l’Etat de Vaud",
-				"author" : "asit (Association pour le Système",
+				"author" : "asit (Association pour le Système d’Information du Territoire)",
 				"description" : "",
-				"url" : "view"
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "MultiPolygon",
-				"coordinates" : [
-					[
-						[
-							[ 6.8210696095, 46.4271568114, 372.13 ],
-							[ 6.8847749678, 46.3760682258, 373.34 ],
-							[ 6.8944994281, 46.3415981408, 375.48 ],
-							[ 6.9300676151, 46.3300212698, 380.324 ],
-							[ 6.9370763961, 46.2975109038, 385.615 ],
-							[ 7.0331811045, 46.1870717871, 437.425 ],
-							[ 7.1062822996, 46.211019828, 2803.946 ],
-							[ 7.1884185453, 46.2706672441, 2547.587 ],
-							[ 7.1890577333, 46.303896514, 3210.884 ],
-							[ 7.2214881766, 46.3292457538, 3123.349 ],
-							[ 7.2300622038, 46.3619423277, 1374.913 ],
-							[ 7.1937173015, 46.3789275168, 2194.135 ],
-							[ 7.2098667346, 46.4162790282, 2345.641 ],
-							[ 7.1925415317, 46.4352231475, 2070.139 ],
-							[ 7.2323283473, 46.4539385843, 1438.47 ],
-							[ 7.2241421621, 46.4868866314, 980.363 ],
-							[ 7.2491849005, 46.5211273316, 1223.535 ],
-							[ 7.2370750544, 46.5537941461, 2235.645 ],
-							[ 7.2076486573, 46.5329067762, 1810.383 ],
-							[ 7.1921728721, 46.5465582934, 1435.714 ],
-							[ 7.1483492134, 46.5284644283, 2389.038 ],
-							[ 7.1227852101, 46.4986989108, 2139.154 ],
-							[ 7.0610843488, 46.4872749154, 1424.484 ],
-							[ 6.9874513236, 46.4379376624, 1888.714 ],
-							[ 6.9541960427, 46.5019100185, 1127.79 ],
-							[ 6.8957147121, 46.5077498914, 639.85 ],
-							[ 6.8967003541, 46.520448019, 805.943 ],
-							[ 6.8489023302, 46.4933745757, 724.695 ],
-							[ 6.8181000685, 46.5165066782, 936.307 ],
-							[ 6.8253421594, 46.5434927035, 630.531 ],
-							[ 6.8610775448, 46.5306843947, 700.958 ],
-							[ 6.9016457777, 46.5697265234, 839.841 ],
-							[ 6.8844995716, 46.5619532684, 849.99 ],
-							[ 6.8141024197, 46.5856687748, 588.827 ],
-							[ 6.794902045, 46.5753184727, 698.594 ],
-							[ 6.7985501499, 46.6486083174, 551.818 ],
-							[ 6.8673479918, 46.6601000928, 821.646 ],
-							[ 6.8626874263, 46.6809486774, 718.305 ],
-							[ 6.9406119124, 46.7437118696, 737.018 ],
-							[ 6.9091938846, 46.7587622538, 582.946 ],
-							[ 6.9570895261, 46.7875932625, 590.091 ],
-							[ 6.9651446272, 46.828240726, 454.313 ],
-							[ 6.9928340151, 46.8319075421, 521.717 ],
-							[ 6.9806250465, 46.8818219599, 437.077 ],
-							[ 6.9581829102, 46.8815360534, 469.711 ],
-							[ 6.9648834369, 46.8653917231, 439.979 ],
-							[ 6.8962302124, 46.9254860934, 429.25 ],
-							[ 6.8656900829, 46.909575066, 429.25 ],
-							[ 6.9210055933, 46.8713308858, 483.736 ],
-							[ 6.8943504294, 46.8621688357, 498.458 ],
-							[ 6.9306248527, 46.853242455, 442.962 ],
-							[ 6.9048741474, 46.8251186216, 445.663 ],
-							[ 6.9048859332, 46.8056100316, 474.732 ],
-							[ 6.9315737668, 46.8053416862, 447.154 ],
-							[ 6.9109937523, 46.779709651, 455.447 ],
-							[ 6.8795475982, 46.7753001513, 512.061 ],
-							[ 6.8590920946, 46.7880030177, 695.56 ],
-							[ 6.8253955947, 46.7728385498, 651.646 ],
-							[ 6.7771297859, 46.7891107828, 694.398 ],
-							[ 6.787278444, 46.7996038679, 653.814 ],
-							[ 6.7418690732, 46.8278756112, 429.25 ],
-							[ 6.7798257262, 46.8529608024, 429.25 ],
-							[ 6.7325081881, 46.8683087247, 613.727 ],
-							[ 6.7208273815, 46.936089784, 1412.931 ],
-							[ 6.6472243715, 46.9107015153, 1099.363 ],
-							[ 6.6271053485, 46.8887059066, 1268.577 ],
-							[ 6.4821069167, 46.8465929267, 1203.369 ],
-							[ 6.460032126, 46.8513033663, 1084.35 ],
-							[ 6.4310401098, 46.8123571764, 1148.291 ],
-							[ 6.4584111544, 46.7887736363, 1282.75 ],
-							[ 6.4381908216, 46.7617768133, 1369.356 ],
-							[ 6.2819931346, 46.6906736374, 1150.089 ],
-							[ 6.1104723663, 46.5764387089, 1313.76 ],
-							[ 6.1566615645, 46.5452977598, 1112.346 ],
-							[ 6.0727933038, 46.4654437264, 1150.84 ],
-							[ 6.0864061424, 46.4438817138, 1238.976 ],
-							[ 6.0638570706, 46.4163897724, 1269.283 ],
-							[ 6.1697411331, 46.367825042, 467.759 ],
-							[ 6.1257894606, 46.317469892, 460.303 ],
-							[ 6.1987426901, 46.2844289838, 372.13 ],
-							[ 6.219551017, 46.3118844112, 372.13 ],
-							[ 6.232321768, 46.3304352249, 372.119 ],
-							[ 6.171101189, 46.3584000987, 467.193 ],
-							[ 6.2414320948, 46.3436678678, 372.13 ],
-							[ 6.3352022832, 46.4037162483, 372.13 ],
-							[ 6.4256322978, 46.4158068925, 372.13 ],
-							[ 6.5191176298, 46.4563679747, 372.13 ],
-							[ 6.6818707884, 46.454333244, 372.13 ],
-							[ 6.8210696095, 46.4271568114, 372.13 ]
-						],
-						[
-							[ 6.1844279953, 46.3458456684, 441.454 ],
-							[ 6.1667855258, 46.3430874823, 472.609 ],
-							[ 6.1755638998, 46.3513262635, 461.711 ],
-							[ 6.1844279953, 46.3458456684, 441.454 ]
-						],
-						[
-							[ 6.7730103525, 46.7513659055, 680.292 ],
-							[ 6.7844464887, 46.7354260891, 750.051 ],
-							[ 6.7624080424, 46.7173740469, 802.26 ],
-							[ 6.7486996035, 46.7318047699, 757.509 ],
-							[ 6.7730103525, 46.7513659055, 680.292 ]
-						],
-						[
-							[ 6.8174839692, 46.7332868098, 709.521 ],
-							[ 6.7880373658, 46.7286568057, 746.635 ],
-							[ 6.8530689892, 46.7747152831, 634.788 ],
-							[ 6.8820900933, 46.7498052361, 466.072 ],
-							[ 6.867173615, 46.7271255335, 492.729 ],
-							[ 6.8174839692, 46.7332868098, 709.521 ]
-						],
-						[
-							[ 6.9710345386, 46.8265623225, 471.965 ],
-							[ 6.9709600339, 46.8273837384, 476.648 ],
-							[ 6.9719975433, 46.8265828383, 468.309 ],
-							[ 6.9710345386, 46.8265623225, 471.965 ]
-						]
-					],
-					[
-						[
-							[ 7.0403441157, 46.9795230321, 429.284 ],
-							[ 7.0024273709, 46.9869090575, 429.25 ],
-							[ 6.9281962491, 46.9533978308, 429.258 ],
-							[ 6.9866518991, 46.9196188223, 513.048 ],
-							[ 7.0095050345, 46.8890385478, 435.356 ],
-							[ 6.9993330638, 46.8743296416, 436.159 ],
-							[ 7.0356861777, 46.8733385661, 451.91 ],
-							[ 7.0374529556, 46.8455357886, 612.936 ],
-							[ 7.0934092188, 46.9057911251, 456.334 ],
-							[ 7.0578794306, 46.9386100828, 438.988 ],
-							[ 7.0630443695, 46.9711086449, 429.398 ],
-							[ 7.0403441157, 46.9795230321, 429.284 ]
-						]
-					]
-				]
-			},
-			"properties" : {
-				"organisation" : "cantonal",
-				"domain" : "Urban",
-				"name" : "Guichet cartographique cantonal de l’Etat de Vaud",
-				"author" : "d’Information du Territoire)",
-				"description" : "",
-				"url" : "data"
+				"url" : "https://www.geo.vd.ch/"
 			}
 		},
 		{
@@ -573,1081 +1495,7 @@
 				"name" : "SITG (Système d’information du territoire à Genève)",
 				"author" : "DIT – Direction de l’information du territoire",
 				"description" : "",
-				"url" : "info"
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.89, 46.18 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Spherical Cap Harmonic Analysis (SCHA) for Characterising the Morphology of Rough Surface Patches",
-				"author" : "Mahmoud Shaqfa; Gary P. T. Choi; Katrin Beyer",
-				"format" : ".zip",
-				"description" : "This release includes implementations for Spherical Cap Harmonics (SCH), Hemispherical Harmonics (HSH) and Spherical Harmonics (SH) for analyzing and reconstructing open and closed surfaces. This is a stable and tested version. Please pay attention to the comments before the inputs. Report bugs to \"mahmoud.shaqfa@epfl.ch\" or \"ptchoi@mit.edu\" (as per the author of the bugged file).",
-				"url" : "https://doi.org/10.5281/zenodo.4890809",
-				"lng" : 8.89,
-				"lat" : 46.18
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.81, 46.99 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Experimental data on plastered rubble stone masonry walls",
-				"author" : "Rezaie, Amir; Godio, Michele; Beyer, Katrin",
-				"format" : ".txt, .zip",
-				"description" : "This repository contains data from experimental tests on plastered rubble stone masonry walls conducted at École Polytechnique Fédérale de Lausanne (EPFL) in Switzerland.  Data visualization in RENKU: Click here Please cite the following related publications: [1] Rezaie, A., Godio, M., Beyer, K. (2020). Experimental investigation of strength, stiffness and drift capacity of rubble stone masonry walls. Construction and Building Materials, 251, 118972.   [2] Rezaie, A., Achanta, R., Godio, M., Beyer, K. (2020). Comparison of crack segmentation using digital image correlation measurements and deep learning. Construction and Building Materials, 261, 120474.   [3] Rezaie, A., Godio, M., & Beyer, K. (2021). Investigating the cracking of plastered stone masonry walls under shear–compression loading. Construction and Building Materials, 306, 124831.",
-				"url" : "https://doi.org/10.5281/zenodo.5052675",
-				"lng" : 8.81,
-				"lat" : 46.99
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.81, 46.44 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "preprocessed OpenStreetMap data edges for Côte d'Ivoire",
-				"author" : "Pessoa Colombo, Vitor",
-				"format" : ".gpkg",
-				"description" : "OpenStreetMap data for Côte d'Ivoire (downloaded on 4 March 2020) transformed to network format following the methods of Karduni et al. (2016). References Karduni, Alireza, Amirhassan Kermanshah, and Sybil Derrible. \"A protocol to convert spatial polyline data to network formats and applications to world urban road networks.\" Scientific data 3.1 (2016): 1-7.",
-				"url" : "https://doi.org/10.5281/zenodo.5564798",
-				"lng" : 8.81,
-				"lat" : 46.44
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.93, 46.47 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Socially-Aware Large-Scale Crowd Forecasting",
-				"author" : "alahi, alexandre; Ramanathan, Vignesh; Fei-fei, li",
-				"format" : ".gz",
-				"description" : "In crowded spaces such as city centers or train stations, human mobility looks complex, but is often influenced only by a few causes. We propose to quantitatively study crowded environments by introducing a dataset of trajectories collected in train stations. ",
-				"url" : "https://doi.org/10.1109/CVPR.2014.283",
-				"lng" : 7.93,
-				"lat" : 46.47
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.3, 46.22 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Questionnaire sur le niveau d'activité et les indicateurs de développement durable dans les villes suisses",
-				"author" : "Boesch Anne",
-				"description" : "This document is the pre-final French version of a questionnaire that will be sent to all Swiss cities approx. September 2021 about their activities (government and administration) related to sustainable development - or other transversal issues - and their potential use of sustainable development indicators (or indicators about similar transversal issues)",
-				"url" : "https://doi.org/10.5281/zenodo.5452447",
-				"lng" : 8.3,
-				"lat" : 46.22
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.54, 46.49 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Landscape of data repositories and platforms",
-				"author" : "Francesco Varrato; Eliane Blumer; Charlotte Weil; Miriam Braskova",
-				"format" : ".xlsx, .pdf, .pptx",
-				"description" : "Scholarly Communication is still shifting from papers to richer content, as for instance research data and code. Data dissemination has a crucial role and yet it is in its infancy, with visible fragmentation and too many unknowns for researchers to get onboard. With our work, we want to mitigate this situation and help researchers decide which platforms are best suited to disseminate their data and code. The table we elaborated is based on multiple feedback from EPFL researchers, and its purpose is both to capture the variety of use-cases, and to guide researchers to make their choice. This poster is principally conceived for colleagues working in university services related to Open Science and Research Data Management, to provide them with an example of collaboration that might be reproduced in their institutions, and to create awareness on the challenges that such an endeavor entails. In this publication, we also include the current version of the comparative table of data dissemination solutions.",
-				"url" : "https://doi.org/10.5281/zenodo.5769280",
-				"lng" : 7.54,
-				"lat" : 46.49
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.89, 46.61 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "MASCDB: a database of images, descriptors and1microphysical properties of individual snowflakes in free fall",
-				"author" : "Grazioli, Jacopo; Ghiggi, Gionata",
-				"format" : ".parquet, .zip",
-				"description" : "Dataset overview This dataset provides data and images of snowflakes in free fall collected with a Multi-Angle Snowflake Camera (MASC) The dataset includes, for each recorded snowflakes: A triplet of gray-scale images corresponding to the three cameras of the MASC A large quantity of geometrical, textural descriptors and the pre-compiled output of published retrieval algorithms as well as basic environmental information at the location and time of each measurement. The pre-computed descriptors and retrievals are available either individually for each camera view or, some of them, available as descriptors of the triplet as a whole. A non exhaustive list of precomputed quantities includes for example: Textural and geometrical descriptors as in Praz et al 2017 Hydrometeor classification, riming degree estimation, melting identification, as in Praz et al 2017 Blowing snow identification, as in  Schaer et al 2020 Mass, volume, gyration estimation, as in Leinonen et al 2021 Data format and structure The dataset is divided into four .parquet file (for scalar descriptors) and a Zarr database (for the images). A detailed description of the data content and of the data records is available here. Supporting code A python-based API is available to manipulate, display and organize the data of our dataset. It can be found on GitHub. See also the code documentation on ReadTheDocs. Download notes All files available here for download should be stored in the same folder, if the python-based API is used MASCdb.zarr.zip must be unzipped after download    ",
-				"url" : "https://doi.org/10.5281/zenodo.5709832",
-				"lng" : 6.89,
-				"lat" : 46.61
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.45, 46.71 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Hydraulic fracturing block test experiments in Gabbro & Marble - experiments # GABB-002 & MARB-007",
-				"author" : "Dong Liu; Brice Lecampion",
-				"format" : ".zip",
-				"description" : "This dataset contains raw, processed and inverted data for 2 hydraulic fracturing tests performed in a Zimbabwe gabbro (GABB-002) and a Carrara Marble (MARB-007) at the Geo-Energy lab @ EPFL. [IMPORTANT NOTE: DUE TO file size-constraint, the raw binary filed containing the acoustic data is not part of this zenodo data set - Please contact Prof. B. Lecampion directly if you are interested in playing with the raw acoustic data file] TEST ID - GABB-002  : Lag/viscosity dominated test in a gabbro TEST ID - MARB-007   : Lag/viscosity dominated test in a carrara Marble The details of these two tests and its analysis is described in details in the following publication: Measurements of the evolution of the fluid lag in laboratory hydraulic fracture experiments in rocks Dong Liu, Brice Lecampion Geo-Energy Laboratory, Gaznat Chair on Geo-Energy, Ecole Polytechique Fédérale de Lausanne, EPFL-ENAC-IIC-GEL, Lausanne, Switzerland",
-				"url" : "https://doi.org/10.5281/zenodo.5525773",
-				"lng" : 7.45,
-				"lat" : 46.71
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.52, 46.56 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Selektiver Rückbau - Rückbaubare Konstruktion: Studie zur Förderung der Abfallreduktion und der Wiederverwendung in der Baubranche",
-				"author" : "Célia Küpfer; Corentin Fivet",
-				"format" : ".pdf",
-				"description" : "Diese Sammlung stützt sich auf eine Literaturrecherche sowie 32 Fallstudien und Interviews mit Fachkräften und: › fasst die Grundprinzipien beider Ansätze zusammen; › dokumentiert und gibt Erfahrungsberichte und bewährte Verfahren weiter; › liefert technische Referenzen für Bauunternehmen, Entwerferinnen/Entwerfer und Bauherrschaft; › bietet einen aktuellen und detaillierten theoretischen Hintergrund sowie Referenzen für die weitere Entwicklung; › skizziert die Möglichkeiten zur Weiterentwicklung und Umsetzung für Schweizer Bauten.",
-				"url" : "https://doi.org/10.5281/zenodo.5131243",
-				"lng" : 7.52,
-				"lat" : 46.56
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.12, 46.06 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data & Figures on the Multiscale Spatiotemporal Characterization of Embodied Environmental Efficiency of Building Structures in Geneva from 1850 to 2018",
-				"author" : "Fivet, Corentin; De Wolf, Catherine; Menny, Thibaut; Vanbutsele, Serena",
-				"format" : ".svg, .tif, .xlsx",
-				"description" : "Process data, figures, and figure data resulting from the study on Multiscale Spatiotemporal Characterization of Embodied Environmental Efficiency of Building Structures in Geneva from 1850 to 2018.",
-				"url" : "https://doi.org/10.5281/zenodo.4542784",
-				"lng" : 7.12,
-				"lat" : 46.06
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.65, 46.62 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Déconstruction sélective - Construction Réversible: recueil pour diminuer les déchets et favoriser le réemploi dans la construction.",
-				"author" : "Célia Küpfer; Corentin Fivet",
-				"format" : ".pdf",
-				"description" : "A travers une revue de la littérature, ainsi que 32 études de cas et des entretiens avec des praticiens, ce recueil: › synthétise les principes fondamentaux des deux approches; › documente et diffuse les retours d’expériences et les bonnes pratiques; › apporte aux entrepreneurs/entrepreneuses, concepteurs/conceptrices et maîtrises d’ouvrage des références techniques; › procure aux parties prenantes un bagage théorique à la pointe et détaillé ainsi qu’une série de référence pour aller plus loin; › esquisse les perspectives d’évolution et opportunités applicables au bâti suisse.",
-				"url" : "https://doi.org/10.5281/zenodo.4314325",
-				"lng" : 8.65,
-				"lat" : 46.62
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.72, 46.01 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "NGon",
-				"author" : "Petras Vestartas; Aryan Rezaei Rad",
-				"format" : ".zip",
-				"description" : "For mesh processing. Examples for Nexorades and COMPAS structural analysis.",
-				"url" : "https://doi.org/10.5281/zenodo.4550592",
-				"lng" : 6.72,
-				"lat" : 46.01
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.84, 46.39 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Ecological modelling",
-				"name" : "Very high-resolution digital elevation models of la Para and les Martinets areas in the Swiss Alps",
-				"author" : "Guillaume, Annie S.; Leempoel, Kevin; Rochat, Estelle; Rogivue, Aude; Kasser, Michel; Gugerli, Felix; Parisod, Christian; Joost, Stéphane",
-				"format" : ".csv, .tif, .zip",
-				"description" : "Data to support the article \"Multiscale very-high resolution topographic models in Alpine ecology: pros and cons of airborne LiDAR and drone-based stereo-photogrammetry technologies\". This study is based in two valleys of the western Swiss Alps in the state of Vaud. The two study sites, Para and Martinets, are situated above the tree-line between 1800-2400m asl, with target site areas of 0.5km2.\n\nHere, we provide the base digital elevation models (DEMs) acquired via Light Detection and Ranging (LiDAR) and stereo-photogrammetry (PHOTO) methods for each site. The finest resolution for LiDAR DEMs is 0.5m and for PHOTO DEMs is 6.25cm. These were then generalised to 32m for LiDAR and 8m for PHOTO using the impyramid function in MATLAB and cropped to remove incorrect borders before being used to derive 23 variables in SAGA GIS. \n\nThe site outline shape files (as zip) show the limitations of each study site, which were used to crop the DEMs and derived variables to the target site.\n\nThe georef_points.csv file contains point data of geo-referenced points (±3cm accuracy) used to assess the DEM accuracies.\n\nThe Aalpina_presence_points.csv file contains the point data of the Arabis alpina plant presence locations for both sites, which were used in MaxEnt analyses.\n\n ",
-				"url" : "https://doi.org/10.5281/zenodo.4575251",
-				"lng" : 7.84,
-				"lat" : 46.39
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.63, 46.5 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data for \"Heat stress reduces the contribution of diazotrophs to coral holobiont nitrogen cycling\"",
-				"author" : "Rädecker, Nils; Pogoreutz, Claudia; Gegner, Hagen M.; Cardenás, Anny; Perna, Gabriela; Geißler, Laura; Roth, Florian; Bougoure, Jeremey; Guagliardo, Paul; Struck, Ulrich; Wild, Christian; Pernice, Mathieu; Raina, Jean-Baptiste; Meibom, Anders; Voolstra, Christian R.",
-				"format" : ".csv",
-				"description" : "Raw data associated with publication 'Heat stress reduces the importance of diazotrophs for coral holobiont nitrogen cycling'.  \"Rädecker_etal_16S.csv\" contains sequence abundance data of annotated 16S rRNA ASVs for all five coral colonies during control or heat stress conditions at day 10 of the experiment.  \"Rädecker_etal_nifH.csv\" contains sequence abundance data of annotated nifH rRNA ASVs for all five coral colonies during control or heat stress conditions at day 10 of the experiment.  \"Rädecker_etal_N2Fix.csv\" contains bulk (acetylene reduction) as well as net (15N2 assimilation) measurements of microbial nitrogen fixation for all five coral colonies during control or heat stress conditions at day 10 of the experiment.  \"Rädecker_etal_NanoSIMS.csvv\" contains raw mass count data of coral host and algal symbiont ROIs (15 images per treatment)  for one coral colony during control or heat stress conditions at day 10 of the experiment. ",
-				"url" : "https://doi.org/10.5281/zenodo.5552980",
-				"lng" : 6.63,
-				"lat" : 46.5
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.5, 46.08 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data for 'Heat stress destabilizes symbiotic nutrient cycling in corals'",
-				"author" : "Nils Rädecker; Claudia Pogoreutz; Hagen M. Gegner; Anny Cárdenas; Florian Roth; Jeremy Bougoure; Paul Guagliardo; Christian Wild; Mathieu Pernice; Jean-Baptiste Raina; Anders Meibom; Christian R. Voolstra",
-				"format" : ".xlsx",
-				"description" : "Physiological data (tab 1) and NanoSIMS data (tab 2) associated with publication 'Heat stress destabilizes symbiotic nutrient cycling in corals'. ",
-				"url" : "https://doi.org/10.5281/zenodo.4429583",
-				"lng" : 6.5,
-				"lat" : 46.08
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.5, 46.44 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Light quantity controls locomotion in photosymbiotic Aiptasia",
-				"author" : "Strumpen, Nils F; Rädecker, Nils; Pogoreutz, Claudia; Voolstra, Christian R",
-				"format" : ".zip",
-				"description" : "Many cnidarians engage in endosymbiotic relationships with photosynthetic microalgae in the family Symbiodiniaceae. This symbiosis is deeply integrated into the physiology of the host. Although positive phototaxis and phototropism have been reported for symbiotic cnidarians, it is currently unknown whether light quantity influences phototactic behavior. Here we tested behavior of aposymbiotic (without Symbiodiniaceae) and symbiotic (with Symbiodiniaceae) Aiptasia in a light gradient to assess presence and effect of phototactic behavior.   ",
-				"url" : "https://doi.org/10.5281/zenodo.5036902",
-				"lng" : 6.5,
-				"lat" : 46.44
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.33, 46.69 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Phenotypic plasticity versus ecotypic differentiation under recurrent summer drought in two drought-tolerant pine species",
-				"author" : "Bachofen, Christoph; Perret-Gentil, Anouchka; Wohlgemuth, Tom; Vollenweider, Pierre; Moser, Barbara",
-				"format" : ".csv, .rtf",
-				"description" : "1. Despite worldwide reports of high tree mortality, growing evidence indicates that many tree species are well adapted to survive repeated dry spells. The drought resilience of trees is related to their phenotypic plasticity and ecotypic differentiation. Whether these two mechanisms act at the same organisational level of a tree and involve similar plant traits is still unknown. 2. We assessed phenotypic plasticity and ecotypic differentiation across four populations of Pinus sylvestris and Pinus nigra seedlings grown for three years under a recurrent summer drought treatment or well-watered control conditions in a common garden. We measured the response to the summer drought treatment of a total of 26 traits including shoot and needle morphology, needle anatomy, and foliar macronutrients, and related the traits to the growing season water deficit (GSWD) at the location of the seed origin. 3. Foliar phenotypic plasticity in response to recurrent summer drought was surprisingly low, with the needle length and the fraction of mesophyll and phloem tissue adjusting to some extent. In comparison, shoot morphological traits were much more plastic in both species with predominant responses to the summer drought stress including shorter and less numerous apical and lateral shoots. These three traits were also correlated with GSWD at the seed origin, indicating local adaptation. In contrast, between-population variation of foliar morphological and anatomical traits, and macronutrients were mostly unrelated to the GSWD at the seed origin. 4. Consequently, phenotypic plasticity and ecotypic differentiation occurred at the same level of organisation and in the same plant traits, i.e. shoot morphology. This combination of plasticity and ecotypic differentiation allowed P. sylvestris and P. nigra seedlings to rapidly acclimate to recurrent and long-lasting dry-spells. 5. Synthesis: P. sylvestris and P. nigra seedlings showed considerable ecotypic differentiation and phenotypic plasticity of shoot morphological traits, and not foliar traits. Acclimation to recurrent severe summer drought was achieved by reducing shoot growth.",
-				"url" : "https://doi.org/10.5061/dryad.547d7wm8g",
-				"lng" : 6.33,
-				"lat" : 46.69
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.32, 46.17 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "High-Frequency Gaseous and Particulate Chemical Characterization using Extractive Electrospray Ionization Mass Spectrometry (Dual-Phase-EESI-TOF)",
-				"author" : "Chuan Ping Lee; Mihnea Surdu; David M. Bell; Josef Dommen; Mao Xiao; Xueqin Zhou; Andrea Baccarini; Stamatios Giannoukos; Günther Wehrle; Pascal André Schneider; Andre S. H. Prevot; Jay G. Slowik; Houssni Lamkaddam; Dongyu Wang; Urs Baltensperger; Imad El Haddad",
-				"format" : ".mat, .m, .asv, .txt",
-				"description" : "To elucidate the sources and chemical reaction pathways of organic vapors and particulate matter in the ambient atmosphere, real-time detection of both gas and particle phase is needed. State-of-the-art techniques often suffer from thermal decomposition, ionization-induced fragmentation, high cut-off size of aerosols or low time resolution. In response to all these limitations, we developed a new technique that uses extractive electrospray ionization (EESI) for online gas and particle chemical speciation, namely the dual-phase extractive electrospray ionization time-of-flight mass spectrometer (Dual-Phase-EESI-TOF or Dual-EESI in short). The Dual-EESI was designed and optimized to measure gas- and particle-phase species with saturation vapor concentrations spanning more than 10 orders of magnitude with good linearity and a measurement cycle as fast as 3 min. The gas-phase selectivity of the Dual-EESI was compared with that of nitrate chemical ionization mass spectrometry. In addition, we performed organic aerosol uptake experiments to characterize the relative gas and particle response factors. In general, the Dual-EESI is more sensitive toward gas-phase analytes as compared to their particle-phase counterparts. The real-time measurement capability of the Dual-EESI for chemically speciated gas- and particle-phase measurements can provide new insights into aerosol sources or formation mechanisms, where gas-particle partitioning behavior can be determined after absolute parameterization of the gas/particle sensitivity.",
-				"url" : "https://doi.org/10.5281/zenodo.3731647",
-				"lng" : 7.32,
-				"lat" : 46.17
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.94, 46.47 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Concentration of gaseous sulfuric acid measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Tummon, Fiona; Hartmann, Markus; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract The authors would highly appreciate being contacted if the data is used for any purpose. We measured sulfuric acid concentration in the gas phase with a nitrate chemical ionization mass spectrometer (we used an APi-HTOF mass spectrometer produced by Tofwerk AG coupled with a Chemical ionization inlet A70 produced by Airmodus). Sulfuric acid is detected in the mass spectrometer either as a deprotonated ion or as a cluster with the reagent ion (NO3-). The concentration is calculated as the area of these two peaks normalized to the concentration of the reagent ions (monomer, dimer and trimer) and multiplied by a calibration factor that was experimentally derived at Paul Scherrer Institute in the summer 2017, after the campaign. In the atmosphere, sulfuric acid is produced by the oxidation of sulfur dioxide that could have both a natural or anthropogenic origin (e.g. phytoplankton emission or fossil fuel combustion). Sulfuric acid in the atmosphere is responsible for a very large fraction of the newly formed particles, therefore it is important to have accurate measurements of this vapour in remote places like the Southern Ocean to better understand secondary aerosol sources and processes. The data have been cleaned from the influence of the exhaust of the research vessel. Temporal coverage is from January 22, 2017 to March 19, 2017. There are no data for the first leg of the expedition because the instrument was not on the ship. The instrument was operated during leg 4 but data has not been processed yet as they require additional work due to some instrumental issues that affects their quality. Data were collected with one-second time resolution but integrated to five minutes to increase the signal to noise ratio. Concentrations are reported as molecules per cubic centimeter. The lower limit of detection is in the ppq (part per quadrillion) range but was not determined exactly as it varies with the integration time and background noise. Dataset contents gas_sulfuric_acid_concentration_data.csv, data file, comma-separated values data_file_header.txt, metadata, text format README.txt, metadata, text format change_log.txt, metadata, text format Data that were missing or bad because of instrumental problems were simply removed from the file (no entry). Change log v1.1 - data files updated re-analysis of the raw data with an improved mass spectra peak fitting routine, a different calibration factor was also applied to the data following a more detailed analysis of the calibration experiment use updated, corrected GPS data v1.0 - initial release of dataset",
-				"url" : "https://doi.org/10.5281/zenodo.5711169",
-				"lng" : 7.94,
-				"lat" : 46.47
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.3, 46.43 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Size distribution of neutral and charged particles smaller than 42 nm measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Tummon, Fiona; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
-				"format" : ".csv, .txt",
-				"description" : "The size distribution of neutral and charged particles was measured using a neutral cluster and air ion spectrometer (NAIS) instrument. The concentration was corrected for diffusional losses in the inlet. The concentration and temporal dynamics of small particles is fundamental to characterize the first step of new particle formation (NPF) and growth. Moreover, naturally charged particles and ions can provide information about the role of ion induced nucleation. Newly formed particles can grow to larger sizes where they act as cloud condensation nuclei, directly affecting the Earth radiative budget and cloud properties. Measurements were performed on the upper deck of icebreaker Akademik Tryoshnikov along the track of the Antarctic Circumnavigation expedition. Temporal coverage is from January 22, 2017 to April 11, 2017. The concentration is reported as dN/dlog(Dp) per cubic centimetre, where Dp indicates the corresponding diameter size bin. Data were collected with one-second time resolution and averaged automatically by the acquisition software to 120 seconds before January 31 2017 and to 90 seconds after that date. The instrument was calibrated before the campaign by the manufacturer and periodically cleaned during the campaign (one time per leg). Pollution from the ship exhaust and other human activities (e.g. helicopter flights) was identified as described in Schmale et al., 2019 (https://doi.org/10.1175/BAMS-D-18-0187.1) and a corresponding flag was associated to the data (with 1 meaning clean data and 0 polluted data).   ***** Dataset contents ***** - 01_neutral_particles_size_distribution.csv, data file, comma-separated values - 02_negative_ions_size_distribution.csv, data file, comma-separated values - 03_positive_ions_size_distribution.csv, data file, comma-separated values - 04_neutral_particles_size_distribution_header.txt, metadata, text - 05_negative_ions_size_distribution_header.txt, metadata, text - 06_positive_ions_size_distribution_header.txt, metadata, text - README.txt, metadata, text Data that were missing or bad because of instrumental problems were simply removed from the file (no entry).",
-				"url" : "https://doi.org/10.5281/zenodo.5180560",
-				"lng" : 8.3,
-				"lat" : 46.43
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.68, 46.61 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Concentration of gaseous iodic acid measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Hartmann, Markus; Tummon, Fiona; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
-				"format" : ".csv, .txt",
-				"description" : "Measurements of iodic acid concentration in the gas phase obtained with a nitrate chemical ionization mass spectrometer (we used an APi-TOF mass spectrometer produced by Tofwerk AG coupled with a Chemical ionization inlet A70 produced by Airmodus). Iodic acid is detected in the mass spectrometer either as a deprotonated ion or as a cluster with the reagent ion (NO3-). The concentration is calculated as the area of these two peaks normalized to the concentration of the reagent ions (monomer, dimer and trimer) and multiplied by a calibration factor equal to 6.9E9 molecules cm-3 that was experimentally derived at Paul Scherrer Institute in the summer 2017, after the campaign. Iodic acid can participate in both new particle formation and growth, affecting the Earth radiative balance and cloud properties. Iodic acid is produced from the iodine radical but the exact formation pathways is still unknown. Measurements were performed on the upper deck of the icebreaker Akademik Tryoshnikov along the track of the Antarctic Circumnavigation expedition. Temporal coverage is from January 22, 2017 to March 19, 2017. There are no data for the first leg of the expedition because the instrument was not on the ship. The instrument was operated during leg 4 but data has not been processed yet. Data were collected with one-second time resolution but integrated to five minutes to increase the signal to noise ratio. Concentrations are reported as molecules per cubic centimeter in five minutes averages. The lower limit of detection was estimated to be lower than 6E3 molecules cm-3. Data below the detection limit were replaced by the detection limit divided by the square root of 2. Pollution from the ship exhaust and other human activities (e.g. helicopter flights) was identified as described in Schmale et al. 2019 (https://doi.org/10.1175/BAMS-D-18-0187.1) and a corresponding flag was associated to the data (with 1 meaning clean data and 2 polluted data). No direct influence of pollution on the iodic acid concentration was found. ***** Dataset contents ***** - 01_gas_iodic_acid_concentration_data.csv, data file, comma-separated values - 02_IodicAcid_file_header.txt, metadata, text format - 03_README.txt, metadata, text format  ",
-				"url" : "https://doi.org/10.5281/zenodo.5176217",
-				"lng" : 6.68,
-				"lat" : 46.61
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.56, 46.79 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Particulate methylsulfonic acid (MSA), sodium and chloride concentrations from high-volume air filter samples over the Southern Ocean during austral summer of 2016/2017 on board the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Tatzelt, Christian; Henning, Silvia; van Pinxteren, Manuela; Tummon, Fiona; Hartmann, Markus; Baccarini, Andrea; Welti, André; Lehtipalo, Katrianne; Schmale, Julia",
-				"description" : "Dataset abstract Aerosol particles come from a variety of sources: a look at the chemical composition gives insights on the particle origin. Ion chromatography was performed for aerosol particles smaller than 10 micrometers (PM10 inlet), giving concentrations of sodium and chloride, as well as particulate methylsulfonic acid (MSA). For this, aerosol particles where sampled on quartz fibre filters for 24 hours each. The sampled filters were stored at -20 degrees C on the research vessel, transported frozen back to the chemistry lab of TROPOS and analysed for main ions. Temporal coverage is from December 20, 2016 to March 20, 2017. We give 24-hour quality controlled particulate MSA, sodium and chloride concentrations in microgram per cubic meter for the Antarctic Circumnavigation Expedition (ACE) cruise over the Southern Ocean, as part of the ACE-SPACE project. Dataset contents ACESPACE_ particulate_MSA_Sodium_Chloride_PM10, data file, comma-separated values data_file_header, metadata, text format README.txt, metadata, text format",
-				"url" : "https://doi.org/10.5281/zenodo.2636773",
-				"lng" : 7.56,
-				"lat" : 46.79
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.34, 46.95 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Concentration of gaseous methanesulfonic acid measured over the Southern Ocean in the austral summer of 2016/2017, during the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Baccarini, Andrea; Schmale, Julia; Henning, Silvia; Tummon, Fiona; Hartmann, Markus; Welti, André; Lehtipalo, Katrianne; Dommen, Josef; Gysel-Beer, Martin",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract The authors would highly appreciate being contacted if the data is used for any purpose. We measured methanesulfonic acid concentration in the gas phase with a nitrate chemical ionization mass spectrometer (we used an APi-HTOF mass spectrometer produced by Tofwerk AG coupled with a Chemical ionization inlet A70 produced by Airmodus). Methanesulfonic acid is detected in the mass spectrometer either as a deprotonated ion or as a cluster with the reagent ion (NO3-). The concentration is calculated as the area of these two peaks normalized to the concentration of the reagent ions (monomer, dimer and trimer) and multiplied by a calibration factor that was experimentally derived at Paul Scherrer Institute in the summer 2017, after the campaign. In the atmosphere, methanesulfonic acid is produced by the oxidation of dimethyl sulfide that is mostly emitted in the atmosphere by phytoplankton. Methanesulfonic acid can contribute to the growth of aerosol particles by condensation or aqueous phase processing in clouds. The data have been cleaned from the influence of the exhaust of the research vessel. Temporal coverage is from 22 January 2017 to 19 March 2017. There are no data for the first leg of the expedition because the instrument was not on the ship. The instrument was operated during leg 4 but data has not been processed yet as they require additional work due to some instrumental issues that affects their quality. Data were collected with one-second time resolution but integrated to five minutes to increase the signal-to-noise ratio. Concentrations are reported as molecules per cubic centimeter. The lower limit of detection is in the ppq (part per quadrillion) range but was not determined exactly as it varies with the integration time and background noise. Dataset contents gas_methanesulfonic_acid_concentration_data.csv, data file, comma-separated values data_file_header.txt, metadata, text format README.txt, metadata, text format change_log.txt, metadata, text format There are no null values in the file. Data that were missing or bad because of instrumental problems were simply removed from the file (no entry). Change log v1.1 - data files updated re-analysis of the raw data with an improved mass spectra peak fitting routine, a different calibration factor was also applied to the data following a more detailed analysis of the calibration experiment use updated, corrected GPS data v1.0 - initial release of dataset",
-				"url" : "https://doi.org/10.5281/zenodo.5718382",
-				"lng" : 8.34,
-				"lat" : 46.95
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.61, 46.76 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Pollution Detection Algorithm (PDA)",
-				"author" : "Beck Ivo; Angot Hélène; Baccarini Andrea; Lampimäki Markus; Boyer Matthew; Schmale Julia",
-				"format" : ".pdf, .py",
-				"description" : "The Pollution Detection Algorithm (PDA) is an algorithm to identify and flag periods of primary polluted data in remote atmospheric time series in five steps. The first and most important step identifies polluted periods based on the gradient (time-derivative) of a concentration over time. If this gradient exceeds a given threshold, data are flagged as polluted. Further pollution identification steps are a simple concentration threshold filter, a neighboring points filter (optional), a median and a sparse data filter (optional). The PDA is written in python and runs from the command line. No GUI installation is needed. The script only relies on the target dataset file itself and is independent of ancillary datasets such as meteorological variables. All parameters of each step are adjustable so that the PDA can be “tuned” to be more or less stringent (e.g., flag more or less data points as polluted). The PDA was developed and tested with a particle number concentration dataset collected during the Multidisciplinary drifting Observatory for the Study of Arctic Climate (MOSAiC) expedition in the Central Arctic.",
-				"url" : "https://doi.org/10.5281/zenodo.5761101",
-				"lng" : 8.61,
-				"lat" : 46.76
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.31, 46.95 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Intermediate processing stage of horizontal particle flux data collected using a snow particle counter on board the R/V Akademik Tryoshnikov in the Southern Ocean during the austral summer of 2016/17 as part of the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tuskernik, Maria; Lehning, Michael",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract Flux of particles (snow, rain and other particles including sea spray) were recorded passing through a photo-electric snow particle counter installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present an intermediate step in data processing, with relative horizontal particle flux of particles with a size between 36 – 2000 μm averaged over one-minute periods. Data are presented in daily files. Dataset contents SPC_HPF_1min_YYYY_MM_DD.csv, data files, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This one-minute averaged horizontal particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"url" : "https://doi.org/10.5281/zenodo.4550721",
-				"lng" : 6.31,
-				"lat" : 46.95
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.05, 46.51 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Quality-checked horizontal particle flux data collected using a snow particle counter on board the R/V Akademik Tryoshnikov in the Southern Ocean during the austral summer of 2016/17 as part of the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tsukernik, Maria; Lehning, Michael",
-				"format" : ".txt, .zip, .csv, .png, .py",
-				"description" : "Dataset abstract Flux of particles (snow, rain and other particles including sea spray) were recorded passing through a photo-electric snow particle counter installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present the finalised, quality-checked, horizontal particle flux data where counts have been averaged over a one-minute period. Dataset contents SPC_HPF_windtrue_1min.csv, data file, comma-separated values SPC_HPF_windtrue_1min.png, metadata, portable network graphics SPC_HPF_windtrue_saveplot.py, script, Python code data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This quality-checked horizontal particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"url" : "https://doi.org/10.5281/zenodo.4550883",
-				"lng" : 7.05,
-				"lat" : 46.51
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.15, 46.53 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Hydrometeor particle size distribution data collected using a snow particle counter on board the R/V Akademik Tryoshnikov in the Southern Ocean during the austral summer of 2016/17 as part of the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tsukernik, Maria; Lehning, Michael",
-				"format" : ".zip, .txt",
-				"description" : "Dataset abstract The data consist of the hydrometeor particle size distribution for particles with a size range (average diameter) from 36 to 490 μm (with the last bin including all detected particles larger than 490 μm) detecting the flux of snow, rain and other particles including sea spray passing through a photo-electric snow particle counter (SPC-95) installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present the raw data set, generated by the SPC-95 Data Processing Device, which consists of the number of particles, classified into 64 size bins, passing through the snow particle counter with a time resolution of one second. Data are presented in daily files and have undergone some pre-processing. The data were collected as part of ACE project 18 aiming to estimate freshwater fluxes (particularly precipitation and blowing snow) and understand their contribution to surface freshening in the Southern Ocean. Dataset contents UYYMMDD_hhmmssSnow-XXX-1sec-org-YYYY.csv, data files, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text where XXX is the sensor code number and YYY is the CF serial number. Dataset license This pre-processed hydrometeor particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"url" : "https://doi.org/10.5281/zenodo.4446616",
-				"lng" : 8.15,
-				"lat" : 46.53
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.31, 46.45 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Proposed changes to the masonry chapter in EC8 Part 1 - Background document for the masonry chapter in EC8 Part 1",
-				"author" : "Beyer, Katrin",
-				"format" : ".pdf",
-				"description" : "This document summarises the background for changes proposed in the masonry chapter of EC8 – Part 1-2 with regard to the current version of EC8 – Part 1 (2004). Note that separate background documents exist for drift capacities of URM walls, behaviour factors and slenderness limits and the design of simple buildings.",
-				"url" : "https://doi.org/10.5281/zenodo.4603576",
-				"lng" : 6.31,
-				"lat" : 46.45
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.01, 46.15 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Supplementary material to 'Numerical Simulation of Unreinforced Masonry Buildings with Timber Diaphragms'",
-				"author" : "Tomić, Igor; Vanin, Francesco; Božulić, Ivana; Beyer, Katrin",
-				"format" : ".pdf, .rar",
-				"description" : "This repository provides the OpenSEES models used for producing the results presented in the papers as well as the data with results of the calibration procedure and IDAs.",
-				"url" : "https://doi.org/10.5281/zenodo.4659149",
-				"lng" : 8.01,
-				"lat" : 46.15
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.72, 46.64 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Biostimulation as a sustainable solution for acid neutralization and uranium immobilization post acidic in-situ recovery",
-				"author" : "Coral, Thomas; Placko, Anne-Laure; Beaufort, Daniel; Tertre, Emmanuel; Bernier-Latmani, Rizlan; Descostes, Michaël; de Boissezon, Hélène; Guillon, Sophie; Rossi, Pierre",
-				"format" : ".zip, .md",
-				"description" : "Major uranium (U) deposits worldwide are exploited by acid leaching, known as 'in-situ recovery' (ISR). ISR involves the injection of an acid fluid into ore-bearing aquifers and the pumping of the resulting metal-containing solution through cation exchange columns for the recovery of dissolved U. Rehabilitation of ISR-impacted aquifers could be achieved through natural attenuation, or via biostimulation of autochthonous heterotrophic microorganisms due to the associated acid neutralization and trace metal immobilization. In this study, we analyzed the capacity of pristine aquifer sediments impacted by diluted ISR fluids to buffer pH and immobilize U. The experimental setup consisted of glass columns, filled with sediment from a U ore-bearing aquifer, through which diluted ISR fluids were flowed continuously. The ISR solution was obtained from ISR mining operations at the Muyunkum and Tortkuduk deposits in Kazakhstan. Following this initial phase, columns were biostimulated with a mix of molasses, yeast extract and glycerol to stimulate the growth of autochthonous heterotrophic communities. Experimental results showed that this amendment efficiently promoted the activity of acid-tolerant bacterial guilds, with pH values rising from 4.8 to 6.5 - 7.0 at the outlet of the stimulated columns. The reduction of sulfate, nitrate, and metals as well as dissimilatory nitrate reduction to ammonia induced the rise in pH values, in agreement with geochemical modeling results. Biostimulation efficiently promoted the complete immobilization of U, with the accumulation of up to 3,343 ppm in the first few centimeters of the columns. Synchrotron analysis and SEM-EDS revealed that up to 60% of the injected hexavalent U was immobilized as tetravalent non-crystalline U onto bacterial cell surfaces. 16S rRNA amplicon analysis and qPCR data suggested a predominant role played for members of the Phylum Firmicutes (from the genera Clostridium, Pelosinus, and Desulfosporosinus) in biological U reduction and immobilization.",
-				"url" : "https://doi.org/10.5281/zenodo.5763237",
-				"lng" : 7.72,
-				"lat" : 46.64
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 9, 46.34 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Supplementary material for \"AR-assisted timber drilling with smart retrofitted tools\"",
-				"author" : "Settimi, Andrea; Gamerro, Julien; Weinand, Yves",
-				"format" : ".dxf, .ply, .3dm, .m, .mat, .md",
-				"description" : "The dataset contains point clouds from 3D scans, reconstructed 3D data, and statistical data analysis, which are intended as complementary material for the publication \"AR-assisted timber drilling with smart retrofitted tools\". ",
-				"url" : "https://doi.org/10.5281/zenodo.5142178",
-				"lng" : 9,
-				"lat" : 46.34
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.89, 46.98 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Civil Engineering",
-				"name" : "Composite Beams Database",
-				"author" : "El Jisr, Hammad; Lignos, Dimitrios G.",
-				"format" : ".xlsx, .zip",
-				"description" : "1. Composite Beam Database v1.0\n\nA database of composite steel beams that are part of moment-resisting frames is provided. The database consists of 97 tests conducted over the last 30 years. The collection and metadata methodology are thoroughly presented in El Jisr et al. (2019). \n\nEach column in the spreadsheet is defined in the \"Definitions\" tab along with accompanying figures in the \"Figures\" tab. The database includes details of the composite slab (dimensions, material strength, shear studs) as well as the calculation of the plastic moment resistance and elastic stiffness of the sections as per European, US and Japanese provisions. A comparison between the code-based and test values is also shown. Furthermore, the database includes the plastic deformation capacity of the sections based on the first cycle envelope.\n\n2.Digitized Moment Rotation Data v1.0\n\nFull digitized histories of the moment-chord rotation of the composite beams are provided.",
-				"url" : "https://doi.org/10.5281/zenodo.4423351",
-				"lng" : 8.89,
-				"lat" : 46.98
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.71, 46.72 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data for Larivé et al, J. Virol. Meth, 2021 (doi 10.1016/j.jviromet.2021.114225)",
-				"author" : "Larivé, Odile; Kohn, Tamar",
-				"format" : ".csv",
-				"description" : "Raw data (RT-qPCR, culturing, ICC-RTqPCR) pertaining to figures 2-5 in publication: Larive et al., An integrated cell culture reverse transcriptase quantitative PCR (ICC-RTqPCR) method to simultaneously quantify the infectious concentrations of eight environmentally relevant enterovirus serotypes. J Virol Methods, 2021.  https://doi.org/10.1016/j.jviromet.2021.114225 Explanations for each data set are given at the bottom of the respective csv file.",
-				"url" : "https://doi.org/10.5281/zenodo.5069278",
-				"lng" : 7.71,
-				"lat" : 46.72
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.21, 46.71 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data for Fernandez-Cassi et al., Wastewater monitoring outperforms case numbers as a tool to track COVID-19 incidence dynamics when test positivity rates are high",
-				"author" : "Fernandez-Cassi, Xavier; Scheidegger, Andreas; Bänziger, Carola; Cariti, Federica; Tunas Corzon, Alex; Ganesanandamoorthy, Pravin; Lemaitre, Joseph; Ort, Christoph; Julian, Timothy R.; Kohn, Tamar",
-				"format" : ".csv",
-				"description" : "Measured virus concentrations (SARS-CoV-2, surrogates and pepper mild mottle virus) and flow rates for Lugano, Lausanne and Zurich wastewater treatment plants Epidemiological data (reported case numbers; test positivity rates) for Lugano, Lausanne and Zurich wastewater treatment plant catchments",
-				"url" : "https://doi.org/10.5281/zenodo.4750572",
-				"lng" : 7.21,
-				"lat" : 46.71
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.32, 46.27 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Swiss Alpine Refuges Dataset",
-				"author" : "Huang, Jeffrey; Johanes, Mikhael; Kim, Frederick Chando; Doumpioti, Christina; Holz, Georg-Christoph",
-				"description" : "This dataset contains 4480 images of Swiss mountain alpine refuges collected from three online databases (Swiss Alpine Club SAC, Capanneti.ch, and Hikr.org). The data were cropped, cleaned and formatted for GAN experiments. Source: Swiss Alpine Club SAC Capanneti.ch Hikr.org Data: 00_full_dataset (4480 images) 01_curated_dataset_1 (613 images) 02_curated_dataset_2 (1203 images) 03_curated_dataset_3 (624 images) 04_curated_dataset_4 (3791 images)",
-				"url" : "https://doi.org/10.5281/zenodo.5036413",
-				"lng" : 8.32,
-				"lat" : 46.27
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.44, 46.24 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Experimental investigation into turbulent free-surface flows over a steep permeable bed",
-				"author" : "ROUSSEAU Gauthier; ANCEY Christophe",
-				"format" : ".zip",
-				"description" : "Data set (Experimental conditions profiles) and python scripts to generate figures for the paper entitled \"Experimental investigation into turbulent free-surface flows over a steep permeable bed\" by Rousseau G. and Ancey C",
-				"url" : "https://doi.org/10.5281/zenodo.4792205",
-				"lng" : 7.44,
-				"lat" : 46.24
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.83, 46.58 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data for the JFM paper \"An experimental scaling law for particle-size segregation in dense granular flows\"",
-				"author" : "Trewhela, Tomas; Ancey, Christophe; Gray, J. M. N. T.",
-				"format" : ".zip, .txt",
-				"description" : "This repository provides the data and routines to plot figures 5 to 15 of the article \"An experimental scaling law for particle-size segregation in dense granular flows\" published in J. Fluid Mech. Tomás Trewhela tomas.trewhela@epfl.ch (from October 2021: tomas.trewhela@uai.cl) Lausanne, March 2021",
-				"url" : "https://doi.org/10.5281/zenodo.4597441",
-				"lng" : 7.83,
-				"lat" : 46.58
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.11, 46.57 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Physics-based estimates of drag coefficients for the impact pressure calculation of dense snow avalanches",
-				"author" : "Kyburz, Michael Lukas; Sovilla, Betty; Gaume, Johan; Ancey, Christophe",
-				"format" : ".py",
-				"description" : "This entry provides the code that can be used with the Itasca PFC3D software to reproduce the data presented in the paper \"Physics-based estimates of drag coefficients for the impact pressure calculation of dense snow avalanches\".",
-				"url" : "https://doi.org/10.5281/zenodo.4394455",
-				"lng" : 7.11,
-				"lat" : 46.57
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.28, 46.66 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Visualization of simulations for \"Effect of wear particles and roughness on nanoscale friction\"",
-				"author" : "Brink, Tobias; Milanese, Enrico; Molinari, Jean-François",
-				"format" : ".webm",
-				"description" : "Videos of sliding molecular dynamics simulations for the article \"Effect of wear particles and roughness on nanoscale friction\". The atoms are colour-coded according to the body they initially belonged to: red: top surface yellow: bottom surface grey: third body blue: boundary The following videos are provided: Excerpts of the simulations showing the different friction regimes run-in.webm: An example of the running-in process, where the rigid particles are quickly coated by material from the two first bodies. This is from the simulation with FN = 7.69 µN with polyhedral particles that were initially arranged equidistantly. rolling.webm: An example of rolling cylindrical particles with low friction and relatively high wear rate. This is from the simulation with FN = 7.69 µN with polyhedral particles that were initially arranged equidistantly. sb-like-regime.webm: An example of the shear-band-like regime forming when particles form adhesive bridges and the rolling regime breaks down. This is from the simulation with FN = 7.69 µN with round particles that were initially arranged randomly (this simulation showed the densest third body). Full main simulations over a sliding distance of 3 µm with polyhedral particles that were initially arranged equidistantly FN-03_85-equidistant-polyhedra.webm: Simulation with FN = 3.85 µN. FN-05_77-equidistant-polyhedra.webm: Simulation with FN = 5.77 µN. FN-07_69-equidistant-polyhedra.webm: Simulation with FN = 7.69 µN. FN-11_54-equidistant-polyhedra.webm: Simulation with FN = 11.54 µN. Simulation with initially round, equidistantly-distributed wear particles over a sliding distance of 3 µm FN-07_69-equidistant-spheres.webm: Simulation with FN = 7.69 µN. Simulations random initial placement of the wear particles over a sliding distance of 3 µm FN-07_69-random_distrib-polyhedra.webm: Simulation with FN = 7.69 µN and polyhedral particles. FN-07_69-random_distrib-spheres.webm: Simulation with FN = 7.69 µN and round particles.",
-				"url" : "https://doi.org/10.5281/zenodo.4698010",
-				"lng" : 6.28,
-				"lat" : 46.66
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.91, 46 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Tamaas, a high-performance library for periodic rough surface contact",
-				"author" : "Frérot, Lucas; Anciaux, Guillaume; Rey, Valentine; Pham-Ba, Son; Molinari, Jean-François",
-				"format" : ".md, copying, .gz",
-				"description" : "Tamaas (from تماس meaning \"contact\" in Farsi) is a high-performance rough-surface periodic contact code based on boundary and volume integral equations. The clever mathematical formulation of the underlying numerical methods allows the use of the fast-Fourier Transform, a great help in achieving peak performance: Tamaas is consistently two orders of magnitude faster (and lighter) than traditional FEM! This means we can tackle such difficult problems as elastoplastic contact of rough surfaces with upwards of 100 million degrees-of-freedom on a single compute node (and more with MPI distributed parallelism). Online documentation can be found on tamaas.readthedocs.io. To give proper credit to Tamaas and the researchers who have developed the numerical methods that it implements, please cite the JOSS paper and the appropriate references therein (see README below for selected references). Tamaas is under active development on GitLab.",
-				"url" : "https://doi.org/10.5281/zenodo.5713675",
-				"lng" : 7.91,
-				"lat" : 46
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.57, 46.17 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Support data and codes for the evaluation experiment section of the paper: \"Mass and geometry reconstruction of snowfall particles from multi angle snowflake camera (MASC) images\"",
-				"author" : "Grazioli, Jacopo; Leinonen, Jussi; Berne, Alexis",
-				"format" : ".zip",
-				"description" : "Codes and data to support the evaluation of the 3D-GAN method, described in the article: \"Mass and geometry reconstruction of snowfall particles from multi angle snowflake camera (MASC) images\", submitted to AMTD in 2021. A README is included in the data/code, with details on how to reproduce the results shown in the paper.",
-				"url" : "https://doi.org/10.5281/zenodo.4790962",
-				"lng" : 8.57,
-				"lat" : 46.17
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.59, 46.94 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Radar-based mesocyclone detections in Switzerland from 2016-2020",
-				"author" : "Feldmann, Monika; Germann, Urs; Gabella, Marco; Berne, Alexis",
-				"format" : ".csv, .txt",
-				"description" : "The data is owned by MeteoSwiss and the Laboratoire de Télédétection Environnementale, EPFL. It is linked to the research article: Feldmann et al., 2021, A Characterisation of Alpine Mesocyclone Occurrence, submitted to Weather and Climate Dynamics. Whenever using the dataset, please include a reference to this article. This dataset contains thunderstorm track data of thunderstorms containing a radar-detected mesocyclone in Switzerland from 2016-2020. Tracked variables include time, position, size, terrain altitude, track direction, track distance, rotational velocity, vorticity and depth of rotation, amongst others. The README.txt file contains a comprehensive list of all included variables and their units. The data is provided as a .csv file. The methods used to obtain this data are described in the corresponding publication (Feldmann et al., 2021).",
-				"url" : "https://doi.org/10.5281/zenodo.5122519",
-				"lng" : 8.59,
-				"lat" : 46.94
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.68, 46 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Dataset - Impact of 3D radiative transfer on airborne NO2 imaging remote sensing over cities with buildings",
-				"author" : "Schwaerzel, Marc; Brunner, Dominik; Jakub ,Fabian; Emde, Claudia; Buchmann, Brigitte; Berne, Alexis; Kuhlmann, Gerrit",
-				"format" : ".zip",
-				"description" : "This dataset was created by Marc Schwaerzel (marc.schwaerzel@empa.ch) and is intended to get along with the Schwaerzel et al. (2021) AMT publication (amt-2020-146) . The data and the data structure is described in the readme.md text file. The dataset contains: - libRadtran output (radiances and AMFs) - Synthetic SCDs",
-				"url" : "https://doi.org/10.5281/zenodo.5519616",
-				"lng" : 8.68,
-				"lat" : 46
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.87, 46.21 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Vehicle sharing systems: A review and a holistic management framework",
-				"author" : "Ataç, Selin; Obrenović, Nikola; Bierlaire, Michel",
-				"format" : ".pdf",
-				"description" : "Although different vehicle sharing systems (VSSs) use different vehicle types, the management challenges and optimization problems to be solved are similar or even the same. This observation led us to create a generalized and holistic VSS management framework, which aims to be applicable to the system using any vehicle type. The framework components, their mutual relationships, and framework tasks have been identified through a thorough and systematic literature review. Furthermore, the literature is positioned in the line with the framework. Finally, the framework and systematic literature review allowed us to identify gaps in the literature, and interesting research avenues.",
-				"url" : "https://doi.org/10.1016/j.ejtl.2021.100033",
-				"lng" : 7.87,
-				"lat" : 46.21
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.72, 46.27 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data Set: The influence of roughness on experimental fault mechanical behaviour and associated microseismicity",
-				"author" : "Fryer, Barnaby; Giorgetti, Carolina; Passelègue, François; Momeni, Seyyedmaalek; Lecampion, Brice; Violay, Marie",
-				"format" : ".m, .mat, .jpeg, .txt, .tdms, .tdms_index, .csv, .docx",
-				"description" : "This is the data set used to create the figures for the submitted manuscript, The influence of roughness on experimental fault mechanical behaviour and associated microseismicity. Submitted December 2021 to Earth and Planetary Science Letters.",
-				"url" : "https://doi.org/10.5281/zenodo.5750031",
-				"lng" : 7.72,
-				"lat" : 46.27
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.38, 46.46 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Effect of water on sandstone's fracture toughness and frictional parameters: Brittle strength constraints",
-				"author" : "Noël, Corentin; Baud, Patrick; Violay, Marie",
-				"format" : ".xlsx, .txt",
-				"description" : "This is the ReadMe file corresponding to the study entitled: \"Effect of water on sandstone’s fracture toughness and frictional parameters: Brittle strength constraints\" By Noël C., Baud P. and Violay M. This study has been published in the journal International Journal of Rock Mechanics and Mining Sciences. It is under Under a Creative Commons license CC BY-NC-ND 4.0. doi: 10.1016/j.ijrmms.2021.104916 This Read-Me file has been last edited in September 2021 This readme file describes the data repository and supplementary files accompanying the above publication.   For any further queries please contact corentin.noel@uniroma1.it",
-				"url" : "https://doi.org/10.1016/j.ijrmms.2021.104916",
-				"lng" : 8.38,
-				"lat" : 46.46
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 9, 46.13 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Origin of the co-seismic variations of elastic properties in the crust: insight from the laboratory",
-				"author" : "Paglialunga Federica; Passelègue Francois; Acosta Mateo; Violay Marie",
-				"format" : ".zip",
-				"description" : "Raw data used for the study of the origin of co-seismic variations of elastic properties in the crust through laboratory experiments.",
-				"url" : "https://doi.org/10.5281/zenodo.4892328",
-				"lng" : 9,
-				"lat" : 46.13
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.91, 46.86 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Data Set: The influence of roughness on experimental fault mechanical behaviour and associated microseismicity",
-				"author" : "Fryer, Barnaby; Giorgetti, Carolina; Passelègue, François; Momeni, Seyyedmaalek; Lecampion, Brice; Violay, Marie",
-				"format" : ".m, .mat, .jpeg, .txt, .tdms, .tdms_index, .csv, .docx",
-				"description" : "This is the data set used to create the figures for the submitted manuscript, The influence of roughness on experimental fault mechanical behaviour and associated microseismicity. Submitted December 2021 to Earth and Planetary Science Letters.",
-				"url" : "https://doi.org/10.5281/zenodo.5750031",
-				"lng" : 7.91,
-				"lat" : 46.86
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.63, 46.69 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "video supplement for \"Molecular scale description of interfacial mass transfer in phase separated aqueous secondary organic aerosol\"",
-				"author" : "Lbadaoui-Darvas, Maria; Takahama, Satoshi; Nenes, Athanasios",
-				"format" : ".gif",
-				"description" : "Sample steered molecular dynamics trajectory at 300 K. ",
-				"url" : "https://doi.org/10.5281/zenodo.4902870",
-				"lng" : 6.63,
-				"lat" : 46.69
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.16, 46.2 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Global chemistry transport model results used to demonstrate \"Changing atmospheric acidity as a modulator of nutrient deposition and ocean biogeochemistry\"",
-				"author" : "Kanakidou, Maria; Myriokefalitakis, Stelios; Nenes, Athanasios; Baker, Alex",
-				"format" : ".nc",
-				"description" : "This dataset contains the TM4-ECPL global chemistry-transport model results as netcdf files that are used for the figures and the discussion in the paper by Baker et al. on \"Changing atmospheric acidity as a modulator of nutrient deposition and ocean biogeochemistry\" under revision for Science Advances. The simulations are described in the paper by Kanakidou M., Myriokefalitakis, S., Tsagkaraki, M., Atmospheric inputs of nutrients to the Mediterranean Sea, Deep Sea Research II, 171 104606, https://doi.org/10.1016/j.dsr2.2019.06.014, 2020. The data concern 1- annual mean distribution of the pH of the near-surface aerosol in the accumulation (aerosolphacc) and in the coarse (aerosolphcoa) modes for present (year 2010), past (year 1850) and future ( year 2100) anthropogenic and biomass burning emissions. 2- Annual mean near-surface partitioning of ammonium (NH4+/(NH4++NH3) (enh4) and of nitrate (NO3-/(NO3-+HNO3) (eno3) for the present, past and future simulations. 3- Monthly mean wet (wet_dep_) and total (dep_) deposition fluxes of the sum of NH4+and NH3 (nhx) , the sum of NO3- and HNO3 (no3hno3), soluble Fe (dfe)  and soluble P (dp) for the present, past and future simulations. 4- Deposition Regimes for accumulation (Regime_Dep_acc) and coarse (Regime_Dep_Coa) mode particles for past, present, future simulations, defined and calculated as explained by Nenes, A., Pandis, S. N., Kanakidou, M., Russell, A., Song, S., Vasilakos, P., and Weber, R. J.: Aerosol acidity and liquid water content regulate the dry deposition of inorganic reactive nitrogen, Atmos. Chem. Phys. Discuss., https://doi.org/10.5194/acp-2020-266, 2020 - in press in Atmos. Chem. Phys. in 2021 for further details please email to mariak (AT) uoc.gr",
-				"url" : "https://doi.org/10.5281/zenodo.4630208",
-				"lng" : 7.16,
-				"lat" : 46.2
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.38, 46.86 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Supplementary data for \"Detrainment and braking of snow avalanches interacting with forests\"",
-				"author" : "Védrine Louis; Li Xingyue; Gaume Johan",
-				"format" : ".zip",
-				"description" : "We are releasing the data as the supplementary information for our manuscript “Detrainment and braking of snow avalanches interacting with forests”. Figure 5. Data of Fig. 5. Evolution of the detrainment mass per unit of area of snow with the velocity (regular staggered forest, e= 8m). Figure 6. Data of Fig. 6. Evolution of the detrainment mass observed for the one tree arrangement and the fits with the tree diameter for 2 flow regimes: Case 1 and Case 2 with respectively a front velocity of12.5 m/s and 10.6 m/s, ‘maximum’ refer to the maximum mass stored behind the tree and ‘final’ refer to the final mass stored. A slope of 30◦, and a top wedge angle of 60° (from measurements Feistl et al. (2014)) is used for the theoretical model (Eq. 8) Figure 8. Data of Fig. 8. Evolution of the detrainment mass per unit of area with the tree diameter for different types of snow and front velocity (regular staggered forest, e = 8 m) Figure 9. Data of Fig. 9. Evolution of the detrainment mass per unit of area with the forest density for different front velocities (regular staggered forest, snow properties: case 2, d = 1 m) Figure 10. Data of Fig. 10. Evolution of the detrainment mass predicted with the model (Eq. 11) and with the observation, r2=0.9926 Figure 11. Data of Fig. 11. Temporal evolution of the kinetic and potential energy without forest and with a regular staggered forest (Case 2, v0 = 6 m/s) Figure 12. Data of Fig. 12. Temporal evolution of the detrainment energy and dissipation due to the forest (Case 2, v0 = 6 m/s) Figure 13. Data of Fig. 13. Energy detrainment and dissipation for different snow properties (1: case 1, 2: case 2, 3: case 3 with M=1) and for 3 types of forest structure (regular aligned, regular staggered and random)",
-				"url" : "https://doi.org/10.5281/zenodo.5547395",
-				"lng" : 8.38,
-				"lat" : 46.86
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.5, 47 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Supplementary videos for \"Detrainment and braking of snow avalanches interacting with forests\"",
-				"author" : "Védrine Louis; Li Xingyue; Gaume Johan",
-				"format" : ".avi, .mp4, .pdf",
-				"description" : "We are releasing the videos as the supplementary information for our manuscript “Detrainment and braking of snow avalanches interacting with forests”. Movie 1. Side view of the snow profile for different values of M in Fig. 2. Movie 2. Perspective view of the snow profile for different values of M in Fig. 2. Movie 3. Flow profile for 3 different flow regimes in Fig. 3. Movie 4. Profile of accumulated snow for different flow regimes in Fig. 4. Movie 5. Flow height of the avalanche in a forest with different forest arrangements in Fig. 14.",
-				"url" : "https://doi.org/10.5281/zenodo.5547386",
-				"lng" : 7.5,
-				"lat" : 47
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.28, 46.28 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Single aerosol measurements from a wideband integrated bioaerosol sensor, collected during the Antarctic Circumnavigation Expedition (ACE).",
-				"author" : "Moallemi, Alireza; Schmale, Julia",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract This data set contains the time series of single particle data, measured by the wideband integrated bioaerosol sensor (WIBS-4, University of Hertfordshire, Hatfield, UK), during the Antarctic Circumnavigation Expedition (ACE), which was conducted between 20th of December 2016 and 19th of March 2017. WIBS provides aerosol optical diameter (5 μm - 14 μm), asymmetry factor and fluorescent signals on three different channels. WIBS measures single aerosol particles at a sampling rate of 125 Hz. More technical details about WIBS could be found in Kaye et al. (2005). Dataset contents part_1_Cape_Town_Kerguelen.csv, data file, comma-separated values part_2_Kerguelen_Hobart.csv, data file, comma-separated values part_3_Hobart_Mertz.csv, data file, comma-separated values part_4_Mertz_Punta Arenas.csv, data file, comma-separated values part_5_Punta_Arenas_Cape_Town.csv, data file, comma-separated value part_6_Cape_Town_Bremerhaven.csv, data file, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This aerosol measurement dataset collected using a WIBS during ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"url" : "https://doi.org/10.5281/zenodo.5109386",
-				"lng" : 8.28,
-				"lat" : 46.28
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.53, 46.48 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "ACE-DATA: Delivering Added value To Antarctica",
-				"author" : "Thomas, Jen; Schmale, Julia",
-				"format" : ".pdf",
-				"description" : "The ACE-DATA project provided added value to data from the Antarctic Circumnavigation Expedition (ACE). This poster describes the initial aims of the project, a collaboration between the Paul Scherrer Institute, Swiss Data Science Center and Swiss Polar Institute. This poster was presented at POLAR2018, a joint SCAR and IASC conference.",
-				"url" : "https://doi.org/10.5281/zenodo.5657300",
-				"lng" : 6.53,
-				"lat" : 46.48
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.52, 46.8 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Number concentration and fluorescent class fraction of fluorescent and hyper-fluorescent aerosol particles measured during the Antarctic Circumnavigation Expedition",
-				"author" : "Moallemi, Alireza; Schmale, Julia; Schnaiter, Martin; Gysel-Beer, Martin; Modini, Robin; Landwehr, Sebastian",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract This dataset consists of a 5-minute time series of number concentrations of fluorescent and total aerosol particles that were measured by wideband integrated by aerosol sensor during the Antarctic Circumnavigation Expedition in the austral summer of 2016/2017. Furthermore, the dataset includes the fraction of fluorescent classes of aerosol particles, according to the ABC classification of Perring et al. (2015). The dataset provides information on fluorescent and hyper-fluorescent aerosols which were obtained by considering low and high fluorescence thresholds. For this dataset, aerosol particles that have optical diameter greater than 1 μm are considered. Since the ship’s exhaust could considerably affect the fluorescence properties of aerosol particles, in this dataset we removed the periods where it is likely that the samples were contaminated by the ship's exhaust. Dataset contents N_fluorescent.csv, data file, comma-separated values N_hyper_fluorescent.csv, data file, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This number concentration and fluorescent class fraction of fluorescent and hyper-fluorescent aerosol particles dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"url" : "https://doi.org/10.5281/zenodo.5109382",
-				"lng" : 7.52,
-				"lat" : 46.8
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.12, 46.23 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Particle number size distribution of fluorescent, hyper-fluorescent, and total aerosol particles measured during the Antarctic Circumnavigation Expedition.",
-				"author" : "Moallemi, Alireza; Schmale, Julia; Schnaiter, Martin; Gysel-Beer, Martin; Modini, Robin; Landwehr, Sebastian",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract This dataset consists of a 5-minute time series of particle number concentration of fluorescent and total aerosol particles that were measured by wideband integrated by aerosol sensor during the Antarctic Circumnavigation Expedition during the austral summer of 2016/2017. For this dataset, aerosol particles within the optical diameter range of 0.5 μm to 14.5 μm were considered. In this dataset, the time periods when samples are likely contaminated by the ship’s exhaust were removed from the time series. Dataset contents PSD_fluorescent.csv , data file, comma-separated values PSD_hyper_fluorescent.csv , data file, comma-separated values PSD_hyper_tot.csv , data file, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This particle number size distribution of fluorescent, hyper-fluorescent, and total aerosol particles dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"url" : "https://doi.org/10.5281/zenodo.5109384",
-				"lng" : 7.12,
-				"lat" : 46.23
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 8.87, 46.31 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"name" : "Both diversity and functional composition affect productivity and water use efficiency in experimental temperate grasslands",
-				"author" : "Grossiord, Charlotte; Walde, Manuel; Allan, Eric; Cappelli, Seraina L.; Didion‐Gency, Margaux; Gessler, Arthur; Lehmann, Marco M.; Pichon, Noémie A.",
-				"format" : ".txt",
-				"description" : "Many experiments have shown that biodiversity promotes ecosystem functioning and stability and that this relationship varies with resource availability. However, we still have a poor understanding of the underlying physiological and ecological mechanisms driving diversity effects and how they may interact with soil nutrient availability. We collected data in a grassland experiment factorially manipulating fertilization, species richness, functional composition (slow-growing vs. fast-growing species), and functional diversity in resource economic traits. We measured aboveground productivity, nitrogen (N) uptake, photosynthesis, and water use efficiency by combining a 15N labelling approach with productivity, gas exchange, and stable isotope measurements in three years differing in rainfall. We found that sown species richness increased aboveground productivity, N uptake and photosynthesis, suggesting that species richness is the most important driver of ecosystem productivity and nutrient cycling. Similarly, photosynthesis was affected by functional composition but not by functional diversity. Water use efficiency was reduced by sown species richness for communities dominated by slow growing species but not for communities dominated by fast growing species. Fertilization increased productivity, N uptake and water use efficiency. The positive effects of high species richness on ecosystem functions were independent of fertility levels. Synthesis. Our results provide evidence that high species richness in temperate grasslands could enhance productivity and reduce the negative impacts of drought events. Multiple factors and community characteristics are important in driving enhanced ecosystem functioning in biodiverse grasslands and seem to affect functioning and stability through different mechanisms.",
-				"url" : "https://doi.org/10.5061/dryad.0cfxpnw31",
-				"lng" : 8.87,
-				"lat" : 46.31
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.28, 46.69 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Environmental assessments of buildings/neighborhoods.",
-				"name" : "Architectural Design Strategies for Building-Integrated Photovoltaics in residential building renovation processes",
-				"format" : "Web",
-				"description" : "--> EPFL Website: http://design-explorer.epfl.ch/\n\nUsing an open source tool (Design Explorer), we have created a web page that allows to explore the simulation results of different research projects, such as Active Interfaces (https://infoscience.epfl.ch/record/265585?ln=en). Architectural Design Strategies for Building-Integrated Photovoltaics in residential building renovation processes\n\nOther projects will be soon exposed here.\n",
-				"url" : "http://design-explorer.epfl.ch/",
-				"lng" : 7.28,
-				"lat" : 46.69
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.69, 46.32 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Civil Engineering",
-				"name" : "Dataset on seismic tests for novel friction damper with composite non-metallic materials",
-				"author" : "Martina Paronesso / Dimitrios Lignos",
-				"format" : "Videos, Photos, txt format",
-				"description" : "The open research dataset contains experimental data on a recently developed prototype seismic damper that was validated in GIS at EPFL. The damper is comprised of composite materials that are not corrosive, thereby leading to superior performance in seismic applications without any weather considerations. The dataset contains over 60 physical experiments including synchronized videos and photos from those tests.",
-				"url" : "https://zenodo.org/record/4544314#.YiZKWRMo-WY",
-				"lng" : 7.69,
-				"lat" : 46.32
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.29, 46.28 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Civil Engineering",
-				"name" : "Inelastic panel zone database",
-				"author" : "Andronikos Skiadopoulos / Dimitrios Lignos",
-				"format" : "Excel, photos, txt",
-				"description" : "1. Inelastic_Panel_Zone_Database_v1.xlsx\n\nAn inelastic panel zone database of fully restrained beam-to-column connection tests as part of steel moment-resisting frames (MRFs) is provided. The database consists of 100 tests of experimental research over the last 50 years. The collection and metadata methodology are thoroughly presented in Skiadopoulos and Lignos (2020).\n\n2. Digitized_Data_v1.7z\n\nFull digitized histories of the local panel zone shear force - shear distortion as well as the global force - story drift ratio hysteretic diagrams of each experiment are provided. A MATLAB code to plot and acquire the performance parameters of interest is shared.\n\n3. Panel_Zone_Deduced_Parameters_v1.m\n\nA MATLAB code to automatically deduce the measured panel zone response parameters of interest is shared.\n\n4. ABAQUS_Model_Validation_v1.7z\n\nThe provided hysteretic responses are exploited for continuum finite element (CFE) model validation. Such a validated CFE model is shared (.inp) together with the respective buckling analysis files (.inp and .fil). The model represents SPEC-6 by Ricles et al. (2004) and was generated by ABAQUS.",
-				"url" : "https://zenodo.org/record/3689756#.YiZL9xMo-WY",
-				"lng" : 7.29,
-				"lat" : 46.28
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 7.24, 46.78 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Civil Engineering",
-				"name" : "Cyclic Push-out Tests Dataset",
-				"author" : "El Jisr, Hammad / Dimitrios, Lignos",
-				"format" : "Excel, txt",
-				"description" : "This dataset consists of 42 cyclic push-out tests of steel beam-slab connections from 11 experimental programs.\n\nThe geometric and material properties of each specimen are summarized in \"Dataset.xlsx\". The slip values at each of the four damage states (DS1 to DS4) defined according to El Jisr and Lignos (2021) are also included in the \"Dataset.xlsx\" file.\n\nThe shear-slip behavior of each specimen in the dataset can be found in the accompanying \".xlsx\" files named according to the corresponding experimental program. In total, eleven files are included.",
-				"url" : "https://zenodo.org/record/4660271#.YiZNcRMo-WY",
-				"lng" : 7.24,
-				"lat" : 46.78
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.8, 46.81 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Civil Engineering",
-				"name" : "Dissipative column base connections dataset",
-				"author" : "Inamasu, Hiroyuki / Lignos, Dimitrios",
-				"format" : "Videos, Photos, DIC, txt",
-				"description" : "Contains the dataset on physical experiments conducted in GIS on the development and experimental validation of a novel dissipative column base connection for steel frame buildings that defies the current paradigm and minimizes earthquake damage in steel columns in the aftermath of earthquakes.",
-				"url" : "https://doi.org/10.5281/zenodo.4244684",
-				"lng" : 6.8,
-				"lat" : 46.81
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : {
-				"type" : "Point",
-				"coordinates" : [ 6.69, 46.49 ]
-			},
-			"properties" : {
-				"organisation" : "EPFL",
-				"domain" : "Traffic Engineering",
-				"name" : "Pneuma",
-				"author" : "LUTS",
-				"description" : "pNEUMA is an open large-scale dataset of naturalistic trajectories of half a million vehicles that have been collected by a one-of-a-kind experiment by a swarm of drones in the congested downtown area of Athens, Greece. A unique observatory of traffic congestion, a scale an-order-of-magnitude higher than what was not available until now, that researchers from different disciplines around the globe can use to develop and test their own models.",
-				"url" : "https://open-traffic.epfl.ch",
-				"lng" : 6.69,
-				"lat" : 46.49
+				"url" : "https://ge.ch/sitg/"
 			}
 		}
 	]

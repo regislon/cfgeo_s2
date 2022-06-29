@@ -15,7 +15,7 @@ Lien pour le [suivi des différentes étape](https://docs.google.com/spreadsheet
 
 ## Installation
 ### Préambule
-Merci d'installer les différents composants en suivant scrupuleusement les chemins d'accès et les nommages.
+Merci d'installer les différents composants en suivant scrupuleusement les chemins d'accès et les nommages. 
 
 
 ### Machine virtuelle

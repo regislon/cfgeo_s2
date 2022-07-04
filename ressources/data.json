@@ -4,36 +4,6 @@
 	"features" : [
 		{
 			"type" : "Feature",
-			"geometry" : null,
-			"properties" : {
-				"organisation" : "EPFL",
-				"group" : "IIE",
-				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tuskernik, Maria; Lehning, Michael",
-				"format" : ".txt, .zip, .csv",
-				"description" : "Dataset abstract Flux of particles (snow, rain and other particles including sea spray) were recorded passing through a photo-electric snow particle counter installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present an intermediate step in data processing, with relative horizontal particle flux of particles with a size between 36 – 2000 μm averaged over one-minute periods. Data are presented in daily files. Dataset contents SPC_HPF_1min_YYYY_MM_DD.csv, data files, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This one-minute averaged horizontal particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
-				"link" : "https://doi.org/10.5281/zenodo.4550721",
-				"privacy" : "public",
-				"fid" : 54,
-				"_area" : 0
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : null,
-			"properties" : {
-				"organisation" : "international",
-				"group" : "",
-				"author" : "NCEP",
-				"format" : null,
-				"description" : "",
-				"link" : "https://www.nco.ncep.noaa.gov/pmb/products/gfs/",
-				"privacy" : "public",
-				"fid" : 1,
-				"_area" : 0
-			}
-		},
-		{
-			"type" : "Feature",
 			"geometry" : {
 				"type" : "MultiPolygon",
 				"coordinates" : [
@@ -457,6 +427,42 @@
 				"privacy" : "public",
 				"fid" : 21,
 				"_area" : 4.864283280653994
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.4386, 46.951 ]
+			},
+			"properties" : {
+				"organisation" : "EPFL",
+				"group" : "IIE",
+				"author" : "Gorodetskaya, Irina; Leonard, Katherine; Tuskernik, Maria; Lehning, Michael",
+				"format" : ".txt, .zip, .csv",
+				"description" : "Dataset abstract Flux of particles (snow, rain and other particles including sea spray) were recorded passing through a photo-electric snow particle counter installed on board the R/V Akademik Tryoshnikov as part of the Antarctic Circumnavigation Expedition (ACE). Data were recorded from January to March 2017 in the Southern Ocean. Here we present an intermediate step in data processing, with relative horizontal particle flux of particles with a size between 36 – 2000 μm averaged over one-minute periods. Data are presented in daily files. Dataset contents SPC_HPF_1min_YYYY_MM_DD.csv, data files, comma-separated values data_file_header.txt, metadata, text README.txt, metadata, text Dataset license This one-minute averaged horizontal particle flux dataset from ACE is made available under the Creative Commons Attribution 4.0 International License (CC BY 4.0) whose full text can be found at https://creativecommons.org/licenses/by/4.0/",
+				"link" : "https://doi.org/10.5281/zenodo.4550721",
+				"privacy" : "public",
+				"fid" : 54,
+				"_area" : 0
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 7.4386, 46.951 ]
+			},
+			"properties" : {
+				"organisation" : "international",
+				"group" : "",
+				"author" : "NCEP",
+				"format" : null,
+				"description" : "",
+				"link" : "https://www.nco.ncep.noaa.gov/pmb/products/gfs/",
+				"privacy" : "public",
+				"fid" : 1,
+				"_area" : 0
 			}
 		}
 	]

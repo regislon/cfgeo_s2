@@ -2,7 +2,7 @@
 
 Ce cours explore l’architecture et l’intégration des Systèmes d’Information Géographique (SIG) avec des infrastructures web et cloud. Il met l’accent sur la gestion, la publication et l’exploitation de données géospatiales à l’aide d’outils comme QGIS, PostgreSQL/PostGIS, QGIS Server, Apache, et l’interaction avec des plateformes externes telles qu’ArcGIS Online, QField et des services web (API RDPFF).
 
-![alt text](/ressources/planning/images/image.png)
+![alt text](./general/media/content.jpg)
 
 
 Les participants apprendront à :  

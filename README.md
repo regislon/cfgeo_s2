@@ -1,135 +1,59 @@
-# Module S2 "SIT systèmes" 
+# Module S2  - SIT systèmes (webGIS et réseaux) 
 
-## Introduction
-![ ](/ressources/planning/images/planning.png) 
+Ce cours explore l’architecture et l’intégration des Systèmes d’Information Géographique (SIG) avec des infrastructures web et cloud. Il met l’accent sur la gestion, la publication et l’exploitation de données géospatiales à l’aide d’outils comme QGIS, PostgreSQL/PostGIS, QGIS Server, Apache, et l’interaction avec des plateformes externes telles qu’ArcGIS Online, QField et des services web (API RDPFF).
 
-## Ressources théoriques
-| Thème  | Powerpoint  | ressources| 
-|---|---|---|
-| PostgreSQL|  [introduction](/slides/introduction.pptx) <br>[postgres](/slides/postgis.pptx) | [dump SQL](/slides/dump.sql)  |
-| Python  | [python](/slides/python.pptx)  | [Notebook](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/notebooks/s2_2_python.zip)|
-|  QGIS server | [qgis](/slides/qgis.pptx)  |   |
-
-Lien pour le [suivi des différentes étape](https://docs.google.com/spreadsheets/d/17YdfYZI3R0N86sSZc5DGH54euCWpwDZ4hMcn9SM57sg/edit#gid=0)
+![alt text](/ressources/planning/images/image.png)
 
 
-## Installation
-### Préambule
-Merci d'installer les différents composants en suivant scrupuleusement les chemins d'accès et les nommages. 
+Les participants apprendront à :  
+- Configurer et administrer un **serveur cartographique** (QGIS Server, Apache).  
+- Manipuler et stocker des données spatiales dans une **base de données PostGIS**.  
+- Automatiser les traitements géospatiaux avec des **scripts Python**.  
+- Publier des cartes interactives et gérer des flux de **big data (GeoParquet, PMTiles) sur Amazon S3**.  
+- Intégrer des solutions mobiles et des API pour la collecte et la diffusion de données géographiques.  
+
+Ce module combine théorie et **applications pratiques** pour offrir une **compréhension complète** du déploiement d’une infrastructure WebSIG dans un **environnement cloud et open-source**.
 
 
-### Machine virtuelle
-Vous disposez toutes et tous d'une machine virtuel sur Amazon. 
+## Planning
 
- 
-### Installation de PostgreSQL et PostGIS
-Pour installer cette base de données avec son extention spatiale, veuillez procéder ainsi :
-- Télécharger l'Installateur [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-- Laisser les répertoires tels que proposés par défaut 
-- Installer pgAdmin par la même occasion
-- User = "postgres"
-- Mot de passe = à votre guise, mais merci de ne pas l'oublier !
-- Démarrer le stack buider pour installer postGIS (à la fin de l'installation)
-- Démarrer PgAdmin pour vérifier que l'on peut se connecter à cette nouvelle base installée
-- Dans une requête, taper ``CREATE EXTENSION postgis;``
-- Exécuter la requête  ``SELECT postgis_full_version();``  pour vérifier que postGIS est installé
-![ ](/ressources/postgres/images/check_postgis.png)
+Ce document présente le planning provisoire du module SIT systèmes (webGIS et réseaux), organisé dans le cadre du Centre de formation géomatique suisse (Romandie). Il détaille les sessions de formation prévues, avec les thématiques abordées, les horaires, les enseignants, ainsi que les formats d'enseignement (présentiel ou en ligne).
 
-Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/install.mkv).
-
-### Permettre la connexion à cette base de données depuis l'extérieur de la machine virtuelle Amazon
-
-Dès l'installation  terminée, il faut ajouter la ligne suivante à la fin du fichier "C:\Program Files\PostgreSQL\14\data\pg_hba.conf"
-
-``host    all all             all                scram-sha-256``
-
-Cela permet l'accès à la base PostgreSQL depuis l'extérieur de la machine AWS.
-
-Dernière étape, autoriser l'accès à PostgreSQL dans le security group d'amazon. Vidéo [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/postgres/videos/aws_security.mkv).
+Ce programme est sujet à d'éventuelles modifications en fonction des disponibilités et des ajustements pédagogiques nécessaires.
 
 
-### Installation de QGIS et QGIS server
-Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciels open source geospatial pour les environnements Windows
 
--  Télécharger l'Installateur [OSGEo4W](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
-- Choisir l’option « Advanced Install »
-- Répertoire d’installation : C:\OSGeo4W64
-- Choisir qgis-lrt et qgis-lrt-server
-
-Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/qgis/videos/install.mkv).
-
-### Création d'un premier projet QGIS
-- Créer un projet QGIS, enregistrer-le sous C:\OSGeo4W64\apps\qgis-ltr\bin\cfgeo.qgz
-- Ajouter ces [données](https://github.com/regislon/cfgeo_s2/raw/main/ressources/qgis/data/initial_load.gpkg).
-
-
-### Installation d'Apache
--  Télécharger l'Installateur [XAMPP](https://www.apachefriends.org/download.html)
-- Sélectionner uniquement que :
-
-![ ](/ressources/apache/images/1.png) 
-
-- Depuis la console d'administration d'amazon, modifier le security group ainsi (ajouter cette règle): 
-![ ](/ressources/apache/images/2.png) 
-
-- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](/ressources/apache/conf/httpd.conf)
-- Ne pas oublier de redémarrer Apache à la fin de l'installation.
-
-Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/apache/videos/install.mkv).
-
-### Test de la configuration GIS server + Apache en local (sur la machine virtuelle)
-- Placer un projet QGIS nommé "cfgeo.qgz" dans
-- Depuis un navigateur web sur la machine virtuelle (Edge par exemple), entrer :  ``localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz``
-- Le test est réussi si vous obtenez une page web avec du code XML
-
-### Test de la configuration GIS server + Apache en externe (depuis internet)
-- Le test précédant est réussi 
-- Depuis la console d'amazon, récupérer le DNS de votre machine virtuelle. Il s'agit de l'adresse de votre machine. 
-
-![ ](/ressources/aws/images/dns.png) 
+| Date                  | Lieu du cours | Horaire début | Horaire fin | Nbre de périodes | Enseignant-e  | Thème                        |
+|-----------------------|--------------|--------------|------------|------------------|---------------|------------------------------|
+| mardi 3 juin 2025    |              | 08:30        | 10:00      | 2                | R. Longchamp  | Introduction                 |
+|                       |              | 10:15        | 11:45      | 2                |               | Machines virtuelles          |
+|                       |              | 13:00        | 14:30      | 2                |               | Github ? (mais pas git)      |
+|                       |              | 14:45        | 16:15      | 2                |               | Base de données              |
+| mardi 10 juin 2025    | Par Zoom     | 15:30        | 16:15      | 1                | R. Longchamp  | Base de données              |
+|                       |              | 16:30        | 17:15      | 1                |               | Eventuellement S3 intro      |
+| mardi 17 juin 2025    |              | 08:30        | 10:00      | 2                | L. Nicolier   | QGIS installation            |
+|                       |              | 10:15        | 11:45      | 2                |               | QGIS server                  |
+|                       |              | 13:00        | 14:30      | 2                |               | Server web                   |
+|                       |              | 14:45        | 16:15      | 2                |               | Théorie standard OGC (pptx)  |
+| mardi 24 juin 2025    | Par Zoom     | 15:30        | 16:15      | 1                | R. Longchamp  | Base de données - Python     |
+|                       |              | 16:30        | 18:00      | 2                |               | Python théorie               |
+| mardi 19 août 2025    |              | 08:30        | 10:00      | 2                | R. Longchamp  | Python                       |
+|                       |              | 10:15        | 11:45      | 2                |               | Python                       |
+|                       |              | 13:00        | 14:30      | 2                |               | Python                       |
+|                       |              | 14:45        | 16:15      | 2                |               | Python                       |
+| mardi 26 août 2025    | Par Zoom     | 15:30        | 16:15      | 1                | R. Longchamp  | Python                       |
+|                       |              | 16:30        | 18:00      | 2                |               | Python                       |
+| mardi 2 septembre 2025|              | 08:30        | 10:00      | 2                | R. Longchamp  | Python                       |
+|                       |              | 10:15        | 11:45      | 2                |               | Python                       |
+|                       |              | 13:00        | 14:30      | 2                |               | S3 + big data                |
+|                       |              | 14:45        | 16:15      | 2                |               | S3 + big data                |
+| mardi 9 septembre 2025|              | 08:30        | 10:00      | 2                | L. Nicolier   | QGIS                         |
+|                       |              | 10:15        | 11:45      | 2                |               | QGIS server                  |
+|                       |              | 13:00        | 14:30      | 2                |               | Q field                      |
+|                       |              | 14:45        | 16:15      | 2                |               | Eventuellement client web ???|
+| mardi 16 septembre 2025|             | 08:30        | 10:00      | 2                | L. Nicolier   | QGIS                         |
+|                       |              | 10:15        | 11:45      | 2                |               | QGIS server                  |
+|                       |              | 13:00        | 14:30      | 2                | E. Sauthier   | AGOL                         |
+|                       |              | 14:45        | 16:15      | 2                |               | AGOL                         |
 
 
-- Depuis un navigateur web à l'extérieur de la machine virtuelle, entrer :  ``<votre_DNS>/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&map=cfgeo.qgz``
-- Le test est réussi si vous obtenez une page web avec du code XML
-
-### Installation de python 
--  Télécharger l'Installateur [python 3.9.9](https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe)
-- Installer python dans le répertoire C:\Python\python-3.9.9-amd64
-
-Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/videos/install.mkv).
-
-### Installation des libraries python
-1.	Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)
-1. Se rendre dans le répertoire d’installation de python en tapant la commande suivante :``cd C:\Python\python-3.9.9-amd64\Scripts``
-1. Installer ipython-sql  en tapant la commande suivante : ``pip install ipython-sql``
-1. Installer jupyter en tapant la commande suivante : ``pip install jupyter``
-1. Installer psycopg2 en tapant la commande suivante : ``pip install psycopg2``
-1. Installer requests en tapant la commande suivante : ``pip install requests``
-
-Vidéo de l'installation de la première librairie [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/videos/pip.mkv).
-
-
-### Installation des jupyter notebooks
-1.	Créer un répertoire C:\Python_projects\cfgeo\notebooks
-1.	Dézipper le contenu de ce [fichier](https://github.com/regislon/cfgeo_s2/raw/main/ressources/python/notebooks/s2_2_python.zip) dans ce répertoire 
-
-### Démarrage de Jupyter Notebook
-1.	Démarrer l’invite de commande windows
-1.	Se rendre dans le répertoire du projet python « C:\Python_projects\cfgeo »
-``cd C:\Python_projects\cfgeo\notebooks``
-1.	Entrer la ligne de commande suivante :
-``python -m notebook``
-1.	Jupyter notebook doit se démarrer dans la fenêtre du navigateur 
-
-
-### Requête server WMS
-- la couche se nomme "commune"
-- l'image demandée est inclue dans la bounding box 2534472,1176780,2541983,1182660
-
-``<votre_DNS>/cgi-bin/qgis_mapserv.fcgi.exe?MAP=cfgeo.qgz&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=2534472,1176780,2541983,1182660&SRS=EPSG:2056&WIDTH=665&HEIGHT=551&LAYERS=commune&FORMAT=image/jpeg``
-
-Ne pas hésiter à modifier l'url ci-dessus pour la faire correspond à votre projet QGIS
-
-### Divers
- - Depuis votre machine virtuelle, tapper "firewall" dans la recherche Windows et désactiver le firewall du private network
- ![ ](/ressources/aws/images/firewall.png)

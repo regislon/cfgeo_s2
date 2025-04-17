@@ -2,11 +2,13 @@
 theme : "simple"
 transition: "slide"
 highlightTheme: "monokai"
-logoImg: "logo.png"
+logoImg: "media/logo-cfgeo.png"
 slideNumber: true
-title: "VSCode Reveal intro"
+title: "CFGEO - S2 - VM"
 center: false
 mouseWheel: true
+progress: true
+rtl: false
 ---
 
 # Système d'information géographique
@@ -103,6 +105,7 @@ Dans le développement d'applications web ou de systèmes d'information, on dist
 
 --
 
+<!-- .slide: style="font-size: 0.6em" -->
 ## 🖥️ Front-End
 
 Le **front-end** correspond à la partie **visible par l'utilisateur**. C'est l'interface graphique avec laquelle l'utilisateur interagit directement, via un navigateur web.
@@ -111,7 +114,7 @@ Le **front-end** correspond à la partie **visible par l'utilisateur**. C'est l'
 
 --
 
-
+<!-- .slide: style="font-size: 0.6em" -->
 ## 🗄️ Back-End
 
 Le **back-end** est la partie **invisible** pour l'utilisateur. Il gère la logique métier, les calculs, les accès aux bases de données, et les communications avec le front-end.
@@ -128,8 +131,7 @@ allowfullscreen>
 
 --
 
-
-
+<!-- .slide: style="font-size: 0.6em" -->
 ## 🔁 Interaction entre Front-End et Back-End
 
 Le front-end envoie des **requêtes** au back-end, qui traite les données et renvoie une **réponse** (souvent au format JSON).  
@@ -141,19 +143,211 @@ Cela permet de construire des applications web interactives et dynamiques.
 ---
 
 
-# Machine virtuelle
-Vous disposez toutes et tous d'une machine virtuel sur Amazon. 
+<!-- .slide: style="font-size: 0.6em" -->
+# Création d'une machine virtuelle sur AWS (Amazon Web Services)
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 1 : Création de votre compte AWS
+
+1. Rendez-vous sur le site d'AWS : [https://aws.amazon.com/fr/](https://aws.amazon.com/fr/)
+2. Cliquez sur "Créer un compte AWS"
+3. Renseignez votre adresse e-mail et choisissez un nom pour votre compte AWS
+4. Suivez les instructions pour créer votre mot de passe
+5. Sélectionnez "Compte personnel" (sauf si vous créez un compte pour une entreprise)
+6. Renseignez vos informations personnelles et les détails de contact
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 2 : Informations de paiement
+
+1. Entrez vos informations de paiement (carte de crédit)
+    > Même si vous allez utiliser des ressources gratuites, AWS demande une méthode de paiement valide
+2. Validez votre identité par SMS ou appel vocal
+3. Sélectionnez le plan de support gratuit (AWS Basic Support)
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 3 : Connexion à la console AWS
+
+1. Une fois votre compte créé, revenez sur [https://aws.amazon.com/fr/](https://aws.amazon.com/fr/)
+2. Cliquez sur "Connexion à la console"
+3. Connectez-vous avec l'adresse e-mail et le mot de passe que vous avez créés
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 4 : Lancement d'une instance EC2 Windows
+
+1. Dans la barre de recherche de la console AWS, tapez "EC2" et sélectionnez ce service
+2. Cliquez sur "Lancer l'instance"
+3. Donnez un nom à votre instance, par exemple "MaVMWindows"
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 5 : Sélection de l'image (AMI)
+
+1. Dans la section "Application and OS Images", cliquez sur l'onglet "Quick Start"
+2. Sélectionnez "Microsoft Windows Server 2025 Base"
+    > Assurez-vous que l'étiquette "Free tier eligible" (Éligible à l'offre gratuite) est présente
+
+--
+
+
+![alt text](image-1.png)
+
+--
+
+
+
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 6 : Choix du type d'instance
+
+1. Sélectionnez le type d'instance "t3.micro" (2 vCPU, 1 Go de RAM)
+    > C'est le seul type d'instance Windows éligible à l'offre gratuite AWS
+2. Conservez les paramètres par défaut pour le stockage (8 Go)
+
+
+![alt text](image-2.png)
+
+
+
+--
 
 
 
 
 
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 7 : Configuration de la paire de clés
+
+> **Pourquoi une clé .pem ?** 
+> Le fichier .pem (Privacy Enhanced Mail) contient une clé privée cryptographique qui sert à décrypter le mot de passe administrateur généré par AWS pour votre instance Windows. C'est un mécanisme de sécurité qui garantit que seule la personne possédant cette clé privée peut accéder à l'instance. Sans cette clé, il est impossible de récupérer le mot de passe administrateur et donc de se connecter à votre machine virtuelle Windows. C'est pourquoi il est crucial de conserver ce fichier dans un endroit sûr et de ne jamais le partager.
+
+
+1. Créez une nouvelle paire de clés en cliquant sur "Create new key pair"
+2. Donnez un nom à votre paire de clés, par exemple "ma-cle-windows"
+3. Conservez le format .pem
+4. Cliquez sur "Créer une paire de clés"
+5. Le fichier de clé sera automatiquement téléchargé - conservez-le précieusement
+
+--
+
+![alt text](image-3.png)
+
+
+--
+
+
+![alt text](image-4.png)
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 8 : Configuration des paramètres réseau
+
+1. Permettez le trafic HTTP depuis n'importe où (vous pourrez ajuster cela plus tard)
+2. Permettez le trafic RDP (port 3389) pour vous connecter à votre machine Windows
 
 
 
+![alt text](image-5.png)
+
+
+--
+
+
+![alt text](image-6.png)
 
 
 
-### Divers
- - Depuis votre machine virtuelle, tapper "firewall" dans la recherche Windows et désactiver le firewall du private network
- ![ ](/ressources/aws/images/firewall.png)
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 9 : Lancement de l'instance
+
+1. Vérifiez les détails de votre configuration
+2. Cliquez sur "Launch instance" (Lancer l'instance)
+3. Patientez quelques minutes pendant que l'instance se lance
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Étape 10 : Connexion à votre instance Windows
+
+1. Retournez à la page d'accueil EC2
+2. Cliquez sur "Instances" dans le menu de gauche
+3. Attendez que l'état de votre instance passe à "Running" (En cours d'exécution)
+4. Sélectionnez votre instance et cliquez sur "Connect" (Se connecter)
+5. Choisissez l'option "RDP client" (Client RDP)
+6. Cliquez sur "Get password" (Obtenir le mot de passe) et utilisez votre fichier de clé .pem
+7. Téléchargez le fichier RDP et utilisez-le pour vous connecter via l'application Bureau à distance (sur windows).
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Connexion à votre machine virtuelle
+
+> Le DNS (Domain Name System) est un système qui traduit les noms de domaine lisibles par les humains (comme `google.com`) en adresses IP compréhensibles par les machines (comme `142.250.74.206`). Sans le DNS, il faudrait mémoriser ces longues adresses numériques pour accéder à des sites web. 
+
+> L’adresse publique, il s’agit de l’adresse IP attribuée à ton réseau par ton fournisseur d’accès à Internet (FAI), visible sur Internet. C’est un peu comme l’adresse postale de ta maison sur le web : elle permet aux autres ordinateurs ou services en ligne de savoir comment te joindre.
+
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+### 💻 Depuis Windows
+
+1. La connexion est simple car Windows intègre déjà le client Bureau à distance (RDP)
+2. Double-cliquez sur le fichier RDP téléchargé depuis la console AWS
+3. Lorsque vous y êtes invité, entrez le mot de passe administrateur que vous avez obtenu avec votre fichier .pem
+4. Acceptez l'avertissement de certificat si nécessaire
+5. Vous êtes maintenant connecté à votre machine virtuelle Windows Server !
+
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+### 🍎 Depuis macOS
+
+1. Vous devez d'abord installer un client RDP pour macOS
+   * Option gratuite : Windows app (téléchargeable depuis l'App Store)
+   * Alternatives : Royal TSX, Jump Desktop
+2. Ouvrez l'application Windows app
+3. Cliquez sur "Add PC" ou "+" pour ajouter une nouvelle connexion
+4. Dans le champ "PC name", collez l'adresse DNS publique de votre instance (disponible dans la console AWS)
+5. Dans "User account", sélectionnez "Add User Account" et entrez:
+   * Nom d'utilisateur: `Administrator`
+   * Mot de passe: collez le mot de passe que vous avez obtenu avec votre fichier .pem
+6. Vous pouvez personnaliser l'affichage dans l'onglet "Display"
+7. Cliquez sur "Save", puis double-cliquez sur la connexion créée pour vous connecter
+8. Acceptez l'avertissement de certificat si nécessaire
+
+> **Astuce**: Pour une meilleure expérience sur macOS, ajustez les paramètres d'affichage dans Microsoft Remote Desktop en augmentant la résolution et en activant le mode plein écran.
+
+
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Points importants à retenir
+
+- La période d'offre gratuite dure 12 mois à partir de la création de votre compte
+- Limitez-vous à 750 heures d'utilisation par mois pour rester dans l'offre gratuite (ce qui équivaut à une instance fonctionnant 24/7)
+- Arrêtez votre instance quand vous ne l'utilisez pas pour économiser des heures
+- Configurez des alertes de facturation pour éviter des coûts imprévus
+- N'oubliez pas de supprimer les ressources dont vous n'avez plus besoin
+
+--
+
+<!-- .slide: style="font-size: 0.6em" -->
+## Surveillance de votre utilisation
+
+1. Accédez à la console AWS
+2. Recherchez le service "Billing" (Facturation)
+3. Consultez régulièrement votre utilisation pour vous assurer de rester dans les limites de l'offre gratuite

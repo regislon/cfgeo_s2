@@ -14,12 +14,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Find README files
         id: find_readmes
         run: |
-          echo "::set-output name=files::$(find . -name 'README.md' -exec grep -l 'marp: true' {} \;)"
+          files=$(find . -name 'README.md' -exec grep -l 'marp: true' {} \;)
+          echo "files=$files" >> $GITHUB_OUTPUT
 
       - name: Convert README files to HTML
         if: steps.find_readmes.outputs.files != ''
@@ -30,7 +31,7 @@ jobs:
 
       - name: Upload HTML files
         if: steps.find_readmes.outputs.files != ''
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: html-files
           path: '**/*.html'

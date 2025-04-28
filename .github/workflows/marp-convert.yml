@@ -18,47 +18,56 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Ensure build dir exists
-        run: mkdir -p build
+      - name: Find README files with marp: true
+        id: find_readmes
+        run: |
+          readmes=$(find . -name 'README.md' -exec grep -l '^---\s*\nmarp:\s*true' {} \; || echo "")
+          echo "readmes=$readmes" >> $GITHUB_OUTPUT
+          mkdir -p build
 
-      - name: Copy images directory (if exists)
-        run: if [[ -d img ]]; then cp -R img build/img; fi
+      - name: Process Marp README files
+        if: steps.find_readmes.outputs.readmes != ''
+        run: |
+          for file in ${{ steps.find_readmes.outputs.readmes }}; do
+            dir=$(dirname "$file")
+            basename=$(basename "$file" .md)
+            mkdir -p "build/$dir"
+            
+            # Copy any images directory if it exists
+            if [[ -d "$dir/img" ]]; then
+              mkdir -p "build/$dir/img"
+              cp -R "$dir/img"/* "build/$dir/img/"
+            fi
 
-      - name: Marp Build (README)
+            echo "Processing $file to HTML, PDF, and PPTX..."
+          done
+
+      - name: Generate HTML files
+        if: steps.find_readmes.outputs.readmes != ''
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: README.md -o build/index.html
+          args: ${{ steps.find_readmes.outputs.readmes }} -o ./build --html
         env:
           MARP_USER: root:root
 
-      - name: Marp Build (README.pdf)
+      - name: Generate PDF files
+        if: steps.find_readmes.outputs.readmes != ''
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: README.md --allow-local-files -o build/README.pdf
+          args: ${{ steps.find_readmes.outputs.readmes }} -o ./build --pdf --allow-local-files
         env:
           MARP_USER: root:root
 
-      - name: Marp Build (README.pptx)
+      - name: Generate PPTX files
+        if: steps.find_readmes.outputs.readmes != ''
         uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          args: README.md --allow-local-files -o build/README.pptx
-        env:
-          MARP_USER: root:root
-
-      - name: Check if docs folder exists
-        id: docs-folder-exists
-        run: bash -c "[[ -d docs ]] ; echo \"has_docs=\$?\" >> \"$GITHUB_OUTPUT\""
-
-      - name: Marp Build (docs folder, if exists)
-        if: steps.docs-folder-exists.outputs.has_docs == '0'
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: -I docs/ -o build/docs/
+          args: ${{ steps.find_readmes.outputs.readmes }} -o ./build --pptx --allow-local-files
         env:
           MARP_USER: root:root
 
       - name: Deploy preview
-        if: ${{ github.event_name == 'pull_request' }}
+        if: ${{ github.event_name == 'pull_request' && steps.find_readmes.outputs.readmes != '' }}
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
@@ -66,7 +75,7 @@ jobs:
           umbrella-dir: pr-preview
 
       - name: Deploy production
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' && steps.find_readmes.outputs.readmes != '' }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

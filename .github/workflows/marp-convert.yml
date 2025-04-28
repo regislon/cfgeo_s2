@@ -25,46 +25,40 @@ jobs:
           echo "readmes=$readmes" >> $GITHUB_OUTPUT
           mkdir -p build
 
-      - name: Process Marp README files
+      # Instead of copying directories first, we'll process each file individually to maintain structure
+      - name: Process Marp README files individually
         if: steps.find_readmes.outputs.readmes != ''
         run: |
           for file in ${{ steps.find_readmes.outputs.readmes }}; do
             dir=$(dirname "$file")
             basename=$(basename "$file" .md)
-            mkdir -p "build/$dir"
+            output_dir="build/$dir"
+            
+            # Create directory structure
+            mkdir -p "$output_dir"
             
             # Copy any images directory if it exists
             if [[ -d "$dir/img" ]]; then
-              mkdir -p "build/$dir/img"
-              cp -R "$dir/img"/* "build/$dir/img/"
+              mkdir -p "$output_dir/img"
+              cp -R "$dir/img"/* "$output_dir/img/"
             fi
-
-            echo "Processing $file to HTML, PDF, and PPTX..."
+            
+            echo "Processing $file in $dir to maintain folder structure..."
+            
+            # Generate HTML
+            docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.html" --html
+            
+            # Generate PDF
+            docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.pdf" --pdf --allow-local-files
+            
+            # Generate PPTX
+            docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.pptx" --pptx --allow-local-files
+            
+            # For directories that contain a README.md that is being processed, also copy the HTML version as index.html
+            if [[ "$basename" == "README" ]]; then
+              cp "$output_dir/$basename.html" "$output_dir/index.html"
+            fi
           done
-
-      - name: Generate HTML files
-        if: steps.find_readmes.outputs.readmes != ''
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: ${{ steps.find_readmes.outputs.readmes }} -o ./build --html
-        env:
-          MARP_USER: root:root
-
-      - name: Generate PDF files
-        if: steps.find_readmes.outputs.readmes != ''
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: ${{ steps.find_readmes.outputs.readmes }} -o ./build --pdf --allow-local-files
-        env:
-          MARP_USER: root:root
-
-      - name: Generate PPTX files
-        if: steps.find_readmes.outputs.readmes != ''
-        uses: docker://marpteam/marp-cli:v3.0.2
-        with:
-          args: ${{ steps.find_readmes.outputs.readmes }} -o ./build --pptx --allow-local-files
-        env:
-          MARP_USER: root:root
 
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' && steps.find_readmes.outputs.readmes != '' }}

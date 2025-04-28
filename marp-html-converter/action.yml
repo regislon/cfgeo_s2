@@ -1,0 +1,13 @@
+name: "Marp HTML Converter"
+description: "A GitHub Action to convert README files with 'marp: true' to HTML format."
+inputs:
+  output-dir:
+    description: "The directory where the converted HTML files will be saved."
+    required: true
+    default: "output"
+runs:
+  using: "node12"
+  main: "dist/index.js"
+branding:
+  icon: "file-code"
+  color: "blue"

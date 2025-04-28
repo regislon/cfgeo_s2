@@ -1,0 +1,36 @@
+name: Convert MARP README to HTML
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Find README files
+        id: find_readmes
+        run: |
+          echo "::set-output name=files::$(find . -name 'README.md' -exec grep -l 'marp: true' {} \;)"
+
+      - name: Convert README files to HTML
+        if: steps.find_readmes.outputs.files != ''
+        run: |
+          for file in ${{ steps.find_readmes.outputs.files }}; do
+            marp --html "$file" -o "${file%.md}.html"
+          done
+
+      - name: Upload HTML files
+        if: steps.find_readmes.outputs.files != ''
+        uses: actions/upload-artifact@v2
+        with:
+          name: html-files
+          path: '**/*.html'

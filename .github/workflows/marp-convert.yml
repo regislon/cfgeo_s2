@@ -9,29 +9,66 @@ on:
       - main
 
 jobs:
-  convert:
+  build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Find README files
-        id: find_readmes
-        run: |
-          files=$(find . -name 'README.md' -exec grep -l 'marp: true' {} \;)
-          echo "files=$files" >> $GITHUB_OUTPUT
+      - name: Ensure build dir exists
+        run: mkdir -p build
 
-      - name: Convert README files to HTML
-        if: steps.find_readmes.outputs.files != ''
-        run: |
-          for file in ${{ steps.find_readmes.outputs.files }}; do
-            marp --html "$file" -o "${file%.md}.html"
-          done
+      - name: Copy images directory (if exists)
+        run: if [[ -d img ]]; then cp -R img build/img; fi
 
-      - name: Upload HTML files
-        if: steps.find_readmes.outputs.files != ''
-        uses: actions/upload-artifact@v3
+      - name: Marp Build (README)
+        uses: docker://marpteam/marp-cli:v3.0.2
         with:
-          name: html-files
-          path: '**/*.html'
+          args: README.md -o build/index.html
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (README.pdf)
+        uses: docker://marpteam/marp-cli:v3.0.2
+        with:
+          args: README.md --allow-local-files -o build/README.pdf
+        env:
+          MARP_USER: root:root
+
+      - name: Marp Build (README.pptx)
+        uses: docker://marpteam/marp-cli:v3.0.2
+        with:
+          args: README.md --allow-local-files -o build/README.pptx
+        env:
+          MARP_USER: root:root
+
+      - name: Check if docs folder exists
+        id: docs-folder-exists
+        run: bash -c "[[ -d docs ]] ; echo \"has_docs=\$?\" >> \"$GITHUB_OUTPUT\""
+
+      - name: Marp Build (docs folder, if exists)
+        if: steps.docs-folder-exists.outputs.has_docs == '0'
+        uses: docker://marpteam/marp-cli:v3.0.2
+        with:
+          args: -I docs/ -o build/docs/
+        env:
+          MARP_USER: root:root
+
+      - name: Deploy preview
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build/
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+
+      - name: Deploy production
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./build/
+          clean-exclude: pr-preview/

@@ -1,25 +1,26 @@
 ---
-theme : "simple"
-transition: "slide"
-highlightTheme: "monokai"
-logoImg: "media/logo-cfgeo.png"
-slideNumber: true
-title: "CFGEO - S2 - VM"
-center: false
-mouseWheel: true
-progress: true
-rtl: false
+marp: true
+paginate: true
+header: "CFGEO - S2 - VM"
+style: |
+  table {
+    font-size: 0.7em; /* Reduce font size */
+    width: 90%; /* Control table width */
+    margin: 0 auto; /* Center the table */
+  }
+  table th, table td {
+    padding: 0.2em 0.4em; /* Reduce padding */
+  }
 ---
 
 # Système d'information géographique
-
---
+ ---
 
 ## Définition 
 
 Un système d’information géographique (SIG) est un outil permettant de collecter, gérer, analyser et visualiser des données géographiques pour mieux comprendre et prendre des décisions sur l’espace.
 
---
+---
 
 À votre avis, quels sont les composants d’un système d’information géographique ?
 
@@ -29,22 +30,17 @@ Par exemple :
 - celui de votre entreprise
 
 
-
---
-
+---
 
 
---
-
-Voici le schéma de notre SIG que nous allons mettre en place 🤘 
-
+Voici le schéma de notre SIG que nous allons mettre en place 🤘
 ![alt text](image.png)
 
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
  Cette liste présente de manière non exhaustive les différents éléments qui composent un système d'information géographique.
+
 
 **Composants de base :**
 
@@ -57,21 +53,24 @@ Voici le schéma de notre SIG que nous allons mettre en place 🤘
 | **Système de fichiers / stockage** | Stockage de fichiers sources, tuiles, logs, backups              | Amazon S3, EBS, disque local, GCS                  |
 | **API / Web services**       | Points de communication entre front-end et back-end, accès aux données            | REST, WFS, WMS, WMTS, GeoJSON API                  |
 
+---
 
 Les composants de base d’un système d’information géographique sont installés sur un serveur (physique, virtuel ou dans le cloud), et peuvent être déployés individuellement ou sous forme de conteneurs Docker pour une installation plus rapide, modulaire et reproductible.
 
 
---
-
+---
+# Serveur physique
 Un serveur physique est un ordinateur dédié, puissant et généralement installé dans un centre de données, conçu pour faire fonctionner des services en continu, comme une base de données, un site web ou un système d’information géographique.
 
---
+---
 
-
+# Serveur virtuel
 Un **serveur virtuel** est une machine simulée par un logiciel (hyperviseur) qui fonctionne comme un vrai serveur, mais partage les ressources (CPU, RAM, disque) d’un serveur physique avec d'autres machines virtuelles.
+> kk
 
 
---
+---
+# Serveur cloud
 
 Un **serveur cloud** est un serveur virtuel hébergé dans un centre de données distant, accessible via Internet, et fourni à la demande par un prestataire (comme AWS, Azure ou Google Cloud), avec une grande flexibilité de ressources et de coûts.
 
@@ -98,21 +97,18 @@ Une telle infrastructure peut être utilisée par une entreprise, une administra
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
 # Distinction entre le backend et le frontend
 
 Dans le développement d'applications web ou de systèmes d'information, on distingue généralement deux parties principales :
 
---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## 🖥️ Front-End
 
 Le **front-end** correspond à la partie **visible par l'utilisateur**. C'est l'interface graphique avec laquelle l'utilisateur interagit directement, via un navigateur web.
 
 
 
---
+---
 
 <!-- .slide: style="font-size: 0.6em" -->
 ## 🗄️ Back-End
@@ -129,7 +125,7 @@ allowfullscreen>
 </center>
 
 
---
+---
 
 <!-- .slide: style="font-size: 0.6em" -->
 ## 🔁 Interaction entre Front-End et Back-End

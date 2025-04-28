@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Find README files with marp: true
+      - name: "Find README files with marp: true"
         id: find_readmes
         run: |
           readmes=$(find . -name 'README.md' -exec grep -l '^---\s*\nmarp:\s*true' {} \; || echo "")

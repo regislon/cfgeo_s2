@@ -65,6 +65,15 @@ jobs:
               cp -R "$dir/img"/* "$output_dir/img/"
             fi
             
+            # Copy referenced images from the Markdown file
+            echo "Copying images referenced in $file..."
+            grep -oE '!\[.*\]\(([^)]+)\)' "$file" | sed -E 's/!\[.*\]\(([^)]+)\)/\1/' | while read -r image; do
+              if [[ -f "$dir/$image" ]]; then
+                mkdir -p "$output_dir/$(dirname "$image")"
+                cp "$dir/$image" "$output_dir/$image"
+              fi
+            done
+            
             echo "Processing $file in $dir to maintain folder structure..."
             
             # Generate HTML

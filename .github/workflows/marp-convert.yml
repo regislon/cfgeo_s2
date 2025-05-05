@@ -21,8 +21,17 @@ jobs:
       - name: "Find README files with marp: true"
         id: find_readmes
         run: |
-          readmes=$(find . -name 'README.md' -exec grep -l '^---\s*\nmarp:\s*true' {} \; || echo "")
-          echo "readmes=$readmes" >> $GITHUB_OUTPUT
+          readmes=$(find . -name 'README.md' -type f -exec grep -l -E '^---(\s|\n)*marp:\s*true' {} \; || echo "")
+          if [ -z "$readmes" ]; then
+            echo "No README files with marp: true found"
+            echo "readmes=" >> $GITHUB_OUTPUT
+          else
+            echo "Found the following README files with marp: true:"
+            echo "$readmes"
+            echo "readmes<<EOF" >> $GITHUB_OUTPUT
+            echo "$readmes" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
           mkdir -p build
 
       # Instead of copying directories first, we'll process each file individually to maintain structure

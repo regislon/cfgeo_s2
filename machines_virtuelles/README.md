@@ -2,16 +2,19 @@
 marp: true
 paginate: true
 header: "CFGEO - S2 - VM"
-style: |
-  table {
-    font-size: 0.7em; /* Reduce font size */
-    width: 90%; /* Control table width */
-    margin: 0 auto; /* Center the table */
-  }
-  table th, table td {
-    padding: 0.2em 0.4em; /* Reduce padding */
-  }
+theme: default
 ---
+
+<style>
+table th {
+  font-size: 0.75em;
+}
+table td {
+  font-size: 0.7em;
+}
+</style>
+
+
 
 # Système d'information géographique
  ---
@@ -19,6 +22,7 @@ style: |
 ## Définition 
 
 Un système d’information géographique (SIG) est un outil permettant de collecter, gérer, analyser et visualiser des données géographiques pour mieux comprendre et prendre des décisions sur l’espace.
+
 
 ---
 
@@ -36,24 +40,24 @@ Par exemple :
 Voici le schéma de notre SIG que nous allons mettre en place 🤘
 ![alt text](image.png)
 
-
 ---
-
  Cette liste présente de manière non exhaustive les différents éléments qui composent un système d'information géographique.
 
+ 
 
 **Composants de base :**
 
 
 | **Composant**                | **Rôle**                                                                 | **Exemples concrets**                              |
 |------------------------------|--------------------------------------------------------------------------|----------------------------------------------------|
-| **Base de données spatiale** | Stockage structuré des données géographiques et attributaires            | PostgreSQL + PostGIS, MSSQL,                    |
-| **Serveur d’application**    | Traitement des requêtes, logique métier                                  | Apache, NGINX, Node.js, Gunicorn                   |
-| **Serveur de diffusion SIG** | Publication des couches spatiales via des services web                   | GeoServer, MapServer, QGIS Server                  |
-| **Système de fichiers / stockage** | Stockage de fichiers sources, tuiles, logs, backups              | Amazon S3, EBS, disque local, GCS                  |
-| **API / Web services**       | Points de communication entre front-end et back-end, accès aux données            | REST, WFS, WMS, WMTS, GeoJSON API                  |
+| **Base de données spatiale** | Stockage structuré des données géographiques et attributaires            | PostgreSQL + PostGIS, MSSQL                       |
+| **Serveur d’application**    | Traitement des requêtes, logique métier                                  | Apache, NGINX, Node.js, Gunicorn                  |
+| **Serveur de diffusion SIG** | Publication des couches spatiales via des services web                   | GeoServer, MapServer, QGIS Server                 |
+| **Système de fichiers**      | Stockage de fichiers sources, tuiles, logs, backups                      | Amazon S3, EBS, disque local, GCS                 |
+| **API / Web services**       | Points de communication entre front-end et back-end, accès aux données   | REST, WFS, WMS, WMTS, GeoJSON API                 |
 
 ---
+
 
 Les composants de base d’un système d’information géographique sont installés sur un serveur (physique, virtuel ou dans le cloud), et peuvent être déployés individuellement ou sous forme de conteneurs Docker pour une installation plus rapide, modulaire et reproductible.
 
@@ -101,6 +105,7 @@ Une telle infrastructure peut être utilisée par une entreprise, une administra
 
 Dans le développement d'applications web ou de systèmes d'information, on distingue généralement deux parties principales :
 
+--
 
 ## 🖥️ Front-End
 
@@ -108,7 +113,7 @@ Le **front-end** correspond à la partie **visible par l'utilisateur**. C'est l'
 
 
 
----
+--
 
 <!-- .slide: style="font-size: 0.6em" -->
 ## 🗄️ Back-End
@@ -125,7 +130,7 @@ allowfullscreen>
 </center>
 
 
----
+--
 
 <!-- .slide: style="font-size: 0.6em" -->
 ## 🔁 Interaction entre Front-End et Back-End

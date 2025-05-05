@@ -52,8 +52,6 @@ jobs:
         if: steps.find_readmes.outputs.readmes != ''
         run: |
           for file in ${{ steps.find_readmes.outputs.readmes }}; do
-            echo "88888888888888888888"
-            echo "Processing $file"
             dir=$(dirname "$file")
             basename=$(basename "$file" .md)
             output_dir="build/$dir"

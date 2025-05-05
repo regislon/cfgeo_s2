@@ -22,16 +22,21 @@ jobs:
         id: find_readmes
         run: |
           echo "Searching for README.md files with marp: true..."
-          # First, list all README.md files to verify they are found
+          
+          # List all README.md files to verify they are found
           echo "All README.md files in repository:"
-          find . -name 'README.md' -type f
+          find . -name 'README.md' -type f || echo "No README.md files found."
           
-          # Use a more flexible grep pattern to find marp: true in frontmatter
-          readmes=$(find . -name 'README.md' -type f -exec grep -l -E '^---(\s|\n)*(marp\s*:|marp\s*=)\s*true' {} \; || echo "")
+          # Use a more robust grep pattern to find marp: true in frontmatter
+          readmes=$(find . -name 'README.md' -type f -exec grep -l -E '^---(\s|\n)*.*marp\s*[:=]\s*true' {} \; || echo "")
           
-          # For debugging: show content of the first few lines of each README.md
+          # Debugging: Show the first 10 lines of each README.md file
           echo "Checking frontmatter of README.md files:"
           find . -name 'README.md' -type f -exec sh -c 'echo "==== $1 ===="; head -n 10 "$1"' sh {} \;
+          
+          # Debugging: Show the matched files
+          echo "Matched README.md files:"
+          echo "$readmes"
           
           if [ -z "$readmes" ]; then
             echo "No README files with marp: true found"

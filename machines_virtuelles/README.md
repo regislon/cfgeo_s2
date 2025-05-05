@@ -105,17 +105,15 @@ Une telle infrastructure peut être utilisée par une entreprise, une administra
 
 Dans le développement d'applications web ou de systèmes d'information, on distingue généralement deux parties principales :
 
---
+---
 
 ## 🖥️ Front-End
 
 Le **front-end** correspond à la partie **visible par l'utilisateur**. C'est l'interface graphique avec laquelle l'utilisateur interagit directement, via un navigateur web.
 
 
+---
 
---
-
-<!-- .slide: style="font-size: 0.6em" -->
 ## 🗄️ Back-End
 
 Le **back-end** est la partie **invisible** pour l'utilisateur. Il gère la logique métier, les calculs, les accès aux bases de données, et les communications avec le front-end.
@@ -130,24 +128,19 @@ allowfullscreen>
 </center>
 
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## 🔁 Interaction entre Front-End et Back-End
 
 Le front-end envoie des **requêtes** au back-end, qui traite les données et renvoie une **réponse** (souvent au format JSON).  
 Cela permet de construire des applications web interactives et dynamiques.
 
 
-
-
 ---
 
-
-<!-- .slide: style="font-size: 0.6em" -->
 # Création d'une machine virtuelle sur AWS (Amazon Web Services)
 
---
+---
 
 <!-- .slide: style="font-size: 0.6em" -->
 ## Étape 1 : Création de votre compte AWS
@@ -159,9 +152,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 5. Sélectionnez "Compte personnel" (sauf si vous créez un compte pour une entreprise)
 6. Renseignez vos informations personnelles et les détails de contact
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 2 : Informations de paiement
 
 1. Entrez vos informations de paiement (carte de crédit)
@@ -169,44 +161,36 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Validez votre identité par SMS ou appel vocal
 3. Sélectionnez le plan de support gratuit (AWS Basic Support)
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 3 : Connexion à la console AWS
 
 1. Une fois votre compte créé, revenez sur [https://aws.amazon.com/fr/](https://aws.amazon.com/fr/)
 2. Cliquez sur "Connexion à la console"
 3. Connectez-vous avec l'adresse e-mail et le mot de passe que vous avez créés
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 4 : Lancement d'une instance EC2 Windows
 
 1. Dans la barre de recherche de la console AWS, tapez "EC2" et sélectionnez ce service
 2. Cliquez sur "Lancer l'instance"
 3. Donnez un nom à votre instance, par exemple "MaVMWindows"
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 5 : Sélection de l'image (AMI)
 
 1. Dans la section "Application and OS Images", cliquez sur l'onglet "Quick Start"
 2. Sélectionnez "Microsoft Windows Server 2025 Base"
     > Assurez-vous que l'étiquette "Free tier eligible" (Éligible à l'offre gratuite) est présente
 
---
-
+---
 
 ![alt text](image-1.png)
 
---
+---
 
-
-
-
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 6 : Choix du type d'instance
 
 1. Sélectionnez le type d'instance "t3.micro" (2 vCPU, 1 Go de RAM)
@@ -216,20 +200,15 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 ![alt text](image-2.png)
 
+---
 
 
---
-
-
-
-
-
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 7 : Configuration de la paire de clés
 
 > **Pourquoi une clé .pem ?** 
 > Le fichier .pem (Privacy Enhanced Mail) contient une clé privée cryptographique qui sert à décrypter le mot de passe administrateur généré par AWS pour votre instance Windows. C'est un mécanisme de sécurité qui garantit que seule la personne possédant cette clé privée peut accéder à l'instance. Sans cette clé, il est impossible de récupérer le mot de passe administrateur et donc de se connecter à votre machine virtuelle Windows. C'est pourquoi il est crucial de conserver ce fichier dans un endroit sûr et de ne jamais le partager.
 
+---
 
 1. Créez une nouvelle paire de clés en cliquant sur "Create new key pair"
 2. Donnez un nom à votre paire de clés, par exemple "ma-cle-windows"
@@ -237,48 +216,45 @@ Cela permet de construire des applications web interactives et dynamiques.
 4. Cliquez sur "Créer une paire de clés"
 5. Le fichier de clé sera automatiquement téléchargé - conservez-le précieusement
 
---
+---
 
 ![alt text](image-3.png)
 
 
---
+---
 
 
 ![alt text](image-4.png)
 
 --
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 8 : Configuration des paramètres réseau
 
 1. Permettez le trafic HTTP depuis n'importe où (vous pourrez ajuster cela plus tard)
 2. Permettez le trafic RDP (port 3389) pour vous connecter à votre machine Windows
 
 
-
+<img src="image-5.png" width="20" />
 ![alt text](image-5.png)
 
 
---
+---
 
 
 ![alt text](image-6.png)
 
 
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 9 : Lancement de l'instance
 
 1. Vérifiez les détails de votre configuration
 2. Cliquez sur "Launch instance" (Lancer l'instance)
 3. Patientez quelques minutes pendant que l'instance se lance
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Étape 10 : Connexion à votre instance Windows
 
 1. Retournez à la page d'accueil EC2
@@ -289,9 +265,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 6. Cliquez sur "Get password" (Obtenir le mot de passe) et utilisez votre fichier de clé .pem
 7. Téléchargez le fichier RDP et utilisez-le pour vous connecter via l'application Bureau à distance (sur windows).
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Connexion à votre machine virtuelle
 
 > Le DNS (Domain Name System) est un système qui traduit les noms de domaine lisibles par les humains (comme `google.com`) en adresses IP compréhensibles par les machines (comme `142.250.74.206`). Sans le DNS, il faudrait mémoriser ces longues adresses numériques pour accéder à des sites web. 
@@ -299,9 +274,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 > L’adresse publique, il s’agit de l’adresse IP attribuée à ton réseau par ton fournisseur d’accès à Internet (FAI), visible sur Internet. C’est un peu comme l’adresse postale de ta maison sur le web : elle permet aux autres ordinateurs ou services en ligne de savoir comment te joindre.
 
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ### 💻 Depuis Windows
 
 1. La connexion est simple car Windows intègre déjà le client Bureau à distance (RDP)
@@ -311,9 +285,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 5. Vous êtes maintenant connecté à votre machine virtuelle Windows Server !
 
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ### 🍎 Depuis macOS
 
 1. Vous devez d'abord installer un client RDP pour macOS
@@ -333,9 +306,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Points importants à retenir
 
 - La période d'offre gratuite dure 12 mois à partir de la création de votre compte
@@ -344,9 +316,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 - Configurez des alertes de facturation pour éviter des coûts imprévus
 - N'oubliez pas de supprimer les ressources dont vous n'avez plus besoin
 
---
+---
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Surveillance de votre utilisation
 
 1. Accédez à la console AWS

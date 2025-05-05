@@ -28,11 +28,8 @@ jobs:
           find . -name 'README.md' -type f || echo "No README.md files found."
           
           # Use a more robust grep pattern to find marp: true in frontmatter
-          readmes=$(find . -name 'README.md' -type f -exec grep -l -E '^---(\s|\n)*.*marp\s*[:=]\s*true' {} \; || echo "")
+          readmes=$(find . -name 'README.md' -type f -exec sh -c 'head -n 2 "$1" | tail -n 1 | grep -q "^marp" && echo "$1"' sh {} \; || echo "")
           
-          # Debugging: Show the first 10 lines of each README.md file
-          echo "Checking frontmatter of README.md files:"
-          find . -name 'README.md' -type f -exec sh -c 'echo "==== $1 ===="; head -n 10 "$1"' sh {} \;
           
           # Debugging: Show the matched files
           echo "Matched README.md files:"

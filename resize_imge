@@ -1,0 +1,1 @@
+find "/Users/regislon/kDrive/prof/Régis/Cf géo/s2/github/cfgeo_s2/machines_virtuelles" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \) -exec sips --resampleHeightWidthMax 600 {} \;

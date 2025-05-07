@@ -216,8 +216,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 4. Cliquez sur "Créer une paire de clés"
 5. Le fichier de clé sera automatiquement téléchargé - conservez-le précieusement
 
----
-
 ![alt text](image-3.png)
 
 
@@ -226,7 +224,7 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 ![alt text](image-4.png)
 
---
+---
 
 ## Étape 8 : Configuration des paramètres réseau
 
@@ -298,6 +296,10 @@ Cela permet de construire des applications web interactives et dynamiques.
 5. Dans "User account", sélectionnez "Add User Account" et entrez:
    * Nom d'utilisateur: `Administrator`
    * Mot de passe: collez le mot de passe que vous avez obtenu avec votre fichier .pem
+
+--- 
+### 🍎 Depuis macOS (suite)
+
 6. Vous pouvez personnaliser l'affichage dans l'onglet "Display"
 7. Cliquez sur "Save", puis double-cliquez sur la connexion créée pour vous connecter
 8. Acceptez l'avertissement de certificat si nécessaire

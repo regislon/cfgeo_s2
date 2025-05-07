@@ -1,23 +1,24 @@
 ---
-theme : "simple"
-transition: "slide"
-highlightTheme: "monokai"
-logoImg: "media/logo-cfgeo.png"
-slideNumber: true
-title: "CFGEO - S2 - VM"
-center: false
-mouseWheel: true
-progress: true
-rtl: false
+marp: true
+paginate: true
+header: "CFGEO - S2 - VM"
+theme: default
 ---
+<style>
+table th {
+  font-size: 0.75em;
+}
+table td {
+  font-size: 0.7em;
+}
+</style>
 
-<!-- .slide: style="font-size: 0.6em" -->
+
+
 # Module S2 - SIT systèmes (webGIS et réseaux)
 
 ---
 
-
-<!-- .slide: style="font-size: 0.6em" -->
 ## Objectifs
 
 
@@ -28,6 +29,9 @@ rtl: false
   - ⚙️ l’installation de logiciels,  
   - 🛠️ la gestion d’infrastructures informatiques.  
 
+--- 
+
+
 - 🎓 Mettre à profit la maturité acquise durant la formation.  
 - 🤔 Se confronter à un environnement nécessitant réflexion et souplesse.  
 - 🌐 Explorer l’architecture et l’intégration des SIG avec des infrastructures web et cloud.  
@@ -37,7 +41,6 @@ rtl: false
 ---
 
 
-<!-- .slide: style="font-size: 0.6em" -->
 ## Mise en context 
 
 📍 Vous allez créer un SIG qui vous permet de gérer et de publier des géodonnées.  
@@ -48,7 +51,7 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
+
 ## La méthode de travail
 
 🧠 Nous allons réfléchir ensemble aux éléments de conception du projet, discuter ensemble des différents sujets à aborder et à traiter dans un tel contexte.  En tant qu'experts, les enseignants mettent leur expérience à votre disposition, mais ils n'ont pas la science infuse pour autant.  
@@ -61,7 +64,7 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
+
 ## L'évaluation
 
 📝 L'examen se déroule sous la forme écrite. Vous serez donc évalués sur des questions relatives au travail que nous avons fait ensemble en classe, et pas uniquement sur les slides présentés ni sur les modules enseignés.  
@@ -70,7 +73,7 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
+
 
 
 ## Les intervenants
@@ -81,7 +84,7 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
+
 
 
 ## Format du cours 
@@ -93,10 +96,9 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 
 
+---
 
---
 
-<!-- .slide: style="font-size: 0.6em" -->
 
 Ce cours se déroule à la fois en présentiel et à distance.
 
@@ -106,9 +108,7 @@ Ce cours se déroule à la fois en présentiel et à distance.
 - Utilise si possible un **casque avec micro** pour une meilleure qualité audio.
 - Trouve un **endroit calme**, bien éclairé, sans distractions.
 
-<br>
-<br><br>
-<br>
+
 
 ### 💬 Reste actif·ve pendant le cours
 - **Allume ta caméra**  cela aide à rester concentré·e et à créer du lien.
@@ -116,6 +116,9 @@ Ce cours se déroule à la fois en présentiel et à distance.
 - **Note les éléments importants**, comme tu le ferais en présentiel.
 
 
+---
+
+![alt text](image-3.png)
 
 
 

@@ -44,9 +44,11 @@ jobs:
             git push origin main
           else
             git checkout main
-            git pull origin main
+            git fetch origin main
+            git rebase origin/main
           fi
           git merge dev --no-edit
+          git push origin main
 
       # Run the Python script
       - name: Run markdown_marp_to_github.py

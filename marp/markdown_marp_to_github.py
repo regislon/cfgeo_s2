@@ -28,7 +28,8 @@ def remove_text_from_markdown_files(markdown_files):
                     trigger = True
                     continue
                 if trigger:
-                    list_of_line.append(line)
+                    if line.strip() != "---":
+                        list_of_line.append(line)
    
         with open(file_path, 'w', encoding='utf-8') as file:
             for line in list_of_line:

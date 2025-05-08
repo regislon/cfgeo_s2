@@ -56,8 +56,10 @@ jobs:
           git add .
           git commit -m "Update markdown files via GitHub Actions"
           if ! git pull --rebase origin main; then
-            echo "Rebase failed due to conflicts. Aborting rebase."
+            echo "Rebase failed due to conflicts. Resolving conflicts by favoring dev branch."
             git rebase --abort
-            exit 1
+            git merge -X theirs dev
+            git push --force origin main
+          else
+            git push --force origin main
           fi
-          git push --force origin main

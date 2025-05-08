@@ -45,10 +45,14 @@ jobs:
           else
             git checkout main
             git fetch origin main
-            git rebase origin/main || (git rebase --abort && echo "Rebase failed. Aborting." && exit 1)
+            if ! git rebase origin/main; then
+              echo "Rebase failed. Resolving conflicts by favoring remote main branch."
+              git rebase --abort
+              git reset --hard origin/main
+            fi
           fi
           git merge dev --no-edit
-          git push origin main
+          git push --force origin main
 
       # Run the Python script
       - name: Run markdown_marp_to_github.py

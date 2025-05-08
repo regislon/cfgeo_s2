@@ -55,5 +55,9 @@ jobs:
         run: |
           git add .
           git commit -m "Update markdown files via GitHub Actions"
-          git pull --rebase origin main
-          git push origin main
+          if ! git pull --rebase origin main; then
+            echo "Rebase failed due to conflicts. Aborting rebase."
+            git rebase --abort
+            exit 1
+          fi
+          git push --force origin main

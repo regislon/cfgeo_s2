@@ -299,7 +299,6 @@ Cela permet de construire des applications web interactives et dynamiques.
    * Mot de passe: collez le mot de passe que vous avez obtenu avec votre fichier .pem
 
 --- 
-### 🍎 Depuis macOS (suite)
 
 6. Vous pouvez personnaliser l'affichage dans l'onglet "Display"
 7. Cliquez sur "Save", puis double-cliquez sur la connexion créée pour vous connecter

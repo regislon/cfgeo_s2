@@ -1,7 +1,7 @@
 from pathlib import Path
 import re
 
-BALISE = "</style2>"
+BALISE = "</style>"
 IMAGE_FOLDER_NAME = "images_documentation"
 
 

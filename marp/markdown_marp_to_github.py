@@ -4,7 +4,6 @@ BALISE = "</style>"
 
 
 
-
 def find_markdown_files_to_convert():
     current_file = Path(__file__)
     project_path = current_file.parent.parent

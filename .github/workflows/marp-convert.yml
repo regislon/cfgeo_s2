@@ -1,108 +1,108 @@
 name: Convert MARP README to HTML
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: write
+#       pull-requests: write
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
 
-      - name: "Find README files with marp: true"
-        id: find_readmes
-        run: |
-          echo "Searching for README.md files with marp: true..."
+#       - name: "Find README files with marp: true"
+#         id: find_readmes
+#         run: |
+#           echo "Searching for README.md files with marp: true..."
           
-          # List all README.md files to verify they are found
-          echo "All README.md files in repository:"
-          find . -name 'README.md' -type f || echo "No README.md files found."
+#           # List all README.md files to verify they are found
+#           echo "All README.md files in repository:"
+#           find . -name 'README.md' -type f || echo "No README.md files found."
           
-          # Use a more robust grep pattern to find marp: true in frontmatter
-          readmes=$(find . -name 'README.md' -type f -exec sh -c 'head -n 2 "$1" | tail -n 1 | grep -q "^marp" && echo "$1"' sh {} \; || echo "")
+#           # Use a more robust grep pattern to find marp: true in frontmatter
+#           readmes=$(find . -name 'README.md' -type f -exec sh -c 'head -n 2 "$1" | tail -n 1 | grep -q "^marp" && echo "$1"' sh {} \; || echo "")
           
           
-          # Debugging: Show the matched files
-          echo "Matched README.md files:"
-          echo "$readmes"
+#           # Debugging: Show the matched files
+#           echo "Matched README.md files:"
+#           echo "$readmes"
           
-          if [ -z "$readmes" ]; then
-            echo "No README files with marp: true found"
-            echo "readmes=" >> $GITHUB_OUTPUT
-          else
-            echo "Found the following README files with marp: true:"
-            echo "$readmes"
-            echo "readmes<<EOF" >> $GITHUB_OUTPUT
-            echo "$readmes" >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
-          fi
-          mkdir -p build
+#           if [ -z "$readmes" ]; then
+#             echo "No README files with marp: true found"
+#             echo "readmes=" >> $GITHUB_OUTPUT
+#           else
+#             echo "Found the following README files with marp: true:"
+#             echo "$readmes"
+#             echo "readmes<<EOF" >> $GITHUB_OUTPUT
+#             echo "$readmes" >> $GITHUB_OUTPUT
+#             echo "EOF" >> $GITHUB_OUTPUT
+#           fi
+#           mkdir -p build
 
-      # Instead of copying directories first, we'll process each file individually to maintain structure
-      - name: Process Marp README files individually
-        if: steps.find_readmes.outputs.readmes != ''
-        run: |
-          for file in ${{ steps.find_readmes.outputs.readmes }}; do
-            dir=$(dirname "$file")
-            basename=$(basename "$file" .md)
-            output_dir="build/$dir"
+#       # Instead of copying directories first, we'll process each file individually to maintain structure
+#       - name: Process Marp README files individually
+#         if: steps.find_readmes.outputs.readmes != ''
+#         run: |
+#           for file in ${{ steps.find_readmes.outputs.readmes }}; do
+#             dir=$(dirname "$file")
+#             basename=$(basename "$file" .md)
+#             output_dir="build/$dir"
             
-            # Create directory structure
-            mkdir -p "$output_dir"
+#             # Create directory structure
+#             mkdir -p "$output_dir"
             
-            # Copy any images directory if it exists
-            if [[ -d "$dir/img" ]]; then
-              mkdir -p "$output_dir/img"
-              cp -R "$dir/img"/* "$output_dir/img/"
-            fi
+#             # Copy any images directory if it exists
+#             if [[ -d "$dir/img" ]]; then
+#               mkdir -p "$output_dir/img"
+#               cp -R "$dir/img"/* "$output_dir/img/"
+#             fi
             
-            # Copy referenced images from the Markdown file
-            echo "Copying images referenced in $file..."
-            grep -oE '!\[.*\]\(([^)]+)\)' "$file" | sed -E 's/!\[.*\]\(([^)]+)\)/\1/' | while read -r image; do
-              if [[ -f "$dir/$image" ]]; then
-                mkdir -p "$output_dir/$(dirname "$image")"
-                cp "$dir/$image" "$output_dir/$image"
-              fi
-            done
+#             # Copy referenced images from the Markdown file
+#             echo "Copying images referenced in $file..."
+#             grep -oE '!\[.*\]\(([^)]+)\)' "$file" | sed -E 's/!\[.*\]\(([^)]+)\)/\1/' | while read -r image; do
+#               if [[ -f "$dir/$image" ]]; then
+#                 mkdir -p "$output_dir/$(dirname "$image")"
+#                 cp "$dir/$image" "$output_dir/$image"
+#               fi
+#             done
             
-            echo "Processing $file in $dir to maintain folder structure..."
+#             echo "Processing $file in $dir to maintain folder structure..."
             
-            # Generate HTML
-            docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.html" --html
+#             # Generate HTML
+#             docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.html" --html
             
-            # Generate PDF
-            docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.pdf" --pdf --allow-local-files
+#             # Generate PDF
+#             docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.pdf" --pdf --allow-local-files
             
-            # Generate PPTX
-            docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.pptx" --pptx --allow-local-files
+#             # Generate PPTX
+#             docker run --rm -e MARP_USER=root:root -v $PWD:/home/marp/app/ marpteam/marp-cli:v3.0.2 "$file" -o "$output_dir/$basename.pptx" --pptx --allow-local-files
             
-            # For directories that contain a README.md that is being processed, also copy the HTML version as index.html
-            if [[ "$basename" == "README" ]]; then
-              cp "$output_dir/$basename.html" "$output_dir/index.html"
-            fi
-          done
+#             # For directories that contain a README.md that is being processed, also copy the HTML version as index.html
+#             if [[ "$basename" == "README" ]]; then
+#               cp "$output_dir/$basename.html" "$output_dir/index.html"
+#             fi
+#           done
 
-      - name: Deploy preview
-        if: ${{ github.event_name == 'pull_request' && steps.find_readmes.outputs.readmes != '' }}
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: ./build/
-          preview-branch: gh-pages
-          umbrella-dir: pr-preview
+#       - name: Deploy preview
+#         if: ${{ github.event_name == 'pull_request' && steps.find_readmes.outputs.readmes != '' }}
+#         uses: rossjrw/pr-preview-action@v1
+#         with:
+#           source-dir: ./build/
+#           preview-branch: gh-pages
+#           umbrella-dir: pr-preview
 
-      - name: Deploy production
-        if: ${{ github.event_name == 'push' && steps.find_readmes.outputs.readmes != '' }}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: ./build/
-          clean-exclude: pr-preview/
+#       - name: Deploy production
+#         if: ${{ github.event_name == 'push' && steps.find_readmes.outputs.readmes != '' }}
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           branch: gh-pages
+#           folder: ./build/
+#           clean-exclude: pr-preview/

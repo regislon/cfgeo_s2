@@ -1,0 +1,46 @@
+name: Sync Dev to Main and Run Script
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  sync-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # Install dependencies (if any)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Add any required dependencies here, e.g., pip install -r requirements.txt
+
+      # Merge dev into main
+      - name: Merge dev into main
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          git merge dev --no-edit
+
+      # Run the Python script
+      - name: Run markdown_marp_to_github.py
+        run: python marp/markdown_marp_to_github.py
+
+      # Commit and push changes to main
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Update markdown files via GitHub Actions"
+          git push origin main

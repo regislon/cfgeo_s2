@@ -41,8 +41,10 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           if ! git show-ref --verify --quiet refs/heads/main; then
             git checkout -b main
+            git push origin main
           else
             git checkout main
+            git pull origin main
           fi
           git merge dev --no-edit
 

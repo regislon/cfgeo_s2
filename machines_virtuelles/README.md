@@ -71,8 +71,6 @@ Un serveur physique est un ordinateur dédié, puissant et généralement instal
 
 # Serveur virtuel
 Un **serveur virtuel** est une machine simulée par un logiciel (hyperviseur) qui fonctionne comme un vrai serveur, mais partage les ressources (CPU, RAM, disque) d’un serveur physique avec d'autres machines virtuelles.
-> kk
-
 
 ---
 # Serveur cloud
@@ -289,14 +287,14 @@ Cela permet de construire des applications web interactives et dynamiques.
 ### 🍎 Depuis macOS
 
 1. Vous devez d'abord installer un client RDP pour macOS
-   * Option gratuite : Windows app (téléchargeable depuis l'App Store)
-   * Alternatives : Royal TSX, Jump Desktop
+   - Option gratuite : Windows app (téléchargeable depuis l'App Store)
+   - Alternatives : Royal TSX, Jump Desktop
 2. Ouvrez l'application Windows app
 3. Cliquez sur "Add PC" ou "+" pour ajouter une nouvelle connexion
 4. Dans le champ "PC name", collez l'adresse DNS publique de votre instance (disponible dans la console AWS)
 5. Dans "User account", sélectionnez "Add User Account" et entrez:
-   * Nom d'utilisateur: `Administrator`
-   * Mot de passe: collez le mot de passe que vous avez obtenu avec votre fichier .pem
+   - Nom d'utilisateur: `Administrator`
+   - Mot de passe: collez le mot de passe que vous avez obtenu avec votre fichier .pem
 
 --- 
 
@@ -329,7 +327,7 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 ---
 
-## Bien vennue sur votre tout nouveau SIT !
+## Bienvennue sur votre tout nouveau SIT !
 
 Ce n'est q  ue le début, mais vous avez déjà fait un grand pas vers la création de votre propre système d'information géographique.
 

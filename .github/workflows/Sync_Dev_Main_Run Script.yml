@@ -35,7 +35,6 @@ jobs:
           git checkout dev
           git branch -f main
           git checkout main
-          git push --force origin main
 
       # Run the Python script
       - name: Run markdown_marp_to_github.py

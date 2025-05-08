@@ -16,6 +16,7 @@ def find_markdown_files_to_convert():
 
 
 def remove_text_from_markdown_files(markdown_files):
+    print("Removing text from markdown files...")
     for file_path in markdown_files:
         print(f"Processing file: {file_path}")
         trigger = False

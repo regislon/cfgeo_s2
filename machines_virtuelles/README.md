@@ -325,3 +325,36 @@ Cela permet de construire des applications web interactives et dynamiques.
 1. Accédez à la console AWS
 2. Recherchez le service "Billing" (Facturation)
 3. Consultez régulièrement votre utilisation pour vous assurer de rester dans les limites de l'offre gratuite
+
+
+---
+
+## Bien vennue sur votre tout nouveau SIT !
+
+Ce n'est q  ue le début, mais vous avez déjà fait un grand pas vers la création de votre propre système d'information géographique.
+
+---
+
+## Prochaines étapes
+ Modifier le firewall de votre machine virtuelle pour permettre l'accès à votre serveur SIG. 
+
+ > **Firewall** : Un pare-feu est un système de sécurité qui surveille et contrôle le trafic réseau entrant et sortant, en autorisant ou bloquant les connexions selon des règles prédéfinies. Il agit comme une barrière entre un réseau interne sécurisé et des réseaux externes non sécurisés, protégeant ainsi les données et les ressources inform
+
+ ---
+
+
+ ![alt text](firewall.png)
+
+ ---
+
+## Transmission du DNS depuis la console AWS
+
+> **DNS (Domain Name System)** : Un système qui traduit les noms de domaine lisibles par les humains (comme `google.com`) en adresses IP compréhensibles par les machines. 
+
+1. Accédez à la console AWS et sélectionnez votre instance EC2.
+2. Dans l'onglet "Détails", recherchez l'adresse DNS publique de votre instance.
+3. Copiez cette adresse DNS pour l'utiliser dans vos configurations ou pour accéder à votre serveur.
+
+---
+
+ ![alt text](dns.png)

@@ -45,7 +45,7 @@ jobs:
           else
             git checkout main
             git fetch origin main
-            git rebase origin/main
+            git rebase origin/main || (git rebase --abort && echo "Rebase failed. Aborting." && exit 1)
           fi
           git merge dev --no-edit
           git push origin main

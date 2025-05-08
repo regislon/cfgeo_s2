@@ -15,8 +15,6 @@ table td {
 </style>
 
 
-❗ Cette page est aussi publiée sous la forme d'une présentation web
-
 
 # Système d'information géographique
  ---

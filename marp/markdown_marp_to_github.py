@@ -1,6 +1,6 @@
 from pathlib import Path
 
-BALISE = "</style>"
+BALISE = "</style2>"
 
 
 
@@ -30,7 +30,7 @@ def remove_text_from_markdown_files(markdown_files):
    
         with open(file_path, 'w', encoding='utf-8') as file:
             for line in list_of_line:
-                file.write(line)
+                file.write(line + '\n')
             
 
 

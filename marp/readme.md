@@ -1,19 +1,38 @@
+
+
+
+
+# Système d'information géographique
+ ---
+
+## Définition 
+
+Un système d’information géographique (SIG) est un outil permettant de collecter, gérer, analyser et visualiser des données géographiques pour mieux comprendre et prendre des décisions sur l’espace.
+
+
 ---
-marp: true
-paginate: true
-header: "CFGEO - S2 - VM"
-theme: default
+
+À votre avis, quels sont les composants d’un système d’information géographique ?
+
+Par exemple :
+- map.geoadmin.ch
+- le guichet cartographique de votre canton ou commune
+- celui de votre entreprise
+
+
 ---
 
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
+
+Voici le schéma de notre SIG que nous allons mettre en place 🤘
+![alt text](image.png)
+
+---
+ Cette liste présente de manière non exhaustive les différents éléments qui composent un système d'information géographique.
+
+ 
+
+**Composants de base :**
 
 
-
-Hello world
+| **Composant**                | **Rôle**                                                                 | **Exemples concrets**                              |
+|------------------------

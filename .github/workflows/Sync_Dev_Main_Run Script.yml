@@ -26,48 +26,25 @@ jobs:
           python -m pip install --upgrade pip
           # Add any required dependencies here, e.g., pip install -r requirements.txt
 
-      # Merge dev into main
-      - name: Merge dev into main
+      # Force push dev to main locally
+      - name: Force push dev to main
         shell: /usr/bin/bash -e {0}
-        env:
-          pythonLocation: /opt/hostedtoolcache/Python/3.13.3/x64
-          PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.3/x64/lib/pkgconfig
-          Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.3/x64
-          Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.3/x64
-          Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.3/x64
-          LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.3/x64/lib
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git show-ref --verify --quiet refs/heads/main; then
-            git checkout -b main
-            git push origin main
-          else
-            git checkout main
-            git fetch origin main
-            if ! git rebase origin/main; then
-              echo "Rebase failed. Resolving conflicts by favoring remote main branch."
-              git rebase --abort
-              git reset --hard origin/main
-            fi
-          fi
-          git merge dev --no-edit
+          git checkout dev
+          git branch -f main
+          git checkout main
           git push --force origin main
 
       # Run the Python script
       - name: Run markdown_marp_to_github.py
         run: python marp/markdown_marp_to_github.py
 
-      # Commit and push changes to main
-      - name: Commit and push changes
+      # Force push main to remote
+      - name: Force push main to remote
+        shell: /usr/bin/bash -e {0}
         run: |
           git add .
-          git commit -m "Update markdown files via GitHub Actions"
-          if ! git pull --rebase origin main; then
-            echo "Rebase failed due to conflicts. Resolving conflicts by favoring dev branch."
-            git rebase --abort
-            git merge -X theirs dev
-            git push --force origin main
-          else
-            git push --force origin main
-          fi
+          git commit -m "Update markdown files via GitHub Actions" || echo "No changes to commit"
+          git push --force origin main

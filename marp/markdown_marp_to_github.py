@@ -1,6 +1,6 @@
 from pathlib import Path
 
-BALISE = "</style2>"
+BALISE = "</style>"
 
 
 

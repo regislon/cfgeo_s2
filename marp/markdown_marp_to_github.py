@@ -22,7 +22,6 @@ def remove_text_from_markdown_files(markdown_files):
         with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read()
             for line in content.splitlines():
-                print(line)
                 if line.strip() == BALISE:
                     trigger = True
                     continue

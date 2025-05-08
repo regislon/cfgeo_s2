@@ -55,4 +55,5 @@ jobs:
         run: |
           git add .
           git commit -m "Update markdown files via GitHub Actions"
+          git pull --rebase origin main
           git push origin main

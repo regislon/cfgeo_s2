@@ -28,10 +28,22 @@ jobs:
 
       # Merge dev into main
       - name: Merge dev into main
+        shell: /usr/bin/bash -e {0}
+        env:
+          pythonLocation: /opt/hostedtoolcache/Python/3.13.3/x64
+          PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.3/x64/lib/pkgconfig
+          Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.3/x64
+          Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.3/x64
+          Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.3/x64
+          LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.3/x64/lib
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout main
+          if ! git show-ref --verify --quiet refs/heads/main; then
+            git checkout -b main
+          else
+            git checkout main
+          fi
           git merge dev --no-edit
 
       # Run the Python script

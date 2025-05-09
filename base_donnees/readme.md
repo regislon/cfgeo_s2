@@ -18,6 +18,8 @@ table td {
 
 ## PostgreSQL, PostGIS et fichiers géographiques
 
+https://regislon.github.io/cfgeo_s2/base_donnees/
+
 ---
 
 ![alt text](image.png)
@@ -123,8 +125,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 ---
 
 
-
-
 ## Le modèle relationnel + spatial
 
 ```sql
@@ -175,6 +175,28 @@ USING GIST(geom);
 
 ---
 
+**Qgis est-il le seul à pouvoir se connecter à PostGIS ?**
+
+Non, d'autres outils comme Pgadmin, GeoServer, MapServer, et même des langages de programmation comme Python (avec psycopg2) ou R (avec RPostgreSQL) peuvent se connecter à PostGIS.
+
+---
+
+## Qu'est-ce que PgAdmin ?
+
+PgAdmin est un outil graphique open source pour gérer et administrer les bases de données PostgreSQL. Il offre une interface utilisateur intuitive pour :
+
+* Créer, modifier et supprimer des bases de données, tables, et autres objets.
+* Exécuter des requêtes SQL et visualiser les résultats.
+* Gérer les utilisateurs et les permissions.
+* Superviser les performances et surveiller l'activité de la base de données.
+
+
+⚠️ : PgAdmin n'est pas une base de données, mais un SGBD.
+
+
+---
+
+
 ## Résumé
 
 * PostGIS transforme PostgreSQL en base spatiale puissante
@@ -182,3 +204,54 @@ USING GIST(geom);
 * Remplace avantageusement les fichiers plats (shapefile, etc.)
 * Outil central dans une **Infrastructure de Données Spatiales (IDS)**
 
+---
+## Installation de PostgreSQL/PostGIS + PGAdmin
+
+🛠️ Exercice : Installation de la base de données
+📋 Instructions : à consulter ci-dessous
+⏱️ Durée estimée : 20 minutes
+
+---
+## Procédure d'installation de PostgreSQL, PostGIS et PgAdmin
+
+### 1. Installation de PostgreSQL
+1. Rendez-vous sur le site officiel de PostgreSQL : [https://www.postgresql.org/download/](https://www.postgresql.org/download/).
+2. Sélectionnez votre système d'exploitation (Windows).
+3. Téléchargez et installez le programme d'installation approprié.
+4. Pendant l'installation :
+  - Configurez un mot de passe pour l'utilisateur `postgres`.
+  - Notez le port par défaut (5432) et le chemin d'installation.
+
+---
+
+### 2. Installation de PostGIS
+1. PostGIS est généralement inclus dans les distributions PostgreSQL modernes.
+2. Si ce n'est pas le cas, installez-le via l'outil de gestion des extensions :
+  ```sql
+  CREATE EXTENSION postgis;
+  ```
+3. Vérifiez que PostGIS est bien installé :
+  ```sql
+  SELECT PostGIS_Full_Version();
+  ```
+
+### 3. Installation de PgAdmin
+1. Téléchargez PgAdmin depuis [https://www.pgadmin.org/download/](https://www.pgadmin.org/download/).
+2. Installez le logiciel en suivant les instructions pour votre système d'exploitation.
+3. Lancez PgAdmin et connectez-vous à votre instance PostgreSQL en utilisant les informations configurées lors de l'installation.
+
+### 4. Vérification de l'installation
+1. Connectez-vous à PostgreSQL via PgAdmin.
+2. Créez une nouvelle base de données.
+3. Activez PostGIS dans cette base de données :
+  ```sql
+  CREATE EXTENSION postgis;
+  ```
+4. Testez une requête spatiale simple pour valider le bon fonctionnement.
+
+### 5. Ressources supplémentaires
+- Documentation PostgreSQL : [https://www.postgresql.org/docs/](https://www.postgresql.org/docs/)
+- Documentation PostGIS : [https://postgis.net/documentation/](https://postgis.net/documentation/)
+- Tutoriels PgAdmin : [https://www.pgadmin.org/docs/](https://www.pgadmin.org/docs/)
+
+---

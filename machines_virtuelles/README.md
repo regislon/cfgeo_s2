@@ -181,7 +181,7 @@ Cela permet de construire des applications web interactives et dynamiques.
 ## Étape 5 : Sélection de l'image (AMI)
 
 1. Dans la section "Application and OS Images", cliquez sur l'onglet "Quick Start"
-2. Sélectionnez "Microsoft Windows Server 2025 Base"
+2. Sélectionnez "Microsoft Windows Server 2022 Base"
     > Assurez-vous que l'étiquette "Free tier eligible" (Éligible à l'offre gratuite) est présente
 
 ---

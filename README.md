@@ -25,7 +25,7 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 
 | Date                  | Lieu du cours | Horaire début | Horaire fin | Nbre de périodes | Enseignant-e  | Thème                        |
 |-----------------------|--------------|--------------|------------|------------------|---------------|------------------------------|
-| mardi 3 juin 2025    |              | 08:30        | 10:00      | 2                | R. Longchamp  | Introduction                 |
+| mardi 3 juin 2025    |              | 08:30        | 10:00      | 2                | Régis  | Introduction                 |
 |                       |              | 10:15        | 11:45      | 2                |               | Machines virtuelles          |
 |                       |              | 13:00        | 14:30      | 2                |               | Github ? (mais pas git)      |
 |                       |              | 14:45        | 16:15      | 2                |               | Base de données              |
@@ -55,5 +55,8 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 |                       |              | 10:15        | 11:45      | 2                |               | QGIS server                  |
 |                       |              | 13:00        | 14:30      | 2                | E. Sauthier   | AGOL                         |
 |                       |              | 14:45        | 16:15      | 2                |               | AGOL                         |
+
+
+
 
 

@@ -50,7 +50,8 @@ jobs:
       - name: Process Marp markdown files individually
         if: steps.find_marp_files.outputs.readmes != ''
         run: |
-          for file in ${{ steps.find_marp_files.outputs.readmes }}; do
+          echo "${{ steps.find_marp_files.outputs.readmes }}" | while IFS= read -r file; do
+            if [ -z "$file" ]; then continue; fi
             dir=$(dirname "$file")
             basename=$(basename "$file" .md)
             output_dir="build/$dir"

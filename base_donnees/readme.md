@@ -49,6 +49,12 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 
 ---
 
+![alt text](image-3.png)
+
+source : [https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b](https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b)
+
+---
+
 La majorité de la diffusion des données géographiques s’effectue via des bases de données. Toutefois, les données statiques, pour des raisons de performance, sont souvent diffusées sous forme de fichiers tuilés, comme le format MBTiles, par exemple. 
 
 De nouveaux formats, tels que GeoParquet, permettent désormais un enregistrement efficace et une accessibilité accrue sans nécessiter de base de données ni de serveur de diffusion. Nous y reviendrons plus en détail dans la suite du cours.
@@ -237,6 +243,15 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 * Idéal pour des projets collaboratifs et évolutifs
 * Remplace avantageusement les fichiers plats (shapefile, etc.)
 * Outil central dans une **Infrastructure de Données Spatiales (IDS)**
+
+
+---
+## Let's go !!!!
+
+
+![alt text](image-5.png)
+
+
 
 ---
 ## Installation de PostgreSQL/PostGIS + PGAdmin

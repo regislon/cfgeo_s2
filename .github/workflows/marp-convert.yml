@@ -1,12 +1,5 @@
 name: Convert MARP README to HTML
 
-# Configuration - specify the markdown files to convert
-env:
-  MARP_FILES: |
-    general/README.md
-    general/github.md
-    base_donnees/readme.md
-
 on:
   push:
     branches:
@@ -25,48 +18,39 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: "Check if specified Markdown files exist"
-        id: find_readmes
+      - name: "Find Markdown files with marp: true"
+        id: find_marp_files
         run: |
-          echo "Using specified Markdown files for conversion:"
+          echo "Searching for markdown files with marp: true..."
           
-          # Process the files line by line
-          valid_files=""
-          while IFS= read -r file || [ -n "$file" ]; do
-            # Skip if line is empty after trimming
-            if [[ -z "${file// /}" ]]; then
-              continue
-            fi
-            
-            file=$(echo "$file" | xargs) # Trim whitespace
-            if [[ -f "$file" ]]; then
-              echo "Found file: $file"
-              valid_files+="$file"$'\n'
-            else
-              echo "Warning: File not found: $file"
-            fi
-          done <<< "${{ env.MARP_FILES }}"
+          # List all markdown files to verify they are found
+          echo "All markdown files in repository:"
+          find . -name '*.md' -type f || echo "No markdown files found."
           
-          # Remove trailing newline
-          valid_files=$(echo -n "$valid_files" | sed '$ s/\n$//')
+          # Use a more robust grep pattern to find marp: true in frontmatter
+          marp_files=$(find . -name '*.md' -type f -exec sh -c 'head -n 5 "$1" | grep -q "^marp: true" && echo "$1"' sh {} \; || echo "")
           
-          if [ -z "$valid_files" ]; then
-            echo "No valid Markdown files found"
+          # Debugging: Show the matched files
+          echo "Matched markdown files:"
+          echo "$marp_files"
+          
+          if [ -z "$marp_files" ]; then
+            echo "No markdown files with marp: true found"
             echo "readmes=" >> $GITHUB_OUTPUT
           else
-            echo "Found the following valid Markdown files:"
-            echo "$valid_files"
+            echo "Found the following markdown files with marp: true:"
+            echo "$marp_files"
             echo "readmes<<EOF" >> $GITHUB_OUTPUT
-            echo "$valid_files" >> $GITHUB_OUTPUT
+            echo "$marp_files" >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
           fi
           mkdir -p build
 
       # Instead of copying directories first, we'll process each file individually to maintain structure
-      - name: Process Marp README files individually
-        if: steps.find_readmes.outputs.readmes != ''
+      - name: Process Marp markdown files individually
+        if: steps.find_marp_files.outputs.readmes != ''
         run: |
-          for file in ${{ steps.find_readmes.outputs.readmes }}; do
+          for file in ${{ steps.find_marp_files.outputs.readmes }}; do
             dir=$(dirname "$file")
             basename=$(basename "$file" .md)
             output_dir="build/$dir"
@@ -107,7 +91,7 @@ jobs:
           done
 
       - name: Deploy preview
-        if: ${{ github.event_name == 'pull_request' && steps.find_readmes.outputs.readmes != '' }}
+        if: ${{ github.event_name == 'pull_request' && steps.find_marp_files.outputs.readmes != '' }}
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
@@ -115,7 +99,7 @@ jobs:
           umbrella-dir: pr-preview
 
       - name: Deploy production
-        if: ${{ github.event_name == 'push' && steps.find_readmes.outputs.readmes != '' }}
+        if: ${{ github.event_name == 'push' && steps.find_marp_files.outputs.readmes != '' }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

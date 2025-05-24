@@ -2,7 +2,7 @@ name: Convert MARP README to HTML
 
 # Configuration - specify the markdown files to convert
 env:
-  MARP_FILES: >-
+  MARP_FILES: |
     general/README.md
     general/github.md
     base_donnees/readme.md
@@ -30,21 +30,25 @@ jobs:
         run: |
           echo "Using specified Markdown files for conversion:"
           
-          # Create an array of files from the environment variable
-          IFS=$'\n' read -r -d '' -a markdown_files < <(echo "${{ env.MARP_FILES }}" | tr ' ' '\n' && printf '\0')
-          
+          # Process the files line by line
           valid_files=""
-          for file in "${markdown_files[@]}"; do
-            if [[ -n "$file" && -f "$file" ]]; then
+          while IFS= read -r file || [ -n "$file" ]; do
+            # Skip if line is empty after trimming
+            if [[ -z "${file// /}" ]]; then
+              continue
+            fi
+            
+            file=$(echo "$file" | xargs) # Trim whitespace
+            if [[ -f "$file" ]]; then
               echo "Found file: $file"
               valid_files+="$file"$'\n'
             else
               echo "Warning: File not found: $file"
             fi
-          done
+          done <<< "${{ env.MARP_FILES }}"
           
           # Remove trailing newline
-          valid_files=$(echo "$valid_files" | sed -e 's/\n$//')
+          valid_files=$(echo -n "$valid_files" | sed '$ s/\n$//')
           
           if [ -z "$valid_files" ]; then
             echo "No valid Markdown files found"

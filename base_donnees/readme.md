@@ -436,16 +436,13 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 
-
-
-
-
-
 ### 5. Ressources supplémentaires
 - Documentation PostgreSQL : [https://www.postgresql.org/docs/](https://www.postgresql.org/docs/)
 - Documentation PostGIS : [https://postgis.net/documentation/](https://postgis.net/documentation/)
 - Tutoriels PgAdmin : [https://www.pgadmin.org/docs/](https://www.pgadmin.org/docs/)
 
 ---
+
+
 
 

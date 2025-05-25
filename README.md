@@ -62,3 +62,9 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 |                       |                | 14:45         | 16:15       | 2                |              |                                     |       |
 
 
+
+## Suivi du planning et des contenus
+
+Un fichier de suivi des différentes étapes du module est disponible en ligne. Il permet de suivre l'avancement des installations et les resultats des travaux effectués par les participants. Ce fichier est mis à jour régulièrement pas les enseignants et les participants.
+
+[Suivi du module (Google Sheets)](https://docs.google.com/spreadsheets/d/17YdfYZI3R0N86sSZc5DGH54euCWpwDZ4hMcn9SM57sg/edit?usp=sharing)

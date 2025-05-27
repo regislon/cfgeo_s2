@@ -24,7 +24,7 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 
 <img src="image.png" width="600">
 
-*Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world*
+- Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world
 
 ---
 # Partie 1 : Théorie
@@ -34,10 +34,10 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 
 ## Pourquoi une base de données en géomatique ?
 
-* Gérer de grands volumes de données spatiales
-* Garantir l’intégrité, la cohérence et la traçabilité
-* Faciliter les requêtes spatiales complexes
-* Travailler en équipe, sur des données partagées
+- Gérer de grands volumes de données spatiales
+- Garantir l’intégrité, la cohérence et la traçabilité
+- Faciliter les requêtes spatiales complexes
+- Travailler en équipe, sur des données partagées
 
 ---
 
@@ -67,15 +67,15 @@ De nouveaux formats, tels que GeoParquet, permettent désormais un enregistremen
 
 ## Les principaux SGBD spatiaux
 
-* **PostgreSQL/PostGIS** : open source, très utilisé en géomatique, riche en fonctions spatiales.
-* **Oracle Spatial** : solution propriétaire, très puissante, intégrée à Oracle Database.
-* **Microsoft SQL Server (avec extension spatiale)** : supporte les types geometry et geography, utilisé dans de nombreux environnements professionnels.
+- **PostgreSQL/PostGIS** : open source, très utilisé en géomatique, riche en fonctions spatiales.
+- **Oracle Spatial** : solution propriétaire, très puissante, intégrée à Oracle Database.
+- **Microsoft SQL Server (avec extension spatiale)** : supporte les types geometry et geography, utilisé dans de nombreux environnements professionnels.
 
 ---
 
-* **MySQL (Spatial Extensions)** : supporte les objets géométriques, moins avancé que PostGIS ou Oracle.
-* **SpatiaLite** : extension spatiale pour SQLite, idéale pour des usages légers ou embarqués.
-* **MongoDB (GeoJSON)** : base NoSQL avec support des requêtes spatiales simples.
+- **MySQL (Spatial Extensions)** : supporte les objets géométriques, moins avancé que PostGIS ou Oracle.
+- **SpatiaLite** : extension spatiale pour SQLite, idéale pour des usages légers ou embarqués.
+- **MongoDB (GeoJSON)** : base NoSQL avec support des requêtes spatiales simples.
 
 ---
 
@@ -96,10 +96,10 @@ Quelle est la limite de votre carte de crédit ?
 
 ## Historique de PostgreSQL
 
-* **1986** : Début du projet POSTGRES à l’Université de Californie, Berkeley, sous la direction de Michael Stonebraker (suite au projet Ingres).
-* **1996** : Le projet devient PostgreSQL, ajout du support SQL.
-* **Années 2000** : Adoption croissante dans le monde open source et en entreprise, enrichissement des fonctionnalités (transactions, index avancés, extensibilité).
-* **Aujourd’hui** : PostgreSQL est reconnu comme l’un des SGBD open source les plus robustes, évolutifs et riches en fonctionnalités, avec une forte communauté et de nombreux contributeurs.
+- **1986** : Début du projet POSTGRES à l’Université de Californie, Berkeley, sous la direction de Michael Stonebraker (suite au projet Ingres).
+- **1996** : Le projet devient PostgreSQL, ajout du support SQL.
+- **Années 2000** : Adoption croissante dans le monde open source et en entreprise, enrichissement des fonctionnalités (transactions, index avancés, extensibilité).
+- **Aujourd’hui** : PostgreSQL est reconnu comme l’un des SGBD open source les plus robustes, évolutifs et riches en fonctionnalités, avec une forte communauté et de nombreux contributeurs.
 
 ---
 
@@ -115,11 +115,11 @@ PostgreSQL se prononce souvent "Post-Gress", car le nom complet est un peu tordu
 
 ## Historique de PostGIS
 
-* **2001** : Début du développement de PostGIS par Refractions Research pour ajouter des capacités spatiales à PostgreSQL.
-* **2003** : Première version stable (1.0), ajout des types `geometry` et des fonctions spatiales de base.
-* **2005** : Certification OGC (Open Geospatial Consortium) pour la conformité avec les standards spatiaux.
-* **Années 2010** : Intégration de nouvelles fonctionnalités comme le support des types `geography`, des index GiST améliorés, et des fonctions avancées (ST_Cluster, ST_3D).
-* **Aujourd’hui** : PostGIS est l’une des extensions spatiales les plus utilisées, avec un large écosystème d’outils compatibles (QGIS, GeoServer, etc.).
+- **2001** : Début du développement de PostGIS par Refractions Research pour ajouter des capacités spatiales à PostgreSQL.
+- **2003** : Première version stable (1.0), ajout des types `geometry` et des fonctions spatiales de base.
+- **2005** : Certification OGC (Open Geospatial Consortium) pour la conformité avec les standards spatiaux.
+- **Années 2010** : Intégration de nouvelles fonctionnalités comme le support des types `geography`, des index GiST améliorés, et des fonctions avancées (ST_Cluster, ST_3D).
+- **Aujourd’hui** : PostGIS est l’une des extensions spatiales les plus utilisées, avec un large écosystème d’outils compatibles (QGIS, GeoServer, etc.).
 
 ---
 
@@ -132,12 +132,12 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 
 ## PostgreSQL + PostGIS
 
-* **PostgreSQL** : Système de gestion de base de données relationnelle (SGBDR)
-* **PostGIS** : Extension spatiale de PostgreSQL
+- **PostgreSQL** : Système de gestion de base de données relationnelle (SGBDR)
+- **PostGIS** : Extension spatiale de PostgreSQL
 
-  * Ajoute le type `geometry` et `geography`
-  * Fonctions spatiales : distances, intersections, buffers, etc.
-  * Indexation spatiale avec **GiST**
+  - Ajoute le type `geometry` et `geography`
+  - Fonctions spatiales : distances, intersections, buffers, etc.
+  - Indexation spatiale avec **GiST**
 
 ---
 
@@ -154,7 +154,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
    PostGIS est utilisé dans des projets de traitement de données **satellitaires**, par exemple à l’**ESA** (European Space Agency) ou dans des portails de données géographiques comme **GeoServer**.
 
 ---
-
 
 4. **Il peut gérer le monde entier**
    Grâce à son support de projections multiples et de géométries complexes, PostGIS peut stocker et analyser des données à l’échelle **globale**, tout en étant rapide et efficace.
@@ -210,9 +209,9 @@ USING GIST(geom);
 
 ## Intégration SIG + BDD
 
-* QGIS peut se connecter directement à PostGIS
-* Possibilité d’éditer, visualiser et filtrer les données
-* Un seul lieu de vérité pour toutes les équipes
+- QGIS peut se connecter directement à PostGIS
+- Possibilité d’éditer, visualiser et filtrer les données
+- Un seul lieu de vérité pour toutes les équipes
 
 ---
 
@@ -226,10 +225,10 @@ Non, d'autres outils comme Pgadmin, GeoServer, MapServer, et même des langages 
 
 PgAdmin est un outil graphique open source pour gérer et administrer les bases de données PostgreSQL. Il offre une interface utilisateur intuitive pour :
 
-* Créer, modifier et supprimer des bases de données, tables, et autres objets.
-* Exécuter des requêtes SQL et visualiser les résultats.
-* Gérer les utilisateurs et les permissions.
-* Superviser les performances et surveiller l'activité de la base de données.
+- Créer, modifier et supprimer des bases de données, tables, et autres objets.
+- Exécuter des requêtes SQL et visualiser les résultats.
+- Gérer les utilisateurs et les permissions.
+- Superviser les performances et surveiller l'activité de la base de données.
 
 
 ⚠️ : PgAdmin n'est pas une base de données, mais un SGBD.
@@ -445,41 +444,41 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 1. **Ouvrir le pare-feu**
 
-   * Clique sur le menu **Start**, puis cherche **"Windows Defender Firewall with Advanced Security"** et ouvre-le.
+   - Clique sur le menu **Start**, puis cherche **"Windows Defender Firewall with Advanced Security"** et ouvre-le.
 
 2. **Créer une nouvelle règle entrante**
 
-   * Dans le panneau de gauche, clique sur **Inbound Rules**.
-   * Dans le panneau de droite, clique sur **New Rule…**.
+   - Dans le panneau de gauche, clique sur **Inbound Rules**.
+   - Dans le panneau de droite, clique sur **New Rule…**.
 
 3. **Choisir le type de règle**
 
-   * Sélectionne **Port** puis clique sur **Next**.
+   - Sélectionne **Port** puis clique sur **Next**.
 
 ---
 
 4. **Configurer le port**
 
-   * Choisis **TCP**.
-   * Coche **Specific local ports** et saisis : `5432`
-   * Clique sur **Next**.
+   - Choisis **TCP**.
+   - Coche **Specific local ports** et saisis : `5432`
+   - Clique sur **Next**.
 
 5. **Définir l’action**
 
-   * Sélectionne **Allow the connection**.
-   * Clique sur **Next**.
+   - Sélectionne **Allow the connection**.
+   - Clique sur **Next**.
 
 6. **Choisir les profils**
 
-   * Coche les options appropriées : **Domain**, **Private** et éventuellement **Public** si nécessaire.
-   * Clique sur **Next**.
+   - Coche les options appropriées : **Domain**, **Private** et éventuellement **Public** si nécessaire.
+   - Clique sur **Next**.
 
 ---
 
 7. **Nommer la règle**
 
-   * Donne un nom clair, comme : `PostgreSQL - Port 5432`
-   * Clique sur **Finish**.
+   - Donne un nom clair, comme : `PostgreSQL - Port 5432`
+   - Clique sur **Finish**.
 
 
 
@@ -493,16 +492,16 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 * 📝 **Modifier `pg_hba.conf`** :
 
-  * Ouvrir également avec Notepad en mode administrateur.
-  * Ajouter à la fin :
+  - Ouvrir également avec Notepad en mode administrateur.
+  - Ajouter à la fin :
     `host    all    all    0.0.0.0/0    md5`
 
 
 * 🔁 **Redémarrer le service PostgreSQL** :
 
-  * Lancer `services.msc`
-  * Trouver `postgresql-x64-<version>`
-  * Clic droit → **Restart**
+  - Lancer `services.msc`
+  - Trouver `postgresql-x64-<version>`
+  - Clic droit → **Restart**
 
 
 ---
@@ -513,7 +512,8 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 Les base de données spatiales fournissent de nouveaux types de données afin de modéliser les géométries
 
-![alt text](image-13.png){style="max-width: 50%;"}
+![width:600px](image-13.png)
+
 
 
 ---
@@ -548,8 +548,6 @@ Les base de données spatiales ont des index spatiaux
 - Documentation PostgreSQL : [https://www.postgresql.org/docs/](https://www.postgresql.org/docs/)
 - Documentation PostGIS : [https://postgis.net/documentation/](https://postgis.net/documentation/)
 - Tutoriels PgAdmin : [https://www.pgadmin.org/docs/](https://www.pgadmin.org/docs/)
-
----
 
 
 

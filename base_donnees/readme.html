@@ -18,7 +18,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="2" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
-<img src="image.png" width="600" />
+<p><img src="image.png" alt="" style="height:400px;" /></p>
 <ul>
 <li>Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world</li>
 </ul>
@@ -213,7 +213,7 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 </li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="18" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="18" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <h2 id="le-mod%C3%A8le-relationnel--spatial">Le modèle relationnel + spatial</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> batiments (
@@ -223,12 +223,12 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 );
 </code></pre>
 <ul>
-<li data-marpit-fragment="1">Chaque ligne représente un <strong>objet géographique</strong></li>
-<li data-marpit-fragment="2">La colonne <code>geom</code> contient la <strong>géométrie</strong></li>
-<li data-marpit-fragment="3">Le SRID (ex: 2056) indique le <strong>système de projection</strong></li>
+<li>Chaque ligne représente un <strong>objet géographique</strong></li>
+<li>La colonne <code>geom</code> contient la <strong>géométrie</strong></li>
+<li>Le SRID (ex: 2056) indique le <strong>système de projection</strong></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-marpit-fragments="2" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="19" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="19" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <h2 id="requ%C3%AAtes-spatiales-avec-postgis">Requêtes spatiales avec PostGIS</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-sql"><span class="hljs-comment">-- Rechercher tous les bâtiments dans une zone</span>
@@ -236,11 +236,11 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 <span class="hljs-keyword">WHERE</span> ST_Within(geom, ST_GeomFromText(<span class="hljs-string">&#x27;POLYGON(...)&#x27;</span>, <span class="hljs-number">2056</span>));
 </code></pre>
 <ul>
-<li data-marpit-fragment="1">Requêtes puissantes grâce aux fonctions <code>ST_</code></li>
-<li data-marpit-fragment="2">Compatible avec QGIS, GeoServer, etc.</li>
+<li>Requêtes puissantes grâce aux fonctions <code>ST_</code></li>
+<li>Compatible avec QGIS, GeoServer, etc.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-marpit-fragments="2" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="20" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="20" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <h2 id="index-spatial--acc%C3%A9l%C3%A9rer-les-requ%C3%AAtes">Index spatial : accélérer les requêtes</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-sql"><span class="hljs-keyword">CREATE</span> INDEX batiments_geom_idx
@@ -248,8 +248,8 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 <span class="hljs-keyword">USING</span> GIST(geom);
 </code></pre>
 <ul>
-<li data-marpit-fragment="1">L’index GiST permet des recherches rapides</li>
-<li data-marpit-fragment="2">Obligatoire pour les projets de grande envergure</li>
+<li>L’index GiST permet des recherches rapides</li>
+<li>Obligatoire pour les projets de grande envergure</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="21" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
@@ -278,14 +278,14 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 </ul>
 <p><img class="emoji" draggable="false" alt="⚠️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" data-marp-twemoji=""/> : PgAdmin n'est pas une base de données, mais un SGBD.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-marpit-fragments="4" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="24" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="24" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <h2 id="r%C3%A9sum%C3%A9">Résumé</h2>
 <ul>
-<li data-marpit-fragment="1">PostGIS transforme PostgreSQL en base spatiale puissante</li>
-<li data-marpit-fragment="2">Idéal pour des projets collaboratifs et évolutifs</li>
-<li data-marpit-fragment="3">Remplace avantageusement les fichiers plats (shapefile, etc.)</li>
-<li data-marpit-fragment="4">Outil central dans une <strong>Infrastructure de Données Spatiales (IDS)</strong></li>
+<li>PostGIS transforme PostgreSQL en base spatiale puissante</li>
+<li>Idéal pour des projets collaboratifs et évolutifs</li>
+<li>Remplace avantageusement les fichiers plats (shapefile, etc.)</li>
+<li>Outil central dans une <strong>Infrastructure de Données Spatiales (IDS)</strong></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="25" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
@@ -356,20 +356,20 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="33" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <ol>
-<li>Depuis PgAdmin. Clic droit sur Bases de données =&gt; Ajouter...</li>
+<li>Depuis PgAdmin. Clic droit sur Bases de données =&gt; Ajouter...<br />
+<img src="image-9.png" alt="" style="height:400px;" /></li>
 </ol>
-<img src="image-9.png" alt="alt text" height="400" />
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="34" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <ol start="2">
 <li>
 <ul>
-<li>variante 1 :  A l’aide du wizard</li>
+<li>variante 1 :  A l’aide du wizard<br />
+<img src="image-110.png" alt="" style="height:400px;" /></li>
 </ul>
 </li>
 </ol>
-<img src="image-10.png" alt="alt text" height="400" />
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="35" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
@@ -380,7 +380,7 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 </ul>
 </li>
 </ol>
-<img src="image-11.png" alt="alt text" height="400" />
+<p><img src="image-11.png" alt="" style="height:400px;" /></p>
 <p>(mieux pour ajouter la gémétrie)</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="36" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
@@ -424,19 +424,19 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="40" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
-<img src="image-12.png" alt="alt text" height="600" />
+<p><img src="image-12.png" alt="" style="height:600px;" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="41" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <h1 id="partie-4--acc%C3%A8s-%C3%A0-la-base-de-donn%C3%A9es-depuis-votre-ordinateur-personnel">Partie 4 : Accès à la base de données depuis votre ordinateur personnel</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="42" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="42" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <p><strong>Préparez-vous, car quelques configurations seront nécessaires si vous souhaitez accéder à la base à distance :</strong></p>
 <ul>
-<li data-marpit-fragment="1">Il faudra configurer <strong>PostgreSQL</strong> pour qu’il accepte les connexions distantes.</li>
-<li data-marpit-fragment="2">Il faudra également modifier le <strong>pare-feu de la machine virtuelle</strong> pour autoriser les connexions sur le port <strong>5432</strong>.</li>
-<li data-marpit-fragment="3">Enfin, il sera nécessaire d’ajuster les <strong>groupes de sécurité AWS</strong> afin d’ouvrir ce même port.</li>
+<li>Il faudra configurer <strong>PostgreSQL</strong> pour qu’il accepte les connexions distantes.</li>
+<li>Il faudra également modifier le <strong>pare-feu de la machine virtuelle</strong> pour autoriser les connexions sur le port <strong>5432</strong>.</li>
+<li>Enfin, il sera nécessaire d’ajuster les <strong>groupes de sécurité AWS</strong> afin d’ouvrir ce même port.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="43" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
@@ -592,21 +592,21 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 <header>CFGEO - S2 - VM</header>
 <p>Pour une grande table, ce système de &quot;deux passes&quot; consistant à évaluer d'abord l'index approximatif, puis à effectuer un test exact peut réduire radicalement la quantité de calculs nécessaires pour répondre à une requête.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:35%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="left"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;image-16.png&quot;);background-size:300px auto;"></figure></div></section></foreignObject><foreignObject width="65%" height="720" x="35%"><section id="55" data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:35%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="left">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:35%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="left"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;image-16.png&quot;);background-size:300px auto;"></figure></div></section></foreignObject><foreignObject width="65%" height="720" x="35%"><section id="55" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:35%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="left">
 <header>CFGEO - S2 - VM</header>
 
 <p>Ce <strong>R-Tree</strong> organise les objets spatiaux de manière à ce qu’une recherche spatiale soit une promenade rapide dans l’arbre.</p>
 <p>Pour trouver quel objet contient <img class="emoji" draggable="false" alt="🌸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f338.svg" data-marp-twemoji=""/> :</p>
 <ul>
-<li data-marpit-fragment="1">Le système vérifie d’abord s’il est dans <strong>T</strong> ou <strong>U</strong> (<strong>T</strong>).</li>
-<li data-marpit-fragment="2">Il vérifie ensuite s’il se trouve dans <strong>N</strong>, <strong>P</strong> ou <strong>Q</strong> (<strong>P</strong>).</li>
-<li data-marpit-fragment="3">Il vérifie enfin s’il se trouve dans <strong>C</strong>, <strong>D</strong> ou <strong>E</strong> (<strong>D</strong>).</li>
+<li>Le système vérifie d’abord s’il est dans <strong>T</strong> ou <strong>U</strong> (<strong>T</strong>).</li>
+<li>Il vérifie ensuite s’il se trouve dans <strong>N</strong>, <strong>P</strong> ou <strong>Q</strong> (<strong>P</strong>).</li>
+<li>Il vérifie enfin s’il se trouve dans <strong>C</strong>, <strong>D</strong> ou <strong>E</strong> (<strong>D</strong>).</li>
 </ul>
 <p>Seulement <strong>8 cases</strong> doivent être testées.<br />
 Pour un balayage complet de la table, il faudrait tester <strong>13 cases</strong>.<br />
 Plus la table est grande, plus l’index est <strong>puissant</strong>.</p>
 </section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="left"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="56" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="left"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="56" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>
 <h3 id="5-ressources-suppl%C3%A9mentaires">5. Ressources supplémentaires</h3>
 <ul>

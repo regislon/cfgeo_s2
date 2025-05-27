@@ -1,23 +1,8 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - VM"
-theme: default
----
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 
 # Module S2 - SIT systèmes (webGIS et réseaux)
 
----
 
 ## Objectifs
 
@@ -29,7 +14,6 @@ table td {
   - ⚙️ l’installation de logiciels,  
   - 🛠️ la gestion d’infrastructures informatiques.  
 
---- 
 
 
 - 🎓 Mettre à profit la maturité acquise durant la formation.  
@@ -38,7 +22,6 @@ table td {
 - 🗺️ Apprendre à gérer, publier et exploiter des données géospatiales.
 
 
----
 
 
 ## Mise en context 
@@ -49,16 +32,13 @@ Ce système inclut des données du canton de Vaud, des données de la Confédér
 📋 A ce stade du projet, le client vous a dit qu'il n'avait aucune infrastructure à disposition, et qu'il vous charge de toute la mise en œuvre. Il n'a pas de cahier des charges précis, vous devez vous-mêmes concevoir et réaliser le projet.  
 Le client dit que le système "devra proposer, au minimum, les fonctions de base d'un SIG standard".  
 
----
 
-![alt text](image-8.png)
-
----
+![alt text](images_documentation/image-8.png)
 
 
-![alt text](image-4.png)
 
----
+![alt text](images_documentation/image-4.png)
+
 
 
 ## La méthode de travail
@@ -71,7 +51,6 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 🛠️ Le travail se fait de manière individuelle, car il est important que chacun ait l'occasion de faire la manipulation.  
 
----
 
 
 ## L'évaluation
@@ -80,7 +59,6 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 ⚙️ Il est donc important que vous compreniez bien les étapes du processus
 
----
 
 
 
@@ -91,7 +69,6 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 - **Lucie Nicolier** - QGIS desktop, QGIS Server, Qfield 
 - **Eulalie Sauthier** - ArcGIS Online 
 
----
 
 
 
@@ -108,7 +85,6 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 * 🤫 …mais faites-le dans le calme, sans que cela ne devienne un marché animé — gardons une ambiance propice à la concentration.
 
 
----
 
 
 
@@ -128,8 +104,7 @@ Ce cours se déroule à la fois en présentiel et à distance.
 - **Note les éléments importants**, comme tu le ferais en présentiel.
 
 
----
 
-![alt text](image-3.png)
+![alt text](images_documentation/image-3.png)
 
 

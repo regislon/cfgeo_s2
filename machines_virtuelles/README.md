@@ -1,31 +1,14 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - VM"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 
 
 # Système d'information géographique
- ---
 
 ## Définition 
 
 Un système d’information géographique (SIG) est un outil permettant de collecter, gérer, analyser et visualiser des données géographiques pour mieux comprendre et prendre des décisions sur l’espace.
 
 
----
 
 À votre avis, quels sont les composants d’un système d’information géographique ?
 
@@ -35,13 +18,11 @@ Par exemple :
 - celui de votre entreprise
 
 
----
 
 
 Voici le schéma de notre SIG que nous allons mettre en place 🤘
-![alt text](image.png)
+![alt text](images_documentation/image.png)
 
----
  Cette liste présente de manière non exhaustive les différents éléments qui composent un système d'information géographique.
 
  
@@ -57,29 +38,24 @@ Voici le schéma de notre SIG que nous allons mettre en place 🤘
 | **Système de fichiers**      | Stockage de fichiers sources, tuiles, logs, backups                      | Amazon S3, EBS, disque local, GCS                 |
 | **API / Web services**       | Points de communication entre front-end et back-end, accès aux données   | REST, WFS, WMS, WMTS, GeoJSON API                 |
 
----
 
 
 Les composants de base d’un système d’information géographique sont installés sur un serveur (physique, virtuel ou dans le cloud), et peuvent être déployés individuellement ou sous forme de conteneurs Docker pour une installation plus rapide, modulaire et reproductible.
 
 
----
 # Serveur physique
 Un serveur physique est un ordinateur dédié, puissant et généralement installé dans un centre de données, conçu pour faire fonctionner des services en continu, comme une base de données, un site web ou un système d’information géographique.
 
----
 
 # Serveur virtuel
 Un **serveur virtuel** est une machine simulée par un logiciel (hyperviseur) qui fonctionne comme un vrai serveur, mais partage les ressources (CPU, RAM, disque) d’un serveur physique avec d'autres machines virtuelles.
 
----
 # Serveur cloud
 
 Un **serveur cloud** est un serveur virtuel hébergé dans un centre de données distant, accessible via Internet, et fourni à la demande par un prestataire (comme AWS, Azure ou Google Cloud), avec une grande flexibilité de ressources et de coûts.
 
 
 
----
 
 <!-- .slide: style="font-size: 0.6em" -->
 # Clients
@@ -98,20 +74,17 @@ Une telle infrastructure peut être utilisée par une entreprise, une administra
 
 
 
----
 
 # Distinction entre le backend et le frontend
 
 Dans le développement d'applications web ou de systèmes d'information, on distingue généralement deux parties principales :
 
----
 
 ## 🖥️ Front-End
 
 Le **front-end** correspond à la partie **visible par l'utilisateur**. C'est l'interface graphique avec laquelle l'utilisateur interagit directement, via un navigateur web.
 
 
----
 
 ## 🗄️ Back-End
 
@@ -127,7 +100,6 @@ allowfullscreen>
 </center>
 
 
----
 
 ## 🔁 Interaction entre Front-End et Back-End
 
@@ -135,11 +107,9 @@ Le front-end envoie des **requêtes** au back-end, qui traite les données et re
 Cela permet de construire des applications web interactives et dynamiques.
 
 
----
 
 # Création d'une machine virtuelle sur AWS (Amazon Web Services)
 
----
 
 <!-- .slide: style="font-size: 0.6em" -->
 ## Étape 1 : Création de votre compte AWS
@@ -151,7 +121,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 5. Sélectionnez "Compte personnel" (sauf si vous créez un compte pour une entreprise)
 6. Renseignez vos informations personnelles et les détails de contact
 
----
 
 ## Étape 2 : Informations de paiement
 
@@ -160,7 +129,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Validez votre identité par SMS ou appel vocal
 3. Sélectionnez le plan de support gratuit (AWS Basic Support)
 
----
 
 ## Étape 3 : Connexion à la console AWS
 
@@ -168,7 +136,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Cliquez sur "Connexion à la console"
 3. Connectez-vous avec l'adresse e-mail et le mot de passe que vous avez créés
 
----
 
 ## Étape 4 : Lancement d'une instance EC2 Windows
 
@@ -176,7 +143,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Cliquez sur "Lancer l'instance"
 3. Donnez un nom à votre instance, par exemple "MaVMWindows"
 
----
 
 ## Étape 5 : Sélection de l'image (AMI)
 
@@ -184,11 +150,9 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Sélectionnez "Microsoft Windows Server 2022 Base"
     > Assurez-vous que l'étiquette "Free tier eligible" (Éligible à l'offre gratuite) est présente
 
----
 
-![alt text](image-1.png)
+![alt text](images_documentation/image-1.png)
 
----
 
 ## Étape 6 : Choix du type d'instance
 
@@ -197,9 +161,8 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Conservez les paramètres par défaut pour le stockage (8 Go)
 
 
-![alt text](image-2.png)
+![alt text](images_documentation/image-2.png)
 
----
 
 
 ## Étape 7 : Configuration de la paire de clés
@@ -207,7 +170,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 > **Pourquoi une clé .pem ?** 
 > Le fichier .pem (Privacy Enhanced Mail) contient une clé privée cryptographique qui sert à décrypter le mot de passe administrateur généré par AWS pour votre instance Windows. C'est un mécanisme de sécurité qui garantit que seule la personne possédant cette clé privée peut accéder à l'instance. Sans cette clé, il est impossible de récupérer le mot de passe administrateur et donc de se connecter à votre machine virtuelle Windows. C'est pourquoi il est crucial de conserver ce fichier dans un endroit sûr et de ne jamais le partager.
 
----
 
 1. Créez une nouvelle paire de clés en cliquant sur "Create new key pair"
 2. Donnez un nom à votre paire de clés, par exemple "ma-cle-windows"
@@ -215,15 +177,13 @@ Cela permet de construire des applications web interactives et dynamiques.
 4. Cliquez sur "Créer une paire de clés"
 5. Le fichier de clé sera automatiquement téléchargé - conservez-le précieusement
 
-![alt text](image-3.png)
+![alt text](images_documentation/image-3.png)
 
 
----
 
 
-![alt text](image-4.png)
+![alt text](images_documentation/image-4.png)
 
----
 
 ## Étape 8 : Configuration des paramètres réseau
 
@@ -232,17 +192,15 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 
 <img src="image-5.png" width="20" />
-![alt text](image-5.png)
-
-
----
-
-
-![alt text](image-6.png)
+![alt text](images_documentation/image-5.png)
 
 
 
----
+
+![alt text](images_documentation/image-6.png)
+
+
+
 
 ## Étape 9 : Lancement de l'instance
 
@@ -250,7 +208,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 2. Cliquez sur "Launch instance" (Lancer l'instance)
 3. Patientez quelques minutes pendant que l'instance se lance
 
----
 
 ## Étape 10 : Connexion à votre instance Windows
 
@@ -262,7 +219,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 6. Cliquez sur "Get password" (Obtenir le mot de passe) et utilisez votre fichier de clé .pem
 7. Téléchargez le fichier RDP et utilisez-le pour vous connecter via l'application Bureau à distance (sur windows).
 
----
 
 ## Connexion à votre machine virtuelle
 
@@ -271,7 +227,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 > L’adresse publique, il s’agit de l’adresse IP attribuée à ton réseau par ton fournisseur d’accès à Internet (FAI), visible sur Internet. C’est un peu comme l’adresse postale de ta maison sur le web : elle permet aux autres ordinateurs ou services en ligne de savoir comment te joindre.
 
 
----
 
 ### 💻 Depuis Windows
 
@@ -282,7 +237,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 5. Vous êtes maintenant connecté à votre machine virtuelle Windows Server !
 
 
----
 
 ### 🍎 Depuis macOS
 
@@ -296,7 +250,6 @@ Cela permet de construire des applications web interactives et dynamiques.
    - Nom d'utilisateur: `Administrator`
    - Mot de passe: collez le mot de passe que vous avez obtenu avec votre fichier .pem
 
---- 
 
 6. Vous pouvez personnaliser l'affichage dans l'onglet "Display"
 7. Cliquez sur "Save", puis double-cliquez sur la connexion créée pour vous connecter
@@ -306,7 +259,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 
 
----
 
 ## Points importants à retenir
 
@@ -316,7 +268,6 @@ Cela permet de construire des applications web interactives et dynamiques.
 - Configurez des alertes de facturation pour éviter des coûts imprévus
 - N'oubliez pas de supprimer les ressources dont vous n'avez plus besoin
 
----
 
 ## Surveillance de votre utilisation
 
@@ -325,25 +276,21 @@ Cela permet de construire des applications web interactives et dynamiques.
 3. Consultez régulièrement votre utilisation pour vous assurer de rester dans les limites de l'offre gratuite
 
 
----
 
 ## Bienvennue sur votre tout nouveau SIT !
 
 Ce n'est q  ue le début, mais vous avez déjà fait un grand pas vers la création de votre propre système d'information géographique.
 
----
 
 ## Prochaines étapes
  Modifier le firewall de votre machine virtuelle pour permettre l'accès à votre serveur SIG. 
 
  > **Firewall** : Un pare-feu est un système de sécurité qui surveille et contrôle le trafic réseau entrant et sortant, en autorisant ou bloquant les connexions selon des règles prédéfinies. Il agit comme une barrière entre un réseau interne sécurisé et des réseaux externes non sécurisés, protégeant ainsi les données et les ressources inform
 
- ---
 
 
- ![alt text](firewall.png)
+ ![alt text](images_documentation/firewall.png)
 
- ---
 
 ## Transmission du DNS depuis la console AWS
 
@@ -353,6 +300,5 @@ Ce n'est q  ue le début, mais vous avez déjà fait un grand pas vers la créat
 2. Dans l'onglet "Détails", recherchez l'adresse DNS publique de votre instance.
 3. Copiez cette adresse DNS pour l'utiliser dans vos configurations ou pour accéder à votre serveur.
 
----
 
- ![alt text](dns.png)
+ ![alt text](images_documentation/dns.png)

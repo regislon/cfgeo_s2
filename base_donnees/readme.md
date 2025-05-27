@@ -22,7 +22,8 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 
 ---
 
-<img src="image.png" width="600">
+![height:400](image.png)
+
 
 - Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world
 
@@ -175,9 +176,9 @@ CREATE TABLE batiments (
 );
 ```
 
-* Chaque ligne représente un **objet géographique**
-* La colonne `geom` contient la **géométrie**
-* Le SRID (ex: 2056) indique le **système de projection**
+- Chaque ligne représente un **objet géographique**
+- La colonne `geom` contient la **géométrie**
+- Le SRID (ex: 2056) indique le **système de projection**
 
 ---
 
@@ -189,8 +190,8 @@ SELECT * FROM batiments
 WHERE ST_Within(geom, ST_GeomFromText('POLYGON(...)', 2056));
 ```
 
-* Requêtes puissantes grâce aux fonctions `ST_`
-* Compatible avec QGIS, GeoServer, etc.
+- Requêtes puissantes grâce aux fonctions `ST_`
+- Compatible avec QGIS, GeoServer, etc.
 
 ---
 
@@ -202,8 +203,8 @@ ON batiments
 USING GIST(geom);
 ```
 
-* L’index GiST permet des recherches rapides
-* Obligatoire pour les projets de grande envergure
+- L’index GiST permet des recherches rapides
+- Obligatoire pour les projets de grande envergure
 
 ---
 
@@ -239,10 +240,10 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 
 ## Résumé
 
-* PostGIS transforme PostgreSQL en base spatiale puissante
-* Idéal pour des projets collaboratifs et évolutifs
-* Remplace avantageusement les fichiers plats (shapefile, etc.)
-* Outil central dans une **Infrastructure de Données Spatiales (IDS)**
+- PostGIS transforme PostgreSQL en base spatiale puissante
+- Idéal pour des projets collaboratifs et évolutifs
+- Remplace avantageusement les fichiers plats (shapefile, etc.)
+- Outil central dans une **Infrastructure de Données Spatiales (IDS)**
 
 
 ---
@@ -320,21 +321,20 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 
 
 1. Depuis PgAdmin. Clic droit sur Bases de données => Ajouter...
-
-<img src="image-9.png" alt="alt text" height="400" />
+![height:400](image-9.png)
 
 ---
 
 2. - variante 1 :  A l’aide du wizard
+![height:400](image-110.png)
 
-<img src="image-10.png" alt="alt text" height="400" />
 
 
 ---
 
 2. - variante 2 : En SQL 
 
-<img src="image-11.png" alt="alt text" height="400" />
+![height:400](image-11.png)
 
 (mieux pour ajouter la gémétrie)
 
@@ -382,8 +382,7 @@ Que obtenez-vous ?
 
 
 ---
-<img src="image-12.png" alt="alt text" height="600" />
-
+![height:600](image-12.png)
 
 ---
 
@@ -394,9 +393,9 @@ Que obtenez-vous ?
 
 **Préparez-vous, car quelques configurations seront nécessaires si vous souhaitez accéder à la base à distance :**
 
-* Il faudra configurer **PostgreSQL** pour qu’il accepte les connexions distantes.
-* Il faudra également modifier le **pare-feu de la machine virtuelle** pour autoriser les connexions sur le port **5432**.
-* Enfin, il sera nécessaire d’ajuster les **groupes de sécurité AWS** afin d’ouvrir ce même port.
+- Il faudra configurer **PostgreSQL** pour qu’il accepte les connexions distantes.
+- Il faudra également modifier le **pare-feu de la machine virtuelle** pour autoriser les connexions sur le port **5432**.
+- Enfin, il sera nécessaire d’ajuster les **groupes de sécurité AWS** afin d’ouvrir ce même port.
 
 
 ---
@@ -548,9 +547,9 @@ Ce **R-Tree** organise les objets spatiaux de manière à ce qu’une recherche 
 
 Pour trouver quel objet contient 🌸 :
 
-* Le système vérifie d’abord s’il est dans **T** ou **U** (**T**).
-* Il vérifie ensuite s’il se trouve dans **N**, **P** ou **Q** (**P**).
-* Il vérifie enfin s’il se trouve dans **C**, **D** ou **E** (**D**).
+- Le système vérifie d’abord s’il est dans **T** ou **U** (**T**).
+- Il vérifie ensuite s’il se trouve dans **N**, **P** ou **Q** (**P**).
+- Il vérifie enfin s’il se trouve dans **C**, **D** ou **E** (**D**).
 
 Seulement **8 cases** doivent être testées.
 Pour un balayage complet de la table, il faudrait tester **13 cases**.

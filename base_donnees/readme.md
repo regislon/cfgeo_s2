@@ -541,24 +541,24 @@ Pour une grande table, ce système de "deux passes" consistant à évaluer d'abo
 
 ---
 
-![bg left:30% w:300](image-16.png)
+![bg left:35% w:300](image-16.png)
 
 
+Ce **R-Tree** organise les objets spatiaux de manière à ce qu’une recherche spatiale soit une promenade rapide dans l’arbre.
 
-This **R-Tree** organizes spatial objects in such a way that a spatial search is like a quick walk through the tree.
+Pour trouver quel objet contient 🌸 :
 
-To find which object contains 🌸:
+* Le système vérifie d’abord s’il est dans **T** ou **U** (**T**).
+* Il vérifie ensuite s’il se trouve dans **N**, **P** ou **Q** (**P**).
+* Il vérifie enfin s’il se trouve dans **C**, **D** ou **E** (**D**).
 
-* The system first checks if it is in **T** or **U** (**T**).
-* Then it checks whether it is in **N**, **P**, or **Q** (**P**).
-* Finally, it checks whether it is in **C**, **D**, or **E** (**D**).
-
-Only **8 cells** need to be tested.
-For a full table scan, **13 cells** would have to be tested.
-The larger the table, the more powerful the index.
-
+Seulement **8 cases** doivent être testées.
+Pour un balayage complet de la table, il faudrait tester **13 cases**.
+Plus la table est grande, plus l’index est **puissant**.
 
 ---
+
+
 
 
 

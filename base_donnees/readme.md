@@ -486,18 +486,18 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 ### 🔧 Configuration de PostgreSQL sur Windows Server 2022
 
-* 📁 **Accéder au dossier d'installation** :
+- 📁 **Accéder au dossier d'installation** :
   `C:\Program Files\PostgreSQL\17\data\`
 
 
-* 📝 **Modifier `pg_hba.conf`** :
+- 📝 **Modifier `pg_hba.conf`** :
 
   - Ouvrir également avec Notepad en mode administrateur.
   - Ajouter à la fin :
     `host    all    all    0.0.0.0/0    md5`
 
 
-* 🔁 **Redémarrer le service PostgreSQL** :
+- 🔁 **Redémarrer le service PostgreSQL** :
 
   - Lancer `services.msc`
   - Trouver `postgresql-x64-<version>`
@@ -520,12 +520,45 @@ Les base de données spatiales fournissent de nouveaux types de données afin de
 
 Les base de données spatiales ont des index spatiaux
 
-<img src="image-14.png" alt="alt text" height="400" />
+![height:400](image-14.png)
+
+```sql
+CREATE INDEX mytable_geom ON mytable USING GIST (geom);
+```
+
+---
+
+![height:200](image-15.png)
+
+Dans la figure ci-dessus, le nombre de lignes qui coupent l'étoile jaune est de un, la ligne rouge. Mais les boîtes englobantes des éléments qui coupent la boîte jaune sont au nombre de deux, la rouge et la bleue.
+
+La façon dont la base de données répond efficacement à la question "quelles lignes coupent l'étoile jaune" est de répondre d'abord à la question "quelles boîtes coupent la boîte jaune" en utilisant l'index (ce qui est très rapide), puis de faire un calcul exact de "quelles lignes coupent l'étoile jaune" uniquement pour les objets retournés par le premier test.
+
+---
+
+Pour une grande table, ce système de "deux passes" consistant à évaluer d'abord l'index approximatif, puis à effectuer un test exact peut réduire radicalement la quantité de calculs nécessaires pour répondre à une requête.
 
 
 ---
 
+![bg left:30% w:300](image-16.png)
 
+
+
+This **R-Tree** organizes spatial objects in such a way that a spatial search is like a quick walk through the tree.
+
+To find which object contains 🌸:
+
+* The system first checks if it is in **T** or **U** (**T**).
+* Then it checks whether it is in **N**, **P**, or **Q** (**P**).
+* Finally, it checks whether it is in **C**, **D**, or **E** (**D**).
+
+Only **8 cells** need to be tested.
+For a full table scan, **13 cells** would have to be tested.
+The larger the table, the more powerful the index.
+
+
+---
 
 
 

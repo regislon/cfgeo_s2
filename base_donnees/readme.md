@@ -27,6 +27,10 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 *Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world*
 
 ---
+# Partie 1 : Théorie
+
+
+---
 
 ## Pourquoi une base de données en géomatique ?
 
@@ -60,8 +64,6 @@ La majorité de la diffusion des données géographiques s’effectue via des ba
 De nouveaux formats, tels que GeoParquet, permettent désormais un enregistrement efficace et une accessibilité accrue sans nécessiter de base de données ni de serveur de diffusion. Nous y reviendrons plus en détail dans la suite du cours.
 
 ---
-
-# Bases de données spatiales : panorama
 
 ## Les principaux SGBD spatiaux
 
@@ -122,7 +124,6 @@ PostgreSQL se prononce souvent "Post-Gress", car le nom complet est un peu tordu
 ---
 
 **PostGIS & Spatial Database History**
-
 
 https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 
@@ -252,6 +253,9 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 ![alt text](image-5.png)
 
 
+---
+
+# Partie 2 : Installation de PostgreSQL/PostGIS + PGAdmin
 
 ---
 ## Installation de PostgreSQL/PostGIS + PGAdmin
@@ -337,6 +341,10 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 
 ---
 
+# Partie 3 : Création d'une base de données géographique et ajout d'une table - Pratique
+
+---
+
 
 ## Créer une base de données géographique et ajoute d'une table
 
@@ -378,9 +386,11 @@ Que obtenez-vous ?
 <img src="image-12.png" alt="alt text" height="600" />
 
 
-
 ---
 
+# Partie 4 : Accès à la base de données depuis votre ordinateur personnel
+
+---
 
 
 **Préparez-vous, car quelques configurations seront nécessaires si vous souhaitez accéder à la base à distance :**
@@ -431,7 +441,7 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 ---
 
 
-### ✅ Ouvrir le port 5432 pour PostgreSQL sur Windows Server 2022 (interface en anglais)
+## ✅ Ouvrir le port 5432 pour PostgreSQL sur Windows Server 2022 (interface en anglais)
 
 1. **Ouvrir le pare-feu**
 
@@ -496,6 +506,41 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 ---
+
+# Partie 5 : Partie théorique, concepts avancés
+
+---
+
+Les base de données spatiales fournissent de nouveaux types de données afin de modéliser les géométries
+
+![alt text](image-13.png){style="max-width: 50%;"}
+
+
+---
+
+Les base de données spatiales ont des index spatiaux
+
+<img src="image-14.png" alt="alt text" height="400" />
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -256,8 +256,8 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 ---
 ## Installation de PostgreSQL/PostGIS + PGAdmin
 
-🛠️ Exercice : Installation de la base de données
-📋 Instructions : à consulter ci-dessous
+🛠️ Exercice : Installation de la base de données sur votre machine virtuelle
+📋 Instructions : à consulter ci-après
 ⏱️ Durée estimée : 20 minutes
 
 ---
@@ -309,11 +309,78 @@ Vouse êtres maintenant prêt à utiliser PostgreSQL et PostGIS depuis votre mar
 
 ---
 
-Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce cas, il peut être plus simple de travailler directement sur votre propre ordinateur.
+Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce cas, il peut être plus simple de travailler directement sur votre propre ordinateur. Mais nous verrons cela plus tard...
 
 ![alt text](image-2.png)
 
 ---
+
+
+1. Depuis PgAdmin. Clic droit sur Bases de données => Ajouter...
+
+<img src="image-9.png" alt="alt text" height="400" />
+
+---
+
+2. - variante 1 :  A l’aide du wizard
+
+<img src="image-10.png" alt="alt text" height="400" />
+
+
+---
+
+2. - variante 2 : En SQL 
+
+<img src="image-11.png" alt="alt text" height="400" />
+
+(mieux pour ajouter la gémétrie)
+
+---
+
+
+## Créer une base de données géographique et ajoute d'une table
+
+🛠️ Exercice : nous allons créer une nouvelle base de données et ajouter une table avec différentes géométries
+📋 Instructions : à consulter ci-après
+⏱️ Durée estimée : 5 minutes
+
+
+---
+
+1. Exécuter la requête SQL suivante dans PgAdmin pour créer une nouvelle table.
+
+```sql
+CREATE TABLE geometries (name varchar, geom geometry);
+
+INSERT INTO geometries VALUES
+  ('Point', 'POINT(0 0)'),
+  ('Linestring', 'LINESTRING(0 0, 1 1, 2 1, 2 2)'),
+  ('Polygon', 'POLYGON((0 0, 1 0, 1 1, 0 1, 0 0))'),
+  ('PolygonWithHole', 'POLYGON((0 0, 10 0, 10 10, 0 10, 0 0),(1 1, 1 2, 2 2, 2 1, 1 1))'),
+  ('Collection', 'GEOMETRYCOLLECTION(POINT(2 0),POLYGON((0 0, 1 0, 1 1, 0 1, 0 0)))’);
+
+```
+
+2. visualiser cette table 
+
+---
+
+3. Puis exécuter la requête suivante pour visualiser les géométries dans QGIS :
+
+```sql 
+SELECT name, ST_AsText(geom) FROM geometries;
+```
+
+Que obtenez-vous ?
+
+
+---
+<img src="image-12.png" alt="alt text" height="600" />
+
+
+
+---
+
 
 
 **Préparez-vous, car quelques configurations seront nécessaires si vous souhaitez accéder à la base à distance :**
@@ -321,9 +388,6 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 * Il faudra configurer **PostgreSQL** pour qu’il accepte les connexions distantes.
 * Il faudra également modifier le **pare-feu de la machine virtuelle** pour autoriser les connexions sur le port **5432**.
 * Enfin, il sera nécessaire d’ajuster les **groupes de sécurité AWS** afin d’ouvrir ce même port.
-
-👉 Ces étapes sont **optionnelles**, mais vous pouvez les suivre si vous souhaitez vous connecter à la base depuis votre propre ordinateur.
-
 
 
 ---
@@ -432,7 +496,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 ---
-
 
 
 

@@ -133,5 +133,3 @@ Ce cours se déroule à la fois en présentiel et à distance.
 ![alt text](image-3.png)
 
 
-
----

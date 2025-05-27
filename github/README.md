@@ -40,6 +40,16 @@ GitHub offre également des fonctionnalités supplémentaires telles que la gest
 
 ---
 
+## Création de votre compte GitHub
+
+🛠️ Exercice : Création de votre compte sur Github
+📋 Instructions : créer votre compte, puis inscrire votre nom d'utilisateur sur la page de suivi : (https://chk.me/9lw684H)[https://chk.me/9lw684H]
+⏱️ Durée estimée : 20 minutes
+
+![alt text](image_200x200.png)
+
+---
+
 ## Fonctionnalités principales de GitHub
 GitHub propose plusieurs fonctionnalités pour faciliter le développement collaboratif :
 
@@ -89,3 +99,11 @@ Puis ce texte Markdown est ensuite transformé en slides à l'aide d'un outil op
 
 > Vous pouvez ainsi visualiser les slides à cette adresse : 
 
+
+---
+
+## Accéder au repository du cours
+
+🛠️ Exercice : Accéder au repository du cours  
+📋 Instructions : Accepter l'invitation reçue  
+⏱️ Durée estimée : 5 minutes

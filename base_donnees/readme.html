@@ -592,19 +592,19 @@ PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des <strong
 <header>CFGEO - S2 - VM</header>
 <p>Pour une grande table, ce système de &quot;deux passes&quot; consistant à évaluer d'abord l'index approximatif, puis à effectuer un test exact peut réduire radicalement la quantité de calculs nécessaires pour répondre à une requête.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:30%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="left"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;image-16.png&quot;);background-size:300px auto;"></figure></div></section></foreignObject><foreignObject width="70%" height="720" x="30%"><section id="55" data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:30%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="left">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:35%;" data-marpit-advanced-background="background" data-marpit-advanced-background-split="left"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;image-16.png&quot;);background-size:300px auto;"></figure></div></section></foreignObject><foreignObject width="65%" height="720" x="35%"><section id="55" data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;--marpit-advanced-background-split:35%;" data-marpit-advanced-background="content" data-marpit-advanced-background-split="left">
 <header>CFGEO - S2 - VM</header>
 
-<p>This <strong>R-Tree</strong> organizes spatial objects in such a way that a spatial search is like a quick walk through the tree.</p>
-<p>To find which object contains <img class="emoji" draggable="false" alt="🌸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f338.svg" data-marp-twemoji=""/>:</p>
+<p>Ce <strong>R-Tree</strong> organise les objets spatiaux de manière à ce qu’une recherche spatiale soit une promenade rapide dans l’arbre.</p>
+<p>Pour trouver quel objet contient <img class="emoji" draggable="false" alt="🌸" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f338.svg" data-marp-twemoji=""/> :</p>
 <ul>
-<li data-marpit-fragment="1">The system first checks if it is in <strong>T</strong> or <strong>U</strong> (<strong>T</strong>).</li>
-<li data-marpit-fragment="2">Then it checks whether it is in <strong>N</strong>, <strong>P</strong>, or <strong>Q</strong> (<strong>P</strong>).</li>
-<li data-marpit-fragment="3">Finally, it checks whether it is in <strong>C</strong>, <strong>D</strong>, or <strong>E</strong> (<strong>D</strong>).</li>
+<li data-marpit-fragment="1">Le système vérifie d’abord s’il est dans <strong>T</strong> ou <strong>U</strong> (<strong>T</strong>).</li>
+<li data-marpit-fragment="2">Il vérifie ensuite s’il se trouve dans <strong>N</strong>, <strong>P</strong> ou <strong>Q</strong> (<strong>P</strong>).</li>
+<li data-marpit-fragment="3">Il vérifie enfin s’il se trouve dans <strong>C</strong>, <strong>D</strong> ou <strong>E</strong> (<strong>D</strong>).</li>
 </ul>
-<p>Only <strong>8 cells</strong> need to be tested.<br />
-For a full table scan, <strong>13 cells</strong> would have to be tested.<br />
-The larger the table, the more powerful the index.</p>
+<p>Seulement <strong>8 cases</strong> doivent être testées.<br />
+Pour un balayage complet de la table, il faudrait tester <strong>13 cases</strong>.<br />
+Plus la table est grande, plus l’index est <strong>puissant</strong>.</p>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section data-marpit-fragments="3" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="55" data-marpit-pagination-total="56" style="" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="left"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-paginate="true" data-header="CFGEO - S2 - VM" data-theme="default" data-marpit-pagination="56" data-marpit-pagination-total="56" style="--paginate:true;--header:CFGEO - S2 - VM;--theme:default;">
 <header>CFGEO - S2 - VM</header>

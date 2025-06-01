@@ -17,8 +17,9 @@ table td {
 
 
 # Module S2 - SIT systèmes (webGIS et réseaux)
-Doc : [https://github.com/regislon/cfgeo_s2/tree/main/general](https://github.com/regislon/cfgeo_s2/tree/main/general)
-Slides : [https://regislon.github.io/cfgeo_s2/general/README.html](https://regislon.github.io/cfgeo_s2/general/README.html)
+
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/general](https://github.com/regislon/cfgeo_s2/tree/main/general)
+- Slides : [https://regislon.github.io/cfgeo_s2/general/README.html](https://regislon.github.io/cfgeo_s2/general/README.html)
 
 
 ---
@@ -95,7 +96,7 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 
 ![height:500](image-1.png)
 
-
+- Planing du cours : https://github.com/regislon/cfgeo_s2
 
 ---
 
@@ -140,11 +141,11 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 
 
 
-* 📱 **Zéro papier** : Ce cours suit une approche moderne — il n’y a **pas de support papier**. Les « slides » (qui n’en sont pas vraiment) sont disponibles sur le **dépôt GitHub** du cours.
-* 🧠 **GitHub est votre ami** : Il est essentiel de vous familiariser avec GitHub. Une partie du cours y sera **consacrée**.
-* 🎥 **Cours en vidéo** : Certaines parties du cours sont **enregistrées**, vous pourrez les **revoir librement** quand vous le souhaitez.
-* 🤝 Soyez solidaires entre vous : les premiers peuvent aider les autres…
-* 🤫 …mais faites-le dans le calme, sans que cela ne devienne un marché animé — gardons une ambiance propice à la concentration.
+- 📱 **Zéro papier** : Ce cours suit une approche moderne — il n’y a **pas de support papier**. Les « slides » (qui n’en sont pas vraiment) sont disponibles sur le **dépôt GitHub** du cours.
+- 🧠 **GitHub est votre ami** : Il est essentiel de vous familiariser avec GitHub. Une partie du cours y sera **consacrée**.
+- 🎥 **Cours en vidéo** : Certaines parties du cours sont **enregistrées**, vous pourrez les **revoir librement** quand vous le souhaitez.
+- 🤝 Soyez solidaires entre vous : les premiers peuvent aider les autres…
+- 🤫 …mais faites-le dans le calme, sans que cela ne devienne un marché animé — gardons une ambiance propice à la concentration.
 
 
 ---

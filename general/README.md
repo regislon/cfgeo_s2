@@ -53,6 +53,7 @@ Il n’a fourni **aucun cahier des charges détaillé**, mais précise que le SI
 
 
 
+
 ![alt text](images_documentation/image-8.png)
 
 
@@ -71,7 +72,6 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 ## Réponse à l’appel d’offre : quels besoins pour un SIT ?
 
 ![height:500](images_documentation/image-1.png)
-
 
 
 

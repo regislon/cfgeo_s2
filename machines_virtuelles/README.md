@@ -2,6 +2,7 @@
 marp: true
 paginate: true
 header: "CFGEO - S2 - VM"
+footer: "Régis Longchamp - 2025"
 theme: default
 ---
 
@@ -17,8 +18,26 @@ table td {
 
 
 
-# Système d'information géographique
- ---
+# Module S2 - Machines virtuelles
+
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/machines_virtuelles](https://github.com/regislon/cfgeo_s2/tree/main/machines_virtuelles)
+- Slides : [https://regislon.github.io/cfgeo_s2/machines_virtuelles/index.html](https://regislon.github.io/cfgeo_s2/machines_virtuelles/index.html)
+
+
+
+---
+
+## Plan de la présentation
+
+## Table des matières
+
+- [Partie 1 : Introduction à l'infrastructure d'un SIT](#partie-1--introduction-à-linfrastructure-dun-sit)
+- [Partie 2 : Création d'une machine virtuelle sur AWS (Amazon Web Services)](#partie-2--création-dune-machine-virtuelle-sur-aws-amazon-web-services)
+
+
+---
+
+# Partie 1 : Introduction à l'infrastructure d'un SIT
 
 ## Définition 
 
@@ -39,7 +58,8 @@ Par exemple :
 
 
 Voici le schéma de notre SIG que nous allons mettre en place 🤘
-![alt text](image.png)
+
+![height:450](image-7.png)
 
 ---
  Cette liste présente de manière non exhaustive les différents éléments qui composent un système d'information géographique.
@@ -60,20 +80,21 @@ Voici le schéma de notre SIG que nous allons mettre en place 🤘
 ---
 
 
-Les composants de base d’un système d’information géographique sont installés sur un serveur (physique, virtuel ou dans le cloud), et peuvent être déployés individuellement ou sous forme de conteneurs Docker pour une installation plus rapide, modulaire et reproductible.
+Les composants de base d’un système d’information géographique sont installés sur un **serveur** (physique, virtuel ou dans le cloud), et peuvent être déployés **individuellement** ou sous forme de **conteneurs** (par example : Docker) pour une installation plus rapide, modulaire et reproductible.
 
 
 ---
-# Serveur physique
+## Serveur physique
 Un serveur physique est un ordinateur dédié, puissant et généralement installé dans un centre de données, conçu pour faire fonctionner des services en continu, comme une base de données, un site web ou un système d’information géographique.
 
 ---
 
-# Serveur virtuel
+## Serveur virtuel
 Un **serveur virtuel** est une machine simulée par un logiciel (hyperviseur) qui fonctionne comme un vrai serveur, mais partage les ressources (CPU, RAM, disque) d’un serveur physique avec d'autres machines virtuelles.
 
 ---
-# Serveur cloud
+
+## Serveur cloud
 
 Un **serveur cloud** est un serveur virtuel hébergé dans un centre de données distant, accessible via Internet, et fourni à la demande par un prestataire (comme AWS, Azure ou Google Cloud), avec une grande flexibilité de ressources et de coûts.
 
@@ -81,8 +102,7 @@ Un **serveur cloud** est un serveur virtuel hébergé dans un centre de données
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
-# Clients
+## Clients
 
 
 Une telle infrastructure peut être utilisée par une entreprise, une administration publique ou un particulier pour gérer des données géographiques, créer des applications web, réaliser des analyses spatiales, etc.
@@ -100,7 +120,7 @@ Une telle infrastructure peut être utilisée par une entreprise, une administra
 
 ---
 
-# Distinction entre le backend et le frontend
+## Distinction entre le backend et le frontend
 
 Dans le développement d'applications web ou de systèmes d'information, on distingue généralement deux parties principales :
 
@@ -137,11 +157,23 @@ Cela permet de construire des applications web interactives et dynamiques.
 
 ---
 
-# Création d'une machine virtuelle sur AWS (Amazon Web Services)
+# Partie 2 : Création d'une machine virtuelle sur AWS (Amazon Web Services)
 
 ---
 
-<!-- .slide: style="font-size: 0.6em" -->
+## Introduction à AWS (Amazon Web Services)
+
+- **AWS** est la plateforme cloud leader dans le monde, proposée par Amazon.
+- Elle offre des services variés : serveurs virtuels (EC2), stockage (S3), bases de données, intelligence artificielle, etc.
+- AWS permet de créer, déployer et gérer des infrastructures informatiques à la demande, sans investir dans du matériel physique.
+- Les ressources sont facturées à l’utilisation, ce qui permet de maîtriser les coûts.
+- AWS propose une offre gratuite ("Free Tier") idéale pour l’apprentissage et les tests.
+- La plateforme est utilisée par des startups, des entreprises et des administrations publiques partout dans le monde.
+
+
+---
+
+
 ## Étape 1 : Création de votre compte AWS
 
 1. Rendez-vous sur le site d'AWS : [https://aws.amazon.com/fr/](https://aws.amazon.com/fr/)
@@ -350,8 +382,11 @@ Ce n'est q  ue le début, mais vous avez déjà fait un grand pas vers la créat
 > **DNS (Domain Name System)** : Un système qui traduit les noms de domaine lisibles par les humains (comme `google.com`) en adresses IP compréhensibles par les machines. 
 
 1. Accédez à la console AWS et sélectionnez votre instance EC2.
-2. Dans l'onglet "Détails", recherchez l'adresse DNS publique de votre instance.
-3. Copiez cette adresse DNS pour l'utiliser dans vos configurations ou pour accéder à votre serveur.
+2. Dans l'onglet "Détails", recherchez l'adresse IP publique de votre instance.
+3. Copiez cette adresse IP pour l'utiliser dans vos configurations ou pour accéder à votre serveur.
+
+https://docs.google.com/spreadsheets/d/17YdfYZI3R0N86sSZc5DGH54euCWpwDZ4hMcn9SM57sg/edit?gid=0#gid=0
+
 
 ---
 

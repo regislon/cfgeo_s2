@@ -1,4 +1,4 @@
-name: Sync Dev to Main and Run Script
+name: Sync doc to Main and Run Script
 
 on:
   push:
@@ -26,24 +26,24 @@ jobs:
           python -m pip install --upgrade pip
           # Add any required dependencies here, e.g., pip install -r requirements.txt
 
-      # Force push dev to main locally
-      - name: Force push dev to main
+      # Force push dev to doc locally
+      - name: Force push dev to doc
         shell: /usr/bin/bash -e {0}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout dev
-          git branch -f main
-          git checkout main
+          git branch -f doc
+          git checkout doc
 
       # Run the Python script
       - name: Run markdown_marp_to_github.py
         run: python marp/markdown_marp_to_github.py
 
-      # Force push main to remote
-      - name: Force push main to remote
+      # Force push doc to remote
+      - name: Force push doc to remote
         shell: /usr/bin/bash -e {0}
         run: |
           git add .
           git commit -m "Update markdown files via GitHub Actions" || echo "No changes to commit"
-          git push --force origin main
+          git push --force origin doc

@@ -1,18 +1,3 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - Introduction"
-footer: "Régis Longchamp - 2025"
-theme: default
----
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 
@@ -21,7 +6,6 @@ Doc : [https://github.com/regislon/cfgeo_s2/tree/main/general](https://github.co
 Slides : [https://regislon.github.io/cfgeo_s2/general/README.html](https://regislon.github.io/cfgeo_s2/general/README.html)
 
 
----
 
 # 👋 Bienvenue dans le module S2 - SIT systèmes !
 
@@ -30,7 +14,6 @@ Ce module vous propose une immersion concrète dans le monde des systèmes d’i
 Préparez-vous à explorer, expérimenter et collaborer pour développer vos compétences techniques et méthodologiques.  
 En route pour une nouvelle aventure d’apprentissage ! 🚀
 
----
 
 ## Objectifs
 
@@ -42,7 +25,6 @@ En route pour une nouvelle aventure d’apprentissage ! 🚀
   - ⚙️ l’installation de logiciels,  
   - 🛠️ la gestion d’infrastructures informatiques.  
 
---- 
 
 
 - 🎓 Mettre à profit la maturité acquise durant la formation.  
@@ -51,7 +33,6 @@ En route pour une nouvelle aventure d’apprentissage ! 🚀
 - 🗺️ Apprendre à gérer, publier et exploiter des données géospatiales.
 
 
----
 
 
 ## Mise en context 
@@ -64,7 +45,6 @@ Le système portera sur la région d’**Yverdon-les-Bains** et intégrera :
 - des données ouvertes de la **Confédération**,
 - ainsi que **des données que vous collecterez vous-mêmes sur le terrain**.
 
----
 
 
 📋 **Contraintes et attentes** :
@@ -72,11 +52,9 @@ Le client ne dispose **d’aucune infrastructure existante** : vous êtes respon
 Il n’a fourni **aucun cahier des charges détaillé**, mais précise que le SIT devra, **a minima**, proposer les **fonctions de base d’un SIG standard**.
 
 
----
 
-![alt text](image-8.png)
+![alt text](images_documentation/image-8.png)
 
----
 
 ## Réponse à l’appel d’offre : quels besoins pour un SIT ?
 
@@ -89,15 +67,13 @@ Quelque mots clés : *gérer et de publier des géodonnées*, *collecterez vous-
 https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yku7I/edit?usp=sharing
 
 
----
 
 ## Réponse à l’appel d’offre : quels besoins pour un SIT ?
 
-![height:500](image-1.png)
+![height:500](images_documentation/image-1.png)
 
 
 
----
 
 
 ## La méthode de travail
@@ -110,7 +86,6 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 
 🛠️ Le travail se fait de manière individuelle, car il est important que chacun ait l'occasion de faire la manipulation.  
 
----
 
 
 ## L'évaluation
@@ -119,7 +94,6 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 
 ⚙️ Il est donc important que vous compreniez bien les étapes du processus
 
----
 
 
 
@@ -130,7 +104,6 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 - **Lucie Nicolier** - QGIS desktop, QGIS Server, Qfield 
 - **Eulalie Sauthier** - ArcGIS Online 
 
----
 
 
 
@@ -147,15 +120,13 @@ https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yk
 * 🤫 …mais faites-le dans le calme, sans que cela ne devienne un marché animé — gardons une ambiance propice à la concentration.
 
 
----
 
 
 
 Ce cours se déroule à la fois en présentiel et à distance.
 
-![height:450](image-9.png)
+![height:450](images_documentation/image-9.png)
 
----
 
 
 ### 🎧 Prépare ton espace et ton matériel
@@ -171,7 +142,6 @@ Ce cours se déroule à la fois en présentiel et à distance.
 - **Note les éléments importants**, comme tu le ferais en présentiel.
 
 
----
 
 
 

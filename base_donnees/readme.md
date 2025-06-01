@@ -1,18 +1,3 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - VM"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 # Bases de données en géomatique
 
@@ -20,18 +5,15 @@ table td {
 
 https://regislon.github.io/cfgeo_s2/base_donnees/
 
----
 
-![height:400](image.png)
+![height:400](images_documentation/image.png)
 
 
 - Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world
 
----
 # Partie 1 : Théorie
 
 
----
 
 ## Pourquoi une base de données en géomatique ?
 
@@ -40,7 +22,6 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 - Faciliter les requêtes spatiales complexes
 - Travailler en équipe, sur des données partagées
 
----
 
 ## Fichiers géographiques vs base de données
 
@@ -52,19 +33,16 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 | Pas d’index spatial performant               | Index spatial performant  |
 
 
----
 
-![alt text](image-3.png)
+![alt text](images_documentation/image-3.png)
 
 source : [https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b](https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b)
 
----
 
 La majorité de la diffusion des données géographiques s’effectue via des bases de données. Toutefois, les données statiques, pour des raisons de performance, sont souvent diffusées sous forme de fichiers tuilés, comme le format MBTiles, par exemple. 
 
 De nouveaux formats, tels que GeoParquet, permettent désormais un enregistrement efficace et une accessibilité accrue sans nécessiter de base de données ni de serveur de diffusion. Nous y reviendrons plus en détail dans la suite du cours.
 
----
 
 ## Les principaux SGBD spatiaux
 
@@ -72,13 +50,11 @@ De nouveaux formats, tels que GeoParquet, permettent désormais un enregistremen
 - **Oracle Spatial** : solution propriétaire, très puissante, intégrée à Oracle Database.
 - **Microsoft SQL Server (avec extension spatiale)** : supporte les types geometry et geography, utilisé dans de nombreux environnements professionnels.
 
----
 
 - **MySQL (Spatial Extensions)** : supporte les objets géométriques, moins avancé que PostGIS ou Oracle.
 - **SpatiaLite** : extension spatiale pour SQLite, idéale pour des usages légers ou embarqués.
 - **MongoDB (GeoJSON)** : base NoSQL avec support des requêtes spatiales simples.
 
----
 
 ## Comparatif des coûts de licence (estimation)
 
@@ -93,7 +69,6 @@ De nouveaux formats, tels que GeoParquet, permettent désormais un enregistremen
 
 Quelle est la limite de votre carte de crédit ? 
 
----
 
 ## Historique de PostgreSQL
 
@@ -102,7 +77,6 @@ Quelle est la limite de votre carte de crédit ?
 - **Années 2000** : Adoption croissante dans le monde open source et en entreprise, enrichissement des fonctionnalités (transactions, index avancés, extensibilité).
 - **Aujourd’hui** : PostgreSQL est reconnu comme l’un des SGBD open source les plus robustes, évolutifs et riches en fonctionnalités, avec une forte communauté et de nombreux contributeurs.
 
----
 
 ## 😲 Fun facts
 
@@ -110,7 +84,6 @@ PostgreSQL se prononce souvent "Post-Gress", car le nom complet est un peu tordu
 
 🐘 Le logo de PostgreSQL est un éléphant- Pourquoi ? Parce qu’un éléphant a une excellente mémoire, tout comme une base de données fiable. Le logo s'appelle Slonik, et certains outils comme pgBackRest ou pgAdmin l’utilisent aussi.
 
----
 
 
 
@@ -122,14 +95,12 @@ PostgreSQL se prononce souvent "Post-Gress", car le nom complet est un peu tordu
 - **Années 2010** : Intégration de nouvelles fonctionnalités comme le support des types `geography`, des index GiST améliorés, et des fonctions avancées (ST_Cluster, ST_3D).
 - **Aujourd’hui** : PostGIS est l’une des extensions spatiales les plus utilisées, avec un large écosystème d’outils compatibles (QGIS, GeoServer, etc.).
 
----
 
 **PostGIS & Spatial Database History**
 
 https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 
 
----
 
 ## PostgreSQL + PostGIS
 
@@ -140,7 +111,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
   - Fonctions spatiales : distances, intersections, buffers, etc.
   - Indexation spatiale avec **GiST**
 
----
 
 ## 😲 Fun facts
 
@@ -154,7 +124,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 3. **Utilisé par des agences spatiales ! 🚀**
    PostGIS est utilisé dans des projets de traitement de données **satellitaires**, par exemple à l’**ESA** (European Space Agency) ou dans des portails de données géographiques comme **GeoServer**.
 
----
 
 4. **Il peut gérer le monde entier**
    Grâce à son support de projections multiples et de géométries complexes, PostGIS peut stocker et analyser des données à l’échelle **globale**, tout en étant rapide et efficace.
@@ -163,7 +132,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
    PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des **surfaces 3D** (`TIN`, `PolyhedralSurface`) et des **images raster géoréférencées**. Tu peux même faire des calculs NDVI dans ta base !
 
 
----
 
 
 ## Le modèle relationnel + spatial
@@ -180,7 +148,6 @@ CREATE TABLE batiments (
 - La colonne `geom` contient la **géométrie**
 - Le SRID (ex: 2056) indique le **système de projection**
 
----
 
 ## Requêtes spatiales avec PostGIS
 
@@ -193,7 +160,6 @@ WHERE ST_Within(geom, ST_GeomFromText('POLYGON(...)', 2056));
 - Requêtes puissantes grâce aux fonctions `ST_`
 - Compatible avec QGIS, GeoServer, etc.
 
----
 
 ## Index spatial : accélérer les requêtes
 
@@ -206,7 +172,6 @@ USING GIST(geom);
 - L’index GiST permet des recherches rapides
 - Obligatoire pour les projets de grande envergure
 
----
 
 ## Intégration SIG + BDD
 
@@ -214,13 +179,11 @@ USING GIST(geom);
 - Possibilité d’éditer, visualiser et filtrer les données
 - Un seul lieu de vérité pour toutes les équipes
 
----
 
 **Qgis est-il le seul à pouvoir se connecter à PostGIS ?**
 
 Non, d'autres outils comme Pgadmin, GeoServer, MapServer, et même des langages de programmation comme Python (avec psycopg2) ou R (avec RPostgreSQL) peuvent se connecter à PostGIS.
 
----
 
 ## Qu'est-ce que PgAdmin ?
 
@@ -235,7 +198,6 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 ⚠️ : PgAdmin n'est pas une base de données, mais un SGBD.
 
 
----
 
 
 ## Résumé
@@ -246,25 +208,21 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 - Outil central dans une **Infrastructure de Données Spatiales (IDS)**
 
 
----
 ## Let's go !!!!
 
 
-![alt text](image-5.png)
+![alt text](images_documentation/image-5.png)
 
 
----
 
 # Partie 2 : Installation de PostgreSQL/PostGIS + PGAdmin
 
----
 ## Installation de PostgreSQL/PostGIS + PGAdmin
 
 🛠️ Exercice : Installation de la base de données sur votre machine virtuelle
 📋 Instructions : à consulter ci-après
 ⏱️ Durée estimée : 20 minutes
 
----
 ## Procédure d'installation de PostgreSQL, PostGIS et PgAdmin
 
 ### 1. Installation de PostgreSQL
@@ -278,7 +236,6 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 📺 **Consultez la vidéo d'installation `base_donnees/video/install.mkv` si nécessaire.**
 
 
----
 
 ### 3. Installation de PgAdmin
 1. Téléchargez PgAdmin depuis [https://www.pgadmin.org/download/](https://www.pgadmin.org/download/).
@@ -286,7 +243,6 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 3. Lancez PgAdmin et connectez-vous à votre instance PostgreSQL en utilisant les informations configurées lors de l'installation.
 
 
----
 
 ### 2. Installation de PostGIS
 
@@ -304,45 +260,38 @@ Depuis PgAdmin, dans le menu **Tools > Query Tool**, exécutez les commandes sui
 
 
 
----
 
 
 Vouse êtres maintenant prêt à utiliser PostgreSQL et PostGIS depuis votre marchine virtuelle. 
 
-![alt text](image-1.png)
+![alt text](images_documentation/image-1.png)
 
----
 
 Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce cas, il peut être plus simple de travailler directement sur votre propre ordinateur. Mais nous verrons cela plus tard...
 
-![alt text](image-2.png)
+![alt text](images_documentation/image-2.png)
 
----
 
 
 1. Depuis PgAdmin. Clic droit sur Bases de données => Ajouter...
-![height:400](image-9.png)
+![height:400](images_documentation/image-9.png)
 
----
 
 2. - variante 1 :  A l’aide du wizard
-![height:400](image-110.png)
+![height:400](images_documentation/image-110.png)
 
 
 
----
 
 2. - variante 2 : En SQL 
 
-![height:400](image-11.png)
+![height:400](images_documentation/image-11.png)
 
 (mieux pour ajouter la gémétrie)
 
----
 
 # Partie 3 : Création d'une base de données géographique et ajout d'une table - Pratique
 
----
 
 
 ## Créer une base de données géographique et ajoute d'une table
@@ -352,7 +301,6 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 ⏱️ Durée estimée : 5 minutes
 
 
----
 
 1. Exécuter la requête SQL suivante dans PgAdmin pour créer une nouvelle table.
 
@@ -370,7 +318,6 @@ INSERT INTO geometries VALUES
 
 2. visualiser cette table 
 
----
 
 3. Puis exécuter la requête suivante pour visualiser les géométries dans QGIS :
 
@@ -381,14 +328,11 @@ SELECT name, ST_AsText(geom) FROM geometries;
 Que obtenez-vous ?
 
 
----
-![height:600](image-12.png)
+![height:600](images_documentation/image-12.png)
 
----
 
 # Partie 4 : Accès à la base de données depuis votre ordinateur personnel
 
----
 
 
 **Préparez-vous, car quelques configurations seront nécessaires si vous souhaitez accéder à la base à distance :**
@@ -398,7 +342,6 @@ Que obtenez-vous ?
 - Enfin, il sera nécessaire d’ajuster les **groupes de sécurité AWS** afin d’ouvrir ce même port.
 
 
----
 
 
 
@@ -412,7 +355,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 
----
 ## Ouverture des ports de la machine virtuelle depuis la console AWS
 
 📺 **Consultez la vidéo d'installation `base_donnees/video/aws_security.mkv` si nécessaire.**
@@ -426,7 +368,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 7. Cliquez sur **Edit inbound rules**.
 8. Cliquez sur **Add rule**.
 
----
 
 9. Sélectionnez **PostgreSQL** dans le menu déroulant.
 10. Vérifiez que le port 5432 est sélectionné.
@@ -436,7 +377,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 14. Testez la connexion depuis PgAdmin en utilisant l'adresse IP publique (Public IPv4 DNS) de votre instance EC2 et le port 5432.
 
 
----
 
 
 ## ✅ Ouvrir le port 5432 pour PostgreSQL sur Windows Server 2022 (interface en anglais)
@@ -454,7 +394,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
    - Sélectionne **Port** puis clique sur **Next**.
 
----
 
 4. **Configurer le port**
 
@@ -472,7 +411,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
    - Coche les options appropriées : **Domain**, **Private** et éventuellement **Public** si nécessaire.
    - Clique sur **Next**.
 
----
 
 7. **Nommer la règle**
 
@@ -481,7 +419,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 
----
 
 ### 🔧 Configuration de PostgreSQL sur Windows Server 2022
 
@@ -503,44 +440,38 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
   - Clic droit → **Restart**
 
 
----
 
 # Partie 5 : Partie théorique, concepts avancés
 
----
 
 Les base de données spatiales fournissent de nouveaux types de données afin de modéliser les géométries
 
-![width:600px](image-13.png)
+![width:600px](images_documentation/image-13.png)
 
 
 
----
 
 Les base de données spatiales ont des index spatiaux
 
-![height:400](image-14.png)
+![height:400](images_documentation/image-14.png)
 
 ```sql
 CREATE INDEX mytable_geom ON mytable USING GIST (geom);
 ```
 
----
 
-![height:200](image-15.png)
+![height:200](images_documentation/image-15.png)
 
 Dans la figure ci-dessus, le nombre de lignes qui coupent l'étoile jaune est de un, la ligne rouge. Mais les boîtes englobantes des éléments qui coupent la boîte jaune sont au nombre de deux, la rouge et la bleue.
 
 La façon dont la base de données répond efficacement à la question "quelles lignes coupent l'étoile jaune" est de répondre d'abord à la question "quelles boîtes coupent la boîte jaune" en utilisant l'index (ce qui est très rapide), puis de faire un calcul exact de "quelles lignes coupent l'étoile jaune" uniquement pour les objets retournés par le premier test.
 
----
 
 Pour une grande table, ce système de "deux passes" consistant à évaluer d'abord l'index approximatif, puis à effectuer un test exact peut réduire radicalement la quantité de calculs nécessaires pour répondre à une requête.
 
 
----
 
-![bg left:35% w:300](image-16.png)
+![bg left:35% w:300](images_documentation/image-16.png)
 
 
 Ce **R-Tree** organise les objets spatiaux de manière à ce qu’une recherche spatiale soit une promenade rapide dans l’arbre.
@@ -555,7 +486,6 @@ Seulement **8 cases** doivent être testées.
 Pour un balayage complet de la table, il faudrait tester **13 cases**.
 Plus la table est grande, plus l’index est **puissant**.
 
----
 
 
 

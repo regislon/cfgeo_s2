@@ -1,7 +1,8 @@
 ---
 marp: true
 paginate: true
-header: "CFGEO - S2 - VM"
+header: "CFGEO - S2 - Introduction"
+footer: "Régis Longchamp - 2025"
 theme: default
 ---
 <style>
@@ -16,6 +17,18 @@ table td {
 
 
 # Module S2 - SIT systèmes (webGIS et réseaux)
+Doc : [https://github.com/regislon/cfgeo_s2/tree/main/general](https://github.com/regislon/cfgeo_s2/tree/main/general)
+Slides : [https://regislon.github.io/cfgeo_s2/general/README.html](https://regislon.github.io/cfgeo_s2/general/README.html)
+
+
+---
+
+# 👋 Bienvenue dans le module S2 - SIT systèmes !
+
+Bienvenue à toutes et à tous !  
+Ce module vous propose une immersion concrète dans le monde des systèmes d’information géographique (SIG) et des infrastructures web.  
+Préparez-vous à explorer, expérimenter et collaborer pour développer vos compétences techniques et méthodologiques.  
+En route pour une nouvelle aventure d’apprentissage ! 🚀
 
 ---
 
@@ -43,11 +56,21 @@ table td {
 
 ## Mise en context 
 
-📍 Vous allez créer un SIG qui vous permet de gérer et de publier des géodonnées.  
-Ce système inclut des données du canton de Vaud, des données de la Confédération, et vous allez y ajouter des données que vous collecterez vous-même sur le terrain. Il est centré sur Yverdon.  
+Vous travaillez pour un bureau de géomatique qui répond à un **appel d’offre**. L’objectif est de concevoir un **Système d’Information Territorial (SIT)** permettant de **gérer et publier des géodonnées via internet**.
 
-📋 A ce stade du projet, le client vous a dit qu'il n'avait aucune infrastructure à disposition, et qu'il vous charge de toute la mise en œuvre. Il n'a pas de cahier des charges précis, vous devez vous-mêmes concevoir et réaliser le projet.  
-Le client dit que le système "devra proposer, au minimum, les fonctions de base d'un SIG standard".  
+Le système portera sur la région d’**Yverdon-les-Bains** et intégrera :
+
+- des données existantes du **canton de Vaud**,
+- des données ouvertes de la **Confédération**,
+- ainsi que **des données que vous collecterez vous-mêmes sur le terrain**.
+
+---
+
+
+📋 **Contraintes et attentes** :
+Le client ne dispose **d’aucune infrastructure existante** : vous êtes responsables **de toute la mise en œuvre**, de la conception à la mise en ligne du système.
+Il n’a fourni **aucun cahier des charges détaillé**, mais précise que le SIT devra, **a minima**, proposer les **fonctions de base d’un SIG standard**.
+
 
 ---
 
@@ -55,8 +78,24 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 ---
 
+## Réponse à l’appel d’offre : quels besoins pour un SIT ?
 
-![alt text](image-4.png)
+🛠️ Exercice : Quels sont, selon vous, les éléments essentiels pour mettre en place un SIT ?
+📋 Instructions : Discutez-en en binôme, puis échange collectif en classe.
+⏱️ Durée estimée : 10 minutes de réflexion en duo, suivies d’une discussion commune.
+
+Quelque mots clés : *gérer et de publier des géodonnées*, *collecterez vous-même sur le terrain*, *infrastructure*, *fonctions de base d'un SIG standard*
+
+https://docs.google.com/spreadsheets/d/1HFy_g0-U8f85EXHqwUXhORyUNBbXV4IlbK4U41Yku7I/edit?usp=sharing
+
+
+---
+
+## Réponse à l’appel d’offre : quels besoins pour un SIT ?
+
+![height:500](image-1.png)
+
+
 
 ---
 
@@ -114,6 +153,10 @@ Le client dit que le système "devra proposer, au minimum, les fonctions de base
 
 Ce cours se déroule à la fois en présentiel et à distance.
 
+![height:450](image-9.png)
+
+---
+
 
 ### 🎧 Prépare ton espace et ton matériel
 - Assure-toi d’avoir une **connexion Internet stable**.
@@ -130,6 +173,6 @@ Ce cours se déroule à la fois en présentiel et à distance.
 
 ---
 
-![alt text](image-3.png)
+
 
 

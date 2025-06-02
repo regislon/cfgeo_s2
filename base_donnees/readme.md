@@ -1,8 +1,8 @@
 ---
 marp: true
 paginate: true
-header: "CFGEO - S2 - Base de données"
-footer: "Régis Longchamp - 2025"
+header: "Base de données spatiales"
+footer: "CFGEO - S2 - 2025"
 theme: default
 ---
 
@@ -25,12 +25,27 @@ table td {
 
 ---
 
-![height:400](image.png)
+![bg left:45% w:500](image.png)
 
-
-- Canada Land Inventory (CLI), which is often recognized as one of the first major GIS initiatives in the world
+L’**Inventaire des terres du Canada** (*Canada Land Inventory*, CLI) est souvent reconnu comme l’une des premières grandes initiatives de SIG  au monde. Ce projet, lancé dans les années 1960, visait à cartographier et à évaluer l’utilisation potentielle des terres à l’échelle nationale, en intégrant de vastes ensembles de données spatiales pour soutenir la gestion des ressources naturelles et l’aménagement du territoire.
 
 ---
+
+## Table des matières
+
+
+- [Partie 1 : Théorie](#partie-1--théorie)
+- [Partie 2 : Installation de PostgreSQL/PostGIS + PGAdmin](#partie-2--installation-de-postgresqlpostgis--pgadmin)
+- [Partie 3 : Création d'une base de données géographique et ajout d'une table - Pratique](#partie-3--création-dune-base-de-données-géographique-et-ajout-dune-table---pratique)
+- [Partie 4 : Accès à la base de données depuis votre ordinateur personnel](#partie-4--accès-à-la-base-de-données-depuis-votre-ordinateur-personnel)
+- [Partie 5 : Partie théorique, concepts avancés](#partie-5--partie-théorique-concepts-avancés)
+- [Ressources supplémentaires](#5-ressources-supplémentaires)
+
+
+---
+
+
+
 # Partie 1 : Théorie
 
 

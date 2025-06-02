@@ -1,7 +1,8 @@
 ---
 marp: true
 paginate: true
-header: "CFGEO - S2 - VM"
+header: "CFGEO - S2 - Github"
+footer: "Régis Longchamp - 2025"
 theme: default
 ---
 <style>
@@ -15,6 +16,12 @@ table td {
 
 
 # Git et Github
+
+
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/github](https://github.com/regislon/cfgeo_s2/tree/main/github)
+- Slides : [https://regislon.github.io/cfgeo_s2/github/index.html](https://regislon.github.io/cfgeo_s2/github/index.html)
+
+
 
 ---
 
@@ -40,7 +47,16 @@ GitHub offre également des fonctionnalités supplémentaires telles que la gest
 
 ---
 
-## Création de votre compte GitHub
+## Pourquoi utiliser GitHub ?
+
+
+![height:500](image.png)
+
+
+
+---
+
+# Création de votre compte GitHub
 
 🛠️ Exercice : Création de votre compte sur Github
 📋 Instructions : créer votre compte, puis inscrire votre nom d'utilisateur sur la page de suivi : (https://chk.me/9lw684H)[https://chk.me/9lw684H]
@@ -91,14 +107,6 @@ Markdown est un langage de balisage léger qui permet de formater du texte en ut
 
 Ces slides sont rédigées en Markdown, et vous pouvez les visualiser directement sur GitHub en format Markdown (transformé par GitHub).
 
-> Lien à ajouter ici
-
----
-
-Puis ce texte Markdown est ensuite transformé en slides à l'aide d'un outil open source intégré à GitHub. 
-
-> Vous pouvez ainsi visualiser les slides à cette adresse : 
-
 
 ---
 
@@ -107,3 +115,71 @@ Puis ce texte Markdown est ensuite transformé en slides à l'aide d'un outil op
 🛠️ Exercice : Accéder au repository du cours  
 📋 Instructions : Accepter l'invitation reçue  
 ⏱️ Durée estimée : 5 minutes
+
+
+--- 
+
+
+
+## Signaler un bug sur GitHub
+
+GitHub permet de signaler des bugs via le système d’**Issues**. Cela facilite la communication avec les développeurs et le suivi des problèmes.
+
+![alt text](image-3.png)
+
+
+
+---
+
+### Exemple : signaler un bug sur QGIS
+
+Pour QGIS, la procédure officielle est détaillée ici : [https://qgis.org/resources/support/bug-reporting/](https://qgis.org/resources/support/bug-reporting/)
+
+**Étapes générales pour signaler un bug :**
+1. **Vérifier** si le bug a déjà été signalé dans la section Issues du dépôt.
+2. **Créer une nouvelle Issue** si le problème n’existe pas encore.
+3. **Décrire précisément le bug** 
+
+
+--- 
+
+
+
+
+## Fun facts : 🔧 **Git : le moteur des développeurs**
+
+- **Créé par Linus Torvalds**
+   Git a été créé en 2005 par le créateur de Linux, **Linus Torvalds**, parce qu’il était fâché contre le système de contrôle de version propriétaire BitKeeper.
+
+- **Git signifie... Git ?**
+   Linus a choisi le nom "Git" en plaisantant, car en anglais britannique, *"git"* est une insulte légère. Il a dit :
+
+   > "I’m an egotistical bastard, and I name all my projects after myself. First ‘Linux’, now ‘Git’.”
+
+
+
+---
+
+## 🐙 **GitHub : plus qu’un hébergeur de code**
+
+- **GitHub a été lancé en 2008**
+   Et a très vite explosé en popularité parmi les développeurs open-source. Aujourd'hui, c’est **Microsoft** qui le possède (depuis 2018).
+
+- **Le logo s’appelle Octocat**
+   Ce n’est pas une pieuvre ! C’est un **chat-octopus mutant**. Son nom complet est **"Mona the Octocat"**.
+
+- **Des millions de commits chaque jour**
+   GitHub héberge **plus de 330 millions de dépôts** (2024), et des milliers de commits sont poussés chaque minute !
+
+---
+
+- **Tu peux créer un site web avec GitHub**
+   Grâce à **GitHub Pages**, tu peux héberger gratuitement un site statique depuis un dépôt Git, sans rien payer.
+
+- **NASA utilise GitHub**
+   Oui, des projets comme le code du **Voyager**, ou des outils d’analyse de données spatiales y sont partagés !
+
+- **Tu peux contribuer à l’emoji poop 💩**
+   Le code source de **Unicode** (les emojis) est aussi sur GitHub. Tu peux voir les discussions autour de certains symboles célèbres !
+
+

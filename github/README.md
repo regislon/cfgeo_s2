@@ -59,7 +59,7 @@ GitHub offre également des fonctionnalités supplémentaires telles que la gest
 # Création de votre compte GitHub
 
 🛠️ Exercice : Création de votre compte sur Github
-📋 Instructions : créer votre compte, puis inscrire votre nom d'utilisateur sur la page de suivi : (https://chk.me/9lw684H)[https://chk.me/9lw684H]
+📋 Instructions : créer votre compte, puis inscrire votre nom d'utilisateur sur la page de suivi : https://chk.me/9lw684H
 ⏱️ Durée estimée : 20 minutes
 
 ![alt text](image_200x200.png)
@@ -77,7 +77,7 @@ GitHub propose plusieurs fonctionnalités pour faciliter le développement colla
 
 ---
 
-## Les format markdown
+## Le format markdown
 Markdown est un langage de balisage léger qui permet de formater du texte en utilisant une syntaxe simple et lisible. Il est souvent utilisé pour rédiger des documents, des articles, des README et des commentaires sur GitHub.
 Il permet de créer des titres, des listes, des liens, des images et d'autres éléments de mise en forme sans avoir à utiliser du HTML complexe.
 Voici quelques éléments de syntaxe Markdown courants :

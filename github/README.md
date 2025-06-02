@@ -1,8 +1,8 @@
 ---
 marp: true
 paginate: true
-header: "CFGEO - S2 - Github"
-footer: "Régis Longchamp - 2025"
+header: "Github"
+footer: "CFGEO - S2 - 2025"
 theme: default
 ---
 <style>

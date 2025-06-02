@@ -250,7 +250,7 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 - Superviser les performances et surveiller l'activité de la base de données.
 
 
-⚠️ : PgAdmin n'est pas une base de données, mais un SGBD.
+⚠️ : PgAdmin n'est pas une base de données, mais un outil graphique pour adminsiter la base de données.
 
 
 ---
@@ -325,7 +325,7 @@ Depuis PgAdmin, dans le menu **Tools > Query Tool**, exécutez les commandes sui
 ---
 
 
-Vouse êtres maintenant prêt à utiliser PostgreSQL et PostGIS depuis votre marchine virtuelle. 
+Vouse êtes maintenant prêt à utiliser PostgreSQL et PostGIS depuis votre marchine virtuelle. 
 
 ![alt text](image-1.png)
 
@@ -354,7 +354,7 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 
 ![height:400](image-11.png)
 
-(mieux pour ajouter la gémétrie)
+(mieux pour ajouter la géométrie)
 
 ---
 
@@ -549,6 +549,19 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 ---
 
+## Partie 5 : Concepts avancés — Panorama
+
+Dans cette partie, nous allons approfondir les concepts clés des bases de données spatiales :
+
+- **Types de géométrie** : points, lignes, polygones, collections, 3D, etc.
+- **Indexation spatiale** : accélérer les requêtes grâce aux index (GiST, R-Tree).
+- **Requêtes spatiales** : sélection, mesure, relations spatiales (intersection, inclusion, distance…).
+- **Jointures spatiales** : relier des tables selon la position ou la relation géographique de leurs objets.
+- **Systèmes de coordonnées** : importance du SRID et des projections pour la précision des calculs.
+
+
+---
+
 Les base de données spatiales fournissent de nouveaux types de données afin de modéliser les géométries
 
 ![width:600px](image-13.png)
@@ -646,7 +659,7 @@ INSERT INTO geometries VALUES
   ('Polygon', 'POLYGON((0 0, 1 0, 1 1, 0 1, 0 0))'),
   ('PolygonWithHole', 'POLYGON((0 0, 10 0, 10 10, 0 10, 0 0),
                                (1 1, 1 2, 2 2, 2 1, 1 1))'),
-  ('Collection', 'GEOMETRYCOLLECTION(POINT(2 0),
+  ('Collection', 'GEOMETRYCOLLECTION(POINT(2 0)),
                 POLYGON((0 0, 1 0, 1 1, 0 1, 0 0)))');
 
 
@@ -712,7 +725,6 @@ INSERT INTO cities (id, the_geom, name) VALUES
 ```
 
 ---
-
 
 
 
@@ -928,6 +940,7 @@ SELECT ST_DistanceSphere(geom1, geom2);
 -- Distance sphéroïdale (terre ellipsoïdale)
 SELECT ST_DistanceSpheroid(geom1, geom2, 'SPHEROID["WGS 84",6378137,298.257223563]');
 ```
+---
 
 Exemple pratique :
 
@@ -1242,6 +1255,14 @@ SELECT ST_Distance(
 
 ![height:500](image-40.png)
 
+---
+
+# Conclusion — Partie 5
+
+- Les bases de données spatiales permettent de stocker, interroger et analyser efficacement des données géographiques.
+- PostGIS enrichit PostgreSQL avec des types, fonctions et index spatiaux puissants.
+- Les concepts avancés (jointures spatiales, projections, conversions de formats) sont essentiels pour des analyses précises et reproductibles.
+- La maîtrise de ces outils ouvre la voie à des applications SIG avancées, collaboratives et évolutives.
 
 
 ---

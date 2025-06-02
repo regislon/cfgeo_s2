@@ -1,0 +1,13 @@
+[project]
+name = "s2"
+version = "0.1.0"
+description = "s2"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "ipyleaflet>=0.19.2",
+    "ipython-sql>=0.5.0",
+    "pandas>=2.2.3",
+    "sqlalchemy>=2.0.41",
+]

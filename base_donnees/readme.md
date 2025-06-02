@@ -1051,7 +1051,7 @@ Dans quel quartier et arrondissement se trouve le point `POINT(586782 4504202)` 
 Exercice : Calculer la distance entre deux stations
 
 🛠️ Exercice :  
-À quelle distance se trouvent "Columbus Cir" et "Fulton Ave" ?
+À quelle distance se trouvent "Cortlandt St (R,W) Manhattan" et "Baychester Ave (5) Bronx" ??
 
 📋 Instructions :  
 - Utilisez la fonction [ST_Distance](https://postgis.net/docs/ST_Distance.html) ou [ST_DistanceSphere](https://postgis.net/docs/ST_DistanceSphere.html) pour calculer la distance entre les géométries des stations "Columbus Cir" et "Fulton Ave".

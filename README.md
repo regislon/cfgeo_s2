@@ -32,10 +32,10 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 |                       |                | 14:45         | 16:15       | 2                |              | Base de données                     | [lien](https://regislon.github.io/cfgeo_s2/base_donnees/readme.html) |
 | mardi 10 juin 2025    | Par Zoom       | 15:30         | 16:15       | 1                | Régis        | Base de données                     |       |
 |                       |                | 16:30         | 17:15       | 1                |              | Base de données                     |       |
-| mardi 17 juin 2025    |                | 08:30         | 10:00       | 2                | Lucie        | QGIS installation                   |       |
+| mardi 17 juin 2025    |                | 08:30         | 10:00       | 2                | Régis        | QGIS installation                   |       |
 |                       |                | 10:15         | 11:45       | 2                |              | QGIS server                         |       |
 |                       |                | 13:00         | 14:30       | 2                |              | Server web                          |       |
-|                       |                | 14:45         | 16:15       | 2                |              | Théorie standard OGC (pptx)         |       |
+|                       |                | 14:45         | 16:15       | 2                |              | Théorie standard OGC                |       |
 | mardi 24 juin 2025    | Par Zoom       | 15:30         | 16:15       | 1                | Régis        | Base de données - Python            |       |
 |                       |                | 16:30         | 18:00       | 2                |              | Python théorie                      |       |
 | mardi 19 août 2025    |                | 08:30         | 10:00       | 2                | Régis        | Python                              |       |
@@ -44,16 +44,16 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 |                       |                | 14:45         | 16:15       | 2                |              | Python                              |       |
 | mardi 26 août 2025    | Par Zoom       | 15:30         | 16:15       | 1                | Régis        | Python                              |       |
 |                       |                | 16:30         | 18:00       | 2                |              | Python                              |       |
-| mardi 2 septembre 2025|                | 08:30         | 10:00       | 2                | Régis        | Python                              |       |
-|                       |                | 10:15         | 11:45       | 2                |              | Python                              |       |
-|                       |                | 13:00         | 14:30       | 2                |              | S3 + big data                       |       |
-|                       |                | 14:45         | 16:15       | 2                |              | S3 + big data                       |       |
-| mardi 9 septembre 2025|                | 08:30         | 10:00       | 2                | Lucie        | QGIS                                |       |
-|                       |                | 10:15         | 11:45       | 2                |              | QGIS server                         |       |
-|                       |                | 13:00         | 14:30       | 2                |              | Q field                             |       |
-|                       |                | 14:45         | 16:15       | 2                |              | Eventuellement client web ???       |       |
-| mardi 16 septembre 2025|               | 08:30         | 10:00       | 2                | Lucie        | QGIS                                |       |
-|                       |                | 10:15         | 11:45       | 2                |              | QGIS server                         |       |
+| mardi 2 septembre 2025|                | 08:30         | 10:00       | 2                | Lucie        | QGIS / QGIS server / Qfield         |       |
+|                       |                | 10:15         | 11:45       | 2                |              | QGIS / QGIS server / Qfield         |       |
+|                       |                | 13:00         | 14:30       | 2                |              | QGIS / QGIS server / Qfield         |       |
+|                       |                | 14:45         | 16:15       | 2                |              | QGIS / QGIS server / Qfield         |       |
+| mardi 9 septembre 2025|                | 08:30         | 10:00       | 2                | Lucie        | QGIS / QGIS server / Qfield         |       |
+|                       |                | 10:15         | 11:45       | 2                |              | QGIS / QGIS server / Qfield         |       |
+|                       |                | 13:00         | 14:30       | 2                |              | QGIS / QGIS server / Qfield         |       |
+|                       |                | 14:45         | 16:15       | 2                |              | QGIS / QGIS server / Qfield         |       |
+| mardi 16 septembre 2025|               | 08:30         | 10:00       | 2                | Lucie        | QGIS / QGIS server / Qfield         |       |
+|                       |                | 10:15         | 11:45       | 2                |              | QGIS / QGIS server / Qfield         |       |
 |                       |                | 13:00         | 14:30       | 2                | Eulalie      | AGOL                                |       |
 |                       |                | 14:45         | 16:15       | 2                |              | AGOL                                |       |
 | ?                     |                | 08:30         | 10:00       | 2                | ?            | S3 + big data                       |       |

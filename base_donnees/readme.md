@@ -1,7 +1,8 @@
 ---
 marp: true
 paginate: true
-header: "CFGEO - S2 - VM"
+header: "CFGEO - S2 - Base de données"
+footer: "Régis Longchamp - 2025"
 theme: default
 ---
 
@@ -18,7 +19,9 @@ table td {
 
 ## PostgreSQL, PostGIS et fichiers géographiques
 
-https://regislon.github.io/cfgeo_s2/base_donnees/
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/base_donnees](https://github.com/regislon/cfgeo_s2/tree/main/base_donnees)
+- Slides : [https://regislon.github.io/cfgeo_s2/base_donnees/index.html](https://regislon.github.io/cfgeo_s2/base_donnees/index.html)
+
 
 ---
 
@@ -54,7 +57,7 @@ https://regislon.github.io/cfgeo_s2/base_donnees/
 
 ---
 
-![alt text](image-3.png)
+![height:400](image-3.png)
 
 source : [https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b](https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b)
 
@@ -325,14 +328,14 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 
 ---
 
-2. - variante 1 :  A l’aide du wizard
-![height:400](image-110.png)
+2. variante 1 :  A l’aide du wizard
+![height:500](image-17.png)
 
 
 
 ---
 
-2. - variante 2 : En SQL 
+2. variante 2 : En SQL 
 
 ![height:400](image-11.png)
 
@@ -388,6 +391,19 @@ Que obtenez-vous ?
 
 # Partie 4 : Accès à la base de données depuis votre ordinateur personnel
 
+Situation actuelle :
+
+![height:400](image-18.png)
+
+---
+
+Il est possible d’accéder à la base de données PostgreSQL/PostGIS depuis votre ordinateur personnel, en utilisant un outil comme **PgAdmin**. Cela vous permet de gérer vos données géographiques sans avoir à vous connecter à la machine virtuelle à chaque fois.
+
+![height:400](image-19.png)
+
+
+
+
 ---
 
 
@@ -403,12 +419,21 @@ Que obtenez-vous ?
 
 
 
+
 Pour ce faire, il vous suffit de suivre les étapes suivantes :
 1. **Téléchargez et installez PgAdmin** sur votre PC personel.
 2. **Ouvrir les ports de la machine virtuelle** pour permettre l'accès à PostgreSQL depuis l'extérieur (voir ci-après).
 3. **Connectez-vous à la machine virtuelle** depuis PgAdmin en utilisant l'adresse IP de la VM et le port 5432.
 4. **Créez une nouvelle connexion** dans PgAdmin en utilisant l'adresse IP de la VM, le port 5432, le nom d'utilisateur `postgres` et le mot de passe que vous avez défini lors de l'installation.
 5. **Testez la connexion** pour vous assurer que tout fonctionne correctement.
+
+---
+
+## Installer PgAdmin sur votre ordinateur personnel
+
+🛠️ Exercice : Installer PgAdmin sur votre ordinateur personnel
+📋 Instructions : voir procédure pour le machine virtuelle
+⏱️ Durée estimée : 5 minutes
 
 
 
@@ -560,19 +585,651 @@ Plus la table est grande, plus l’index est **puissant**.
 
 
 
+![bg left:40% w:500](image-20.png)
+
+POSTGIS offre quatre types spatiaux principaux
+- Geometry : type planaire basé sur les mathématiques cartésiennes (éléments : points, lignes, polygones, ...).
+- Geography : type géodésique sphéroïdal (des lignes et des polygones sont dessinés sur une surface courbe).
+- Topology : type de modèle relationnel. Les objets sont représentés comme un réseau de nœuds et d'arêtes.
+- Raster : l'espace est modélisé comme une grille de cellules rectangulaires, chacune contenant une valeur numérique
+
+
+
+---
+
+### Points 
+
+
+```sql
+CREATE TABLE myPoints (
+   id SERIAL PRIMARY KEY,
+   description VARCHAR(10),
+   point GEOMETRY(POINT),
+   3dpoint GEOMETRY(POINTZ),
+   pointsrd GEOMETRY(POINT, 4326)
+);
+
+```
+
+
+- **POINT** → un point dans l’espace 2D avec des coordonnées (X,Y)
+- **POINTZ** → un point dans l’espace 3D avec des coordonnées (X,Y,Z)
+- **POINTM** → un point dans l’espace 2D avec une valeur mesurée (M)
+- **POINTZM** → un point dans l’espace 3D avec une valeur mesurée (M)
+
+---
+
+### Lignes / Polygones
+
+
+```sql
+CREATE TABLE geometries (name varchar, geom geometry);
+
+INSERT INTO geometries VALUES
+  ('Point', 'POINT(0 0)'),
+  ('Linestring', 'LINESTRING(0 0, 1 1, 2 1, 2 2)'),
+  ('Polygon', 'POLYGON((0 0, 1 0, 1 1, 0 1, 0 0))'),
+  ('PolygonWithHole', 'POLYGON((0 0, 10 0, 10 10, 0 10, 0 0),
+                               (1 1, 1 2, 2 2, 2 1, 1 1))'),
+  ('Collection', 'GEOMETRYCOLLECTION(POINT(2 0),
+                POLYGON((0 0, 1 0, 1 1, 0 1, 0 0)))');
+
+
+```
+
+
+
+- **LINESTRING** → une ligne composée de plusieurs points en 2D (coordonnées X,Y)
+- **LINESTRINGZ** → une ligne en 3D (coordonnées X,Y,Z)
+
+---
+
+
+- **LINESTRINGM** → une ligne en 2D avec une valeur mesurée (M) à chaque point
+- **LINESTRINGZM** → une ligne en 3D avec une valeur mesurée (M) à chaque point
+- **POLYGON** → une surface fermée définie par un ou plusieurs anneaux en 2D
+- **MULTIPOINT** → un ensemble de points indépendants
+- **MULTIPOLYGON** → un ensemble de polygones distincts
+- **GEOMETRYCOLLECTION** → une collection hétérogène de géométries (points, lignes, polygones, etc.)
+
+---
+
+### Autre types de géométrie
+
+![bg left:35% w:300](image-21.png)
 
 
 
 
+- **POLYHEDRALSURFACE** : surface 3D composée de plusieurs faces polygonales.
+- **TIN** : réseau de triangles pour modéliser des surfaces irrégulières (topographie).
+- **CIRCULARSTRING** : courbe définie par des arcs de cercle.
+- **COMPOUNDCURVE** : combinaison de segments linéaires et de courbes.
+- **CURVEPOLYGON** : polygone dont les bords peuvent être des courbes.
+
+
+---
+
+
+
+### ✅ Fonctions de construction de géométries :
+
+* **ST\_GeomFromText** → Build geometries from well-known text
+* **ST\_GeomFromWKB** → Build geometries from a binary representation
+* **ST\_GeomFromGeoJSON** → Build geometries from a GEOJSON format
+* **ST\_GeomFromKML** → Build geometries from a KML format
+
+---
+
+### ✅ Exemple SQL :
+
+```sql
+CREATE TABLE cities (
+  id int4 primary key,
+  name varchar(50),
+  the_geom geometry(POINT, 4326)
+);
+
+INSERT INTO cities (id, the_geom, name) VALUES
+  (1, ST_GeomFromText('POINT(-0.1257 51.508)', 4326), 'London, England'),
+  (2, ST_GeomFromText('POINT(-81.233 42.983)', 4326), 'London, Ontario'),
+  (3, ST_GeomFromText('POINT(27.91162491 -33.01529)', 4326), 'East London, SA');
+```
+
+---
 
 
 
 
+### ✅ Requête de sélection :
+
+```sql
+SELECT * FROM cities;
+```
+
+Résultat :
+
+```
+ id |       name        |                      the_geom
+----+-------------------+--------------------------------------------------------------
+ 1  | London, England   | 0101000020E6100000BBB88D06F016C0BF1B2FDD2406C14940
+ 2  | London, Ontario   | 0101000020E6100000F4FDD478E94E54C0E7FBA9F1D27D4540
+ 3  | East London, SA   | 0101000020E610000040AB064060E93B4059FAD005F58140C0
+```
+
+
+
+🔲 **Remarque importante** :
+La colonne `the_geom` affiche une **représentation binaire spatiale** (WKB : Well-Known Binary).
+
+
+
+---
+### Charger des données dans postgreSQL
+
+
+🛠️ Exercice : Charger des données que nous allons utiliser par la suite
+📋 Instructions : à consulter ci-après
+⏱️ Durée estimée : 20 minutes
+
+Fichier à télécharger : [https://github.com/regislon/cfgeo_s2/tree/main/base_donnees/dump.sql](https://github.com/regislon/cfgeo_s2/tree/main/base_donnees/dump.sql)
+
+
+---
+
+Marche à suivre pour charger les données dans PostgreSQL :
+1. Ouvrir PgAdmin et se connecter à la base de données créée précédemment.
+2. Ouvrir l'outil de requête SQL (Query Tool).
+3. Copier le contenu du fichier `dump.sql` dans l'outil de requête.
+4. Exécuter la requête en cliquant sur le bouton "Exécuter" (icône en forme de triangle).
+
+![alt text](image-23.png)
+
+---
+
+Contenu du fichier `dump.sql` : stations de métro de New York
+
+
+
+![alt text](image-24.png)
+
+
+---
+
+Contenu du fichier `dump.sql` : les rues de  New York
+
+![alt text](image-25.png)
+
+---
+Contenu du fichier `dump.sql` : les blocs de recensement de New York
+
+![alt text](image-26.png)
+
+
+---
+
+Contenu du fichier `dump.sql` : les quartiers  de  New York
+![alt text](image-27.png)
+
+
+---
+
+## Visualiser la géométrie dans PgAdmin
+
+Depuis PgAdmin, il est possible de visualiser les géométries directement dans l'interface :
+
+1. Faites un clic droit sur la table contenant la colonne géométrique, puis sélectionnez **View/Edit Data > All Rows**.
+2. Dans la colonne `geom`, cliquez sur l'icône en forme de globe ou de loupe pour ouvrir le visualiseur de géométrie intégré.
+3. Vous pouvez ainsi explorer et vérifier la représentation spatiale de vos données sans quitter PgAdmin.
+
+Cette fonctionnalité est très pratique pour un contrôle rapide des objets spatiaux insérés ou modifiés dans la base.
+
+---
+
+
+![alt text](image-28.png)
+
+---
+
+# Charger des données géographiques dans PostgreSQL
+
+Plusieurs outils permettent d'importer des données spatiales dans PostgreSQL/PostGIS :
+
+- **ogr2ogr** (GDAL) : conversion et import de nombreux formats (Shapefile, GeoJSON, etc.)
+- **shp2pgsql** : conversion de Shapefile en SQL pour PostGIS
+- **SQL** : insertion directe via requêtes SQL
+- **Logiciels SIG** (QGIS, ArcGIS) : connexion et import/export de données
+- **ETL** (FME, Talend) : flux de transformation et chargement avancés
+
+
+---
+
+
+Exemple avec `ogr2ogr` :
+
+```bash
+ogr2ogr \
+   -f "PostgreSQL" \
+   PG:"host=localhost dbname=nyc user=postgres password=secret" \
+   nyc_census_blocks_2000.shp \
+   -nln nyc_census_blocks_2000 \
+   -lco GEOMETRY_NAME=geom \
+   -lco FID=gid \
+   -lco PRECISION=NO
+```
+
+- `-nln` : nom de la nouvelle table
+- `-lco GEOMETRY_NAME` : nom de la colonne géométrique
+- `-lco FID` : nom de la clé primaire
+- `-lco PRECISION` : précision des coordonnées
+
+Pour plus de détails, voir la [documentation GDAL/ogr2ogr](https://gdal.org/programs/ogr2ogr.html).
+
+---
+
+
+## Fonctions de conversion de géométrie dans PostGIS
+
+| Catégorie         | Fonctions principales                                                                                 | Formats pris en charge                |
+|-------------------|------------------------------------------------------------------------------------------------------|---------------------------------------|
+| **Export (ST_As)**    | `ST_AsText`, `ST_AsEWKT`, `ST_AsGeoJSON`, `ST_AsGML`, `ST_AsKML`, `ST_AsSVG`, `ST_AsBinary`          | WKT, EWKT, GeoJSON, GML, KML, SVG, WKB |
+| **Import (ST_GeomFrom)** | `ST_GeomFromText`, `ST_GeomFromEWKT`, `ST_GeomFromGeoJSON`, `ST_GeomFromGML`, `ST_GeomFromKML`, `ST_GeomFromWKB` | WKT, EWKT, GeoJSON, GML, KML, WKB     |
+
+- **ST_As...** : Convertit une géométrie PostGIS vers un format texte ou binaire.
+- **ST_GeomFrom...** : Crée une géométrie PostGIS à partir d'un format texte ou binaire.
+
+Exemple :
+```sql
+SELECT ST_AsGeoJSON(geom), ST_AsText(geom) FROM ma_table;
+```
+
+---
+
+![alt text](image-29.png)
+
+
+---
+Exercice : Calculer la superficie d'un quartier
+
+🛠️ Exercice : Quelle est la superficie du quartier "West Village" ?
+📋 Instructions : Google + CHatGPT + https://postgis.net/docs/ST_Area.html
+⏱️ Durée estimée : 10 minutes
+
+
+---
+
+
+Exercice : Calculer la longueur d'une rue
+
+🛠️ Exercice : Quelle est la longueur de la rue "Pelham St" ?
+📋 Instructions : Utilisez la documentation PostGIS, notamment la fonction [ST_Length](https://postgis.net/docs/ST_Length.html), pour écrire une requête SQL qui calcule la longueur de "Pelham St" dans la table des rues importée.
+⏱️ Durée estimée : 10 minutes
+
+---
+
+
+Exercice : Obtenir la représentation GeoJSON d'une station
+
+🛠️ Exercice : Quelle est la représentation GeoJSON de la station de métro "Broad St" ?
+📋 Instructions : Utilisez la fonction [ST_AsGeoJSON](https://postgis.net/docs/ST_AsGeoJSON.html) de PostGIS pour écrire une requête SQL qui retourne la géométrie de la station "Broad St" au format GeoJSON.
+⏱️ Durée estimée : 5 minutes
+
+
+
+---
+
+Exercice : Calculer la longueur totale des rues de New York
+
+🛠️ Exercice : Quelle est la longueur totale des rues (en kilomètres) de la ville de New York ?
+📋 Instructions : Utilisez la fonction [ST_Length](https://postgis.net/docs/ST_Length.html) pour additionner la longueur de toutes les rues dans la table des rues importée. 
+⏱️ Durée estimée : 5 minutes
 
 
 
 
+---
 
+
+Exercice : Trouver la station de métro la plus à l'ouest
+
+🛠️ Exercice : Quelle est la station de métro la plus à l'ouest ?
+📋 Instructions : Utilisez la fonction [ST_X](https://postgis.net/docs/ST_X.html) pour extraire la longitude des stations et trouvez celle ayant la valeur la plus faible (la plus à l'ouest).
+⏱️ Durée estimée : 5 minutes
+
+
+---
+
+## Relations spatiales : calcul de distances
+
+PostGIS propose plusieurs fonctions pour mesurer la distance entre objets géographiques :
+
+```sql
+-- Distance euclidienne (plan)
+SELECT ST_Distance(geom1, geom2);
+
+-- Distance sphérique (terre sphérique)
+SELECT ST_DistanceSphere(geom1, geom2);
+
+-- Distance sphéroïdale (terre ellipsoïdale)
+SELECT ST_DistanceSpheroid(geom1, geom2, 'SPHEROID["WGS 84",6378137,298.257223563]');
+```
+
+Exemple pratique :
+
+```sql
+SELECT p1.name, p2.name,
+   ST_DistanceSphere(p1.the_geom, p2.the_geom) AS st_distance_sphere
+FROM cities AS p1, cities AS p2
+WHERE p1.id > p2.id;
+```
+
+| name            | name            | st_distance_sphere |
+|-----------------|-----------------|--------------------|
+| London, Ontario | London, England | 5875766.85         |
+| East London, SA | London, England | 9789646.97         |
+| East London, SA | London, Ontario | 13892160.95        |
+
+
+---
+
+Les base de données spatiales fournissent des requêtes spatiales
+
+
+![height:400](image-30.png)
+
+Source : http://postgis.net/workshops/postgis-intro/spatial_relationships.html
+
+---
+
+
+## Fonctions de relations spatiales principales
+
+```sql
+-- Intersections
+SELECT ST_Intersects(geomA, geomB);
+
+-- Intersection géométrique
+SELECT ST_Intersection(geomA, geomB);
+
+-- Inclusion
+SELECT ST_Within(geomA, geomB);
+
+-- Contient
+SELECT ST_Contains(geomA, geomB);
+
+
+-- Chevauchement
+SELECT ST_Overlaps(geomA, geomB);
+
+```
+
+---
+
+```sql
+
+-- Toucher
+SELECT ST_Touches(geomA, geomB);
+
+
+-- Égalité géométrique
+SELECT ST_Equals(geomA, geomB);
+```
+
+- Ces fonctions permettent de comparer des objets spatiaux et de filtrer selon leurs relations (intersection, inclusion, contact, etc.).
+- Disponibles pour les types `geometry` et `geography`.
+- Très utilisées pour les requêtes spatiales avancées (ex: trouver les objets qui se touchent ou s’intersectent).
+
+---
+
+Exercice : Requêtes spatiales sur la station "Broad Street"
+
+🛠️ Exercice : 
+Q1 : Quel est le well-known text (WKT) de la station de métro Broad Street ?  
+Q2 : Quel quartier croise cette station de métro ?
+
+📋 Instructions :  
+- Pour Q1, utilisez la fonction [ST_AsText](https://postgis.net/docs/ST_AsText.html) pour obtenir la géométrie WKT de la station "Broad Street".
+- Pour Q2, utilisez la fonction [ST_Intersects](https://postgis.net/docs/ST_Intersects.html) pour trouver le quartier dont la géométrie intersecte celle de la station "Broad Street".
+
+⏱️ Durée estimée : 10 minutes
+
+---
+
+Exercice : Trouver les rues à proximité de la station "Broad Street"
+
+🛠️ Exercice :  
+Quelles sont les rues situées à moins de 10 mètres de la station de métro "Broad Street" ?
+
+📋 Instructions :  
+- Utilisez la fonction [ST_DWithin](https://postgis.net/docs/ST_DWithin.html) pour sélectionner les rues dont la géométrie est à moins de 10 mètres de la géométrie de la station "Broad Street".
+- Vous devrez probablement faire une jointure entre la table des rues et celle des stations de métro.
+
+⏱️ Durée estimée : 10 minutes
+
+---
+
+Exercice : Localiser un point dans un quartier et un arrondissement
+
+🛠️ Exercice :  
+Dans quel quartier et arrondissement se trouve le point `POINT(586782 4504202)` ?
+
+📋 Instructions :  
+- Utilisez la fonction [ST_Intersects](https://postgis.net/docs/ST_Intersects.html) ou [ST_Within](https://postgis.net/docs/ST_Within.html) pour déterminer dans quel quartier et arrondissement ce point se situe.
+
+
+⏱️ Durée estimée : 10 minutes
+
+---
+Exercice : Calculer la distance entre deux stations
+
+🛠️ Exercice :  
+À quelle distance se trouvent "Columbus Cir" et "Fulton Ave" ?
+
+📋 Instructions :  
+- Utilisez la fonction [ST_Distance](https://postgis.net/docs/ST_Distance.html) ou [ST_DistanceSphere](https://postgis.net/docs/ST_DistanceSphere.html) pour calculer la distance entre les géométries des stations "Columbus Cir" et "Fulton Ave".
+- Écrivez une requête SQL qui sélectionne ces deux stations et calcule la distance entre elles.
+
+⏱️ Durée estimée : 5 minutes
+
+
+
+---
+
+## Jointures spatiales
+
+Les jointures spatiales permettent de relier des tables en fonction de la relation géographique entre leurs objets, plutôt que sur une clé classique.
+
+- Exemple : associer chaque station de métro au quartier dans lequel elle se trouve.
+
+```sql
+SELECT s.name AS station, q.name AS quartier
+FROM stations s
+JOIN quartiers q
+   ON ST_Within(s.geom, q.geom);
+```
+
+- Fonctions courantes : `ST_Within`, `ST_Intersects`, `ST_DWithin`, etc.
+- Très utile pour croiser des couches géographiques (ex : points dans polygones, lignes traversant polygones).
+
+---
+
+![height:500](image-31.png)
+
+
+---
+
+![height:500](image-32.png)
+
+---
+
+Exercice : Trouver la station de métro dans "Little Italy" et sa ligne
+
+🛠️ Exercice :  
+Quelle station de métro se trouve dans le quartier "Little Italy" ? Sur quelle ligne de métro se trouve-t-elle ?
+
+📋 Instructions :  
+- Utilisez une jointure spatiale entre la table des stations de métro et celle des quartiers pour identifier la station située dans "Little Italy" (`ST_Within` ou `ST_Intersects`).
+- Faites une jointure avec la table des lignes de métro pour déterminer sur quelle ligne se trouve cette station.
+
+⏱️ Durée estimée : 10 minutes
+
+
+---
+
+## Exercice : Analyse spatiale et données attributaires
+
+🛠️ Exercice :  
+Après le 11 septembre, le quartier de Battery Park a été interdit d'accès pendant plusieurs jours. Combien de personnes ont dû être évacuées ?
+
+📋 Instructions :  
+- Identifiez le quartier "Battery Park" dans la table des quartiers.
+- Recherchez le champ correspondant à la population (par exemple `population` ou similaire).
+- Écrivez une requête SQL pour obtenir le nombre d'habitants à évacuer.
+
+⏱️ Durée estimée : 5 minutes
+
+---
+
+Exercice : Trouver le quartier avec la plus forte densité de population
+
+🛠️ Exercice :  
+Quel quartier a la plus forte densité de population (personnes/km²) ?
+
+📋 Instructions :  
+- Identifiez les champs correspondant à la population et à la géométrie des quartiers.
+- Utilisez la fonction [ST_Area](https://postgis.net/docs/ST_Area.html) pour calculer la superficie de chaque quartier.
+- Calculez la densité en divisant la population par la superficie (en km²).
+- Écrivez une requête SQL pour trouver le quartier ayant la densité maximale.
+
+⏱️ Durée estimée : 10 minutes
+
+
+
+---
+
+## Systèmes de coordonnées géographiques
+
+- Un **système de coordonnées** permet de localiser précisément des objets dans l’espace.
+- Deux grands types :
+   - **Cartésien (plan)** : coordonnées (X, Y), utilisées pour des plans locaux ou des projections planes.
+   - **Sphérique (géodésique)** : coordonnées (longitude, latitude, éventuellement altitude), adaptées à la surface de la Terre.
+- Le choix du système de coordonnées influence la précision des mesures spatiales (distances, surfaces, etc.).
+- En base de données spatiale, chaque géométrie est associée à un **SRID** (Spatial Reference System Identifier) qui définit son système de coordonnées.
+
+---
+
+![alt text](image-34.png)
+
+---
+
+
+## Calculer la distance entre Los Angeles et Paris
+
+Quelle est la distance entre Los Angeles et Paris en utilisant `ST_Distance(geometry, geometry)` ?
+
+```sql
+SELECT ST_Distance(
+   'SRID=4326;POINT(-118.4079 33.9434)'::geometry,
+   'SRID=4326;POINT(2.5559 49.0083)'::geometry
+);
+```
+
+Résultat (en degrés) : **121.90**
+
+---
+
+
+
+Pour obtenir la distance en mètres (sur la sphère) :
+
+```sql
+SELECT ST_DistanceSphere(
+   'SRID=4326;POINT(-118.4079 33.9434)'::geometry,
+   'SRID=4326;POINT(2.5559 49.0083)'::geometry
+);
+```
+
+Résultat : **9105587.6 mètres** (~9106 km)
+
+![alt text](image-35.png)
+
+
+---
+
+## Les unités de mesure spatiales
+
+- Les **degrés** (°) ne sont pas des unités de distance ou de surface, mais des unités angulaires.
+- La distance représentée par 1° de longitude varie selon la latitude :  
+   - À l’équateur : ~111,3 km  
+   - À 60° de latitude : ~55,8 km
+- Pour obtenir des distances ou surfaces réelles, utilisez des fonctions adaptées (`ST_DistanceSphere`, `ST_Area` avec projection métrique).
+- Toujours vérifier le **SRID** et le système de coordonnées de vos données avant de faire des calculs spatiaux.
+
+
+---
+![alt text](image-37.png)
+
+
+---
+
+## Exercice : Calcul de distance entre deux villes (Los Angeles et Paris)
+
+Quelle est la distance entre Los Angeles et Paris en utilisant `ST_Distance(geography, geography)` ?
+
+```sql
+SELECT ST_Distance(
+   -- Los Angeles (LAX)
+   'SRID=4326;POINT(-118.4079 33.9434)'::geography,
+   -- Paris (CDG)
+   'SRID=4326;POINT(2.5559 49.0083)'::geography
+);
+```
+
+Résultat : **9124665 mètres** (~9125 km)
+
+---
+
+
+
+- La fonction `ST_Distance` appliquée à des objets de type `geography` retourne la distance sphéroïdale en mètres.
+- Pratique pour des calculs de distances réelles à l’échelle mondiale.
+
+![height:400](image-38.png)
+
+---
+
+
+# Quel est l'itinéraire le plus court de Los Angeles à Tokyo ?
+
+```sql
+-- Distance en degrés (plan)
+SELECT ST_Distance(
+   'SRID=4326;POINT(-118.408 33.943)'::geometry, -- LAX
+   'SRID=4326;POINT(139.733 35.567)'::geometry   -- NRT
+);
+
+-- Distance sphéroïdale en mètres (terre)
+SELECT ST_Distance(
+   'SRID=4326;POINT(-118.408 33.943)'::geography, -- LAX
+   'SRID=4326;POINT(139.733 35.567)'::geography   -- NRT
+);
+```
+
+---
+- Avec `geometry`, la distance est calculée sur un plan (en degrés).
+- Avec `geography`, la distance est calculée sur la sphère (en mètres), ce qui correspond à la distance réelle la plus courte (orthodromie).
+
+
+![height:400](image-39.png)
+
+
+---
+
+![height:500](image-40.png)
+
+
+
+---
 
 
 

@@ -1,19 +1,3 @@
----
-marp: true
-paginate: true
-header: "Base de données spatiales"
-footer: "CFGEO - S2 - 2025"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 # Bases de données en géomatique
 
@@ -23,13 +7,11 @@ table td {
 - Slides : [https://regislon.github.io/cfgeo_s2/base_donnees/index.html](https://regislon.github.io/cfgeo_s2/base_donnees/index.html)
 
 
----
 
-![bg left:45% w:500](image.png)
+![bg left:45% w:500](images_documentation/image.png)
 
 L’**Inventaire des terres du Canada** (*Canada Land Inventory*, CLI) est souvent reconnu comme l’une des premières grandes initiatives de SIG  au monde. Ce projet, lancé dans les années 1960, visait à cartographier et à évaluer l’utilisation potentielle des terres à l’échelle nationale, en intégrant de vastes ensembles de données spatiales pour soutenir la gestion des ressources naturelles et l’aménagement du territoire.
 
----
 
 ## Table des matières
 
@@ -42,14 +24,12 @@ L’**Inventaire des terres du Canada** (*Canada Land Inventory*, CLI) est souve
 - [Ressources supplémentaires](#5-ressources-supplémentaires)
 
 
----
 
 
 
 # Partie 1 : Théorie
 
 
----
 
 ## Pourquoi une base de données en géomatique ?
 
@@ -58,7 +38,6 @@ L’**Inventaire des terres du Canada** (*Canada Land Inventory*, CLI) est souve
 - Faciliter les requêtes spatiales complexes
 - Travailler en équipe, sur des données partagées
 
----
 
 ## Fichiers géographiques vs base de données
 
@@ -70,19 +49,16 @@ L’**Inventaire des terres du Canada** (*Canada Land Inventory*, CLI) est souve
 | Pas d’index spatial performant               | Index spatial performant  |
 
 
----
 
-![height:400](image-3.png)
+![height:400](images_documentation/image-3.png)
 
 source : [https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b](https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b)
 
----
 
 La majorité de la diffusion des données géographiques s’effectue via des bases de données. Toutefois, les données statiques, pour des raisons de performance, sont souvent diffusées sous forme de fichiers tuilés, comme le format MBTiles, par exemple. 
 
 De nouveaux formats, tels que GeoParquet, permettent désormais un enregistrement efficace et une accessibilité accrue sans nécessiter de base de données ni de serveur de diffusion. Nous y reviendrons plus en détail dans la suite du cours.
 
----
 
 ## Les principaux SGBD spatiaux
 
@@ -90,13 +66,11 @@ De nouveaux formats, tels que GeoParquet, permettent désormais un enregistremen
 - **Oracle Spatial** : solution propriétaire, très puissante, intégrée à Oracle Database.
 - **Microsoft SQL Server (avec extension spatiale)** : supporte les types geometry et geography, utilisé dans de nombreux environnements professionnels.
 
----
 
 - **MySQL (Spatial Extensions)** : supporte les objets géométriques, moins avancé que PostGIS ou Oracle.
 - **SpatiaLite** : extension spatiale pour SQLite, idéale pour des usages légers ou embarqués.
 - **MongoDB (GeoJSON)** : base NoSQL avec support des requêtes spatiales simples.
 
----
 
 ## Comparatif des coûts de licence (estimation)
 
@@ -111,7 +85,6 @@ De nouveaux formats, tels que GeoParquet, permettent désormais un enregistremen
 
 Quelle est la limite de votre carte de crédit ? 
 
----
 
 ## Historique de PostgreSQL
 
@@ -120,7 +93,6 @@ Quelle est la limite de votre carte de crédit ?
 - **Années 2000** : Adoption croissante dans le monde open source et en entreprise, enrichissement des fonctionnalités (transactions, index avancés, extensibilité).
 - **Aujourd’hui** : PostgreSQL est reconnu comme l’un des SGBD open source les plus robustes, évolutifs et riches en fonctionnalités, avec une forte communauté et de nombreux contributeurs.
 
----
 
 ## 😲 Fun facts
 
@@ -128,7 +100,6 @@ PostgreSQL se prononce souvent "Post-Gress", car le nom complet est un peu tordu
 
 🐘 Le logo de PostgreSQL est un éléphant- Pourquoi ? Parce qu’un éléphant a une excellente mémoire, tout comme une base de données fiable. Le logo s'appelle Slonik, et certains outils comme pgBackRest ou pgAdmin l’utilisent aussi.
 
----
 
 
 
@@ -140,14 +111,12 @@ PostgreSQL se prononce souvent "Post-Gress", car le nom complet est un peu tordu
 - **Années 2010** : Intégration de nouvelles fonctionnalités comme le support des types `geography`, des index GiST améliorés, et des fonctions avancées (ST_Cluster, ST_3D).
 - **Aujourd’hui** : PostGIS est l’une des extensions spatiales les plus utilisées, avec un large écosystème d’outils compatibles (QGIS, GeoServer, etc.).
 
----
 
 **PostGIS & Spatial Database History**
 
 https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 
 
----
 
 ## PostgreSQL + PostGIS
 
@@ -158,7 +127,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
   - Fonctions spatiales : distances, intersections, buffers, etc.
   - Indexation spatiale avec **GiST**
 
----
 
 ## 😲 Fun facts
 
@@ -172,7 +140,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
 3. **Utilisé par des agences spatiales ! 🚀**
    PostGIS est utilisé dans des projets de traitement de données **satellitaires**, par exemple à l’**ESA** (European Space Agency) ou dans des portails de données géographiques comme **GeoServer**.
 
----
 
 4. **Il peut gérer le monde entier**
    Grâce à son support de projections multiples et de géométries complexes, PostGIS peut stocker et analyser des données à l’échelle **globale**, tout en étant rapide et efficace.
@@ -181,7 +148,6 @@ https://www.youtube.com/watch?v=ZO5ZAXtW0MU
    PostGIS ne se limite pas aux vecteurs : tu peux stocker et manipuler des **surfaces 3D** (`TIN`, `PolyhedralSurface`) et des **images raster géoréférencées**. Tu peux même faire des calculs NDVI dans ta base !
 
 
----
 
 
 ## Le modèle relationnel + spatial
@@ -198,7 +164,6 @@ CREATE TABLE batiments (
 - La colonne `geom` contient la **géométrie**
 - Le SRID (ex: 2056) indique le **système de projection**
 
----
 
 ## Requêtes spatiales avec PostGIS
 
@@ -211,7 +176,6 @@ WHERE ST_Within(geom, ST_GeomFromText('POLYGON(...)', 2056));
 - Requêtes puissantes grâce aux fonctions `ST_`
 - Compatible avec QGIS, GeoServer, etc.
 
----
 
 ## Index spatial : accélérer les requêtes
 
@@ -224,7 +188,6 @@ USING GIST(geom);
 - L’index GiST permet des recherches rapides
 - Obligatoire pour les projets de grande envergure
 
----
 
 ## Intégration SIG + BDD
 
@@ -232,13 +195,11 @@ USING GIST(geom);
 - Possibilité d’éditer, visualiser et filtrer les données
 - Un seul lieu de vérité pour toutes les équipes
 
----
 
 **Qgis est-il le seul à pouvoir se connecter à PostGIS ?**
 
 Non, d'autres outils comme Pgadmin, GeoServer, MapServer, et même des langages de programmation comme Python (avec psycopg2) ou R (avec RPostgreSQL) peuvent se connecter à PostGIS.
 
----
 
 ## Qu'est-ce que PgAdmin ?
 
@@ -253,7 +214,6 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 ⚠️ : PgAdmin n'est pas une base de données, mais un outil graphique pour adminsiter la base de données.
 
 
----
 
 
 ## Résumé
@@ -264,25 +224,21 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 - Outil central dans une **Infrastructure de Données Spatiales (IDS)**
 
 
----
 ## Let's go !!!!
 
 
-![alt text](image-5.png)
+![alt text](images_documentation/image-5.png)
 
 
----
 
 # Partie 2 : Installation de PostgreSQL/PostGIS + PGAdmin
 
----
 ## Installation de PostgreSQL/PostGIS + PGAdmin
 
 🛠️ Exercice : Installation de la base de données sur votre machine virtuelle
 📋 Instructions : à consulter ci-après
 ⏱️ Durée estimée : 20 minutes
 
----
 ## Procédure d'installation de PostgreSQL, PostGIS et PgAdmin
 
 ### 1. Installation de PostgreSQL
@@ -296,7 +252,6 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 📺 **Consultez la vidéo d'installation `base_donnees/video/install.mkv` si nécessaire.**
 
 
----
 
 ### 3. Installation de PgAdmin
 1. Téléchargez PgAdmin depuis [https://www.pgadmin.org/download/](https://www.pgadmin.org/download/).
@@ -304,7 +259,6 @@ PgAdmin est un outil graphique open source pour gérer et administrer les bases 
 3. Lancez PgAdmin et connectez-vous à votre instance PostgreSQL en utilisant les informations configurées lors de l'installation.
 
 
----
 
 ### 2. Installation de PostGIS
 
@@ -322,45 +276,38 @@ Depuis PgAdmin, dans le menu **Tools > Query Tool**, exécutez les commandes sui
 
 
 
----
 
 
 Vouse êtes maintenant prêt à utiliser PostgreSQL et PostGIS depuis votre marchine virtuelle. 
 
-![alt text](image-1.png)
+![alt text](images_documentation/image-1.png)
 
----
 
 Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce cas, il peut être plus simple de travailler directement sur votre propre ordinateur. Mais nous verrons cela plus tard...
 
-![alt text](image-2.png)
+![alt text](images_documentation/image-2.png)
 
----
 
 
 1. Depuis PgAdmin. Clic droit sur Bases de données => Ajouter...
-![height:400](image-9.png)
+![height:400](images_documentation/image-9.png)
 
----
 
 2. variante 1 :  A l’aide du wizard
-![height:500](image-17.png)
+![height:500](images_documentation/image-17.png)
 
 
 
----
 
 2. variante 2 : En SQL 
 
-![height:400](image-11.png)
+![height:400](images_documentation/image-11.png)
 
 (mieux pour ajouter la géométrie)
 
----
 
 # Partie 3 : Création d'une base de données géographique et ajout d'une table - Pratique
 
----
 
 
 ## Créer une base de données géographique et ajoute d'une table
@@ -370,7 +317,6 @@ Cependant, il arrive que la machine virtuelle soit relativement lente. Dans ce c
 ⏱️ Durée estimée : 5 minutes
 
 
----
 
 1. Exécuter la requête SQL suivante dans PgAdmin pour créer une nouvelle table.
 
@@ -388,7 +334,6 @@ INSERT INTO geometries VALUES
 
 2. visualiser cette table 
 
----
 
 3. Puis exécuter la requête suivante pour visualiser les géométries dans QGIS :
 
@@ -399,27 +344,23 @@ SELECT name, ST_AsText(geom) FROM geometries;
 Que obtenez-vous ?
 
 
----
-![height:600](image-12.png)
+![height:600](images_documentation/image-12.png)
 
----
 
 # Partie 4 : Accès à la base de données depuis votre ordinateur personnel
 
 Situation actuelle :
 
-![height:400](image-18.png)
+![height:400](images_documentation/image-18.png)
 
----
 
 Il est possible d’accéder à la base de données PostgreSQL/PostGIS depuis votre ordinateur personnel, en utilisant un outil comme **PgAdmin**. Cela vous permet de gérer vos données géographiques sans avoir à vous connecter à la machine virtuelle à chaque fois.
 
-![height:400](image-19.png)
+![height:400](images_documentation/image-19.png)
 
 
 
 
----
 
 
 **Préparez-vous, car quelques configurations seront nécessaires si vous souhaitez accéder à la base à distance :**
@@ -429,7 +370,6 @@ Il est possible d’accéder à la base de données PostgreSQL/PostGIS depuis vo
 - Enfin, il sera nécessaire d’ajuster les **groupes de sécurité AWS** afin d’ouvrir ce même port.
 
 
----
 
 
 
@@ -442,7 +382,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 4. **Créez une nouvelle connexion** dans PgAdmin en utilisant l'adresse IP de la VM, le port 5432, le nom d'utilisateur `postgres` et le mot de passe que vous avez défini lors de l'installation.
 5. **Testez la connexion** pour vous assurer que tout fonctionne correctement.
 
----
 
 ## Installer PgAdmin sur votre ordinateur personnel
 
@@ -452,7 +391,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 
----
 ## Ouverture des ports de la machine virtuelle depuis la console AWS
 
 📺 **Consultez la vidéo d'installation `base_donnees/video/aws_security.mkv` si nécessaire.**
@@ -466,7 +404,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 7. Cliquez sur **Edit inbound rules**.
 8. Cliquez sur **Add rule**.
 
----
 
 9. Sélectionnez **PostgreSQL** dans le menu déroulant.
 10. Vérifiez que le port 5432 est sélectionné.
@@ -476,7 +413,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 14. Testez la connexion depuis PgAdmin en utilisant l'adresse IP publique (Public IPv4 DNS) de votre instance EC2 et le port 5432.
 
 
----
 
 
 ## ✅ Ouvrir le port 5432 pour PostgreSQL sur Windows Server 2022 (interface en anglais)
@@ -494,7 +430,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
    - Sélectionne **Port** puis clique sur **Next**.
 
----
 
 4. **Configurer le port**
 
@@ -512,7 +447,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
    - Coche les options appropriées : **Domain**, **Private** et éventuellement **Public** si nécessaire.
    - Clique sur **Next**.
 
----
 
 7. **Nommer la règle**
 
@@ -521,7 +455,6 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
 
 
 
----
 
 ### 🔧 Configuration de PostgreSQL sur Windows Server 2022
 
@@ -543,11 +476,9 @@ Pour ce faire, il vous suffit de suivre les étapes suivantes :
   - Clic droit → **Restart**
 
 
----
 
 # Partie 5 : Partie théorique, concepts avancés
 
----
 
 ## Partie 5 : Concepts avancés — Panorama
 
@@ -560,40 +491,35 @@ Dans cette partie, nous allons approfondir les concepts clés des bases de donn�
 - **Systèmes de coordonnées** : importance du SRID et des projections pour la précision des calculs.
 
 
----
 
 Les base de données spatiales fournissent de nouveaux types de données afin de modéliser les géométries
 
-![width:600px](image-13.png)
+![width:600px](images_documentation/image-13.png)
 
 
 
----
 
 Les base de données spatiales ont des index spatiaux
 
-![height:400](image-14.png)
+![height:400](images_documentation/image-14.png)
 
 ```sql
 CREATE INDEX mytable_geom ON mytable USING GIST (geom);
 ```
 
----
 
-![height:200](image-15.png)
+![height:200](images_documentation/image-15.png)
 
 Dans la figure ci-dessus, le nombre de lignes qui coupent l'étoile jaune est de un, la ligne rouge. Mais les boîtes englobantes des éléments qui coupent la boîte jaune sont au nombre de deux, la rouge et la bleue.
 
 La façon dont la base de données répond efficacement à la question "quelles lignes coupent l'étoile jaune" est de répondre d'abord à la question "quelles boîtes coupent la boîte jaune" en utilisant l'index (ce qui est très rapide), puis de faire un calcul exact de "quelles lignes coupent l'étoile jaune" uniquement pour les objets retournés par le premier test.
 
----
 
 Pour une grande table, ce système de "deux passes" consistant à évaluer d'abord l'index approximatif, puis à effectuer un test exact peut réduire radicalement la quantité de calculs nécessaires pour répondre à une requête.
 
 
----
 
-![bg left:35% w:300](image-16.png)
+![bg left:35% w:300](images_documentation/image-16.png)
 
 
 Ce **R-Tree** organise les objets spatiaux de manière à ce qu’une recherche spatiale soit une promenade rapide dans l’arbre.
@@ -608,12 +534,11 @@ Seulement **8 cases** doivent être testées.
 Pour un balayage complet de la table, il faudrait tester **13 cases**.
 Plus la table est grande, plus l’index est **puissant**.
 
----
 
 
 
 
-![bg left:40% w:500](image-20.png)
+![bg left:40% w:500](images_documentation/image-20.png)
 
 POSTGIS offre quatre types spatiaux principaux
 - Geometry : type planaire basé sur les mathématiques cartésiennes (éléments : points, lignes, polygones, ...).
@@ -623,7 +548,6 @@ POSTGIS offre quatre types spatiaux principaux
 
 
 
----
 
 ### Points 
 
@@ -645,7 +569,6 @@ CREATE TABLE myPoints (
 - **POINTM** → un point dans l’espace 2D avec une valeur mesurée (M)
 - **POINTZM** → un point dans l’espace 3D avec une valeur mesurée (M)
 
----
 
 ### Lignes / Polygones
 
@@ -670,7 +593,6 @@ INSERT INTO geometries VALUES
 - **LINESTRING** → une ligne composée de plusieurs points en 2D (coordonnées X,Y)
 - **LINESTRINGZ** → une ligne en 3D (coordonnées X,Y,Z)
 
----
 
 
 - **LINESTRINGM** → une ligne en 2D avec une valeur mesurée (M) à chaque point
@@ -680,11 +602,10 @@ INSERT INTO geometries VALUES
 - **MULTIPOLYGON** → un ensemble de polygones distincts
 - **GEOMETRYCOLLECTION** → une collection hétérogène de géométries (points, lignes, polygones, etc.)
 
----
 
 ### Autre types de géométrie
 
-![bg left:35% w:300](image-21.png)
+![bg left:35% w:300](images_documentation/image-21.png)
 
 
 
@@ -696,7 +617,6 @@ INSERT INTO geometries VALUES
 - **CURVEPOLYGON** : polygone dont les bords peuvent être des courbes.
 
 
----
 
 
 
@@ -707,7 +627,6 @@ INSERT INTO geometries VALUES
 * **ST\_GeomFromGeoJSON** → Build geometries from a GEOJSON format
 * **ST\_GeomFromKML** → Build geometries from a KML format
 
----
 
 ### ✅ Exemple SQL :
 
@@ -724,7 +643,6 @@ INSERT INTO cities (id, the_geom, name) VALUES
   (3, ST_GeomFromText('POINT(27.91162491 -33.01529)', 4326), 'East London, SA');
 ```
 
----
 
 
 
@@ -751,7 +669,6 @@ La colonne `the_geom` affiche une **représentation binaire spatiale** (WKB : We
 
 
 
----
 ### Charger des données dans postgreSQL
 
 
@@ -762,7 +679,6 @@ La colonne `the_geom` affiche une **représentation binaire spatiale** (WKB : We
 Fichier à télécharger : [https://github.com/regislon/cfgeo_s2/tree/main/base_donnees/dump.sql](https://github.com/regislon/cfgeo_s2/tree/main/base_donnees/dump.sql)
 
 
----
 
 Marche à suivre pour charger les données dans PostgreSQL :
 1. Ouvrir PgAdmin et se connecter à la base de données créée précédemment.
@@ -770,36 +686,31 @@ Marche à suivre pour charger les données dans PostgreSQL :
 3. Copier le contenu du fichier `dump.sql` dans l'outil de requête.
 4. Exécuter la requête en cliquant sur le bouton "Exécuter" (icône en forme de triangle).
 
-![alt text](image-23.png)
+![alt text](images_documentation/image-23.png)
 
----
 
 Contenu du fichier `dump.sql` : stations de métro de New York
 
 
 
-![alt text](image-24.png)
+![alt text](images_documentation/image-24.png)
 
 
----
 
 Contenu du fichier `dump.sql` : les rues de  New York
 
-![alt text](image-25.png)
+![alt text](images_documentation/image-25.png)
 
----
 Contenu du fichier `dump.sql` : les blocs de recensement de New York
 
-![alt text](image-26.png)
+![alt text](images_documentation/image-26.png)
 
 
----
 
 Contenu du fichier `dump.sql` : les quartiers  de  New York
-![alt text](image-27.png)
+![alt text](images_documentation/image-27.png)
 
 
----
 
 ## Visualiser la géométrie dans PgAdmin
 
@@ -811,12 +722,10 @@ Depuis PgAdmin, il est possible de visualiser les géométries directement dans 
 
 Cette fonctionnalité est très pratique pour un contrôle rapide des objets spatiaux insérés ou modifiés dans la base.
 
----
 
 
-![alt text](image-28.png)
+![alt text](images_documentation/image-28.png)
 
----
 
 # Charger des données géographiques dans PostgreSQL
 
@@ -829,7 +738,6 @@ Plusieurs outils permettent d'importer des données spatiales dans PostgreSQL/Po
 - **ETL** (FME, Talend) : flux de transformation et chargement avancés
 
 
----
 
 
 Exemple avec `ogr2ogr` :
@@ -852,7 +760,6 @@ ogr2ogr \
 
 Pour plus de détails, voir la [documentation GDAL/ogr2ogr](https://gdal.org/programs/ogr2ogr.html).
 
----
 
 
 ## Fonctions de conversion de géométrie dans PostGIS
@@ -870,12 +777,10 @@ Exemple :
 SELECT ST_AsGeoJSON(geom), ST_AsText(geom) FROM ma_table;
 ```
 
----
 
-![alt text](image-29.png)
+![alt text](images_documentation/image-29.png)
 
 
----
 Exercice : Calculer la superficie d'un quartier
 
 🛠️ Exercice : Quelle est la superficie du quartier "West Village" ?
@@ -883,7 +788,6 @@ Exercice : Calculer la superficie d'un quartier
 ⏱️ Durée estimée : 10 minutes
 
 
----
 
 
 Exercice : Calculer la longueur d'une rue
@@ -892,7 +796,6 @@ Exercice : Calculer la longueur d'une rue
 📋 Instructions : Utilisez la documentation PostGIS, notamment la fonction [ST_Length](https://postgis.net/docs/ST_Length.html), pour écrire une requête SQL qui calcule la longueur de "Pelham St" dans la table des rues importée.
 ⏱️ Durée estimée : 10 minutes
 
----
 
 
 Exercice : Obtenir la représentation GeoJSON d'une station
@@ -903,7 +806,6 @@ Exercice : Obtenir la représentation GeoJSON d'une station
 
 
 
----
 
 Exercice : Calculer la longueur totale des rues de New York
 
@@ -914,7 +816,6 @@ Exercice : Calculer la longueur totale des rues de New York
 
 
 
----
 
 
 Exercice : Trouver la station de métro la plus à l'ouest
@@ -924,7 +825,6 @@ Exercice : Trouver la station de métro la plus à l'ouest
 ⏱️ Durée estimée : 5 minutes
 
 
----
 
 ## Relations spatiales : calcul de distances
 
@@ -940,7 +840,6 @@ SELECT ST_DistanceSphere(geom1, geom2);
 -- Distance sphéroïdale (terre ellipsoïdale)
 SELECT ST_DistanceSpheroid(geom1, geom2, 'SPHEROID["WGS 84",6378137,298.257223563]');
 ```
----
 
 Exemple pratique :
 
@@ -958,16 +857,14 @@ WHERE p1.id > p2.id;
 | East London, SA | London, Ontario | 13892160.95        |
 
 
----
 
 Les base de données spatiales fournissent des requêtes spatiales
 
 
-![height:400](image-30.png)
+![height:400](images_documentation/image-30.png)
 
 Source : http://postgis.net/workshops/postgis-intro/spatial_relationships.html
 
----
 
 
 ## Fonctions de relations spatiales principales
@@ -991,7 +888,6 @@ SELECT ST_Overlaps(geomA, geomB);
 
 ```
 
----
 
 ```sql
 
@@ -1007,7 +903,6 @@ SELECT ST_Equals(geomA, geomB);
 - Disponibles pour les types `geometry` et `geography`.
 - Très utilisées pour les requêtes spatiales avancées (ex: trouver les objets qui se touchent ou s’intersectent).
 
----
 
 Exercice : Requêtes spatiales sur la station "Broad Street"
 
@@ -1021,7 +916,6 @@ Q2 : Quel quartier croise cette station de métro ?
 
 ⏱️ Durée estimée : 10 minutes
 
----
 
 Exercice : Trouver les rues à proximité de la station "Broad Street"
 
@@ -1034,7 +928,6 @@ Quelles sont les rues situées à moins de 10 mètres de la station de métro "B
 
 ⏱️ Durée estimée : 10 minutes
 
----
 
 Exercice : Localiser un point dans un quartier et un arrondissement
 
@@ -1047,7 +940,6 @@ Dans quel quartier et arrondissement se trouve le point `POINT(586782 4504202)` 
 
 ⏱️ Durée estimée : 10 minutes
 
----
 Exercice : Calculer la distance entre deux stations
 
 🛠️ Exercice :  
@@ -1061,7 +953,6 @@ Exercice : Calculer la distance entre deux stations
 
 
 
----
 
 ## Jointures spatiales
 
@@ -1079,16 +970,13 @@ JOIN quartiers q
 - Fonctions courantes : `ST_Within`, `ST_Intersects`, `ST_DWithin`, etc.
 - Très utile pour croiser des couches géographiques (ex : points dans polygones, lignes traversant polygones).
 
----
 
-![height:500](image-31.png)
+![height:500](images_documentation/image-31.png)
 
 
----
 
-![height:500](image-32.png)
+![height:500](images_documentation/image-32.png)
 
----
 
 Exercice : Trouver la station de métro dans "Little Italy" et sa ligne
 
@@ -1102,7 +990,6 @@ Quelle station de métro se trouve dans le quartier "Little Italy" ? Sur quelle 
 ⏱️ Durée estimée : 10 minutes
 
 
----
 
 ## Exercice : Analyse spatiale et données attributaires
 
@@ -1116,7 +1003,6 @@ Après le 11 septembre, le quartier de Battery Park a été interdit d'accès pe
 
 ⏱️ Durée estimée : 5 minutes
 
----
 
 Exercice : Trouver le quartier avec la plus forte densité de population
 
@@ -1133,7 +1019,6 @@ Quel quartier a la plus forte densité de population (personnes/km²) ?
 
 
 
----
 
 ## Systèmes de coordonnées géographiques
 
@@ -1144,11 +1029,9 @@ Quel quartier a la plus forte densité de population (personnes/km²) ?
 - Le choix du système de coordonnées influence la précision des mesures spatiales (distances, surfaces, etc.).
 - En base de données spatiale, chaque géométrie est associée à un **SRID** (Spatial Reference System Identifier) qui définit son système de coordonnées.
 
----
 
-![alt text](image-34.png)
+![alt text](images_documentation/image-34.png)
 
----
 
 
 ## Calculer la distance entre Los Angeles et Paris
@@ -1164,7 +1047,6 @@ SELECT ST_Distance(
 
 Résultat (en degrés) : **121.90**
 
----
 
 
 
@@ -1179,10 +1061,9 @@ SELECT ST_DistanceSphere(
 
 Résultat : **9105587.6 mètres** (~9106 km)
 
-![alt text](image-35.png)
+![alt text](images_documentation/image-35.png)
 
 
----
 
 ## Les unités de mesure spatiales
 
@@ -1194,11 +1075,9 @@ Résultat : **9105587.6 mètres** (~9106 km)
 - Toujours vérifier le **SRID** et le système de coordonnées de vos données avant de faire des calculs spatiaux.
 
 
----
-![alt text](image-37.png)
+![alt text](images_documentation/image-37.png)
 
 
----
 
 ## Exercice : Calcul de distance entre deux villes (Los Angeles et Paris)
 
@@ -1215,16 +1094,14 @@ SELECT ST_Distance(
 
 Résultat : **9124665 mètres** (~9125 km)
 
----
 
 
 
 - La fonction `ST_Distance` appliquée à des objets de type `geography` retourne la distance sphéroïdale en mètres.
 - Pratique pour des calculs de distances réelles à l’échelle mondiale.
 
-![height:400](image-38.png)
+![height:400](images_documentation/image-38.png)
 
----
 
 
 # Quel est l'itinéraire le plus court de Los Angeles à Tokyo ?
@@ -1243,19 +1120,16 @@ SELECT ST_Distance(
 );
 ```
 
----
 - Avec `geometry`, la distance est calculée sur un plan (en degrés).
 - Avec `geography`, la distance est calculée sur la sphère (en mètres), ce qui correspond à la distance réelle la plus courte (orthodromie).
 
 
-![height:400](image-39.png)
+![height:400](images_documentation/image-39.png)
 
 
----
 
-![height:500](image-40.png)
+![height:500](images_documentation/image-40.png)
 
----
 
 # Conclusion — Partie 5
 
@@ -1265,7 +1139,6 @@ SELECT ST_Distance(
 - La maîtrise de ces outils ouvre la voie à des applications SIG avancées, collaboratives et évolutives.
 
 
----
 
 
 

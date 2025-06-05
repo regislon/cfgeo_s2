@@ -30,19 +30,19 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 |                       |                | 10:15         | 11:45       | 2                |              | Machines virtuelles                 | [lien](https://regislon.github.io/cfgeo_s2/machines_virtuelles/index.html) |
 |                       |                | 13:00         | 14:30       | 2                |              | Github                              | [lien](https://regislon.github.io/cfgeo_s2/github/index.html) |
 |                       |                | 14:45         | 16:15       | 2                |              | Base de données                     | [lien](https://regislon.github.io/cfgeo_s2/base_donnees/readme.html) |
-| mardi 10 juin 2025    | Par Zoom       | 15:30         | 16:15       | 1                | Régis        | Base de données                     |       |
+| mardi 10 juin 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | Jupyter notebooks                   | [lien](https://regislon.github.io/cfgeo_s2/jupyter_notebook/readme.html) |
 |                       |                | 16:30         | 17:15       | 1                |              | Base de données                     |       |
 | mardi 17 juin 2025    |                | 08:30         | 10:00       | 2                | Régis        | QGIS installation                   |       |
 |                       |                | 10:15         | 11:45       | 2                |              | QGIS server                         |       |
 |                       |                | 13:00         | 14:30       | 2                |              | Server web                          |       |
 |                       |                | 14:45         | 16:15       | 2                |              | Théorie standard OGC                |       |
-| mardi 24 juin 2025    | Par Zoom       | 15:30         | 16:15       | 1                | Régis        | Base de données - Python            |       |
+| mardi 24 juin 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | Base de données - Python            |       |
 |                       |                | 16:30         | 18:00       | 2                |              | Python théorie                      |       |
 | mardi 19 août 2025    |                | 08:30         | 10:00       | 2                | Régis        | Python                              |       |
 |                       |                | 10:15         | 11:45       | 2                |              | Python                              |       |
 |                       |                | 13:00         | 14:30       | 2                |              | Python                              |       |
 |                       |                | 14:45         | 16:15       | 2                |              | Python                              |       |
-| mardi 26 août 2025    | Par Zoom       | 15:30         | 16:15       | 1                | Régis        | Python                              |       |
+| mardi 26 août 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | Python                              |       |
 |                       |                | 16:30         | 18:00       | 2                |              | Python                              |       |
 | mardi 2 septembre 2025|                | 08:30         | 10:00       | 2                | Lucie        | QGIS / QGIS server / Qfield         |       |
 |                       |                | 10:15         | 11:45       | 2                |              | QGIS / QGIS server / Qfield         |       |

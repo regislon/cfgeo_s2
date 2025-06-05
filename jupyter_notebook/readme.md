@@ -17,7 +17,8 @@ table td {
 
 # Introduction à Jupyter Notebook
 - Doc : [https://github.com/regislon/cfgeo_s2/tree/main/jupyter_notebook](https://github.com/regislon/cfgeo_s2/tree/main/jupyter_notebook)
-- Slides : [https://regislon.github.io/cfgeo_s2/jupyter_notebook/index.html](https://regislon.github.io/cfgeo_s2/jupyter_notebook/index.html)
+- Slides : [https://regislon.github.io/cfgeo_s2/jupyter_notebook/readme.html](https://regislon.github.io/cfgeo_s2/jupyter_notebook/readme.html)
+- pdf : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/jupyter_notebook/readme.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/jupyter_notebook/readme.pdf)
 
 
 
@@ -93,14 +94,12 @@ Pour utiliser Jupyter Notebook, vous aurez besoin de plusieurs bibliothèques Py
 
 Installation des libraries python
 
-    Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)
-    Se rendre dans le répertoire d’installation de python en tapant la commande suivante :cd C:\Python\python-3.9.9-amd64\Scripts
-    Installer ipython-sql en tapant la commande suivante : pip install ipython-sql
-    Installer jupyter en tapant la commande suivante : pip install jupyter
-    Installer psycopg2 en tapant la commande suivante : pip install psycopg2
-    Installer requests en tapant la commande suivante : pip install requests
+1. Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)
+    
+    ```bash
+    pip install ipython-sql, jupyter, psycopg2, requests
 
-Vidéo de l'installation de la première librairie [ici](https://github.com/regislon/cfgeo_s2/blob/main/python/videos/pip.mkv).
+    ```
 
 ---
 
@@ -121,19 +120,13 @@ Les packages s'installent généralement avec la commande `pip install nom_du_pa
 
 ### Option 1 : Installation autonome
 
-1. **Installer Python**  
-   Téléchargez et installez Python depuis [https://www.python.org/downloads/](https://www.python.org/downloads/).  
-   Assurez-vous de cocher l'option "Add Python to PATH" lors de l'installation.
-
-2. **Installer Jupyter Notebook**  
+1. **Installer Jupyter Notebook**  
    Ouvrez un terminal ou une invite de commande et exécutez :  
    ```bash
    pip install notebook
    ```
 
----
-
-3. **Lancer Jupyter Notebook**  
+2. **Lancer Jupyter Notebook**  
    Dans le terminal, exécutez :  
    ```bash
    jupyter notebook

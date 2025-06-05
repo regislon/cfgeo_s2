@@ -879,7 +879,7 @@ SELECT ST_AsGeoJSON(geom), ST_AsText(geom) FROM ma_table;
 Exercice : Calculer la superficie d'un quartier
 
 🛠️ Exercice : Quelle est la superficie du quartier "West Village" ?
-📋 Instructions : Google + CHatGPT + https://postgis.net/docs/ST_Area.html
+📋 Instructions : Google + ChatGPT + https://postgis.net/docs/ST_Area.html
 ⏱️ Durée estimée : 10 minutes
 
 

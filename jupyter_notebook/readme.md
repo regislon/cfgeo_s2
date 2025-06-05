@@ -18,7 +18,7 @@ table td {
 # Introduction à Jupyter Notebook
 - Doc : [https://github.com/regislon/cfgeo_s2/tree/main/jupyter_notebook](https://github.com/regislon/cfgeo_s2/tree/main/jupyter_notebook)
 - Slides : [https://regislon.github.io/cfgeo_s2/jupyter_notebook/readme.html](https://regislon.github.io/cfgeo_s2/jupyter_notebook/readme.html)
-- pdf : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/jupyter_notebook/readme.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/jupyter_notebook/readme.pdf)
+- PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/jupyter_notebook/readme.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/jupyter_notebook/readme.pdf)
 
 
 
@@ -97,7 +97,7 @@ Installation des libraries python
 1. Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)
     
     ```bash
-    pip install ipython-sql, jupyter, psycopg2, requests
+    pip install ipython-sql, jupyter, psycopg2, requests, sqlalchemy psycopg2 pandas
 
     ```
 

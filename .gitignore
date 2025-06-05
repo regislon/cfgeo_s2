@@ -2,3 +2,7 @@
 .pwd
 *.pem
 *.rdp
+_*
+
+temp
+temp

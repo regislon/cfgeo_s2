@@ -173,13 +173,51 @@ Les packages s'installent généralement avec la commande `pip install nom_du_pa
    ```
 
 2. **Lancer Jupyter Notebook**  
-   Dans le terminal, exécutez :  
+   Dans le terminal (invite de command) exécutez (voir ci-apprès pour plus d'info) :  
    ```bash
    jupyter notebook
    ```
    Cela ouvrira une interface web où vous pourrez créer et gérer vos notebooks.
 
 ---
+
+## Qu'est-ce que l'invite de commande (ou terminal Windows) ?
+
+L’**invite de commande** (ou **terminal Windows**) est un programme qui permet d’interagir avec votre ordinateur en tapant des commandes texte. Il sert à :
+
+- Naviguer dans les dossiers et fichiers
+- Lancer des programmes ou scripts (comme Python ou Jupyter Notebook)
+- Installer des packages avec `pip`
+- Gérer des processus ou configurer le système
+
+
+---
+
+
+Pour ouvrir l’invite de commande :
+- Appuyez sur `Win + R`, tapez `cmd` puis validez
+- Ou recherchez “Invite de commandes” dans le menu Démarrer
+
+C’est un outil essentiel pour les développeurs, car il offre un contrôle précis et rapide sur l’environnement de travail.
+
+Pour vous déplacer dans un dossier, utilisez la commande `cd nom_du_dossier` (par exemple : `cd Documents`).
+
+---
+
+Exemple de lancement de Jupyter Notebook dans l'invite de commande :
+
+![bg left:50% w:600](image-2.png)
+
+```bash
+   cd <le dossier ou il y a vos notebooks>
+```
+et après :
+```bash
+   jupyter notebook
+```
+---
+
+
 
 ### Option 2 : Utilisation avec VS Code
 

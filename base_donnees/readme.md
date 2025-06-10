@@ -20,7 +20,7 @@ table td {
 ## PostgreSQL, PostGIS et fichiers géographiques
 
 - Doc : [https://github.com/regislon/cfgeo_s2/tree/main/base_donnees](https://github.com/regislon/cfgeo_s2/tree/main/base_donnees)
-- Slides : [https://regislon.github.io/cfgeo_s2/base_donnees/index.html](https://regislon.github.io/cfgeo_s2/base_donnees/index.html)
+- Slides : [https://regislon.github.io/cfgeo_s2/base_donnees/index.html](https://regislon.github.io/cfgeo_s2/base_donnees/readme.html)
 
 
 ---

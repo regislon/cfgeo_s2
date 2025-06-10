@@ -143,7 +143,7 @@ Installation des libraries python
 1. Démarrer l’invite de commande windows (taper CMD dans la barre de recherche)
     
     ```bash
-    pip install ipython-sql, jupyter, psycopg2, requests, sqlalchemy psycopg2 pandas
+    pip install ipython-sql; jupyter; psycopg2; requests; sqlalchemy; pandas
 
     ```
 

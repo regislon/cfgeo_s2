@@ -48,6 +48,52 @@ Jupyter Notebook est un environnement interactif qui permet d'écrire et d'exéc
 
 ---
 
+
+## Langage compilé vs interprété
+
+| Langage compilé         | Langage interprété         |
+|-------------------------|---------------------------|
+| Le code source est transformé en un fichier exécutable par un **compilateur** avant l'exécution. | Le code source est lu et exécuté **ligne par ligne** par un **interpréteur**. |
+| Exécution généralement plus rapide. | Exécution plus lente, mais plus flexible. |
+| Nécessite une étape de compilation (ex : C, C++). | Pas d'étape de compilation préalable (ex : Python, JavaScript). |
+| Plus difficile à déboguer (erreurs détectées à la compilation). | Plus facile à tester et à modifier rapidement. |
+
+**Exemples :**
+- Compilés : C, C++, Go, Rust
+- Interprétés : Python, R, JavaScript, Ruby
+
+
+
+---
+
+##  Fonctionnement d'un langage compilé
+
+![alt text](image.png)
+
+Fonctionnement d'un langage interprété. Le fichier source est lu et exécuté directement par un interpréteur (par exemple Python), qui produit le résultat sans étape de compilation préalable.*
+
+
+---
+
+## Fonctionnement d'un langage interprété
+
+![bg left:35% w:400](image-1.png)
+
+Cette image illustre le processus de compilation d’un langage compilé : les fichiers source (ex. : C, C++) sont d’abord transformés en fichiers objets par un compilateur (comme gcc). Ensuite, un éditeur de liens (linker) assemble ces fichiers objets avec d’éventuelles bibliothèques pour produire un fichier exécutable (exe), une bibliothèque dynamique (dll) ou statique (lib). Ce processus se distingue des langages interprétés où le code source est exécuté directement sans étape de compilation préalable.
+
+---
+
+
+## Qu'est-ce qu'un IDE ?
+
+Un **IDE** (Environnement de Développement Intégré) est une application qui regroupe plusieurs outils pour faciliter le développement logiciel : éditeur de code, coloration syntaxique, autocomplétion, gestion de projets, débogueur, terminal intégré, etc. Exemples populaires : PyCharm, Visual Studio Code, Eclipse.  
+Un IDE vise à améliorer la productivité et le confort du développeur en centralisant toutes les fonctionnalités nécessaires au codage, à la compilation et au test d'applications.
+
+
+
+---
+
+
 ## Pourquoi utiliser Jupyter Notebook plutôt qu'un IDE classique ou la ligne de commande ?
 
 - **Interactivité** : Exécutez le code cellule par cellule et visualisez instantanément les résultats (tableaux, graphiques, images).

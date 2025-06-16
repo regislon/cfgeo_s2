@@ -34,6 +34,8 @@ table td {
 
 ---
 
+
+
 # Introduction à Jupyter Notebook
 
 
@@ -294,3 +296,12 @@ plt.show()
 - Tutoriels Python : [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 
 ---
+## Utilisation de Jupyter Notebook dans ArcGIS
+
+Jupyter Notebook est également intégré dans ArcGIS (ArcGIS Pro et ArcGIS Online) pour l'analyse spatiale et la manipulation de données géographiques. Vous pouvez ainsi écrire et exécuter du code Python utilisant les bibliothèques ArcPy ou ArcGIS API for Python directement dans un notebook, ce qui facilite l'automatisation et la visualisation des traitements SIG.
+
+
+---
+
+
+![height:500](image-3.png)

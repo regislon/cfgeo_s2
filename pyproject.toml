@@ -9,5 +9,6 @@ dependencies = [
     "ipyleaflet>=0.19.2",
     "ipython-sql>=0.5.0",
     "pandas>=2.2.3",
+    "requests>=2.32.4",
     "sqlalchemy>=2.0.41",
 ]

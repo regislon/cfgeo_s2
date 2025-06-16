@@ -28,7 +28,7 @@ table td {
 - **Interopérabilité** : Python s'intègre facilement avec d'autres outils et logiciels utilisés en géomatique.
 - **Personnalisation** : Création de scripts et d'extensions adaptés à des besoins spécifiques.
 
-
+ 
 ---
 
 Dans notre contexte, Python est particulièrement utile pour :

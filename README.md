@@ -32,7 +32,7 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 |                       |                | 14:45         | 16:15       | 2                |              | Base de données                     | [lien](https://regislon.github.io/cfgeo_s2/base_donnees/readme.html) |
 | mardi 10 juin 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | Jupyter notebooks                   | [lien](https://regislon.github.io/cfgeo_s2/jupyter_notebook/readme.html) |
 |                       |                | 16:30         | 17:15       | 1                |              | Base de données                     |       |
-| mardi 17 juin 2025    |                | 08:30         | 10:00       | 2                | Régis        | Python théorie                      | [lien](https://regislon.github.io/cfgeo_s2/python/README.html) |
+| mardi 17 juin 2025    |                | 08:30         | 10:00       | 2                | Régis        | Python théorie                      | [lien](https://regislon.github.io/cfgeo_s2/python/readme.html) |
 |                       |                | 10:15         | 11:45       | 2                |              | Python théorie                      |       |
 |                       |                | 13:00         | 14:30       | 2                |              | Base de données                     |       |
 |                       |                | 14:45         | 16:15       | 2                |              | Base de données                     |       |

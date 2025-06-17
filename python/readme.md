@@ -15,7 +15,7 @@ table td {
 }
 </style>
 
-# Introduction à Jupyter Notebook
+# Introduction à Python
 - Doc : [https://github.com/regislon/cfgeo_s2/tree/main/python](https://github.com/regislon/cfgeo_s2/tree/main/python)
 - Slides : [https://regislon.github.io/cfgeo_s2/python/readme.html](https://regislon.github.io/cfgeo_s2/python/readme.html)
 - PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/python/readme.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/python/readme.pdf)

@@ -1,26 +1,9 @@
----
-marp: true
-paginate: true
-header: "Python"
-footer: "CFGEO - S2 - 2025"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 # Introduction à Python
 - Doc : [https://github.com/regislon/cfgeo_s2/tree/main/python](https://github.com/regislon/cfgeo_s2/tree/main/python)
 - Slides : [https://regislon.github.io/cfgeo_s2/python/readme.html](https://regislon.github.io/cfgeo_s2/python/readme.html)
 - PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/python/readme.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/python/readme.pdf)
 
----
 ## Pourquoi apprendre Python en géomatique ?
 
 - **Automatisation** : Python permet d'automatiser des tâches répétitives (traitement de données, conversions de formats, génération de rapports).
@@ -29,15 +12,13 @@ table td {
 - **Personnalisation** : Création de scripts et d'extensions adaptés à des besoins spécifiques.
 
  
----
 
 Dans notre contexte, Python est particulièrement utile pour :
 
 
-![height:500](image-2.png)
+![height:500](images_documentation/image-2.png)
 
 
---- 
 
 
 **Exemples de logiciels géomatiques utilisant Python :**
@@ -48,11 +29,9 @@ Dans notre contexte, Python est particulièrement utile pour :
 Apprendre Python ouvre donc de nombreuses possibilités pour un géomaticien !
 
 
----
 
-![bg left:45% w:500](image.png) **Let's go !  🚀**
+![bg left:45% w:500](images_documentation/image.png) **Let's go !  🚀**
 
----
 
 
 # Petite histoire de Python
@@ -65,7 +44,6 @@ Apprendre Python ouvre donc de nombreuses possibilités pour un géomaticien !
 - Utilisé par **Google** dès ses débuts
 - De plus en plus **populaire** dans de nombreux domaines
 
----
 
 
 
@@ -78,14 +56,12 @@ Ce document présente quelques bases théoriques essentielles. Les Jupyter Noteb
 
 
 
----
 
 # Les variables et assignation
 
 Les variables et types de données sont les bases de la programmation Python. Elles permettent de stocker et manipuler des informations. Une bonne compréhension de ces concepts est essentielle pour créer des programmes robustes.
 
 
----
 
 # Les types de données
 
@@ -98,7 +74,6 @@ Python propose plusieurs types de données :
 - **Dictionary** : Paires clé-valeur
 
 
----
 
 ## Les nombres
 
@@ -113,7 +88,6 @@ depth = 8.6   # float
 ```
 
 
----
 
 ## Les strings
 
@@ -126,7 +100,6 @@ print(message.upper())  # BONJOUR
 
 
 
----
 
 ## Les listes et tuples
 
@@ -140,7 +113,6 @@ fruits.append('orange')  # ['pomme', 'banane', 'orange']
 
 
 
----
 
 ## Les dictionnaires
 
@@ -153,13 +125,11 @@ print(mon_dict["nom"])  # Alice
 
 
 
----
 
 # Les conditions
 
 En Python, les conditions permettent de prendre des décisions dans le code.
 
----
 
 ## Structure de base : `if`
 
@@ -172,7 +142,6 @@ if age >= 18:
 
 Si la condition est vraie, le message sera affiché.
 
----
 
 ## `else` : Bloc alternatif
 
@@ -187,7 +156,6 @@ else:
 
 Si la condition est fausse, le bloc `else` sera exécuté.
 
----
 
 ## `elif` : Vérifier plusieurs conditions
 
@@ -206,7 +174,6 @@ else:
 
 Chaque condition est vérifiée séquentiellement.
 
----
 
 ## Conditions multiples : `and`, `or`, `not`
 
@@ -222,7 +189,6 @@ else:
 
 Combinez plusieurs conditions avec des opérateurs logiques.
 
----
 
 ## Conditions imbriquées
 
@@ -241,19 +207,16 @@ else:
 
 Les conditions peuvent être imbriquées pour des cas complexes.
 
----
 
 ## Conclusion
 
 Les conditions (`if`, `elif`, `else`) et les opérateurs logiques permettent de créer des programmes interactifs et sophistiqués. Structurez-les clairement pour une meilleure lisibilité.
 
----
 
 # Les boucles
 
 Les boucles permettent d'exécuter une séquence d'instructions plusieurs fois. En Python, on utilise principalement les boucles `for` et `while`.
 
----
 
 ## Boucles `for`
 
@@ -272,7 +235,6 @@ Résultat :
 56
 ```
 
----
 
 ### Exemple : Somme des longueurs de poutres
 
@@ -286,7 +248,6 @@ for longueur in longueurs_poutres:
 print(f"Somme des longueurs : {somme_longueurs} m")
 ```
 
----
 
 ### Boucler sur une plage
 
@@ -306,7 +267,6 @@ Résultat :
 4
 ```
 
----
 
 ## Boucles imbriquées
 
@@ -326,7 +286,6 @@ for i in range(len(charges)):
 print(f"Total des charges : {total_charges} kN")
 ```
 
----
 
 ## Utilisation de `enumerate`
 
@@ -339,7 +298,6 @@ for index, charge in enumerate(charges):
     print(f"Charge {index + 1} : {charge} kN")
 ```
 
----
 
 ## Boucles `while`
 
@@ -357,33 +315,28 @@ while volume > 0:
 print(f"Temps nécessaire : {temps} heures")
 ```
 
----
 
 ## Conclusion
 
 Les boucles sont essentielles pour automatiser les tâches répétitives. Elles permettent de gérer efficacement des calculs complexes et des structures de données en Python.
 
----
 
 # Les packages
 
 En Python, un package est une façon d'organiser des modules Python logiquement en utilisant des dossiers et des fichiers.
 
----
 
 ## Où trouver des packages ?
 
 - **PyPI (Python Package Index)** : Répertoire officiel de logiciels Python. Utilisez `pip` pour installer des packages.
 - **GitHub et autres plateformes** : Téléchargez ou clonez des bibliothèques directement depuis des dépôts de code source.
 
----
 
 ## Est-ce gratuit ?
 
 - **Licences open-source** : La plupart des packages sont gratuits (MIT, Apache 2.0, GPL).
 - **Paquets commerciaux** : Certains nécessitent une licence payante, souvent pour des environnements d'entreprise.
 
----
 
 ## Installer des packages avec `pip`
 
@@ -401,19 +354,16 @@ pip install numpy
 
 Installez facilement les bibliothèques nécessaires pour vos projets.
 
----
 
 ## Conclusion
 
 Les packages Python permettent d'étendre les fonctionnalités de base du langage. Ils sont essentiels pour développer des projets complexes et interactifs.
 
----
 
 # Les fonctions
 
 Les fonctions sont des blocs de code réutilisables qui exécutent une tâche spécifique. Elles permettent de structurer le code de manière modulaire.
 
----
 
 ## Définition et Appel de Fonctions
 
@@ -428,7 +378,6 @@ def saluer():
 saluer()
 ```
 
----
 
 ## Fonctions avec Paramètres
 
@@ -443,7 +392,6 @@ def saluer_personne(nom):
 saluer_personne("Alice")
 ```
 
----
 
 ## Valeur de Retour
 
@@ -459,7 +407,6 @@ resultat = addition(5, 3)
 print(f"La somme est : {resultat}")
 ```
 
----
 
 ## Paramètres par Défaut
 
@@ -477,7 +424,6 @@ saluer_personne()
 saluer_personne("Bob")
 ```
 
----
 
 ## Conclusion
 

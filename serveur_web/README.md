@@ -1,23 +1,7 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - Serveur web"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 # Server Web
 
----
 
 ### Introduction : Qu’est-ce qu’un serveur web ?
 
@@ -26,7 +10,6 @@ table td {
 - Il utilise en général le **protocole HTTP ou HTTPS**
 - Dans notre cas, il permet d’exposer un **projet QGIS** comme service **WMS / WFS**
 
----
 
 ### Pourquoi un serveur web dans un SIG ?
 
@@ -35,7 +18,6 @@ table td {
 - Séparer le **backend SIG (QGIS Server)** de l’**interface utilisateur** (client Web, QGIS Desktop, etc.)
 - Permettre l’**interopérabilité** via des standards OGC
 
----
 
 ### Types de serveurs web
 
@@ -45,7 +27,6 @@ table td {
 | **SIG dédiés**   | QGIS Server, GeoServer | Produisent des flux WMS/WFS/WMTS à partir de SIG   |
 | **Combinés**     | Apache + QGIS Server   | Requêtes traitées par Apache, transmises à QGIS    |
 
----
 
 ### Fonctionnement général : Apache + QGIS Server
 
@@ -60,18 +41,16 @@ table td {
 - QGIS Server interprète la requête (ex: WMS GetMap)
 - Il génère la réponse (ex: carte raster) et la renvoie
 
----
 
 ### Installation d'Apache
 
 - Télécharger l'Installateur [XAMPP](https://www.apachefriends.org/download.html)
 - Sélectionner uniquement que :
 
-![ ](./media/1.png) 
+![ ](images_documentation/./media/1.png) 
 
----
 
-- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](/ressources/apache/conf/httpd.conf)
+- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](images_documentation//ressources/apache/conf/httpd.conf)
 
 
 
@@ -87,15 +66,13 @@ table td {
 >
 > ✅ Résultat : Apache peut servir les requêtes cartographiques.
 
----
 
 - Ne pas oublier de redémarrer Apache à la fin de l'installation.
 
-    ![alt text](image.png)
+    ![alt text](images_documentation/image.png)
 
 > Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/apache/videos/install.mkv).
 
----
 
 
 ### Test du serveur web en local
@@ -110,7 +87,6 @@ table td {
 
 
 
----
 
 ### Open HTTP and HTTPS ports in Windows Server 2022 firewall
 
@@ -122,7 +98,6 @@ table td {
 
 4. In the right panel, click **New Rule...**
  
----
 
 5. Choose:
    - **Rule Type**: *Port*
@@ -135,7 +110,6 @@ table td {
 ✅ This allows incoming web traffic to reach your Apache server on ports 80 and 443.
 
 
----
 
 
 
@@ -156,13 +130,11 @@ table td {
 
 ✅ Cela permet d’accéder à votre serveur web depuis l’extérieur (navigateur, client SIG, etc.).
 
----
 
 Nouveaux ajouts dans le group de sécurité :
 
-![alt text](image-1.png)
+![alt text](images_documentation/image-1.png)
 
----
 
 ### Test du serveur web **à distance**
 
@@ -181,15 +153,12 @@ http\://\<votre\_IP\_publique>
 
 
 
----
 ```
 
----
 
 ### 🌐 Test du serveur web **depuis l’extérieur**
 
 ```markdown
----
 
 ### Test du serveur web depuis l’extérieur
 
@@ -209,7 +178,6 @@ http\://\<votre\_DNS>
 - Vérifie que **Apache est en cours d’exécution** dans la VM
 - Essaie un ping ou `curl` pour diagnostiquer la connectivité
 
----
 ```
 
 Souhaites-tu que je t’envoie l’intégralité de la présentation mise à jour en `.md` ou `.pptx` ?
@@ -231,14 +199,13 @@ localhost/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=Get
 ```
 - Le test est réussi si vous obtenez une page web avec du code XML
 
----
 
 ### Test de la configuration GIS server + Apache en externe (depuis internet)
 
 - Le test précédant est réussi 
 - Depuis la console d'amazon, récupérer le DNS de votre machine virtuelle. Il s'agit de l'adresse de votre machine. 
 
-![ ](/ressources/aws/images/dns.png) 
+![ ](images_documentation//ressources/aws/images/dns.png) 
 
 - Depuis un navigateur web à l'extérieur de la machine virtuelle, entrer :  
 ```
@@ -248,6 +215,5 @@ localhost/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=Get
 ```
 - Le test est réussi si vous obtenez une page web avec du code XML
 
----
 ```
 

@@ -1,0 +1,19 @@
+{
+    "titre": {"fre": "La Solution", "ger": "Die Lösung"},
+    "auteur": "Bertold Brecht",
+    "annee": 1953,
+    "source": "https://fr.wikipedia.org/wiki/Die_L%C3%B6sung",
+    "vers": [
+        {"n": 1, "texte": "Après l'insurrection du 17 juin,"},
+        {"n": 2, "texte": "Le secrétaire de l'Union des Écrivains"},
+        {"n": 3, "texte": "Fit distribuer des tracts dans la Stalinallée."},
+        {"n": 4, "texte": "Le peuple, y lisait-on, a par sa faute"},
+        {"n": 5, "texte": "Perdu la confiance du gouvernement"},
+        {"n": 6, "texte": "Et ce n'est qu'en redoublant d'efforts"},
+        {"n": 7, "texte": "Qu'il peut la regagner."},
+        {"n": 8, "texte": "Ne serait-il pas"},
+        {"n": 9, "texte": "Plus simple alors pour le gouvernement"},
+        {"n": 10, "texte": "De dissoudre le peuple"},
+        {"n": 11, "texte": "Et d'en élire un autre ?"}
+    ]
+}

@@ -1,5 +1,11 @@
 # 🗺️ Mise en place de QGIS Server sur un Windows Server 2022 (AWS)
 
+## Accueil et Introduction (30 min)
+- Qui êtes-vous et qui suis-je?
+
+- À propos de QGIS :
+  - QGIS : Historique, philosophie (open-source), avantages et place dans le monde de la géomatique.
+
 ## 🎯 Objectif
 
 Déployer QGIS Server sur une instance **Windows Server 2022 EC2 (AWS)**, sans passer par WSL, pour servir des cartes via **WMS/WFS** à partir de projets QGIS.

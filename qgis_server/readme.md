@@ -1,10 +1,12 @@
 # 🗺️ Mise en place de QGIS Server sur un Windows Server 2022 (AWS)
 
-## Accueil et Introduction (30 min)
+## Accueil et Introduction
 - Qui êtes-vous et qui suis-je?
 
 - À propos de QGIS :
   - QGIS : Historique, philosophie (open-source), avantages et place dans le monde de la géomatique.
+
+---
 
 ## 🎯 Objectif
 

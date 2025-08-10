@@ -1,0 +1,42 @@
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@import url(https://use.typekit.net/kve4lwn.css);
+
+:root {
+    --r-background-color: var(--opengisch-white);
+    --opengisch-green: hsl(88, 67%, 48%);
+    --opengisch-blue: #2880cc;
+    --opengisch-dark: #313131;
+    --opengisch-light: #c2c2c2;
+    --opengisch-white: #ffffff;
+    --r-main-font: "futura-pt", Helvetica, Arial, sans-serif;
+    --r-heading-font: "futura-pt", Helvetica, Arial, sans-serif;
+}
+
+/* -- GLOBAL STYLES -- */
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color);
+  margin-top: 20px;
+}
+
+section.present {
+  top: 10% !important;
+}
+
+.reveal .slides::after {
+  content: "";
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-image: url(../assets/logo-bg-cut-l.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  width: 140px;
+  height: 140px;
+  pointer-events: none;
+  z-index: 1;
+}

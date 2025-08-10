@@ -1,0 +1,35 @@
+@import 'main-style.css';
+@import url("https://use.typekit.net/cbd7kad.css");
+
+:root {
+  --r-background-color: var(--opengisch-white);
+}
+
+#qf-logo { /* left corner qfield logo*/
+  position: fixed;
+  top: 500px;
+  z-index: 1000;
+}
+
+.slide-background-content{
+  background-image: url(https://qfield.org/images/qf_carousel/qf-bg-sync.jpg) !important;
+}
+
+.reveal .slides::after {
+  background:none !important;
+}
+
+body {
+  font-family: "bio-sans", sans-serif !important;
+}
+
+img.vertical{
+  max-width: 90% !important;
+  position: absolute;
+  right: 40px;
+  top: 100px;
+}
+
+li{
+  background:none !important;
+}

@@ -16,6 +16,11 @@ table td {
 
 
 # Server Web
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/serveur_web](https://github.com/regislon/cfgeo_s2/tree/main/serveur_web)
+- Slides : [https://regislon.github.io/cfgeo_s2/serveur_web/README.html](https://regislon.github.io/cfgeo_s2/serveur_web/README.html)
+- PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/serveur_web/README.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/serveur_web/README.pdf)
+
+
 
 ---
 

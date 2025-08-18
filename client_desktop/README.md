@@ -16,6 +16,10 @@ table td {
 
 
 # QGIS - Installation
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/client_desktop](https://github.com/regislon/cfgeo_s2/tree/main/client_desktop)
+- Slides : [https://regislon.github.io/cfgeo_s2/client_desktop/README.html](https://regislon.github.io/cfgeo_s2/client_desktop/README.html)
+- PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/client_desktop/README.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/client_desktop/README.pdf)
+
 
 
 ---

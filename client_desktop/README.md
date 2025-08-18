@@ -1,3 +1,25 @@
+---
+marp: true
+paginate: true
+header: "CFGEO - S2 - QGIS - Installation"
+theme: default
+---
+
+<style>
+table th {
+  font-size: 0.75em;
+}
+table td {
+  font-size: 0.7em;
+}
+</style>
+
+
+# QGIS - Installation
+
+
+---
+
 
 # Installation de QGIS et QGIS server
 Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution de binaire d'un grand nombre de logiciels open source geospatial pour les environnements Windows
@@ -9,9 +31,14 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/client_desktop/videos/install.mkv).
 
+
+---
+
+
 ### Création d'un premier projet QGIS
 - Créer un projet QGIS, enregistrer-le sous C:\OSGeo4W64\apps\qgis-ltr\bin\cfgeo.qgz
 - Ajouter ces [données](https://github.com/regislon/cfgeo_s2/raw/main/client_desktop/data/initial_load.gpkg).
 
 
 
+---

@@ -106,10 +106,6 @@ table td {
 - Si cette page s'affiche, cela signifie que **le serveur Apache fonctionne localement**
 
 
-
-
-
-
 ---
 
 ### Open HTTP and HTTPS ports in Windows Server 2022 firewall
@@ -162,61 +158,20 @@ Nouveaux ajouts dans le group de sécurité :
 
 ![alt text](image-1.png)
 
----
-
-### Test du serveur web **à distance**
-
-Noter l'adresse IP publique de votre machine virtuelle dans la console AWS.
-
-Depuis votre machie personnelle (pas la VM), ouvrir un navigateur et entrer l'adresse suivante :
-
-```markdown
-http\://\<votre\_IP\_publique>
-```
-```markdown
-- Tu devrais voir la même page que celle testée en local (XAMPP ou `index.html`)
-
-
-
-
-
-
----
-```
 
 ---
 
-### 🌐 Test du serveur web **depuis l’extérieur**
-
-```markdown
----
 
 ### Test du serveur web depuis l’extérieur
 
-- Depuis la **console AWS**, repère l’**adresse publique (DNS)** de ta machine
+- Depuis la **console AWS**, repère l’**adresse IPv4 publique** de ta machine
 - Ouvre un navigateur **depuis ton ordinateur personnel (pas la VM)**
-- Entre l’adresse suivante :
-  
-```
+- Entre l’adresse suivante : `http://<votre_IP_publique>`
 
-http\://\<votre\_DNS>
 
-```
 
-- Tu devrais voir la même page que celle testée en local (XAMPP ou `index.html`)
-- Si ça ne fonctionne pas :
-- Vérifie que la **règle de sécurité** autorise le **port TCP 80** en entrée
-- Vérifie que **Apache est en cours d’exécution** dans la VM
-- Essaie un ping ou `curl` pour diagnostiquer la connectivité
 
 ---
-```
-
-Souhaites-tu que je t’envoie l’intégralité de la présentation mise à jour en `.md` ou `.pptx` ?
-
-
-
-
 
 
 

@@ -39,10 +39,10 @@ Ce programme est sujet à d'éventuelles modifications en fonction des disponibi
 | mardi 24 juin 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | Python                              |       |
 |                       |                | 16:30         | 18:00       | 2                |              | Python                              |       |
 | mardi 19 août 2025    |                | 08:30         | 10:00       | 2                | Régis        | Python                              |       |
-|                       |                | 10:15         | 11:45       | 2                |              | Python                              |       |
+|                       |                | 10:15         | 11:45       | 2                |              | QGIS installation                   |       |
 |                       |                | 13:00         | 14:30       | 2                |              | Python                              |       |
 |                       |                | 14:45         | 16:15       | 2                |              | Python                              |       |
-| mardi 26 août 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | QGIS installation                   |       |
+| mardi 26 août 2025    | Par Teams      | 15:30         | 16:15       | 1                | Régis        | Python.                             |       |
 |                       |                | 16:30         | 18:00       | 2                |              | QGIS installation                   |       |
 | mardi 2 septembre 2025|                | 08:30         | 10:00       | 2                | Lucie        | QGIS / QGIS server / Qfield         |       |
 |                       |                | 10:15         | 11:45       | 2                |              | QGIS / QGIS server / Qfield         |       |

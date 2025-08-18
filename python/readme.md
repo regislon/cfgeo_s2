@@ -359,11 +359,233 @@ print(f"Temps nécessaire : {temps} heures")
 
 ---
 
-## Conclusion
+### Conclusion
 
 Les boucles sont essentielles pour automatiser les tâches répétitives. Elles permettent de gérer efficacement des calculs complexes et des structures de données en Python.
 
 ---
+
+
+##  Web Services VS  Fichiers 
+
+**Web Services  :** 
+
+- Accès **à distance** via Internet  
+- Données mises à jour en continu par le fournisseur  
+- Formats : **GeoJSON**, **ESRIJSON**, **XML**, **WFS**, etc.  
+- Exemple : API de swisstopo, services INSPIRE, API OpenStreetMap  
+- Utilisés avec `requests` ou directement dans **GeoPandas** via une URL 
+
+---
+
+**Fichiers :** 
+
+- Données **stockées localement** ou dans un serveur interne  
+- Formats : **Shapefile**, **GeoPackage (GPKG)**
+- Accès rapide, idéal pour l’analyse intensive ou hors-ligne  
+- Manipulation avec **GeoPandas** ou autre bibliothèque de traitement de données spatiales 
+
+
+---
+
+
+
+
+
+# Les requêtes HTTP
+
+En géomatique, on accède souvent à des services web (GeoJSON, ESRIJSON, XML).
+La bibliothèque **requests** est la plus simple pour récupérer des données.
+
+---
+
+## Structure d’une requête
+
+- **URL** : l’adresse du service (ex. `https://api3.geo.admin.ch/...`)  
+- **Méthode** :  
+  - `GET` → lire des données  
+  - `POST` → envoyer des données  
+- **Paramètres** : zone, format de sortie, filtres…
+
+---
+
+
+# Codes de statut HTTP
+
+Quand on envoie une requête HTTP, le serveur répond avec un **code de statut**.  
+Ce code indique si la requête a réussi ou échoué.
+
+---
+
+## Les codes les plus courants
+
+- **200 – OK** ✅  
+  La requête a réussi, les données sont renvoyées.
+- **201 – Created** ✨  
+  Une ressource a été créée (souvent après un POST).
+- **400 – Bad Request** ⚠️  
+  La requête est incorrecte (paramètres manquants ou invalides).
+- **401 – Unauthorized** 🔒  
+  Authentification requise pour accéder à la ressource.
+
+---
+
+- **403 – Forbidden** 🚫  
+  Accès interdit même avec authentification.
+- **404 – Not Found** ❌  
+  La ressource demandée n’existe pas.
+- **500 – Internal Server Error** 💥  
+  Erreur côté serveur.
+
+---
+
+
+## Les fichiers JSON
+
+Le format **JSON (JavaScript Object Notation)** est largement utilisé pour stocker et échanger des données, notamment géospatiales.
+
+---
+
+## Lire et écrire du JSON en Python
+
+```python
+import json
+
+# Exemple de dictionnaire Python
+data = {"nom": "Alice", "âge": 30, "ville": "Genève"}
+
+# Écrire dans un fichier JSON
+with open("data.json", "w") as f:
+    json.dump(data, f)
+
+# Lire depuis un fichier JSON
+with open("data.json", "r") as f:
+    contenu = json.load(f)
+
+print(contenu["ville"])  # Genève
+````
+
+---
+
+
+
+## Exemple : Récupérer un GeoJSON depuis une API
+
+```python
+import requests
+url = (
+    "https://api3.geo.admin.ch/rest/services/api/MapServer/identify?"
+    "geometryType=esriGeometryEnvelope&"
+    "geometry=548945.5,147956,549402,148103.5&"
+    "imageDisplay=500,600,96&"
+    "mapExtent=548945.5,147956,549402,148103.5&"
+    "tolerance=1&"
+    "layers=all:ch.bfs.arealstatistik&"
+    "geometryFormat=geojson"
+)
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    geojson = response.json()
+    print(geojson["results"][0])
+```
+
+---
+
+## Exemple : Récupérer un ESRIJSON ou XML
+
+```python
+url = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3/query"
+params = {
+    "where": "1=1",
+    "outFields": "*",
+    "f": "geojson"  # ou "json", "pjson", "xml"
+}
+
+response = requests.get(url, params=params)
+data = response.json()  # si f=geojson ou f=json
+```
+
+
+
+---
+
+# Le SQL en Python
+
+On peut interroger des bases de données relationnelles avec Python, par exemple avec **sqlite3** (intégré par défaut).
+
+---
+
+## Exemple avec SQLite
+
+```python
+import sqlite3
+
+# Connexion à une base SQLite
+conn = sqlite3.connect("ma_base.db")
+cursor = conn.cursor()
+
+# Création d'une table
+cursor.execute("CREATE TABLE IF NOT EXISTS personnes (id INTEGER, nom TEXT)")
+
+# Insertion
+cursor.execute("INSERT INTO personnes VALUES (1, 'Alice')")
+conn.commit()
+
+# Requête SQL
+cursor.execute("SELECT * FROM personnes")
+print(cursor.fetchall())  # [(1, 'Alice')]
+```
+
+---
+
+# Introduction à GeoPandas
+
+**GeoPandas** étend pandas pour manipuler des données géospatiales (GeoJSON, Shapefile, GPKG…).
+Il permet d’intégrer des géométries dans des DataFrames et de faire des opérations spatiales.
+
+---
+
+## Exemple : Charger un fichier GeoJSON
+
+```python
+import geopandas as gpd
+
+# Charger un GeoJSON
+gdf = gpd.read_file("communes.geojson")
+
+print(gdf.head())
+```
+
+---
+
+## Exemple : Charger depuis un web service
+
+```python
+url = "https://geo.api.gouv.fr/communes?codePostal=75001&format=geojson"
+gdf = gpd.read_file(url)
+gdf.plot()
+```
+
+---
+
+## Différence : GeoPandas vs Requêtes HTTP
+
+* **Requêtes HTTP (requests)** : pour récupérer les données depuis une API ou un service web (GeoJSON, ESRIJSON, XML).
+* **GeoPandas** : pour manipuler et analyser les données stockées localement (fichiers shapefile, GeoPackage, GeoJSON) ou issues d’une base de données.
+
+---
+
+### Conclusion
+
+* **requests** = interaction avec des **services web** (API REST, formats JSON/XML).
+* **GeoPandas** = manipulation de **données spatiales** sous forme de fichiers ou bases de données.
+* En pratique, on combine souvent les deux : *requests* pour récupérer les données → *GeoPandas* pour les analyser et les visualiser.
+
+---
+
+
 
 # Les packages
 
@@ -384,6 +606,8 @@ En Python, un package est une façon d'organiser des modules Python logiquement 
 - **Paquets commerciaux** : Certains nécessitent une licence payante, souvent pour des environnements d'entreprise.
 
 ---
+
+
 
 ## Installer des packages avec `pip`
 

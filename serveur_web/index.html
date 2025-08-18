@@ -194,44 +194,15 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="CFGEO - S2 - Serveur web" data-theme="default" data-marpit-pagination="14" data-marpit-pagination-total="17" style="--paginate:true;--header:CFGEO - S2 - Serveur web;--theme:default;">
 <header>CFGEO - S2 - Serveur web</header>
-<h3 id="test-du-serveur-web-%C3%A0-distance">Test du serveur web <strong>à distance</strong></h3>
-<p>Noter l'adresse IP publique de votre machine virtuelle dans la console AWS.</p>
-<p>Depuis votre machie personnelle (pas la VM), ouvrir un navigateur et entrer l'adresse suivante :</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-markdown">http\://\<span class="language-xml">&lt;votre\_IP\_publique&gt;</span>
-</code></pre>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-markdown"><span class="hljs-bullet">-</span> Tu devrais voir la même page que celle testée en local (XAMPP ou <span class="hljs-code">`index.html`</span>)
-
-
-
-
-
-
----
-</code></pre>
+<h3 id="test-du-serveur-web-depuis-lext%C3%A9rieur">Test du serveur web depuis l’extérieur</h3>
+<ul>
+<li>Depuis la <strong>console AWS</strong>, repère l’<strong>adresse IPv4 publique</strong> de ta machine</li>
+<li>Ouvre un navigateur <strong>depuis ton ordinateur personnel (pas la VM)</strong></li>
+<li>Entre l’adresse suivante : <code>http://&lt;votre_IP_publique&gt;</code></li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="CFGEO - S2 - Serveur web" data-theme="default" data-marpit-pagination="15" data-marpit-pagination-total="17" style="--paginate:true;--header:CFGEO - S2 - Serveur web;--theme:default;">
 <header>CFGEO - S2 - Serveur web</header>
-<h3 id="%F0%9F%8C%90-test-du-serveur-web-depuis-lext%C3%A9rieur"><img class="emoji" draggable="false" alt="🌐" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f310.svg" data-marp-twemoji=""/> Test du serveur web <strong>depuis l’extérieur</strong></h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-markdown">---
-
-<span class="hljs-section">### Test du serveur web depuis l’extérieur</span>
-
-<span class="hljs-bullet">-</span> Depuis la <span class="hljs-strong">**console AWS**</span>, repère l’<span class="hljs-strong">**adresse publique (DNS)**</span> de ta machine
-<span class="hljs-bullet">-</span> Ouvre un navigateur <span class="hljs-strong">**depuis ton ordinateur personnel (pas la VM)**</span>
-<span class="hljs-bullet">-</span> Entre l’adresse suivante :
-  
-</code></pre>
-<p>http://&lt;votre_DNS&gt;</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>
-- Tu devrais voir la même page que celle testée en local (XAMPP ou `index.html`)
-- Si ça ne fonctionne pas :
-- Vérifie que la **règle de sécurité** autorise le **port TCP 80** en entrée
-- Vérifie que **Apache est en cours d’exécution** dans la VM
-- Essaie un ping ou `curl` pour diagnostiquer la connectivité
-
----
-</code></pre>
-<p>Souhaites-tu que je t’envoie l’intégralité de la présentation mise à jour en <code>.md</code> ou <code>.pptx</code> ?</p>
 <h3 id="test-de-la-configuration-gis-server--apache-en-local-sur-la-machine-virtuelle">Test de la configuration GIS server + Apache en local (sur la machine virtuelle)</h3>
 <ul>
 <li>Placer un projet QGIS nommé &quot;cfgeo.qgz&quot; dans</li>

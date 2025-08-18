@@ -177,6 +177,8 @@ Nouveaux ajouts dans le group de sécurité :
 
 ### Test de la configuration GIS server + Apache en local (sur la machine virtuelle)
 
+Une fois QGIS server installé... 
+
 - Placer un projet QGIS nommé "cfgeo.qgz" dans
 - Depuis un navigateur web sur la machine virtuelle (Edge par exemple), entrer :  
 ```
@@ -191,14 +193,14 @@ localhost/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=Get
 ### Test de la configuration GIS server + Apache en externe (depuis internet)
 
 - Le test précédant est réussi 
-- Depuis la console d'amazon, récupérer le DNS de votre machine virtuelle. Il s'agit de l'adresse de votre machine. 
+- Depuis la console d'amazon, récupérer votre adresse IP publique de votre machine virtuelle. 
 
-![ ](/ressources/aws/images/dns.png) 
+
 
 - Depuis un navigateur web à l'extérieur de la machine virtuelle, entrer :  
 ```
 
-\<votre\_DNS>/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=GetCapabilities\&map=cfgeo.qgz
+\<votre\_IP\_publique>/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=GetCapabilities\&map=cfgeo.qgz
 
 ```
 - Le test est réussi si vous obtenez une page web avec du code XML

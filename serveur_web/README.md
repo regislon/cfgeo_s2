@@ -76,7 +76,7 @@ table td {
 
 ---
 
-- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](/ressources/apache/conf/httpd.conf)
+- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](/conf/httpd.conf)
 
 
 
@@ -143,7 +143,6 @@ table td {
 ### Configuration du pare-feu AWS pour autoriser l'accès externe
 
 1. Accéder à la console AWS :  
-   [console EC2 - eu-north-1](https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#Instances:)
 
 2. Sélectionner votre **instance** dans la liste.
 

@@ -67,51 +67,146 @@ table td {
 
 ---
 
-### Installation d'Apache
+### Installation et parametrisation d'Apache
 
-- Télécharger l'Installateur [XAMPP](https://www.apachefriends.org/download.html)
-- Sélectionner uniquement que :
+L'installation d'Apache s'effectue avec le OSGeo4W network installer (comme pour QGIS et QGIS serveur).
 
-![ ](./media/1.png) 
+Cela s'effectue en 3 étapes :  
+1. Installation via OsGeo4W
+2. Configuration du fichier httpd.conf
+3. Démarrage du service Apache
 
----
+ --- 
 
-- Remplacer le fichier C:\xampp\apache\conf\httpd.conf par celui ci : ![httpd.conf](/conf/httpd.conf)
+#### Partie 1 : Installation via OsGeo4W
 
-
-
-
-> 💡 **Pourquoi remplacer `httpd.conf` ?**
->
-> Le fichier `httpd.conf` par défaut **n’autorise pas** l’exécution de QGIS Server.
->
-> En le remplaçant, on :
-> - Active le **module CGI**
-> - Crée l’alias `/cgi-bin/` vers le dossier de QGIS Server
-> - Autorise l’exécution de `qgis_mapserv.fcgi.exe`
->
-> ✅ Résultat : Apache peut servir les requêtes cartographiques.
+1. **Télécharger et lancer l’installateur OSGeo4W.**
+  ![height:300](image-2.png)
+2. **Choisir l’option « Advanced Install ».**
 
 ---
 
-- Ne pas oublier de redémarrer Apache à la fin de l'installation.
+3. **Sélectionner les paquets suivants dans la catégorie web :**
+  * `apache`, `qgis-ltr-server` et `mod_fcgi`.
+![height:300](image-3.png)
 
-    ![alt text](image.png)
+4. **Exécuter le fichier `OSGeo4W.bat` en tant qu'administrateur** :
+   - Naviguer vers le dossier `C:\OSGeo4W\`.
+   - Faire un clic droit sur le fichier `OSGeo4W.bat` et sélectionner **Exécuter en tant qu'administrateur**.
+   
+---
 
-> Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/ressources/apache/videos/install.mkv).
+5. **Installer le service Apache** :
+   - Dans la console, exécuter la commande suivante :
+     ```
+     apache-install.bat
+     ```
+   - Cela affichera un message similaire :
+     ```
+     Installing the 'Apache OSGeo4W Web Server' service
+     The 'Apache OSGeo4W Web Server' service is successfully installed.
+     Testing httpd.conf....
+     Errors reported here must be corrected before the service can be started.
+     ```
+
+Garder cette console ouverte, nous en auront besoin dans quelques minutes.
 
 ---
 
 
-### Test du serveur web en local
 
-- Ouvrir un navigateur **dans la machine virtuelle** (ex. Edge ou Chrome)
-- Entrer l’adresse suivante dans la barre d’URL : [http://localhost](http://localhost)
-- Tu devrais voir la **page d'accueil de XAMPP** (ou un fichier `index.html`)
-- Si cette page s'affiche, cela signifie que **le serveur Apache fonctionne localement**
+#### Partie 2 : Configuration du fichier httpd.conf
+
+Pour configurer correctement Apache avec QGIS Server, il est nécessaire de modifier le fichier `httpd.conf` situé dans `C:\OSGeo4W\apps\apache\conf\httpd.conf`. Voici les changements à effectuer :
+
+
+1. **Indiquer où trouver les fichiers de script** :
+   Remplacer :
+   ```
+   ScriptAlias /cgi-bin/ "${SRVROOT}/cgi-bin/"
+   ```
+   Par :
+   ```
+   ScriptAlias /cgi-bin/ "C:/OSGeo4W/apps/qgis-ltr/bin/"
+   ```
+
+
+⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/bin/ existe !
+
+---
+
+
+2. **Fournir les permissions sur le dossier des scripts** :
+   Remplacer :
+   ```
+   <Directory "${SRVROOT}/cgi-bin">
+       AllowOverride None
+       Options None
+       Require all granted
+   </Directory>
+   ```
+   Par :
+   ```
+   <Directory "C:/OSGeo4W/apps/qgis-ltr/bin">
+       SetHandler cgi-script
+       AllowOverride None
+       Options ExecCGI
+       Require all granted
+   </Director
+    ```
+   
+   ⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/bin/ existe !
+
+---
+
+
+
+
+3. **Activer les extensions de fichiers pour les scripts** :
+   Remplacer :
+   ```
+   #AddHandler cgi-script .cgi
+   ```
+   Par :
+   ```
+   AddHandler cgi-script .cgi .exe
+   ```
+
+---
+
+
+4. **Ajouter des variables de configuration spécifiques à OSGeo4W** :
+   Ajouter à la fin du fichier :
+   ```
+   # parse OSGeo4W apache conf files
+   IncludeOptional "C:/OSGeo4W/httpd.d/httpd_*.conf"
+   SetEnv GDAL_DATA "C:/OSGeo4W/share/gdal"
+   SetEnv QGIS_AUTH_DB_DIR_PATH "C:/OSGeo4W/apps/qgis-ltr/resources"
+   ```
+
+   ⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/resources existe !
 
 
 ---
+
+#### Partie 3 : Démarrage du service Apache
+
+✅ Une fois ces modifications effectuées, redémarrer Apache pour appliquer les changements. Pour ce faire, retourne dans la console OSGeo4W et entre : 
+
+  ```
+   apache-restart.bat
+   ```
+
+
+
+Puis nous pouvons tester le serveur web en local, depuis un navigateur web sur la machine virtuelle, entrer :  
+```
+http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities
+```
+ Une page web avec un contenu XML devrait s'afficher. 🎆 
+
+---
+
 
 ### Open HTTP and HTTPS ports in Windows Server 2022 firewall
 
@@ -170,45 +265,10 @@ Nouveaux ajouts dans le group de sécurité :
 
 - Depuis la **console AWS**, repère l’**adresse IPv4 publique** de ta machine
 - Ouvre un navigateur **depuis ton ordinateur personnel (pas la VM)**
-- Entre l’adresse suivante : `http://<votre_IP_publique>`
+- Entre l’adresse suivante : `http://<votre_IP_publique>/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities`
 
+La page devrait afficher un contenu XML avec les informations de capacité du service WMS : 
 
+![alt text](image-4.png)
 
-
----
-
-
-
-### Test de la configuration GIS server + Apache en local (sur la machine virtuelle)
-
-Une fois QGIS server installé... 
-
-- Placer un projet QGIS nommé "cfgeo.qgz" dans
-- Depuis un navigateur web sur la machine virtuelle (Edge par exemple), entrer :  
-```
-
-localhost/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=GetCapabilities\&map=cfgeo.qgz
-
-```
-- Le test est réussi si vous obtenez une page web avec du code XML
-
----
-
-### Test de la configuration GIS server + Apache en externe (depuis internet)
-
-- Le test précédant est réussi 
-- Depuis la console d'amazon, récupérer votre adresse IP publique de votre machine virtuelle. 
-
-
-
-- Depuis un navigateur web à l'extérieur de la machine virtuelle, entrer :  
-```
-
-\<votre\_IP\_publique>/cgi-bin/qgis\_mapserv.fcgi.exe?SERVICE=WMS\&VERSION=1.3.0\&REQUEST=GetCapabilities\&map=cfgeo.qgz
-
-```
-- Le test est réussi si vous obtenez une page web avec du code XML
-
----
-```
 

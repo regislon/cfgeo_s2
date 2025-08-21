@@ -80,8 +80,10 @@ Cela s'effectue en 3 étapes :
 
 #### Partie 1 : Installation via OsGeo4W
 
-1. **Télécharger et lancer l’installateur OSGeo4W.**
+1. **Télécharger (normalement déjà fait pour QGIS) et lancer l’installateur OSGeo4W.**
+
   ![height:300](image-2.png)
+
 2. **Choisir l’option « Advanced Install ».**
 
 ---

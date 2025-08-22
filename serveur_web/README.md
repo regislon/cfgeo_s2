@@ -1,18 +1,3 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - Serveur web"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 # Server Web
@@ -22,7 +7,6 @@ table td {
 
 
 
----
 
 ### Introduction : Qu’est-ce qu’un serveur web ?
 
@@ -31,7 +15,6 @@ table td {
 - Il utilise en général le **protocole HTTP ou HTTPS**
 - Dans notre cas, il permet d’exposer un **projet QGIS** comme service **WMS / WFS**
 
----
 
 ### Pourquoi un serveur web dans un SIG ?
 
@@ -40,7 +23,6 @@ table td {
 - Séparer le **backend SIG (QGIS Server)** de l’**interface utilisateur** (client Web, QGIS Desktop, etc.)
 - Permettre l’**interopérabilité** via des standards OGC
 
----
 
 ### Types de serveurs web
 
@@ -50,7 +32,6 @@ table td {
 | **SIG dédiés**   | QGIS Server, GeoServer | Produisent des flux WMS/WFS/WMTS à partir de SIG   |
 | **Combinés**     | Apache + QGIS Server   | Requêtes traitées par Apache, transmises à QGIS    |
 
----
 
 ### Fonctionnement général : Apache + QGIS Server
 
@@ -65,7 +46,6 @@ table td {
 - QGIS Server interprète la requête (ex: WMS GetMap)
 - Il génère la réponse (ex: carte raster) et la renvoie
 
----
 
 ### Installation et parametrisation d'Apache
 
@@ -76,27 +56,24 @@ Cela s'effectue en 3 étapes :
 2. Configuration du fichier httpd.conf
 3. Démarrage du service Apache
 
- --- 
 
 #### Partie 1 : Installation via OsGeo4W
 
 1. **Télécharger (normalement déjà fait pour QGIS) et lancer l’installateur OSGeo4W.**
 
-  ![height:300](image-2.png)
+  ![height:300](images_documentation/image-2.png)
 
 2. **Choisir l’option « Advanced Install ».**
 
----
 
 3. **Sélectionner les paquets suivants dans la catégorie web :**
   * `apache`, `qgis-ltr-server` et `mod_fcgi`.
-![height:300](image-3.png)
+![height:300](images_documentation/image-3.png)
 
 4. **Exécuter le fichier `OSGeo4W.bat` en tant qu'administrateur** :
    - Naviguer vers le dossier `C:\OSGeo4W\`.
    - Faire un clic droit sur le fichier `OSGeo4W.bat` et sélectionner **Exécuter en tant qu'administrateur**.
    
----
 
 5. **Installer le service Apache** :
    - Dans la console, exécuter la commande suivante :
@@ -113,7 +90,6 @@ Cela s'effectue en 3 étapes :
 
 Garder cette console ouverte, nous en auront besoin dans quelques minutes.
 
----
 
 
 
@@ -135,7 +111,6 @@ Pour configurer correctement Apache avec QGIS Server, il est nécessaire de modi
 
 ⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/bin/ existe !
 
----
 
 
 2. **Fournir les permissions sur le dossier des scripts** :
@@ -159,7 +134,6 @@ Pour configurer correctement Apache avec QGIS Server, il est nécessaire de modi
    
    ⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/bin/ existe !
 
----
 
 
 
@@ -174,7 +148,6 @@ Pour configurer correctement Apache avec QGIS Server, il est nécessaire de modi
    AddHandler cgi-script .cgi .exe
    ```
 
----
 
 
 4. **Ajouter des variables de configuration spécifiques à OSGeo4W** :
@@ -189,7 +162,6 @@ Pour configurer correctement Apache avec QGIS Server, il est nécessaire de modi
    ⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/resources existe !
 
 
----
 
 #### Partie 3 : Démarrage du service Apache
 
@@ -207,7 +179,6 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST
 ```
  Une page web avec un contenu XML devrait s'afficher. 🎆 
 
----
 
 
 ### Open HTTP and HTTPS ports in Windows Server 2022 firewall
@@ -220,7 +191,6 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST
 
 4. In the right panel, click **New Rule...**
  
----
 
 5. Choose:
    - **Rule Type**: *Port*
@@ -233,7 +203,6 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST
 ✅ This allows incoming web traffic to reach your Apache server on ports 80 and 443.
 
 
----
 
 
 
@@ -253,14 +222,12 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?SERVICE=WMS&VERSION=1.3.0&REQUEST
 
 ✅ Cela permet d’accéder à votre serveur web depuis l’extérieur (navigateur, client SIG, etc.).
 
----
 
 Nouveaux ajouts dans le group de sécurité :
 
-![alt text](image-1.png)
+![alt text](images_documentation/image-1.png)
 
 
----
 
 
 ### Test du serveur web depuis l’extérieur
@@ -271,6 +238,6 @@ Nouveaux ajouts dans le group de sécurité :
 
 La page devrait afficher un contenu XML avec les informations de capacité du service WMS : 
 
-![alt text](image-4.png)
+![alt text](images_documentation/image-4.png)
 
 

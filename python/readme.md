@@ -17,6 +17,7 @@ Dans notre contexte, Python est particulièrement utile pour :
 
 
 ![height:500](images_documentation/image-2.png)
+![height:500](images_documentation/image-2.png)
 
 
 
@@ -30,6 +31,7 @@ Apprendre Python ouvre donc de nombreuses possibilités pour un géomaticien !
 
 
 
+![bg left:45% w:500](images_documentation/image.png) **Let's go !  🚀**
 ![bg left:45% w:500](images_documentation/image.png) **Let's go !  🚀**
 
 

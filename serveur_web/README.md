@@ -154,7 +154,7 @@ Pour configurer correctement Apache avec QGIS Server, il est nécessaire de modi
        AllowOverride None
        Options ExecCGI
        Require all granted
-   </Director
+   </Directory>
     ```
    
    ⚠️ Vérifie bien que le chemin C:/OSGeo4W/apps/qgis-ltr/bin/ existe !

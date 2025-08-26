@@ -92,6 +92,19 @@ table td {
 
 ---
 
+## OGC : Open Geospatial Consortium
+
+- **Fondé en 1994**
+- **Objectif** : *Faciliter les échanges dans le domaine de la géomatique (formats de données et services)*
+- Mise en place de **standards ouverts** :
+  - Formats de fichiers (KML, NetCDF, ...)
+  - Services web (WMS, WFS, ...)
+  - API (GeoAPI)
+  - ...
+- Ces standards assurent l’interopérabilité entre logiciels et plateformes SIG.
+
+---
+
 
 
 ## Web Map Service (WMS)
@@ -141,6 +154,51 @@ table td {
 > :bar_chart: Permet une **analyse SIG complète côté client**.  
 
 ---
+
+## Vector Tile Service (MVT)
+
+- **Vector tiles** : tuiles contenant des données vectorielles (géométries + attributs), généralement au format **MVT (Mapbox Vector Tile)**.
+- Avantages :
+  - Affichage **rapide et fluide** même avec de grandes quantités de données.
+  - **Personnalisation du style** côté client (couleurs, symboles, etc.).
+  - Moins de bande passante qu’avec des images.
+- Utilisation :
+  - Compatible avec des bibliothèques web modernes (MapLibre, OpenLayers, etc.).
+  - Permet des applications interactives et dynamiques.
+
+
+> :triangular_ruler: Idéal pour des cartes web interactives et personnalisables à grande échelle.
+
+---
+
+
+
+## File-based (analyse & stockage)
+
+* **GeoParquet** 🟢 (GDAL, OGC)
+  ➝ Extension de Parquet pour données géospatiales (colonnaire, big data, analytique).
+* **FlatGeobuf** 🟢 (GDAL, non-OGC)
+  ➝ Format binaire compact, optimisé transfert rapide & web/mobile.
+
+💡 Idéal pour l’**analyse** (requêtes attributaires/spatiales), mais pas pensé pour la visualisation directe.
+
+---
+
+## Tiled-based (visualisation & diffusion)
+
+* **COMTiles** (2022)
+  ➝ Archive streamable pour tuiles, cloud-optimisé (S3, Azure).
+* **PMTiles** (2021) 🟢 (GDAL)
+  ➝ Archive unique de tuiles (vecteur/raster), hébergeable “serverless” (S3, GitHub Pages).
+* **Mapbox Vector Tiles (MVT)** 🟢 (OGC Community Std)
+  ➝ Format binaire standard pour diffusion web des vecteurs, interactif & rapide.
+
+💡 Idéal pour la **visualisation web** (MapLibre, Leaflet, OpenLayers).
+
+---
+
+
+
 
 ## Tester la publication du projet
 
@@ -192,7 +250,4 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?MAP=C:\qgis\cfgeo.qgz&LAYERS=bf&S
   * **WIDTH / HEIGHT** : dimensions de l’image.
 
 > \:framed\_picture: Le résultat est une **image générée par QGIS Server**, confirmant que la couche est bien publiée.
-
----
-
 

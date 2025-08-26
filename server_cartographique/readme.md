@@ -16,10 +16,9 @@ table td {
 
 
 # Server Cartographique
-- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/serveur_cartographique](https://github.com/regislon/cfgeo_s2/tree/main/serveur_cartographique)
-- Slides : [https://regislon.github.io/cfgeo_s2/serveur_cartographique/README.html](https://regislon.github.io/cfgeo_s2/serveur_cartographique/README.html)
-- PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/serveur_cartographique/README.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/serveur_cartographique/README.pdf)
-
+- Doc : [https://github.com/regislon/cfgeo_s2/tree/main/serveur_cartographique](https://github.com/regislon/cfgeo_s2/tree/main/server_cartographique)
+- Slides : [https://regislon.github.io/cfgeo_s2/serveur_cartographique/README.html](https://regislon.github.io/cfgeo_s2/server_cartographique/readme.html)
+- PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/serveur_cartographique/README.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/server_cartographique/readme.pdf)
 
 
 ---

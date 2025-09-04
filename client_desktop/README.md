@@ -46,3 +46,62 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 
 
 ---
+
+## 1. Interface de QGIS
+L’interface de QGIS se compose de plusieurs éléments principaux :
+
+- **Barre de menu** : accès aux fonctions principales (Projet, Édition, Vue, Couche, etc.).  
+- **Barres d’outils** : outils accessibles rapidement, activables/désactivables.  
+- **Panneaux** : par exemple le panneau des couches ou l’explorateur. Ils sont modulables et peuvent être affichés ou masqués.  
+- **Vue cartographique (map canvas)** : zone principale d’affichage des couches.  
+- **Barre d’état** : messages, coordonnées, SCR courant, indicateurs et recherche.
+
+---
+
+## 2. Configuration de QGIS
+La configuration se fait via **Paramètres → Options** et inclut :
+
+- **Options générales** : apparence, thèmes, langue, gestion des fichiers temporaires.  
+- **Système et Profils utilisateur** : possibilité de créer plusieurs profils pour conserver des environnements distincts (plugins, barres d’outils, préférences).  
+- **Propriétés du projet** : paramètres spécifiques à un projet (SCR, métadonnées, couleurs, variables, relations, macros, etc.).  
+- **Personnalisation** : activer/désactiver des éléments de l’interface.  
+- **Raccourcis clavier** : entièrement personnalisables.  
+- **Ligne de commande et variables d’environnement** : pour les usages avancés et le déploiement.
+
+---
+
+## 3. Création d’un GeoPackage (gpkg) via le panneau Explorateur
+Le **GeoPackage (GPKG)** est un format OGC qui stocke dans un seul fichier :  
+- des couches vecteurs et rasters,  
+- des styles (symbologie),  
+- éventuellement un projet QGIS.
+
+**Étapes pour créer un GeoPackage depuis le panneau Explorateur** :  
+
+1. Ouvrir le **panneau Explorateur** (si besoin, activer via `Vue → Panneaux → Explorateur`).  
+2. Dans l’arborescence, **clic droit sur "GeoPackage"** → choisir **Nouvelle base de données…**  
+3. Donner un **nom** et un **emplacement** au fichier `.gpkg`.  
+4. Une fois créé, le fichier apparaît dans le panneau Explorateur.  
+5. Pour ajouter une couche dans ce GeoPackage :  
+   - clic droit sur le GeoPackage,  
+   - choisir **Nouvelle couche** (vecteur ou raster),  
+   - définir les champs et géométries (point, ligne, polygone).  
+
+---
+
+## 4. Symbologie
+La symbologie détermine l’apparence des couches vectorielles et rasters.
+
+- **Accès** : clic droit sur une couche → *Propriétés* → onglet *Symbologie*, ou directement via le **panneau de style (Layer Styling Panel)**.  
+- **Types de rendu disponibles** :  
+  - Symbole unique,  
+  - Valeurs catégorisées,  
+  - Valeurs graduées,  
+  - Symboles proportionnels,  
+  - Rendu par règles,  
+  - Heatmap (densité),  
+  - Cluster,  
+  - 2.5D et autres styles avancés.  
+- **Options supplémentaires** : niveaux de symbole, transparence, effets de dessin, animation, styles sauvegardables dans le GeoPackage.
+
+---

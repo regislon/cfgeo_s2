@@ -1,18 +1,3 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - QGIS - Installation"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 # QGIS - Installation
@@ -22,7 +7,6 @@ table td {
 
 
 
----
 
 
 # Installation de QGIS et QGIS server
@@ -36,7 +20,6 @@ Pour installer Qgis, nous allons utiliser OSGeo4W. OSGeo4W est une distribution 
 Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/raw/main/client_desktop/videos/install.mkv).
 
 
----
 
 
 ### Création d'un premier projet QGIS
@@ -45,7 +28,6 @@ Vidéo complète de l'installation [ici](https://github.com/regislon/cfgeo_s2/ra
 
 
 
----
 
 ## 1. Interface de QGIS
 L’interface de QGIS se compose de plusieurs éléments principaux :
@@ -56,7 +38,6 @@ L’interface de QGIS se compose de plusieurs éléments principaux :
 - **Vue cartographique (map canvas)** : zone principale d’affichage des couches.  
 - **Barre d’état** : messages, coordonnées, SCR courant, indicateurs et recherche.
 
----
 
 ## 2. Configuration de QGIS
 La configuration se fait via **Paramètres → Options** et inclut :
@@ -68,7 +49,6 @@ La configuration se fait via **Paramètres → Options** et inclut :
 - **Raccourcis clavier** : entièrement personnalisables.  
 - **Ligne de commande et variables d’environnement** : pour les usages avancés et le déploiement.
 
----
 
 ## 3. Création d’un GeoPackage (gpkg) via le panneau Explorateur
 Le **GeoPackage (GPKG)** est un format OGC qui stocke dans un seul fichier :  
@@ -87,7 +67,6 @@ Le **GeoPackage (GPKG)** est un format OGC qui stocke dans un seul fichier :
    - choisir **Nouvelle couche** (vecteur ou raster),  
    - définir les champs et géométries (point, ligne, polygone).  
 
----
 
 ## 4. Symbologie
 La symbologie détermine l’apparence des couches vectorielles et rasters.
@@ -104,4 +83,3 @@ La symbologie détermine l’apparence des couches vectorielles et rasters.
   - 2.5D et autres styles avancés.  
 - **Options supplémentaires** : niveaux de symbole, transparence, effets de dessin, animation, styles sauvegardables dans le GeoPackage.
 
----

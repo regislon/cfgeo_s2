@@ -1,18 +1,3 @@
----
-marp: true
-paginate: true
-header: "CFGEO - S2 - Serveur cartographique"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 
 # Server Cartographique
@@ -21,13 +6,11 @@ table td {
 - PDF : [https://github.com/regislon/cfgeo_s2/blob/gh-pages/serveur_cartographique/README.pdf](https://github.com/regislon/cfgeo_s2/blob/gh-pages/server_cartographique/readme.pdf)
 
 
----
 
 
 > :speech_balloon: Dans cette partie, nous allons créer un projet QGIS, le placer à l'emplacement précis sur la machine virtuelle, puis il sera servi par le serveur cartographique QGIS Server pour diffuser les données.
 
 
----
 
 
 ### Création de la structure du projet
@@ -37,7 +20,6 @@ table td {
 - Cette organisation facilitera la gestion et la diffusion du projet par QGIS Server.
 
 
----
 
 ### Ajout des données au projet QGIS
 
@@ -48,7 +30,6 @@ table td {
 
 > :art: Un style clair et lisible améliore la compréhension des cartes publiées.
 
----
 
 
 
@@ -56,19 +37,17 @@ table td {
 
 - Ouvrez le menu **Project > Properties...** pour accéder aux paramètres du projet QGIS.
 
-![height:400](image.png)
+![height:400](images_documentation/image.png)
 
 
----
 
 
 
 - Activez **Enable Service Capabilities** dans l’onglet `QGIS Server`.
 
-![height:500](image-1.png)
+![height:500](images_documentation/image-1.png)
 
 
----
 
 - Complétez les métadonnées principales :  
   - Titre, Organisation, Contact, URL.  
@@ -76,20 +55,18 @@ table td {
 
 - Configurez les capacités :  
   - **WMS** : étendue, options de rendu, taille max. des images.  
-    ![height:400](image-2.png)
+    ![height:400](images_documentation/image-2.png)
 
 
----
 
   - **WFS / OAPIF** : couches publiées, droits de mise à jour/insertion.  
 
-![height:400](image-3.png)
+![height:400](images_documentation/image-3.png)
 
 
 > :bulb: Ces paramètres alimentent les documents *GetCapabilities* (interopérabilité et sécurité).  
 
 
----
 
 ## OGC : Open Geospatial Consortium
 
@@ -102,7 +79,6 @@ table td {
   - ...
 - Ces standards assurent l’interopérabilité entre logiciels et plateformes SIG.
 
----
 
 
 
@@ -121,7 +97,6 @@ table td {
 
 
 
----
 
 ## Web Map Tile Service (WMTS)
 
@@ -138,7 +113,6 @@ table td {
 
 
 
----
 
 ## Web Feature Service (WFS)
 
@@ -152,7 +126,6 @@ table td {
 
 > :bar_chart: Permet une **analyse SIG complète côté client**.  
 
----
 
 ## Vector Tile Service (MVT)
 
@@ -168,7 +141,6 @@ table td {
 
 > :triangular_ruler: Idéal pour des cartes web interactives et personnalisables à grande échelle.
 
----
 
 
 
@@ -181,7 +153,6 @@ table td {
 
 💡 Idéal pour l’**analyse** (requêtes attributaires/spatiales), mais pas pensé pour la visualisation directe.
 
----
 
 ## Tiled-based (visualisation & diffusion)
 
@@ -194,7 +165,6 @@ table td {
 
 💡 Idéal pour la **visualisation web** (MapLibre, Leaflet, OpenLayers).
 
----
 
 
 
@@ -217,7 +187,6 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?MAP=C:\qgis\cfgeo.qgz&SERVICE=WMS
 > \:mag\_right: Ce test permet de vérifier que QGIS Server **répond bien** et que votre projet est accessible.
 
 
----
 
 ## Comparaison WMS / WMTS / WFS
 
@@ -230,7 +199,6 @@ http://localhost/cgi-bin/qgis_mapserv.fcgi.exe?MAP=C:\qgis\cfgeo.qgz&SERVICE=WMS
 
 
 
----
 
 ## Tester l’affichage d’une couche (GetMap)
 

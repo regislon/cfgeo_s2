@@ -1,19 +1,3 @@
----
-marp: true
-paginate: true
-header: "Jupyter Notebook"
-footer: "CFGEO - S2 - 2025"
-theme: default
----
-
-<style>
-table th {
-  font-size: 0.75em;
-}
-table td {
-  font-size: 0.7em;
-}
-</style>
 
 # Introduction à Jupyter Notebook
 - Doc : [https://github.com/regislon/cfgeo_s2/tree/main/jupyter_notebook](https://github.com/regislon/cfgeo_s2/tree/main/jupyter_notebook)
@@ -22,7 +6,6 @@ table td {
 
 
 
----
 
 # Plan
 
@@ -32,7 +15,6 @@ table td {
 - [Demonstration de Jupyter Notebook](#demonstration-de-jupyter-notebook)
 - [Conclusion](#conclusion)
 
----
 
 
 
@@ -48,7 +30,6 @@ Jupyter Notebook est un environnement interactif qui permet d'écrire et d'exéc
 - Le prototypage rapide
 - La documentation interactive
 
----
 
 
 ## Langage compilé vs interprété
@@ -66,24 +47,21 @@ Jupyter Notebook est un environnement interactif qui permet d'écrire et d'exéc
 
 
 
----
 
 ##  Fonctionnement d'un langage compilé
 
-![alt text](image.png)
+![alt text](images_documentation/image.png)
 
 Fonctionnement d'un langage interprété. Le fichier source est lu et exécuté directement par un interpréteur (par exemple Python), qui produit le résultat sans étape de compilation préalable.*
 
 
----
 
 ## Fonctionnement d'un langage interprété
 
-![bg left:35% w:400](image-1.png)
+![bg left:35% w:400](images_documentation/image-1.png)
 
 Cette image illustre le processus de compilation d’un langage compilé : les fichiers source (ex. : C, C++) sont d’abord transformés en fichiers objets par un compilateur (comme gcc). Ensuite, un éditeur de liens (linker) assemble ces fichiers objets avec d’éventuelles bibliothèques pour produire un fichier exécutable (exe), une bibliothèque dynamique (dll) ou statique (lib). Ce processus se distingue des langages interprétés où le code source est exécuté directement sans étape de compilation préalable.
 
----
 
 
 ## Qu'est-ce qu'un IDE ?
@@ -93,7 +71,6 @@ Un IDE vise à améliorer la productivité et le confort du développeur en cent
 
 
 
----
 
 
 ## Pourquoi utiliser Jupyter Notebook plutôt qu'un IDE classique ou la ligne de commande ?
@@ -106,7 +83,6 @@ Un IDE vise à améliorer la productivité et le confort du développeur en cent
 - Bref, Idéal pour l'apprentissage...
 
 
----
 
 
 
@@ -120,7 +96,6 @@ Pour utiliser Jupyter Notebook, il est recommandé d'avoir :
 
 
 
----
 
 # Installation de python
 
@@ -135,7 +110,6 @@ Pour utiliser Jupyter Notebook, il est recommandé d'avoir :
 👉 Vidéo complète de l’installation disponible [ici](https://github.com/regislon/cfgeo_s2/blob/main/python/videos/install.mkv).
 
 
----
 
 ### Installation de packages Python
 Pour utiliser Jupyter Notebook, vous aurez besoin de plusieurs bibliothèques Python. Voici comment les installer :
@@ -149,7 +123,6 @@ Installation des libraries python
 
     ```
 
----
 
 ## Qu'est-ce qu'un package Python ?
 
@@ -162,7 +135,6 @@ Un **package** (ou bibliothèque) est un ensemble de modules Python prêts à l'
 
 Les packages s'installent généralement avec la commande `pip install nom_du_package`.
 
----
 
 # Installation de Jupyter Notebook
 
@@ -181,7 +153,6 @@ Les packages s'installent généralement avec la commande `pip install nom_du_pa
    ```
    Cela ouvrira une interface web où vous pourrez créer et gérer vos notebooks.
 
----
 
 ## Qu'est-ce que l'invite de commande (ou terminal Windows) ?
 
@@ -193,7 +164,6 @@ L’**invite de commande** (ou **terminal Windows**) est un programme qui permet
 - Gérer des processus ou configurer le système
 
 
----
 
 
 Pour ouvrir l’invite de commande :
@@ -204,11 +174,10 @@ C’est un outil essentiel pour les développeurs, car il offre un contrôle pr�
 
 Pour vous déplacer dans un dossier, utilisez la commande `cd nom_du_dossier` (par exemple : `cd Documents`).
 
----
 
 Exemple de lancement de Jupyter Notebook dans l'invite de commande :
 
-![bg left:50% w:600](image-2.png)
+![bg left:50% w:600](images_documentation/image-2.png)
 
 ```bash
    cd <le dossier ou il y a vos notebooks>
@@ -217,7 +186,6 @@ et après :
 ```bash
    jupyter notebook
 ```
----
 
 
 
@@ -235,13 +203,11 @@ et après :
    - Installez Python comme décrit dans l'option 1.
    - Dans VS Code, sélectionnez un interpréteur Python (Ctrl+Shift+P → "Python: Select Interpreter").
 
----
 
 4. **Créer un Notebook**  
    - Cliquez sur "File > New File" et sauvegardez-le avec l'extension `.ipynb`.
    - Vous pouvez maintenant écrire et exécuter du code directement dans VS Code.
 
----
 
 # Demonstration de Jupyter Notebook
 
@@ -253,7 +219,6 @@ Un notebook est composé de **cellules** qui peuvent contenir :
 - **Markdown** : pour ajouter des descriptions, des titres, ou des explications.
 - **Sorties** : résultats des cellules de code (textes, graphiques, etc.).
 
----
 
 
 
@@ -276,7 +241,6 @@ plt.plot(data['x'], data['y'])
 plt.show()
 ```
 
----
 
 # Conclusion
 
@@ -287,7 +251,6 @@ plt.show()
 - **Utilisez des environnements virtuels** : pour isoler vos dépendances Python.
 - **Ajoutez des visualisations** : utilisez des bibliothèques comme Matplotlib, Seaborn ou Plotly.
 
----
 
 ## Ressources supplémentaires
 
@@ -295,13 +258,11 @@ plt.show()
 - Extension Jupyter pour VS Code : [https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - Tutoriels Python : [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 
----
 ## Utilisation de Jupyter Notebook dans ArcGIS
 
 Jupyter Notebook est également intégré dans ArcGIS (ArcGIS Pro et ArcGIS Online) pour l'analyse spatiale et la manipulation de données géographiques. Vous pouvez ainsi écrire et exécuter du code Python utilisant les bibliothèques ArcPy ou ArcGIS API for Python directement dans un notebook, ce qui facilite l'automatisation et la visualisation des traitements SIG.
 
 
----
 
 
-![height:500](image-3.png)
+![height:500](images_documentation/image-3.png)

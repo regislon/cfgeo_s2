@@ -1,38 +1,3 @@
----
-title: QField - Qu'est-ce que c'est ?
-description: Présentation de QField
-theme: stylesheets/main-style.css
-customTheme: stylesheets/main-style
-verticalSeparator: --v--
-transition: none
-revealOptions: {
-  transition: 'none',
-  slideNumber: false,
-  overview: true,
-  autoPlayMedia: true,
-}
----
-
----
-
-<link rel="stylesheet" href="./stylesheets/main-style.css">
-
-<style>
-.reveal .slides::after {
-  content: "";
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  background-image: url('assets/logo-bg-cut-l.png');
-  background-size: 200px;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  width: 140px;
-  height: 140px;
-  pointer-events: none;
-  z-index: 1;
-}
-</style>
 
 <!-- .slide: class="stack" -->
 # OPEN SOURCE<br><span class="green">GEONINJAS</span><br> MADE IN<br> SWITZERLAND
@@ -41,7 +6,6 @@ revealOptions: {
 
 <img src="assets/logo_opengisch_open-source-geoninjas.png" class="styled-logo">
 
----
 
 <!-- .slide: class="stack" -->
 
@@ -49,7 +13,6 @@ revealOptions: {
 
 ### parce que les données sont hors du bureau.
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -152,7 +115,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -163,7 +125,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -185,7 +146,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -293,7 +253,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -330,7 +289,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -487,7 +445,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -515,7 +472,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
@@ -528,7 +484,6 @@ revealOptions: {
 
 </div>
 
----
 
 <div style="margin-top: 20px;">
 <!-- .slide: class="stack" -->
